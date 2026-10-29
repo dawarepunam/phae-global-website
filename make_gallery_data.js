@@ -42,3 +42,4 @@ const items = urls.map((url, index) => {
 
 fs.writeFileSync('generated_gallery_data.json', JSON.stringify(items, null, 2));
 console.log('Generated gallery items count:', items.length);
+

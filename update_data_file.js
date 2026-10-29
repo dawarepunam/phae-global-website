@@ -9,3 +9,4 @@ const updated = polyhubData.replace(
 
 fs.writeFileSync('src/data/polyhubData.ts', updated);
 console.log('polyhubData.ts successfully updated with 69 real gallery items!');
+
