@@ -110,7 +110,8 @@ export const PRODUCTS_LIST: ProductItem[] = [
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.03_3c367041.jpg"
     ],
     specifications: [
       { label: "Structural Frame", value: "Hot-Dip Galvanized steel tubular pipes providing strength and corrosion resistance conforming to IS norms" },
@@ -152,7 +153,9 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b0e4b2fc.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.05_4f7ce404.jpg"
     ],
     specifications: [
       { label: "Structure & Design", value: "Arched or hoop-shaped frames constructed from high-strength galvanized steel pipes" },
@@ -191,7 +194,9 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.06_f97fa1a2.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.08_ba1ca66c.jpg"
     ],
     specifications: [
       { label: "Panel Material", value: "Multi-wall (twin-wall or triple-wall) UV-coated polycarbonate sheets" },
@@ -230,7 +235,9 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.09_07bbdc72.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.13_75d6f947.jpg"
     ],
     specifications: [
       { label: "Dome Geometry", value: "Curved aerodynamic multi-dome arch framework shedding rain smoothly" },
@@ -268,7 +275,10 @@ export const PRODUCTS_LIST: ProductItem[] = [
     bannerImage: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
     image: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
     galleryImages: [
-      "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.14_a765bb27.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.17_a800466e.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.18_52fe5d3f.jpg"
     ],
     specifications: [
       { label: "Frame Grid", value: "Galvanized GI column grid with high-tensile wire rope top cross-bracing" },
@@ -306,7 +316,9 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.20_3a4ce083.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.22_944a9e2d.jpg"
     ],
     specifications: [
       { label: "Hydroponic Systems", value: "Nutrient Film Technique (NFT), Deep Water Culture (DWC), and Dutch Bucket setups" },
