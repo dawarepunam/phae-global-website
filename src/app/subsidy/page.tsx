@@ -130,31 +130,34 @@ export default function SubsidyPage() {
             <div className="section-divider mx-auto mt-2" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
             {/* Scheme 1: NHB (National Horticulture Board) */}
-            <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-xl flex flex-col justify-between relative overflow-hidden">
-              <div className="space-y-5">
-                <div className="flex items-center justify-between">
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-slate-200/90 shadow-xl flex flex-col justify-between relative overflow-hidden">
+              <div className="flex flex-col flex-1">
+                {/* Header Tag & Badge */}
+                <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/25 px-3 py-1 rounded-full border border-[#183F32]/20">
                     AUTHORITY 01 • CENTRAL SCHEME
                   </span>
-                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg">
+                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
                     Comprehensive 50%
                   </span>
                 </div>
 
-                <h4 className="text-2xl font-black text-[#102C24]">
+                {/* Title */}
+                <h4 className="text-2xl font-black text-[#102C24] min-h-[36px] flex items-center">
                   National Horticulture Board (NHB)
                 </h4>
 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  The client can get <strong>50% subsidy on the TOTAL project cost</strong>. This is ideal for commercial, large-scale protected cultivation projects with comprehensive turnkey scope.
+                {/* Fixed-height description for perfect visual alignment */}
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2.5 mb-5 min-h-[48px] flex items-center">
+                  The client can get <strong>50% subsidy on the TOTAL project cost</strong>. Ideal for commercial, large-scale protected cultivation with full turnkey scope.
                 </p>
 
-                {/* Scope Coverage List */}
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5">
-                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block mb-1">
+                {/* Scope Coverage List Box */}
+                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
+                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
                     Total Project Cost Includes:
                   </span>
                   {[
@@ -166,16 +169,17 @@ export default function SubsidyPage() {
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-[#183F32] shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                      <span className="leading-snug">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="pt-8 mt-6 border-t border-slate-100">
+              {/* Bottom CTA Button */}
+              <div className="pt-6 mt-6 border-t border-slate-100">
                 <Link
                   href="/contact"
-                  className="btn-gold w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
+                  className="btn-gold w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform"
                 >
                   <span>Apply for NHB Project DPR</span>
                   <ArrowRight className="w-4 h-4" />
@@ -184,49 +188,53 @@ export default function SubsidyPage() {
             </div>
 
             {/* Scheme 2: NHM (National Horticulture Mission) */}
-            <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-xl flex flex-col justify-between relative overflow-hidden">
-              <div className="space-y-5">
-                <div className="flex items-center justify-between">
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-slate-200/90 shadow-xl flex flex-col justify-between relative overflow-hidden">
+              <div className="flex flex-col flex-1">
+                {/* Header Tag & Badge */}
+                <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/25 px-3 py-1 rounded-full border border-[#183F32]/20">
                     AUTHORITY 02 • STATE MISSION
                   </span>
-                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg">
+                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
                     State Norms 50%
                   </span>
                 </div>
 
-                <h4 className="text-2xl font-black text-[#102C24]">
+                {/* Title */}
+                <h4 className="text-2xl font-black text-[#102C24] min-h-[36px] flex items-center">
                   National Horticulture Mission (NHM / MIDH)
                 </h4>
 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  The client can get <strong>50% subsidy on polyhouse construction & drip/fogging system</strong> according to the rates determined by the particular State Horticulture Department.
+                {/* Fixed-height description for perfect visual alignment */}
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2.5 mb-5 min-h-[48px] flex items-center">
+                  The client can get <strong>50% subsidy on polyhouse construction & drip/fogging</strong> according to rates determined by particular State Horticulture Departments.
                 </p>
 
-                {/* Scope Coverage List */}
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5">
-                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block mb-1">
+                {/* Scope Coverage List Box */}
+                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
+                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
                     State Department Inclusions:
                   </span>
                   {[
                     "Polyhouse structural fabrication as per state cost norms",
                     "Drip & high-pressure fogging system integration",
                     "Anti-insect netting & 200-micron UV stabilized polyfilms",
-                    "Optional plant subsidy: Dependent on state fund availability (not mandatory)",
-                    "Subsidies directly credited to farmer bank account upon verification"
+                    "Optional plant subsidy: Dependent on state fund availability",
+                    "Direct subsidy credit into farmer bank account upon verification"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
                       <CheckCircle2 className="w-4 h-4 text-[#183F32] shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                      <span className="leading-snug">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="pt-8 mt-6 border-t border-slate-100">
+              {/* Bottom CTA Button */}
+              <div className="pt-6 mt-6 border-t border-slate-100">
                 <Link
                   href="/contact"
-                  className="btn-gold w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
+                  className="btn-gold w-full py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md hover:scale-[1.01] transition-transform"
                 >
                   <span>Check State NHM Allocation</span>
                   <ArrowRight className="w-4 h-4" />
