@@ -213,9 +213,40 @@ export default function Navbar() {
 
       </div>
 
-      {/* Mobile Drawer Menu - Premium Fullscreen Solid Sheet Above All Content */}
+      {/* Mobile Drawer Menu - Fullscreen Solid Modal Above Everything */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[56px] sm:top-[68px] bottom-0 bg-[#102C24] overflow-y-auto px-5 py-6 pb-28 space-y-4 animate-fadeIn z-[110] shadow-2xl">
+        <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 w-screen h-[100dvh] bg-[#102C24] overflow-y-auto px-5 pt-20 pb-28 space-y-4 animate-fadeIn z-[9999] shadow-2xl">
+          
+          {/* Top Header inside fullscreen menu with Logo and Close button */}
+          <div className="fixed top-0 left-0 right-0 h-16 bg-[#102C24] border-b border-white/10 px-5 flex items-center justify-between z-[10000]">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center">
+                <img
+                  src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
+                  alt="PolyHub Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <span className="font-black text-lg text-white">
+                Poly<span className="text-[#C5B27D]">Hub</span>
+              </span>
+            </Link>
+            <div className="flex items-center gap-2">
+              <a
+                href={`tel:${COMPANY_INFO.contacts.phone}`}
+                className="p-2 rounded-xl bg-white/10 text-[#C5B27D] border border-white/10"
+              >
+                <Phone className="w-4 h-4" />
+              </a>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-xl bg-white/15 text-white border border-white/20 hover:bg-white/25"
+                aria-label="Close menu"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
           
           <div className="space-y-1">
             {navLinks.map((item) => {
