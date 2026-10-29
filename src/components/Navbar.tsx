@@ -47,6 +47,18 @@ export default function Navbar() {
     setMobileSubmenu(null);
   }, [pathname]);
 
+  // Prevent body scrolling when mobile menu is open on iPhone and Android
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   const navLinks: NavItem[] = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
@@ -81,7 +93,7 @@ export default function Navbar() {
     : "bg-[#102C24]/85 backdrop-blur-xl shadow-lg py-3 sm:py-4 border-none";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-none ${headerBgClass}`}>
+    <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 border-none ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo with Official Website Emblem */}
@@ -201,9 +213,9 @@ export default function Navbar() {
 
       </div>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer Menu - Premium Fullscreen Solid Sheet Above All Content */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[60px] sm:top-[68px] bottom-0 bg-[#102C24]/98 backdrop-blur-2xl border-t border-white/10 overflow-y-auto px-5 py-6 pb-24 space-y-4 animate-fadeIn z-50">
+        <div className="lg:hidden fixed inset-x-0 top-[56px] sm:top-[68px] bottom-0 bg-[#102C24] overflow-y-auto px-5 py-6 pb-28 space-y-4 animate-fadeIn z-[110] shadow-2xl">
           
           <div className="space-y-1">
             {navLinks.map((item) => {
