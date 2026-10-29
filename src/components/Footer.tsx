@@ -17,16 +17,16 @@ export default function Footer() {
               <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform">
                 <img
                   src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-                  alt="Poly Hub Agro Engineers Logo"
+                  alt="PHAE Global Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
-                  Poly<span className="text-[#C5B27D]">Hub</span>
+                  PHAE <span className="text-[#C5B27D] ml-1">Global</span>
                 </span>
                 <span className="text-[9px] uppercase font-bold tracking-widest text-[#A6B5A0] -mt-1">
-                  Agro Engineers
+                  PolyHub Agro Engineers
                 </span>
               </div>
             </Link>

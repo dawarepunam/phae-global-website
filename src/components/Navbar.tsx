@@ -96,21 +96,21 @@ export default function Navbar() {
     <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 border-none ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Brand Logo with Official Website Emblem */}
+        {/* Brand Logo: PHAE Global */}
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
           <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-white p-1 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform shrink-0">
             <img
               src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-              alt="Poly Hub Agro Engineers Logo"
+              alt="PHAE Global Logo"
               className="w-full h-full object-contain"
             />
           </div>
           <div className="flex flex-col">
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center">
-              Poly<span className="text-[#C5B27D]">Hub</span>
+              PHAE <span className="text-[#C5B27D] ml-1">Global</span>
             </span>
             <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#A6B5A0] -mt-1">
-              Agro Engineers
+              PolyHub Agro Engineers
             </span>
           </div>
         </Link>
@@ -208,12 +208,12 @@ export default function Navbar() {
               <div className="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center">
                 <img
                   src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-                  alt="PolyHub Logo"
+                  alt="PHAE Global Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <span className="font-black text-lg text-white">
-                Poly<span className="text-[#C5B27D]">Hub</span>
+                PHAE <span className="text-[#C5B27D]">Global</span>
               </span>
             </Link>
             <div className="flex items-center">

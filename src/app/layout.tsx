@@ -5,24 +5,25 @@ import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 
 export const metadata: Metadata = {
-  title: "PolyHub Agro Engineers | Commercial Polyhouses & Greenhouse Engineering",
-  description: "Premier agricultural infrastructure company in India. Specializing in naturally ventilated polyhouses, climate-controlled fan & pad setups, shade net houses, and government subsidy assistance (MIDH/NHB).",
+  title: "PHAE Global | Commercial Polyhouses & Greenhouse Engineering",
+  description: "PHAE Global (PolyHub Agro Engineers) - Premier agricultural infrastructure company in India. Specializing in naturally ventilated polyhouses, climate-controlled fan & pad setups, shade net houses, and government subsidy assistance (MIDH/NHB).",
   keywords: [
-    "Polyhouse", 
-    "Greenhouse", 
-    "Naturally Ventilated Polyhouse", 
-    "Fan and Pad Polyhouse", 
-    "Shade Net House", 
-    "Hydroponics", 
-    "Agriculture Subsidy MIDH NHB",
-    "PolyHub Agro Engineers Patiala Pune"
+    "PHAE Global",
+    "PolyHub Agro Engineers",
+    "Polyhouse",
+    "Greenhouse",
+    "Naturally Ventilated Polyhouse",
+    "Fan and Pad Polyhouse",
+    "Shade Net House",
+    "Hydroponics",
+    "Agriculture Subsidy MIDH NHB"
   ],
-  authors: [{ name: "PolyHub Agro Engineers" }],
+  authors: [{ name: "PHAE Global (PolyHub Agro Engineers)" }],
   openGraph: {
-    title: "PolyHub Agro Engineers | Commercial Polyhouses & Greenhouse Engineering",
+    title: "PHAE Global | Commercial Polyhouses & Greenhouse Engineering",
     description: "Modernizing Indian agriculture with durable, wind-resistant polyhouses and shade nets.",
     url: "https://polyhubagro.com",
-    siteName: "PolyHub Agro Engineers",
+    siteName: "PHAE Global",
     locale: "en_IN",
     type: "website",
   },

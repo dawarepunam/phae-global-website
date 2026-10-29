@@ -76,7 +76,8 @@ export interface CropEconomicsItem {
 }
 
 export const COMPANY_INFO = {
-  name: "PolyHub Agro Engineers",
+  name: "PHAE Global",
+  brandName: "PHAE Global",
   legalName: "Poly Hub Agro Engineers",
   tagline: "Pioneering Modern Agricultural Technology & Greenhouse Engineering",
   established: "2014",
