@@ -153,7 +153,7 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b82e64ab.jpg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b0e4b2fc.jpg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.05_4f7ce404.jpg"
     ],
@@ -190,10 +190,10 @@ export const PRODUCTS_LIST: ProductItem[] = [
     badge: "Ultra-Durable",
     shortDescription: "Strength Meets Sustainability: Exceptional insulation, extreme impact resistance, and durability through multi-wall polycarbonate panels.",
     fullDescription: "Polycarbonate greenhouses represent a fusion of strength, durability, and energy efficiency in modern protected cultivation. Utilizing multi-wall polycarbonate sheets, these greenhouses provide outstanding thermal insulation, high light transmission, and unmatched impact resistance against severe hailstorms, winds, and debris.",
-    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
-    image: "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/Fan-and-pad-1-1024x576.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2020/04/Fan-and-pad-1-1024x576.jpg",
     galleryImages: [
-      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2020/04/Fan-and-pad-1-1024x576.jpg",
       "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.06_f97fa1a2.jpg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.08_ba1ca66c.jpg"
@@ -316,9 +316,9 @@ export const PRODUCTS_LIST: ProductItem[] = [
     image: "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
     galleryImages: [
       "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2020/04/Fan-and-pad-1-1024x576.jpg",
       "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.20_3a4ce083.jpg",
-      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.22_944a9e2d.jpg"
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.06_6ef49eb7-1.jpg"
     ],
     specifications: [
       { label: "Hydroponic Systems", value: "Nutrient Film Technique (NFT), Deep Water Culture (DWC), and Dutch Bucket setups" },
@@ -437,7 +437,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     title: "Custom Polyhouse Design",
     shortDescription: "Tailored polyhouse design solutions optimized for your specific crop, local climate, land topography, and commercial expansion goals.",
     fullDescription: "At Polyhub, we understand that each agricultural project is unique, requiring a tailored approach to meet specific needs and objectives. Our custom polyhouse design services ensure that your polyhouse is optimized for your crops, climate, and operational goals.",
-    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b82e64ab.jpg",
     icon: "DraftingCompass",
     deliverables: [
       "Initial Consultation: In-depth discussion of your specific requirements, business goals, budget, and commercial crop choices",
