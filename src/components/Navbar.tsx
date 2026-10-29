@@ -75,18 +75,18 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Identical transparent-to-frosted dark glass styling across all pages
+  // Identical borderless transparent-to-frosted dark glass styling across all pages
   const headerBgClass = scrolled 
-    ? "bg-[#102C24]/95 backdrop-blur-xl border-b border-[#B5A16A]/25 shadow-xl py-3" 
-    : "bg-[#102C24]/80 backdrop-blur-md border-b border-white/10 py-4";
+    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-3 border-none" 
+    : "bg-[#102C24]/75 backdrop-blur-lg shadow-lg py-4 border-none";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBgClass}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-none ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo with Official Website Emblem */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform">
+          <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform">
             <img
               src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
               alt="Poly Hub Agro Engineers Logo"
