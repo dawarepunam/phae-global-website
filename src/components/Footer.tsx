@@ -1,21 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import { Sprout, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import { COMPANY_INFO, PRODUCTS_LIST, SERVICES_LIST } from "@/data/polyhubData";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#102C24] text-slate-300 pt-16 pb-12 border-t border-[#B5A16A]/25">
+    <footer className="bg-[#102C24] text-slate-300 pt-16 pb-12 border-t border-[#B5A16A]/25 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 4 Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           
-          {/* Column 1: Brand & Identity */}
+          {/* Column 1: Brand & Identity with Official Emblem */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#183F32] to-[#B5A16A] flex items-center justify-center text-white shadow-md">
-                <Sprout className="w-5 h-5 text-[#F5F2E9]" />
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform">
+                <img
+                  src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
+                  alt="Poly Hub Agro Engineers Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
@@ -25,20 +29,26 @@ export default function Footer() {
                   Agro Engineers
                 </span>
               </div>
-            </div>
+            </Link>
 
             <p className="text-xs text-slate-300 leading-relaxed">
               Established in {COMPANY_INFO.established}, PolyHub Agro Engineers is committed to advancing Indian agriculture through state-of-the-art greenhouse fabrication, climate-controlled farming setups, and government subsidy consultancy.
             </p>
 
-            <div className="flex items-center gap-2 pt-2">
-              <span className="text-[11px] text-[#A6B5A0] font-semibold">Connect with our engineers</span>
+            <div className="pt-2">
+              <Link
+                href="/contact"
+                className="btn-gold inline-flex items-center gap-2 py-2 px-3.5 rounded-xl text-xs font-bold"
+              >
+                <span>Request Project Proposal</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4 text-[#C5B27D]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
               Navigation
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -55,8 +65,8 @@ export default function Footer() {
 
           {/* Column 3: Products */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4 text-[#C5B27D]">
-              Structures
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
+              Commercial Structures
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
               {PRODUCTS_LIST.map((p) => (
@@ -71,7 +81,7 @@ export default function Footer() {
 
           {/* Column 4: Contact & Locations */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-widest mb-4 text-[#C5B27D]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
               Contact Details
             </h4>
             <div className="space-y-3 text-xs text-slate-300">
