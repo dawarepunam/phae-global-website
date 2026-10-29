@@ -136,12 +136,12 @@ export default function AboutClient() {
             <h2 className="text-3xl sm:text-4xl xl:text-5xl font-black text-[#102C24] tracking-tight leading-tight">
               Welcome to{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5A16A] to-[#183F32]">
-                Polyhub Agro
+                PHAE Global
               </span>
             </h2>
 
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
-              At Polyhub Agro, we stand at the forefront of agricultural innovation, driven by our commitment to sustainability and technological advancement. Our journey began in{" "}
+              At PHAE Global, we stand at the forefront of agricultural innovation, driven by our commitment to sustainability and technological advancement. Our journey began in{" "}
               <strong className="text-[#102C24]">{COMPANY_INFO.established}</strong>, with a vision to revolutionize farming practices worldwide.
             </p>
 
@@ -262,7 +262,7 @@ export default function AboutClient() {
               Innovative Solutions for Modern Agriculture
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-              At the heart of Polyhub Agro's offerings are our state-of-the-art products and engineering services designed to meet the evolving needs of commercial horticulture and precision farming.
+              At the heart of PHAE Global's offerings are our state-of-the-art products and engineering services designed to meet the evolving needs of commercial horticulture and precision farming.
             </p>
           </div>
 
@@ -309,7 +309,7 @@ export default function AboutClient() {
               Leadership &amp; Driving Vision
             </span>
             <h3 className="text-2xl sm:text-3xl font-black mt-3 text-white">
-              Pioneers Behind PolyHub Agro Engineers
+              Pioneers Behind PHAE Global
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 mt-2">
               Guided by experienced technocrats committed to transforming commercial agriculture across India.
@@ -363,7 +363,7 @@ export default function AboutClient() {
               {
                 badge: "Customer-Centric Approach",
                 title: "Tailored Solutions for Real Farm Success",
-                body: "Polyhub Agro is committed to the success of our customers. We collaborate closely with farmers, understanding their unique challenges and tailoring engineering solutions that address their specific regional and crop requirements.",
+                body: "PHAE Global is committed to the success of our customers. We collaborate closely with farmers, understanding their unique challenges and tailoring engineering solutions that address their specific regional and crop requirements.",
                 footer: "Dedicated On-Site Farmer Support & Training",
                 FooterIcon: Users2,
               },

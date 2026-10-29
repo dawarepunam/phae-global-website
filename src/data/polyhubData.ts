@@ -78,7 +78,7 @@ export interface CropEconomicsItem {
 export const COMPANY_INFO = {
   name: "PHAE Global",
   brandName: "PHAE Global",
-  legalName: "Poly Hub Agro Engineers",
+  legalName: "PHAE Global",
   tagline: "Pioneering Modern Agricultural Technology & Greenhouse Engineering",
   established: "2014",
   stats: [
@@ -354,7 +354,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     slug: "construction-and-installation",
     title: "Construction and Installation",
     shortDescription: "End-to-end site preparation, custom planning, durable GI framing, and precision polyhouse erection built to the highest engineering standards.",
-    fullDescription: "At Polyhub, we pride ourselves on delivering top-quality construction and installation services for your polyhouse projects. Our team of experienced professionals ensures that your polyhouse is built to the highest standards, providing a robust and efficient environment for your crops.",
+    fullDescription: "At PHAE Global, we pride ourselves on delivering top-quality construction and installation services for your polyhouse projects. Our team of experienced professionals ensures that your polyhouse is built to the highest standards, providing a robust and efficient environment for your crops.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
     icon: "Hammer",
     deliverables: [
@@ -399,7 +399,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     slug: "maintenance-and-support",
     title: "Maintenance and Support",
     shortDescription: "Routine structural inspections, emergency storm repairs, covering replacements, and agronomic support to keep your polyhouse in top condition.",
-    fullDescription: "At Polyhub, we are committed to ensuring the longevity and optimal performance of your polyhouse structures. Our comprehensive maintenance and support services are designed to keep your polyhouse in top condition, ensuring your crops thrive under the best possible conditions.",
+    fullDescription: "At PHAE Global, we are committed to ensuring the longevity and optimal performance of your polyhouse structures. Our comprehensive maintenance and support services are designed to keep your polyhouse in top condition, ensuring your crops thrive under the best possible conditions.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg",
     icon: "Wrench",
     deliverables: [
@@ -437,7 +437,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     slug: "custom-polyhouse-design",
     title: "Custom Polyhouse Design",
     shortDescription: "Tailored polyhouse design solutions optimized for your specific crop, local climate, land topography, and commercial expansion goals.",
-    fullDescription: "At Polyhub, we understand that each agricultural project is unique, requiring a tailored approach to meet specific needs and objectives. Our custom polyhouse design services ensure that your polyhouse is optimized for your crops, climate, and operational goals.",
+    fullDescription: "At PHAE Global, we understand that each agricultural project is unique, requiring a tailored approach to meet specific needs and objectives. Our custom polyhouse design services ensure that your polyhouse is optimized for your crops, climate, and operational goals.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b82e64ab.jpg",
     icon: "DraftingCompass",
     deliverables: [
@@ -482,7 +482,7 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     type: "Flower",
     variety: "Tropical Red, Fire, Sensazione, Pistache",
     shortSummary: "High-value export flower yielding ₹21.65 Lakh net annual return under 4000 sq.m naturally ventilated polyhouse.",
-    overview: "Anthuriums are tropical evergreen perennials prized for their distinctive heart-shaped spathes and long vase life. Based on PolyHub's real project economics for a 4000 sq. meter (1 Acre) Naturally Ventilated Polyhouse under MIDH norms, anthurium cultivation provides outstanding recurring annual income with steady corporate and export market demand.",
+    overview: "Anthuriums are tropical evergreen perennials prized for their distinctive heart-shaped spathes and long vase life. Based on PHAE Global's real project economics for a 4000 sq. meter (1 Acre) Naturally Ventilated Polyhouse under MIDH norms, anthurium cultivation provides outstanding recurring annual income with steady corporate and export market demand.",
     climateSuitability: "Naturally Ventilated Polyhouse / 75% Shade Net House with Micro-fogging",
     yieldAdvantage: "Continuous commercial production with up to 7 export-grade flowers per plant annually and minimal seasonal price fluctuation.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/ANTHURIUM-poly.jpg",
@@ -932,7 +932,7 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
 export const SUBSIDY_INFO = {
   title: "Government Subsidies & Financial Assistance",
   tagline: "Up to 50% - 75% Capital Support for Protected Cultivation Structures",
-  description: "PolyHub Agro Engineers assists progressive farmers, FPOs, and agricultural entrepreneurs in securing financial subsidies under Central and State Government horticultural development missions.",
+  description: "PHAE Global assists progressive farmers, FPOs, and agricultural entrepreneurs in securing financial subsidies under Central and State Government horticultural development missions.",
   authorities: [
     {
       name: "National Horticulture Board (NHB)",

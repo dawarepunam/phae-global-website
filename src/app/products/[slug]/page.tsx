@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) {
     return {
-      title: "Product Not Found | PolyHub Agro Engineers",
+      title: "Product Not Found | PHAE Global",
     };
   }
 
   return {
-    title: `${product.title} | PolyHub Agro Engineers`,
+    title: `${product.title} | PHAE Global`,
     description: product.shortDescription,
   };
 }

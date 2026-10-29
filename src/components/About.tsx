@@ -26,7 +26,7 @@ const principles = [
   },
 ];
 
-// Curated Real PolyHub High-Resolution Construction & Structure Images
+// Curated Real PHAE Global High-Resolution Construction & Structure Images
 const projectReelImages = [
   "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
   "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
@@ -105,7 +105,7 @@ export default function About() {
             <div>
               <span className="section-label">WHO WE ARE</span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight leading-tight mt-3">
-                PolyHub Agro<br />
+                PHAE Global<br />
                 <span className="text-[#183F32]">Engineers</span>
               </h2>
               <div className="section-divider mt-4" />
@@ -176,7 +176,7 @@ export default function About() {
                 >
                   <img
                     src={imgUrl}
-                    alt="PolyHub Agro Project"
+                    alt="PHAE Global Project"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
@@ -240,7 +240,7 @@ export default function About() {
             {/* Top Bar with Controls */}
             <div className="flex items-center justify-between p-3.5 sm:p-4 bg-black/80 border-b border-white/10 z-30">
               <span className="text-xs sm:text-sm font-bold text-white tracking-wide">
-                PolyHub Agro — Field Projects ({modalIdx + 1} of {projectReelImages.length})
+                PHAE Global — Field Projects ({modalIdx + 1} of {projectReelImages.length})
               </span>
               <div className="flex items-center gap-2">
                 <button
@@ -274,7 +274,7 @@ export default function About() {
                 >
                   <img
                     src={imgUrl}
-                    alt="PolyHub Project"
+                    alt="PHAE Global Project"
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -33,16 +33,16 @@ const leadershipPartners = [
   {
     name: "Randeep Singh",
     role: "Director & Agro Structural Specialist",
-    company: "PolyHub Agro Engineers",
+    company: "PHAE Global",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-02-at-5.55.18-PM-5-1-460x460.png",
     fallbackImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-    quote: "At the heart of PolyHub Agro's offerings are our state-of-the-art protected cultivation structures designed to meet the evolving climate challenges of modern agriculture.",
+    quote: "At the heart of PHAE Global's offerings are our state-of-the-art protected cultivation structures designed to meet the evolving climate challenges of modern agriculture.",
     expertise: ["Hot-Dip Galvanized GI Design", "IS 1239 / IS 1161 Standards", "Pan-India Project Execution"]
   },
   {
     name: "Arvind Kumar Yadav",
     role: "Director & Precision Agri Consultant",
-    company: "PolyHub Agro Engineers",
+    company: "PHAE Global",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/Group-1696-460x460.png",
     fallbackImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
     quote: "We integrate smart irrigation systems, precision automation, and real-time environmental sensors so farmers achieve maximum output per drop and acre.",
@@ -146,7 +146,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=2000&q=85"
-            alt="PolyHub Agro Greenhouse Engineering"
+            alt="PHAE Global Greenhouse Engineering"
             className="w-full h-full object-cover object-center opacity-30 scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D2419] via-[#102C24]/92 to-[#183F32]/85" />
@@ -178,7 +178,7 @@ export default function ContactPage() {
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
+                  href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-gold px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg"
@@ -363,7 +363,7 @@ export default function ContactPage() {
 
             <div className="mt-6 pt-4 border-t border-slate-100">
               <a
-                href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
+                href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition-all duration-300 hover:scale-[1.02]"

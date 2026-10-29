@@ -6,10 +6,10 @@ import MobileStickyBar from "@/components/MobileStickyBar";
 
 export const metadata: Metadata = {
   title: "PHAE Global | Commercial Polyhouses & Greenhouse Engineering",
-  description: "PHAE Global (PolyHub Agro Engineers) - Premier agricultural infrastructure company in India. Specializing in naturally ventilated polyhouses, climate-controlled fan & pad setups, shade net houses, and government subsidy assistance (MIDH/NHB).",
+  description: "PHAE Global (PHAE Global) - Premier agricultural infrastructure company in India. Specializing in naturally ventilated polyhouses, climate-controlled fan & pad setups, shade net houses, and government subsidy assistance (MIDH/NHB).",
   keywords: [
     "PHAE Global",
-    "PolyHub Agro Engineers",
+    "PHAE Global",
     "Polyhouse",
     "Greenhouse",
     "Naturally Ventilated Polyhouse",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Hydroponics",
     "Agriculture Subsidy MIDH NHB"
   ],
-  authors: [{ name: "PHAE Global (PolyHub Agro Engineers)" }],
+  authors: [{ name: "PHAE Global (PHAE Global)" }],
   openGraph: {
     title: "PHAE Global | Commercial Polyhouses & Greenhouse Engineering",
     description: "Modernizing Indian agriculture with durable, wind-resistant polyhouses and shade nets.",

@@ -3,10 +3,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { 
-  Menu, 
-  X, 
-  ChevronDown, 
+import {
+  Menu,
+  X,
+  ChevronDown,
   Phone,
   ArrowRight,
   ShieldCheck,
@@ -62,8 +62,8 @@ export default function Navbar() {
   const navLinks: NavItem[] = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { 
-      name: "Products", 
+    {
+      name: "Products",
       href: "/products",
       hasDropdown: true,
       subItems: PRODUCTS_LIST.map((p) => ({
@@ -72,8 +72,8 @@ export default function Navbar() {
         badge: p.badge
       }))
     },
-    { 
-      name: "Services", 
+    {
+      name: "Services",
       href: "/services",
       hasDropdown: true,
       subItems: SERVICES_LIST.map((s) => ({
@@ -88,14 +88,14 @@ export default function Navbar() {
   ];
 
   // Identical borderless transparent-to-frosted dark glass styling across all pages
-  const headerBgClass = scrolled 
-    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-2.5 sm:py-3 border-none" 
+  const headerBgClass = scrolled
+    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-2.5 sm:py-3 border-none"
     : "bg-[#102C24]/85 backdrop-blur-xl shadow-lg py-3 sm:py-4 border-none";
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 border-none ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        
+
         {/* Brand Logo: PHAE Global */}
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
           <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-white p-1 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform shrink-0">
@@ -110,7 +110,7 @@ export default function Navbar() {
               PHAE <span className="text-[#C5B27D] ml-1">Global</span>
             </span>
             <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#A6B5A0] -mt-1">
-              PolyHub Agro Engineers
+              PHAE Global
             </span>
           </div>
         </Link>
@@ -123,9 +123,8 @@ export default function Navbar() {
               <div key={item.name} className="relative group">
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 py-2 transition-colors relative ${
-                    isActive ? "text-[#C5B27D] font-bold" : "hover:text-white"
-                  }`}
+                  className={`flex items-center gap-1 py-2 transition-colors relative ${isActive ? "text-[#C5B27D] font-bold" : "hover:text-white"
+                    }`}
                 >
                   <span>{item.name}</span>
                   {item.hasDropdown && (
@@ -201,7 +200,7 @@ export default function Navbar() {
       {/* Mobile Drawer Menu - Fullscreen Solid Modal Above Everything */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 w-screen h-[100dvh] bg-[#102C24] overflow-y-auto px-5 pt-20 pb-28 space-y-4 animate-fadeIn z-[9999] shadow-2xl">
-          
+
           {/* Top Header inside fullscreen menu with Logo and Close button */}
           <div className="fixed top-0 left-0 right-0 h-16 bg-[#102C24] border-b border-white/10 px-5 flex items-center justify-between z-[10000]">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2.5">
@@ -226,7 +225,7 @@ export default function Navbar() {
               </button>
             </div>
           </div>
-          
+
           <div className="space-y-1">
             {navLinks.map((item) => {
               const isActive = pathname === item.href;
@@ -238,9 +237,8 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       onClick={() => !item.hasDropdown && setMobileMenuOpen(false)}
-                      className={`text-base font-semibold py-2.5 flex-1 transition-colors ${
-                        isActive ? "text-[#C5B27D]" : "text-white hover:text-[#C5B27D]"
-                      }`}
+                      className={`text-base font-semibold py-2.5 flex-1 transition-colors ${isActive ? "text-[#C5B27D]" : "text-white hover:text-[#C5B27D]"
+                        }`}
                     >
                       {item.name}
                     </Link>

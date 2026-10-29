@@ -35,12 +35,12 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 
   if (!service) {
     return {
-      title: "Service Not Found | PolyHub Agro Engineers",
+      title: "Service Not Found | PHAE Global",
     };
   }
 
   return {
-    title: `${service.title} | PolyHub Agro Engineers`,
+    title: `${service.title} | PHAE Global`,
     description: service.shortDescription,
   };
 }
@@ -177,7 +177,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-50" />
                 <div className="absolute bottom-3 left-4 right-4 text-white text-xs font-semibold">
-                  Field Execution by PolyHub Agro Engineers
+                  Field Execution by PHAE Global
                 </div>
               </div>
             </div>

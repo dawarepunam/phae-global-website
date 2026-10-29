@@ -5,7 +5,7 @@ import { ArrowRight, TrendingUp, Sparkles, Sprout } from "lucide-react";
 import { CROPS_ECONOMICS_LIST } from "@/data/polyhubData";
 
 export const metadata: Metadata = {
-  title: "Crop Economics & Profitability | PolyHub Agro Engineers",
+  title: "Crop Economics & Profitability | PHAE Global",
   description: "Explore cultivation economics, yield advantages, market demand, and revenue viability for high-value flowers and vegetables grown under protected polyhouse conditions.",
 };
 

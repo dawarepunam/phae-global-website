@@ -148,7 +148,7 @@ export default function Products() {
           ))}
         </div>
 
-        {/* ── Flagship Spotlight (Interactive Gallery & Real PolyHub Images) ── */}
+        {/* ── Flagship Spotlight (Interactive Gallery & Real PHAE Global Images) ── */}
         <div className="mt-16 sm:mt-24 bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12">
 

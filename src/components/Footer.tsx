@@ -26,13 +26,13 @@ export default function Footer() {
                   PHAE <span className="text-[#C5B27D] ml-1">Global</span>
                 </span>
                 <span className="text-[9px] uppercase font-bold tracking-widest text-[#A6B5A0] -mt-1">
-                  PolyHub Agro Engineers
+                  PHAE Global
                 </span>
               </div>
             </Link>
 
             <p className="text-xs text-slate-300 leading-relaxed">
-              Established in {COMPANY_INFO.established}, PolyHub Agro Engineers is committed to advancing Indian agriculture through state-of-the-art greenhouse fabrication, climate-controlled farming setups, and government subsidy consultancy.
+              Established in {COMPANY_INFO.established}, PHAE Global is committed to advancing Indian agriculture through state-of-the-art greenhouse fabrication, climate-controlled farming setups, and government subsidy consultancy.
             </p>
 
             <div className="pt-2">
@@ -112,7 +112,7 @@ export default function Footer() {
 
         {/* Bottom copyright row */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
-          <p>© 2026 PolyHub Agro Engineers. All rights reserved.</p>
+          <p>© 2026 PHAE Global. All rights reserved.</p>
           <div className="flex items-center gap-4 text-slate-400">
             <span>IS 1239 / IS 1161 Galvanized Standards</span>
             <span>•</span>

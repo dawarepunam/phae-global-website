@@ -48,7 +48,7 @@ export default function SubsidyPage() {
       a: "NHB (National Horticulture Board) मध्ये संपूर्ण प्रोजेक्ट कॉस्टवर (स्ट्रक्चर, ठिबक/फॉगर, प्लांटिंग मटेरियल व पॅकहॉस) ५०% सबसिडी मिळते. तर NHM मध्ये प्रामुख्याने स्ट्रक्चर व ठिबकवर राज्य शासनाच्या दरानुसार ५०% सबसिडी दिली जाते."
     },
     {
-      q: "PolyHub Agro Engineers सबसिडीच्या प्रक्रियेत कशी मदत करते?",
+      q: "PHAE Global सबसिडीच्या प्रक्रियेत कशी मदत करते?",
       a: "आम्ही आर्किटेक्चरल ड्रॉईंग्ज, BIS (IS 1239/1161) मानकांनुसार स्ट्रक्चरल कोटेशन्स, बँक-मान्य डीपीआर (Bankable DPR) आणि प्रत्यक्ष सरकारी इन्स्पेक्शनपर्यंत सर्व टेक्निकल साह्य पुरवतो."
     }
   ];
@@ -397,7 +397,7 @@ export default function SubsidyPage() {
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="section-label">HOW WE WORK</span>
             <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
-              PolyHub&apos;s Turnkey Subsidy Assistance
+              PHAE Global&apos;s Turnkey Subsidy Assistance
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
               Navigating government procedures can be challenging. We take complete responsibility from DPR preparation to final subsidy release.

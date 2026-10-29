@@ -105,7 +105,7 @@ export default function Contact() {
 
             <div className="mt-8 pt-6 border-t border-slate-200">
               <a
-                href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
+                href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition-colors"

@@ -5,8 +5,8 @@ import { ArrowRight, Check, ShieldCheck, Sparkles } from "lucide-react";
 import { PRODUCTS_LIST } from "@/data/polyhubData";
 
 export const metadata: Metadata = {
-  title: "Products Catalogue | PolyHub Agro Engineers",
-  description: "Browse commercial polyhouses, naturally ventilated greenhouses, poly tunnels, shade net houses, and hydroponic structures manufactured by PolyHub Agro Engineers.",
+  title: "Products Catalogue | PHAE Global",
+  description: "Browse commercial polyhouses, naturally ventilated greenhouses, poly tunnels, shade net houses, and hydroponic structures manufactured by PHAE Global.",
 };
 
 export default function ProductsPage() {
@@ -30,7 +30,7 @@ export default function ProductsPage() {
             Engineered For Climate Resilience & Maximum Harvest
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            Every structure engineered by PolyHub is fabricated using hot-dip galvanized steel pipes conforming to IS 1239/1161, multi-layered anti-drip UV polyfilms, and high-performance shade nettings conforming to BIS specifications.
+            Every structure engineered by PHAE Global is fabricated using hot-dip galvanized steel pipes conforming to IS 1239/1161, multi-layered anti-drip UV polyfilms, and high-performance shade nettings conforming to BIS specifications.
           </p>
         </div>
 

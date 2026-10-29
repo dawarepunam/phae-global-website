@@ -36,12 +36,12 @@ export async function generateMetadata({ params }: CropPageProps): Promise<Metad
 
   if (!crop) {
     return {
-      title: "Crop Not Found | PolyHub Agro Engineers",
+      title: "Crop Not Found | PHAE Global",
     };
   }
 
   return {
-    title: `${crop.name} Polyhouse Cultivation Economics | PolyHub Agro Engineers`,
+    title: `${crop.name} Polyhouse Cultivation Economics | PHAE Global`,
     description: crop.shortSummary,
   };
 }

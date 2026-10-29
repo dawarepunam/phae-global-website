@@ -317,7 +317,7 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
                 <span className="text-xs uppercase font-extrabold tracking-widest text-[#C5B27D]">
-                  PolyHub Agro Field Project Reel
+                  PHAE Global Field Project Reel
                 </span>
               </div>
 

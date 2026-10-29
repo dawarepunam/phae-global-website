@@ -3,8 +3,8 @@ import PageBanner from "@/components/PageBanner";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-  title: "About Us | PolyHub Agro Engineers",
-  description: "Learn about PolyHub Agro Engineers - over a decade of excellence in modern agricultural infrastructure, greenhouse engineering, and sustainable polyhouse construction.",
+  title: "About Us | PHAE Global",
+  description: "Learn about PHAE Global - over a decade of excellence in modern agricultural infrastructure, greenhouse engineering, and sustainable polyhouse construction.",
 };
 
 export default function AboutPage() {

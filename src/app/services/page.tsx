@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Wrench, Hammer, DraftingCompass,
 import { SERVICES_LIST } from "@/data/polyhubData";
 
 export const metadata: Metadata = {
-  title: "Services | PolyHub Agro Engineers",
+  title: "Services | PHAE Global",
   description: "End-to-end greenhouse construction, installation, maintenance, repair, and custom polyhouse structural engineering across India.",
 };
 
@@ -36,7 +36,7 @@ export default function ServicesPage() {
             From Blueprint Design to Successful Commercial Harvest
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-            At Polyhub, we pride ourselves on delivering top-tier engineering, civil fabrication, and lifecycle support for greenhouse and polyhouse structures. Explore our 3 specialized service pillars below.
+            At PHAE Global, we pride ourselves on delivering top-tier engineering, civil fabrication, and lifecycle support for greenhouse and polyhouse structures. Explore our 3 specialized service pillars below.
           </p>
         </div>
 
@@ -104,10 +104,10 @@ export default function ServicesPage() {
         <div className="mt-20 bg-[#102C24] rounded-3xl p-8 sm:p-12 text-white shadow-xl border border-[#B5A16A]/20">
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A] bg-[#B5A16A]/10 px-3 py-1 rounded-full">
-              PolyHub Engineering Assurance
+              PHAE Global Engineering Assurance
             </span>
             <h3 className="text-xl sm:text-3xl font-black mt-3 text-white">
-              Why Growers Nationwide Trust PolyHub Agro Engineers
+              Why Growers Nationwide Trust PHAE Global
             </h3>
             <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
               Every project is backed by structural safety certifications conforming to Indian Standards (IS), genuine hot-dip galvanized steel components, and end-to-end subsidy liaison support with State Horticulture Departments.

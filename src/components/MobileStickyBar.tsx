@@ -36,7 +36,7 @@ export default function MobileStickyBar() {
       {/* Floating WhatsApp on Desktop */}
       <div className="hidden sm:block fixed bottom-6 left-6 z-40">
         <a
-          href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20would%20like%20to%20know%20more%20about%20polyhouse%20installation.`}
+          href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20would%20like%20to%20know%20more%20about%20polyhouse%20installation.`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-2xl transition-transform hover:scale-105 active:scale-95 border border-white/20"
@@ -57,7 +57,7 @@ export default function MobileStickyBar() {
         </a>
 
         <a
-          href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20would%20like%20to%20know%20more%20about%20polyhouse%20installation.`}
+          href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20would%20like%20to%20know%20more%20about%20polyhouse%20installation.`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-emerald-700 text-white font-bold text-xs active:bg-emerald-800 transition-colors"
