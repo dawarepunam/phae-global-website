@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PageBanner from "@/components/PageBanner";
 import { 
   MapPin, 
@@ -16,15 +16,44 @@ import {
   ExternalLink,
   Route,
   Search,
-  Compass
+  Compass,
+  Users2,
+  Handshake,
+  ChevronLeft,
+  ChevronRight,
+  ShieldCheck,
+  Award
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/polyhubData";
+
+// Partnership slider stories (featuring agri engineers & farming partners)
+const partnershipSlides = [
+  {
+    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=1200&q=80",
+    title: "Engineering Innovation with Farmers",
+    subtitle: "Turnkey Agro Collaboration",
+    desc: "Our on-site structural engineers work side-by-side with progressive farmers to build climate-resilient, high-yield polyhouses tailored to regional wind loads and soil conditions."
+  },
+  {
+    image: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80",
+    title: "End-to-End Agronomy & DPR Assistance",
+    subtitle: "Complete Project Lifecycle",
+    desc: "From initial GPS topographical land survey and soil testing to bankable DPR preparation and government subsidy disbursement, our dedicated technical team supports you at every step."
+  },
+  {
+    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1200&q=80",
+    title: "300+ Successful Commercial Installations",
+    subtitle: "Trusted Pan-India Network",
+    desc: "Join over 300+ successful farm entrepreneurs across 18+ Indian states cultivating premium export-quality Dutch Roses, Carnations, and exotic vegetables."
+  }
+];
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [activeOffice, setActiveOffice] = useState<"punjab" | "pune">("punjab");
   const [userLocation, setUserLocation] = useState("");
   const [mapMode, setMapMode] = useState<"location" | "directions">("location");
+  const [currentPartnerSlide, setCurrentPartnerSlide] = useState(0);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -35,6 +64,14 @@ export default function ContactPage() {
     farmArea: "1000 - 2000 sq. meters",
     message: ""
   });
+
+  // Auto rotate partnership slider
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentPartnerSlide((prev) => (prev + 1) % partnershipSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   const offices = {
     punjab: {
@@ -55,19 +92,15 @@ export default function ContactPage() {
 
   const currentOffice = offices[activeOffice];
 
-  // Dynamic Google Maps Embed URL
   const getMapUrl = () => {
     if (mapMode === "directions" && userLocation.trim()) {
-      // Directions from User Origin to Selected Office Destination
       const origin = encodeURIComponent(userLocation.trim());
       const destination = encodeURIComponent(currentOffice.query);
       return `https://www.google.com/maps?saddr=${origin}&daddr=${destination}&output=embed`;
     }
-    // Standard Location View with full interactive controls
     return `https://www.google.com/maps?q=${encodeURIComponent(currentOffice.query)}&t=m&z=15&output=embed&iwloc=near`;
   };
 
-  // Launch Directions in Google Maps Native App
   const openDirectDirections = (origin?: string) => {
     const dest = encodeURIComponent(currentOffice.query);
     if (origin && origin.trim()) {
@@ -77,7 +110,6 @@ export default function ContactPage() {
     }
   };
 
-  // Auto-detect GPS Current Location
   const handleUseCurrentLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -103,19 +135,97 @@ export default function ContactPage() {
 
   return (
     <div className="bg-[#F5F2E9] min-h-screen">
-      {/* Page Banner */}
-      <PageBanner
-        title="Get In Touch"
-        subtitle="We're here to help you build a better tomorrow"
-        breadcrumbItems={[{ label: "Contact" }]}
-        backgroundImage="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1920&q=85"
-      />
+      
+      {/* ── CINEMATIC CONTACT HERO SECTION ── */}
+      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden bg-[#102C24] text-white">
+        {/* Background Layers */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=2000&q=85"
+            alt="PolyHub Agro Greenhouse Engineering"
+            className="w-full h-full object-cover object-center opacity-30 scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0D2419] via-[#102C24]/90 to-[#183F32]/85" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#102C24] via-transparent to-transparent" />
+        </div>
 
-      {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+        {/* Ambient Glow */}
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#B5A16A]/10 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div className="lg:col-span-8 space-y-5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#183F32]/80 border border-[#B5A16A]/40 text-[#F5F2E9] text-[11px] font-bold tracking-widest uppercase backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-[#C5B27D] animate-ping" />
+                <span>DIRECT AGRO ENGINEERING HELPLINE</span>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
+                Let&apos;s Build Your Next<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5B27D] via-[#D4C391] to-[#B5A16A]">
+                  High-Yield Farm Project
+                </span>
+              </h1>
+
+              <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                Connect with our certified greenhouse engineers for turn-key structural design, government subsidy DPR paperwork, and on-site topographic evaluations.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-gold px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+
+                <a
+                  href={`tel:${COMPANY_INFO.contacts.phone}`}
+                  className="btn-forest-outline px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2"
+                >
+                  <Phone className="w-4 h-4 text-[#C5B27D]" />
+                  <span>Call {COMPANY_INFO.contacts.phoneDisplay}</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Trust Stats Strip */}
+            <div className="lg:col-span-4 grid grid-cols-2 gap-3.5">
+              <div className="bg-[#183F32]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
+                <Award className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+                <div className="text-2xl font-black text-white">10+</div>
+                <div className="text-[11px] text-slate-300 font-semibold">Years of Excellence</div>
+              </div>
+              <div className="bg-[#183F32]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
+                <ShieldCheck className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+                <div className="text-2xl font-black text-white">300+</div>
+                <div className="text-[11px] text-slate-300 font-semibold">Projects Built</div>
+              </div>
+              <div className="bg-[#183F32]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
+                <Building2 className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+                <div className="text-2xl font-black text-white">18+</div>
+                <div className="text-[11px] text-slate-300 font-semibold">Indian States</div>
+              </div>
+              <div className="bg-[#183F32]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
+                <Sparkles className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+                <div className="text-2xl font-black text-white">Up to 50%</div>
+                <div className="text-[11px] text-slate-300 font-semibold">Subsidy Support</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ── MAIN CONTENT CONTAINER ── */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         
         {/* Top 3 Quick Helpline Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
           
           <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-[#183F32] text-[#C5B27D] flex items-center justify-center shrink-0 shadow-md">
@@ -165,10 +275,10 @@ export default function ContactPage() {
 
         </div>
 
-        {/* 3-Column Layout: Offices Details + Form + Poster */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-14">
+        {/* ── 3-COLUMN CONTACT SECTION WITH PARTNERSHIP SLIDER POSTER ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
           
-          {/* Column 1: Office Addresses */}
+          {/* Column 1: Registered Office Cards */}
           <div className="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-lg flex flex-col justify-between">
             <div className="space-y-6">
               <div>
@@ -369,26 +479,77 @@ export default function ContactPage() {
             )}
           </div>
 
-          {/* Column 3: Let's Grow Together Poster */}
-          <div className="lg:col-span-3 rounded-3xl overflow-hidden shadow-xl relative min-h-[380px] flex flex-col justify-end p-7 border-2 border-[#B5A16A]/30 group">
-            <img
-              src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80"
-              alt="Let's grow together"
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#102C24] via-[#102C24]/80 to-transparent" />
-            <div className="relative z-10 text-white space-y-2.5">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5B27D] flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#B5A16A]" />
-                Partnership
+          {/* Column 3: INTERACTIVE PARTNERSHIP SLIDER POSTER (Featuring the 2 agro partners & farmers) */}
+          <div className="lg:col-span-3 rounded-3xl overflow-hidden shadow-2xl relative min-h-[440px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#B5A16A]/40 group bg-[#102C24]">
+            
+            {/* Slider Background Images */}
+            {partnershipSlides.map((slide, idx) => (
+              <div
+                key={idx}
+                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                  idx === currentPartnerSlide ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none"
+                }`}
+              >
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0D2419] via-[#102C24]/80 to-black/30" />
+              </div>
+            ))}
+
+            {/* Top Badge & Slider Controls */}
+            <div className="relative z-10 flex items-center justify-between">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#C5B27D] bg-[#102C24]/85 px-3 py-1 rounded-full border border-[#B5A16A]/40 flex items-center gap-1.5">
+                <Handshake className="w-3.5 h-3.5 text-[#B5A16A]" />
+                <span>Partner With Us</span>
               </span>
-              <h4 className="text-3xl font-black font-serif italic text-white leading-tight">
-                Let&apos;s Grow Together
-              </h4>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Start your profitable protected greenhouse venture with India&apos;s trusted agro structural engineering team.
-              </p>
+
+              <div className="flex items-center gap-1.5">
+                <button
+                  onClick={() => setCurrentPartnerSlide((prev) => (prev - 1 + partnershipSlides.length) % partnershipSlides.length)}
+                  className="w-7 h-7 rounded-full bg-black/40 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors border border-white/20"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={() => setCurrentPartnerSlide((prev) => (prev + 1) % partnershipSlides.length)}
+                  className="w-7 h-7 rounded-full bg-black/40 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors border border-white/20"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
+
+            {/* Bottom Content with Slide details */}
+            <div className="relative z-10 text-white space-y-2 mt-auto pt-6">
+              <span className="text-[11px] font-bold text-[#C5B27D] tracking-wider uppercase block">
+                {partnershipSlides[currentPartnerSlide].subtitle}
+              </span>
+
+              <h4 className="text-xl sm:text-2xl font-black font-serif italic text-white leading-tight">
+                {partnershipSlides[currentPartnerSlide].title}
+              </h4>
+
+              <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
+                {partnershipSlides[currentPartnerSlide].desc}
+              </p>
+
+              {/* Slider Dots Indicator */}
+              <div className="flex items-center gap-1.5 pt-2">
+                {partnershipSlides.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentPartnerSlide(i)}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      currentPartnerSlide === i ? "w-6 bg-[#C5B27D]" : "w-2 bg-white/40"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+
           </div>
 
         </div>
