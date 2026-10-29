@@ -593,7 +593,7 @@ export default function ContactPage() {
         </div>
 
         {/* ── REAL-WORLD INTERACTIVE NAVIGATION & ROUTE MAP ── */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-2xl overflow-hidden">
+        <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-2xl">
           
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8 border-b border-slate-100 pb-6">
             <div>
@@ -715,12 +715,20 @@ export default function ContactPage() {
           </div>
 
           {/* Embedded Real Google Map Frame with Full Map Controls */}
-          <div className="relative w-full h-[450px] sm:h-[520px] rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100">
+          <div className="relative w-full min-h-[480px] h-[480px] sm:min-h-[550px] sm:h-[550px] rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100">
             <iframe
               key={`${activeOffice}-${mapMode}-${userLocation}`}
               src={getMapUrl()}
               title={`Google Map - ${currentOffice.name}`}
-              className="w-full h-full border-0"
+              width="100%"
+              height="100%"
+              style={{
+                minHeight: "480px",
+                height: "100%",
+                width: "100%",
+                border: 0,
+                display: "block"
+              }}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
