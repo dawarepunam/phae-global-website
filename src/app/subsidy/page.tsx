@@ -393,7 +393,7 @@ export default function SubsidyPage() {
         </div>
 
         {/* ── STEP-BY-STEP SUBSIDY PROCESS (Turnkey Support) ── */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/90 shadow-xl mb-16">
+        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/90 shadow-xl">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="section-label">HOW WE WORK</span>
             <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
@@ -436,44 +436,18 @@ export default function SubsidyPage() {
               </div>
             ))}
           </div>
-        </div>
 
-        {/* ── FREQUENTLY ASKED QUESTIONS (FAQS) ── */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/90 shadow-xl">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-8">
-              <span className="section-label">COMMON QUESTIONS</span>
-              <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
-                Frequently Asked Questions on Subsidies
-              </h3>
-            </div>
-
-            <div className="space-y-4">
-              {faqs.map((faq, i) => (
-                <div key={i} className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200 space-y-1.5">
-                  <div className="flex items-start gap-2.5 text-sm font-bold text-[#102C24]">
-                    <HelpCircle className="w-4 h-4 text-[#B5A16A] shrink-0 mt-0.5" />
-                    <span>{faq.q}</span>
-                  </div>
-                  <p className="text-xs text-slate-600 leading-relaxed pl-6">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 text-center pt-6 border-t border-slate-100">
-              <span className="text-xs text-slate-600 block mb-2 font-medium">
-                Have specific queries regarding state grant limits or bank loan tie-ups?
-              </span>
-              <a
-                href={`tel:${COMPANY_INFO.contacts.phone}`}
-                className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#183F32] hover:text-[#B5A16A]"
-              >
-                <Phone className="w-4 h-4 text-[#C5B27D]" />
-                <span>Call our Subsidy Helpline: {COMPANY_INFO.contacts.phoneDisplay}</span>
-              </a>
-            </div>
+          <div className="mt-10 text-center pt-8 border-t border-slate-100">
+            <span className="text-xs sm:text-sm text-slate-600 block mb-2 font-medium">
+              Have specific queries regarding state grant limits or bank loan tie-ups?
+            </span>
+            <a
+              href={`tel:${COMPANY_INFO.contacts.phone}`}
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#183F32] hover:text-[#B5A16A]"
+            >
+              <Phone className="w-4 h-4 text-[#C5B27D]" />
+              <span>Call our Subsidy Helpline: {COMPANY_INFO.contacts.phoneDisplay}</span>
+            </a>
           </div>
         </div>
 
