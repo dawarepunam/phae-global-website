@@ -77,16 +77,16 @@ export default function Navbar() {
 
   // Identical borderless transparent-to-frosted dark glass styling across all pages
   const headerBgClass = scrolled 
-    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-3 border-none" 
-    : "bg-[#102C24]/75 backdrop-blur-lg shadow-lg py-4 border-none";
+    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-2.5 sm:py-3 border-none" 
+    : "bg-[#102C24]/85 backdrop-blur-xl shadow-lg py-3 sm:py-4 border-none";
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-none ${headerBgClass}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
         {/* Brand Logo with Official Website Emblem */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform">
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
+          <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-white p-1 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform shrink-0">
             <img
               src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
               alt="Poly Hub Agro Engineers Logo"
@@ -94,10 +94,10 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-extrabold text-xl tracking-tight text-white flex items-center">
+            <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center">
               Poly<span className="text-[#C5B27D]">Hub</span>
             </span>
-            <span className="text-[9px] uppercase font-bold tracking-[0.25em] text-[#A6B5A0] -mt-1">
+            <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#A6B5A0] -mt-1">
               Agro Engineers
             </span>
           </div>
@@ -203,7 +203,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[68px] bottom-0 bg-[#102C24]/98 backdrop-blur-2xl border-t border-white/10 overflow-y-auto px-5 py-6 space-y-4 animate-fadeIn">
+        <div className="lg:hidden fixed inset-x-0 top-[60px] sm:top-[68px] bottom-0 bg-[#102C24]/98 backdrop-blur-2xl border-t border-white/10 overflow-y-auto px-5 py-6 pb-24 space-y-4 animate-fadeIn z-50">
           
           <div className="space-y-1">
             {navLinks.map((item) => {

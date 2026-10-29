@@ -18,7 +18,7 @@ export default function PageBanner({
   backgroundImage = "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1800&q=80"
 }: PageBannerProps) {
   return (
-    <div className="relative pt-28 pb-14 sm:pt-36 sm:pb-18 overflow-hidden bg-[#102C24] text-white">
+    <div className="relative pt-32 pb-14 sm:pt-40 sm:pb-20 overflow-hidden bg-[#102C24] text-white">
       {/* Background with Dark Evergreen Tint */}
       <div className="absolute inset-0 z-0">
         <img
