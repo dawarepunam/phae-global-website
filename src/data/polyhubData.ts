@@ -344,80 +344,124 @@ export const SERVICES_LIST: ServiceItem[] = [
   {
     id: "construction-and-installation",
     slug: "construction-and-installation",
-    title: "Construction & Installation",
-    shortDescription: "Professional construction and installation services for all types of polyhouses and greenhouses.",
-    fullDescription: "PolyHub Agro Engineers delivers rigorous, end-to-end civil and mechanical execution. From topographical soil compaction audits and RCC foundation anchor casting to precision GI truss erection and automated polyfilm locking, our certified agricultural civil engineers ensure each structure conforms to national IS engineering standards.",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80",
+    title: "Construction and Installation",
+    shortDescription: "End-to-end site preparation, custom planning, durable GI framing, and precision polyhouse erection built to the highest engineering standards.",
+    fullDescription: "At Polyhub, we pride ourselves on delivering top-quality construction and installation services for your polyhouse projects. Our team of experienced professionals ensures that your polyhouse is built to the highest standards, providing a robust and efficient environment for your crops.",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
     icon: "Hammer",
     deliverables: [
-      "Site topography & soil-bearing capacity audit",
-      "Telescopic civil concrete footing grouting",
-      "Galvanized GI truss fabrication & bolt assembly",
-      "200-micron polyfilm locking & insect netting installation",
-      "Micro-irrigation & fogger pipeline integration",
-      "Final structural stability certification"
+      "Site Evaluation: Comprehensive assessment of the site to determine suitability for polyhouse construction",
+      "Soil Testing: Analysis of soil quality to ensure it meets the requirements for your intended crops",
+      "Land Clearing and Leveling: Preparing the site by clearing debris and leveling the ground for a stable foundation",
+      "Tailored Designs: Creating customized polyhouse designs to meet your specific agricultural needs and climatic conditions",
+      "Detailed Blueprints: Providing detailed construction plans and blueprints for clear visualization and approval",
+      "Budget Planning: Developing cost-effective plans that align with your budget without compromising on quality",
+      "Durable Frames: Using galvanized steel or aluminum frames for long-lasting strength and resistance to corrosion",
+      "UV-Stabilized Coverings: Installing high-quality polyethylene films that provide optimal light transmission and protection",
+      "Advanced Ventilation Systems: Incorporating state-of-the-art natural ventilation systems to ensure efficient airflow",
+      "Experienced Construction Team: Skilled construction crew with expertise in building polyhouses to exact specifications",
+      "Timely Execution: Adhering strictly to project timelines to ensure timely completion of your polyhouse",
+      "Strict Safety Standards: Following stringent safety protocols to protect workers and ensure a secure construction environment",
+      "Ventilation & Shading Installation: Installing and calibrating natural ventilation systems and shading nets for optimal climate control",
+      "Irrigation Systems: Setting up efficient drip irrigation and micro-sprinklers to ensure crops receive precise hydration",
+      "Environmental Controls: Integrating environmental control systems to monitor and adjust temperature, humidity, and light levels",
+      "Quality Inspection & Testing: Thorough inspection and full operational testing of all systems before handover",
+      "Handover & Documentation: Comprehensive documentation, structural blueprints, and a walkthrough of your new polyhouse",
+      "Operational Training & Support: Hands-on training for your team on operating polyhouse systems with continuous ongoing support",
+      "Warranty & Aftercare Services: Complete warranty on materials and construction with regular check-ins and maintenance"
     ],
     processSteps: [
-      { step: "01", title: "Topographical Survey", description: "GPS and level measurement to optimize greenhouse orientation against sun and wind directions." },
-      { step: "02", title: "Foundation Casting", description: "Excavation and civil casting of telescopic anchor columns with standard concrete mix." },
-      { step: "03", title: "Truss Assembly", description: "Precision erection of hot-dip galvanized columns, purlins, and gutter channels with high-grade bolts." },
-      { step: "04", title: "Cladding & Commissioning", description: "Uniform tensioning of UV polyfilm and integration of drip and microclimate controls." }
+      { step: "01", title: "Site Assessment & Preparation", description: "Comprehensive site evaluation, soil testing, and ground clearing/leveling for a stable foundation." },
+      { step: "02", title: "Custom Design & Planning", description: "Formulating tailored polyhouse blueprints, 3D visualizations, and budget plans conforming to government norms." },
+      { step: "03", title: "High-Quality Material Selection", description: "Deploying corrosion-resistant hot-dip galvanized steel frames and UV-stabilized 200-micron polyethylene coverings." },
+      { step: "04", title: "Professional Construction Execution", description: "Skilled agricultural civil and mechanical erection conforming to stringent safety protocols and strict timelines." },
+      { step: "05", title: "Installation of Systems", description: "Precision calibration of motorized/manual vents, shade nets, drip irrigation, foggers, and environmental sensors." },
+      { step: "06", title: "Post-Construction Review & Handover", description: "Rigorous quality inspection, operational dry-runs, handover documentation, and farmer walkthrough." },
+      { step: "07", title: "Operational Training & Support", description: "Hands-on agronomy and mechanical training for farm staff with continuous technical backstopping." },
+      { step: "08", title: "Warranty & Aftercare Services", description: "Full structural warranty coverage and scheduled proactive visits to maximize polyhouse longevity." }
     ],
     features: [
-      "Executed by specialized agricultural structural crews",
-      "Full adherence to NHB and MIDH structural technical specifications",
-      "All-weather structural durability with multi-year warranty"
+      "Hot-dip galvanized GI pipe structure conforming to IS standards",
+      "Turnkey execution from soil assessment to trial harvest",
+      "Full compliance with NHB and MIDH 50% subsidy guidelines"
     ]
   },
   {
     id: "maintenance-and-support",
     slug: "maintenance-and-support",
-    title: "Maintenance & Support",
-    shortDescription: "Regular maintenance, retrofitting, and technical support to ensure long-term performance.",
-    fullDescription: "Greenhouse longevity and crop profitability depend on preventative structural audits and rapid technical assistance. PolyHub provides comprehensive service contracts, emergency storm-damage repair, polyfilm re-tensioning, cooling pad descaling, and automation upgrades to keep your farm operating at peak efficiency.",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=900&q=80",
+    title: "Maintenance and Support",
+    shortDescription: "Routine structural inspections, emergency storm repairs, covering replacements, and agronomic support to keep your polyhouse in top condition.",
+    fullDescription: "At Polyhub, we are committed to ensuring the longevity and optimal performance of your polyhouse structures. Our comprehensive maintenance and support services are designed to keep your polyhouse in top condition, ensuring your crops thrive under the best possible conditions.",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg",
     icon: "Wrench",
     deliverables: [
-      "Polyfilm tear repair, patching, and seasonal re-tensioning",
-      "Evaporative cooling pad chemical descaling and fan motor servicing",
-      "Drip irrigation flush, acid treatment, and filter backwash audits",
-      "IoT climate sensor re-calibration and PLC firmware upgrades",
-      "Emergency post-storm structural reinforcement"
+      "Structural Integrity Checks: Regular inspection of the frame and covering material to identify and address any wear and tear",
+      "Ventilation System Review: Ensuring vents operate smoothly and efficiently, checking for any obstructions or mechanical damage",
+      "Climate Control Monitoring: Verifying the effectiveness of natural ventilation and making adjustments to maintain optimal conditions",
+      "Covering Material Replacement: Timely replacement of polyethylene films degraded by UV exposure, hailstorms, or physical wear",
+      "Structural Repairs: Part replacement, anti-corrosion rust treatment, welding, and structural column reinforcement",
+      "Ventilation Maintenance: Servicing or replacing motorized/manual vent gears and side-curtain winches for seamless airflow",
+      "Emergency Support & Assistance: Immediate support for urgent structural or electrical issues impacting crop health",
+      "Rapid Response Team: On-call engineers ready to provide rapid troubleshooting, emergency repairs, and storm restoration",
+      "Expert Consultation: Access to certified agronomists and greenhouse engineers for optimizing microclimate parameters",
+      "Technical Troubleshooting: Diagnosing and resolving irrigation blockages, fogger pressure drops, or sensor calibration issues",
+      "System Upgrades & Customization: Installing modern automation, IoT climate controls, and tailored retrofits for changing crop needs",
+      "User Training & Education: Hands-on operational refresher sessions for farm staff on preventative maintenance best practices",
+      "Scheduled Maintenance Plans: Flexible, customizable AMC schedules tailored to specific crop cycles and seasonal transitions",
+      "Proactive Preventative Visits: Scheduled visits to detect and fix minor vulnerabilities before they impact commercial operations"
     ],
     processSteps: [
-      { step: "01", title: "Structural Audit", description: "Comprehensive check of cable tension, bolt tightness, and film elasticity." },
-      { step: "02", title: "Component Servicing", description: "Descaling cooling pads, flushing irrigation lines, and checking exhaust shutter alignment." },
-      { step: "03", title: "Preventative Upgrades", description: "Installing replacement parts or retrofitting automated sensors." }
+      { step: "01", title: "Routine Structural Inspections", description: "Checking GI frame integrity, cable tensions, vent mechanics, and covering material elasticity." },
+      { step: "02", title: "Repairs & Covering Replacements", description: "Patching UV films, rust removal, weld reinforcement, and servicing jammed ventilation gears." },
+      { step: "03", title: "Emergency Support & Rapid Response", description: "Immediate dispatch of repair crews for urgent storm damages, torn films, or irrigation breakdowns." },
+      { step: "04", title: "Technical Consultation & Agronomy", description: "Access to greenhouse engineers and agronomists to diagnose microclimate imbalances." },
+      { step: "05", title: "System Upgrades & Automation", description: "Upgrading legacy manual polyhouses to automated fogging, motorized vents, and smart fertigation." },
+      { step: "06", title: "Scheduled Maintenance Plans (AMC)", description: "Proactive seasonal audits and pre-monsoon inspections to prevent operational interruptions." }
     ],
     features: [
-      "Rapid response technical team across Punjab, Maharashtra & neighboring states",
-      "Genuine replacement parts conforming to original specifications",
-      "Comprehensive Annual Maintenance Contracts (AMC) available"
+      "Pan-India on-call emergency response team",
+      "Genuine BIS-certified replacement components and UV films",
+      "Customizable Annual Maintenance Contracts (AMC) for commercial growers"
     ]
   },
   {
     id: "custom-polyhouse-design",
     slug: "custom-polyhouse-design",
     title: "Custom Polyhouse Design",
-    shortDescription: "Tailor-made designs as per your land area, crop, and business needs.",
-    fullDescription: "No two agricultural tracts are identical. PolyHub's in-house engineering team crafts bespoke polyhouse CAD blueprints customized to your land topography, local wind history, water quality, and targeted crop varieties. We balance structural integrity with optimal light distribution and economic viability.",
-    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=900&q=80",
+    shortDescription: "Tailored polyhouse design solutions optimized for your specific crop, local climate, land topography, and commercial expansion goals.",
+    fullDescription: "At Polyhub, we understand that each agricultural project is unique, requiring a tailored approach to meet specific needs and objectives. Our custom polyhouse design services ensure that your polyhouse is optimized for your crops, climate, and operational goals.",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg",
     icon: "DraftingCompass",
     deliverables: [
-      "Site-specific CAD blueprints and civil structural drawings",
-      "Wind dynamic and shadow simulation models",
-      "Detailed Bill of Materials (BOM) and technical rate analysis",
-      "Bankable Detailed Project Report (DPR) for subsidy and loan sanctioning"
+      "Initial Consultation: In-depth discussion of your specific requirements, business goals, budget, and commercial crop choices",
+      "Site Visit & Topography Audit: Detailed site inspection to evaluate wind vectors, ground slope, sunlight trajectory, and soil type",
+      "Needs Assessment: Evaluating production targets, market supply timelines, and crop spacing for custom structural geometry",
+      "Custom Blueprints & 3D Models: Creating high-precision CAD blueprints and 3D architectural renders for clear visualization",
+      "Tailored Structural Engineering: Designing custom gutter heights, bay widths, and truss configurations for specific crops",
+      "Advanced Technology Integration: Incorporating modern fertigation units, motorized climate curtains, and automated sensors",
+      "Local Climate Adaptation: Customizing roof pitch and vent ratios for extreme local heat, monsoon downpours, or heavy winds",
+      "Ventilation & Cooling Optimization: Calculating aerodynamic buoyancy and convection airflow for energy-efficient climate control",
+      "Light Optimization & Shading: Designing structures to maximize diffuse natural PAR light with automated retractable shading",
+      "Premium Material Selection: Selecting certified galvanized steel tubing and multi-layer UV polyethylene suited to local climate",
+      "Energy Efficiency & Water Conservation: Designing low-energy passive cooling layouts with rainwater harvesting and recycling",
+      "Modular & Scalable Design: Creating phased blueprint modularity allowing seamless acreage expansion as your business grows",
+      "Seamless System Integration: Ensuring full compatibility with drip manifolds, pack houses, and central automation controllers",
+      "Comprehensive Project Management: End-to-end guidance from architectural CAD sign-off to bankable DPR subsidy sanctioning",
+      "Ongoing Post-Design Support: Continuous technical consultation and future expansion planning for the lifetime of your farm"
     ],
     processSteps: [
-      { step: "01", title: "Requirement Gathering", description: "Evaluating crop choices, farm acreage, budget targets, and local climatic variables." },
-      { step: "02", title: "Engineering Blueprinting", description: "CAD designing structural layouts, ventilation ratios, and irrigation zoning." },
-      { step: "03", title: "DPR Finalization", description: "Preparing comprehensive project reports conforming to bank and government subsidy formats." }
+      { step: "01", title: "Personalized Consultation & Site Visit", description: "Evaluating land topography, water quality, local wind velocity, crop objectives, and capital budgets." },
+      { step: "02", title: "Bespoke CAD Blueprinting & 3D Modeling", description: "Drafting precision structural blueprints with custom bay widths, gutter heights, and structural load calculations." },
+      { step: "03", title: "Climate-Specific Thermal Engineering", description: "Adapting ventilation geometry, shadow-free orientations, and natural convection cooling to local weather." },
+      { step: "04", title: "Material & Durability Selection", description: "Specifying heavy-duty GI tubular profiles, anti-drip UV films, and insect nets conforming to BIS standards." },
+      { step: "05", title: "Efficiency, Water & Energy Planning", description: "Integrating high-efficiency drip networks, precision foggers, and low-power passive ventilation channels." },
+      { step: "06", title: "Modular & Scalable Architecture", description: "Formulating expandable layouts that allow easy phased acreage enlargement without redesigning existing units." },
+      { step: "07", title: "Detailed Execution & Bankable DPR", description: "Compiling comprehensive technical project reports formatted to achieve swift NHB/MIDH subsidy approval." }
     ],
     features: [
-      "Custom gutter slopes ensuring flawless monsoon water discharge",
-      "Engineered to qualify for maximum government capital subsidies",
-      "Scalable layouts allowing phased commercial expansion"
+      "Bespoke CAD drawings tailored to your exact land dimensions",
+      "Maximized qualification for NHB and State Horticulture 50% subsidies",
+      "Modular layouts designed for smooth phased commercial expansion"
     ]
   }
 ];
