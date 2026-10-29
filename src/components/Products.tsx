@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { PRODUCTS_LIST } from "@/data/polyhubData";
-import { ArrowRight, Wind, Layers, Clock, DollarSign, ChevronRight } from "lucide-react";
+import { ArrowRight, Wind, Layers, Clock, DollarSign, ChevronRight, ZoomIn, X, ChevronLeft } from "lucide-react";
 
 const tabs = ["All", "Polyhouse", "Greenhouse", "Shade Net House", "Tunnel", "Others"];
 
@@ -18,13 +18,41 @@ function filterProducts(tab: string) {
   });
 }
 
+// Real polyhub flagship images (NV Polyhouse)
+const flagshipGallery = [
+  "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.03_3c367041.jpg",
+];
+
 export default function Products() {
   const [activeTab, setActiveTab] = useState("All");
   const filtered = filterProducts(activeTab);
 
+  // Interactive Flagship Gallery State
+  const [activeMainImg, setActiveMainImg] = useState<string>(flagshipGallery[0]);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (idx: number) => {
+    setLightboxIndex(idx);
+    setLightboxOpen(true);
+  };
+
+  const nextLightbox = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setLightboxIndex((prev) => (prev + 1) % flagshipGallery.length);
+  };
+
+  const prevLightbox = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setLightboxIndex((prev) => (prev - 1 + flagshipGallery.length) % flagshipGallery.length);
+  };
+
   return (
-    <section className="bg-[#F5F2E9] py-24 sm:py-32">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <section className="bg-[#F5F2E9] py-16 sm:py-24 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── Section Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
@@ -120,15 +148,15 @@ export default function Products() {
           ))}
         </div>
 
-        {/* ── Flagship Spotlight ── */}
-        <div className="mt-20 bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl">
+        {/* ── Flagship Spotlight (Interactive Gallery & Real PolyHub Images) ── */}
+        <div className="mt-16 sm:mt-24 bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12">
 
             {/* Content */}
-            <div className="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center space-y-6">
+            <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-center space-y-6">
               <div>
                 <span className="section-label">FLAGSHIP STRUCTURE</span>
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#102C24] mt-4 leading-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#102C24] mt-3 leading-tight">
                   Naturally Ventilated<br />Polyhouse
                 </h3>
                 <div className="section-divider mt-3" />
@@ -145,7 +173,10 @@ export default function Products() {
                   { icon: Clock, label: "15+ Yr GI Life" },
                   { icon: DollarSign, label: "Cost Effective" },
                 ].map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F5F2E9] border border-slate-100 text-center hover:border-[#B5A16A]/30 hover:shadow-sm transition-all">
+                  <div
+                    key={label}
+                    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F5F2E9] border border-slate-100 text-center hover:border-[#B5A16A]/30 hover:shadow-sm transition-all"
+                  >
                     <Icon className="w-5 h-5 text-[#183F32]" />
                     <span className="text-[11px] font-bold text-slate-700 leading-tight">{label}</span>
                   </div>
@@ -155,40 +186,65 @@ export default function Products() {
               <div className="flex flex-wrap gap-3 pt-1">
                 <Link
                   href="/products/naturally-ventilated-polyhouse"
-                  className="btn-gold px-6 py-3 rounded-xl text-sm font-bold inline-flex items-center gap-2"
+                  className="btn-gold px-6 py-3 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
                 >
-                  View Full Details <ArrowRight className="w-4 h-4" />
+                  <span>View Full Details</span>
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-6 py-3 rounded-xl text-sm font-semibold text-slate-700 bg-[#F5F2E9] hover:bg-slate-100 transition-colors border border-slate-200"
+                  className="px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 bg-[#F5F2E9] hover:bg-slate-100 transition-colors border border-slate-200"
                 >
                   Request Technical DPR
                 </Link>
               </div>
             </div>
 
-            {/* Images */}
-            <div className="lg:col-span-5 bg-[#F5F2E9] p-6 flex flex-col gap-3">
-              <div className="rounded-2xl overflow-hidden flex-1 min-h-[200px]">
+            {/* Interactive Image Gallery */}
+            <div className="lg:col-span-5 bg-[#F5F2E9] p-5 sm:p-7 flex flex-col gap-3 justify-center">
+              
+              {/* Main Image with Zoom Trigger */}
+              <div
+                onClick={() => openLightbox(flagshipGallery.indexOf(activeMainImg))}
+                className="rounded-2xl overflow-hidden flex-1 min-h-[240px] sm:min-h-[300px] relative group cursor-pointer border-2 border-white shadow-md bg-white"
+              >
                 <img
-                  src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80"
+                  src={activeMainImg}
                   alt="Naturally Ventilated Polyhouse"
-                  className="w-full h-full object-cover"
-                  style={{ minHeight: "200px" }}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="bg-[#102C24]/90 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl backdrop-blur-md flex items-center gap-1.5 shadow-lg">
+                    <ZoomIn className="w-4 h-4 text-[#C5B27D]" /> Click to Enlarge
+                  </span>
+                </div>
               </div>
+
+              {/* 4 Interactive Thumbnails (Click switches main image) */}
               <div className="grid grid-cols-4 gap-2">
-                {[
-                  "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=300&q=80",
-                  "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=300&q=80",
-                  "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=300&q=80",
-                  "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=300&q=80",
-                ].map((src, i) => (
-                  <div key={i} className="h-16 rounded-xl overflow-hidden border-2 border-white shadow-sm">
-                    <img src={src} alt={`Gallery ${i + 1}`} className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
-                  </div>
-                ))}
+                {flagshipGallery.map((src, i) => {
+                  const isActive = activeMainImg === src;
+                  return (
+                    <button
+                      key={i}
+                      onClick={() => setActiveMainImg(src)}
+                      className={`h-16 sm:h-20 rounded-xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
+                        isActive
+                          ? "border-[#183F32] ring-2 ring-[#183F32]/30 scale-[0.98]"
+                          : "border-white hover:border-[#B5A16A] opacity-75 hover:opacity-100"
+                      }`}
+                    >
+                      <img
+                        src={src}
+                        alt={`Flagship view ${i + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                      {isActive && (
+                        <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#183F32] ring-1 ring-white" />
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -196,6 +252,53 @@ export default function Products() {
         </div>
 
       </div>
+
+      {/* ── Fullscreen Lightbox Modal ── */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md p-4 sm:p-8"
+          onClick={() => setLightboxOpen(false)}
+        >
+          {/* Close */}
+          <button
+            onClick={() => setLightboxOpen(false)}
+            className="absolute top-5 right-5 z-20 p-2.5 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
+          >
+            <X className="w-6 h-6" />
+          </button>
+
+          {/* Left Arrow */}
+          <button
+            onClick={prevLightbox}
+            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          {/* Image */}
+          <div
+            className="relative max-w-4xl max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={flagshipGallery[lightboxIndex]}
+              alt="Naturally Ventilated Polyhouse"
+              className="max-h-[85vh] w-auto max-w-full object-contain mx-auto"
+            />
+            <div className="absolute bottom-3 left-4 right-4 text-center text-xs text-white/90 bg-black/60 py-1.5 px-3 rounded-lg backdrop-blur-sm">
+              Naturally Ventilated Polyhouse ({lightboxIndex + 1} of {flagshipGallery.length})
+            </div>
+          </div>
+
+          {/* Right Arrow */}
+          <button
+            onClick={nextLightbox}
+            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/10 hover:bg-white/25 text-white transition-colors"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
+      )}
     </section>
   );
 }
