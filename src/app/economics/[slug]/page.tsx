@@ -139,15 +139,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
           {/* Right Column: Image & Quick Metrics */}
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
-              <div className="h-64 sm:h-80 w-full overflow-hidden relative">
+              <div className="h-64 sm:h-80 w-full overflow-hidden relative bg-[#102C24]/5 flex items-center justify-center p-3">
                 <img
                   src={crop.image}
                   alt={crop.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40" />
-                <div className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium">
-                  PolyHub Engineering Protected Crop System
+                <div className="absolute top-3 right-3 bg-[#102C24]/80 backdrop-blur-md px-3 py-1 rounded-full text-white text-[11px] font-semibold border border-white/20">
+                  {crop.name} Cultivation
                 </div>
               </div>
             </div>

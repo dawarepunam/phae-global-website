@@ -51,11 +51,11 @@ export default function Economics() {
             
             {/* Left: Crop Image Card */}
             <div className="lg:col-span-4">
-              <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-lg bg-slate-100 group">
+              <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-lg bg-[#102C24]/5 group flex items-center justify-center p-2 border border-slate-200">
                 <img
                   src={activeData.image}
                   alt={activeData.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-3 left-3">
                   <span className="bg-[#102C24]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">

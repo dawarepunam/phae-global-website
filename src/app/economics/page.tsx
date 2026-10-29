@@ -42,11 +42,11 @@ export default function EconomicsPage() {
               className="premium-agro-card overflow-hidden flex flex-col justify-between group h-full"
             >
               <div className="flex-1 flex flex-col">
-                <div className="relative h-60 w-full overflow-hidden bg-slate-100">
+                <div className="relative h-60 w-full overflow-hidden bg-[#102C24]/5 flex items-center justify-center p-2">
                   <img
                     src={crop.image}
                     alt={crop.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
                   
