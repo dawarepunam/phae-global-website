@@ -8,18 +8,24 @@ import {
   Mail, 
   Send, 
   CheckCircle2, 
-  MessageSquare,
-  Sparkles,
-  Clock,
-  Building2,
-  Navigation,
-  ExternalLink
+  MessageSquare, 
+  Sparkles, 
+  Clock, 
+  Building2, 
+  Navigation, 
+  ExternalLink,
+  Route,
+  Search,
+  Compass
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/polyhubData";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
-  const [activeMapTab, setActiveMapTab] = useState<"punjab" | "pune">("punjab");
+  const [activeOffice, setActiveOffice] = useState<"punjab" | "pune">("punjab");
+  const [userLocation, setUserLocation] = useState("");
+  const [mapMode, setMapMode] = useState<"location" | "directions">("location");
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -30,13 +36,70 @@ export default function ContactPage() {
     message: ""
   });
 
+  const offices = {
+    punjab: {
+      name: "Punjab Corporate Office",
+      address: COMPANY_INFO.contacts.corporateOffice,
+      query: "Mini Secretariat, Patiala, Punjab 147001",
+      city: "Patiala, Punjab",
+      latLng: "30.3205,76.3814"
+    },
+    pune: {
+      name: "Pune Sales Office",
+      address: COMPANY_INFO.contacts.salesOffice,
+      query: "104 Niche Facade, New Airport Road, Viman Nagar, Pune, Maharashtra 411014",
+      city: "Pune, Maharashtra",
+      latLng: "18.5623,73.9104"
+    }
+  };
+
+  const currentOffice = offices[activeOffice];
+
+  // Dynamic Google Maps Embed URL
+  const getMapUrl = () => {
+    if (mapMode === "directions" && userLocation.trim()) {
+      // Directions from User Origin to Selected Office Destination
+      const origin = encodeURIComponent(userLocation.trim());
+      const destination = encodeURIComponent(currentOffice.query);
+      return `https://www.google.com/maps?saddr=${origin}&daddr=${destination}&output=embed`;
+    }
+    // Standard Location View with full interactive controls
+    return `https://www.google.com/maps?q=${encodeURIComponent(currentOffice.query)}&t=m&z=15&output=embed&iwloc=near`;
+  };
+
+  // Launch Directions in Google Maps Native App
+  const openDirectDirections = (origin?: string) => {
+    const dest = encodeURIComponent(currentOffice.query);
+    if (origin && origin.trim()) {
+      window.open(`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin.trim())}&destination=${dest}`, "_blank");
+    } else {
+      window.open(`https://www.google.com/maps/dir/?api=1&destination=${dest}`, "_blank");
+    }
+  };
+
+  // Auto-detect GPS Current Location
+  const handleUseCurrentLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const coords = `${position.coords.latitude},${position.coords.longitude}`;
+          setUserLocation("My Current Location (GPS)");
+          setMapMode("directions");
+          openDirectDirections(coords);
+        },
+        () => {
+          openDirectDirections();
+        }
+      );
+    } else {
+      openDirectDirections();
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
   };
-
-  const mapPunjab = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13778.679549348986!2d76.38137359999999!3d30.32049615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028a30e8c751d%3A0xb3638c11e6fa4f86!2sMini%20Secretariat%2C%20Patiala%2C%20Punjab%20147001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
-  const mapPune = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.261317327889!2d73.91036347519266!3d18.562253982539958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdccd8e202562!2sViman%20Nagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
 
   return (
     <div className="bg-[#F5F2E9] min-h-screen">
@@ -49,9 +112,9 @@ export default function ContactPage() {
       />
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
-        {/* Top 3-Card Summary (Phone, Email, Hours) */}
+        {/* Top 3 Quick Helpline Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           
           <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4">
@@ -103,9 +166,9 @@ export default function ContactPage() {
         </div>
 
         {/* 3-Column Layout: Offices Details + Form + Poster */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-14">
           
-          {/* Column 1: Detailed Office Addresses */}
+          {/* Column 1: Office Addresses */}
           <div className="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-lg flex flex-col justify-between">
             <div className="space-y-6">
               <div>
@@ -116,47 +179,69 @@ export default function ContactPage() {
                 <div className="section-divider mt-2" />
               </div>
 
-              {/* Corporate Office */}
-              <div className="p-4 rounded-2xl bg-[#F5F2E9] border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-[#183F32]" />
-                  <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
-                    Corporate Office (Punjab)
-                  </h4>
+              {/* Punjab Office Card */}
+              <div 
+                onClick={() => setActiveOffice("punjab")}
+                className={`p-4 rounded-2xl border transition-all cursor-pointer ${
+                  activeOffice === "punjab" 
+                    ? "bg-[#183F32]/10 border-[#183F32] shadow-sm" 
+                    : "bg-[#F5F2E9] border-slate-200 hover:border-slate-300"
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Building2 className={`w-4 h-4 ${activeOffice === "punjab" ? "text-[#183F32]" : "text-slate-600"}`} />
+                    <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
+                      Corporate Office (Punjab)
+                    </h4>
+                  </div>
+                  {activeOffice === "punjab" && (
+                    <span className="text-[10px] bg-[#183F32] text-white px-2 py-0.5 rounded-full font-bold">
+                      Selected
+                    </span>
+                  )}
                 </div>
-                <p className="text-xs text-slate-700 leading-relaxed pl-6">
+                <p className="text-xs text-slate-700 leading-relaxed pl-6 mt-2">
                   {COMPANY_INFO.contacts.corporateOffice}
                 </p>
-                <div className="pl-6 pt-1">
-                  <button
-                    onClick={() => setActiveMapTab("punjab")}
-                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32] hover:text-[#B5A16A]"
-                  >
+                <div className="pl-6 pt-2">
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32]">
                     <Navigation className="w-3.5 h-3.5" />
-                    <span>View on Map Below ↓</span>
-                  </button>
+                    <span>View Location & Route Below ↓</span>
+                  </span>
                 </div>
               </div>
 
-              {/* Sales Office */}
-              <div className="p-4 rounded-2xl bg-[#F5F2E9] border border-slate-200 space-y-2">
-                <div className="flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-[#183F32]" />
-                  <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
-                    Sales Office (Maharashtra)
-                  </h4>
+              {/* Pune Office Card */}
+              <div 
+                onClick={() => setActiveOffice("pune")}
+                className={`p-4 rounded-2xl border transition-all cursor-pointer ${
+                  activeOffice === "pune" 
+                    ? "bg-[#183F32]/10 border-[#183F32] shadow-sm" 
+                    : "bg-[#F5F2E9] border-slate-200 hover:border-slate-300"
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Building2 className={`w-4 h-4 ${activeOffice === "pune" ? "text-[#183F32]" : "text-slate-600"}`} />
+                    <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
+                      Sales Office (Maharashtra)
+                    </h4>
+                  </div>
+                  {activeOffice === "pune" && (
+                    <span className="text-[10px] bg-[#183F32] text-white px-2 py-0.5 rounded-full font-bold">
+                      Selected
+                    </span>
+                  )}
                 </div>
-                <p className="text-xs text-slate-700 leading-relaxed pl-6">
+                <p className="text-xs text-slate-700 leading-relaxed pl-6 mt-2">
                   {COMPANY_INFO.contacts.salesOffice}
                 </p>
-                <div className="pl-6 pt-1">
-                  <button
-                    onClick={() => setActiveMapTab("pune")}
-                    className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32] hover:text-[#B5A16A]"
-                  >
+                <div className="pl-6 pt-2">
+                  <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32]">
                     <Navigation className="w-3.5 h-3.5" />
-                    <span>View on Map Below ↓</span>
-                  </button>
+                    <span>View Location & Route Below ↓</span>
+                  </span>
                 </div>
               </div>
 
@@ -308,34 +393,44 @@ export default function ContactPage() {
 
         </div>
 
-        {/* Embedded Interactive Google Map Section (matching polyhubagro.com/contacts/) */}
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl overflow-hidden">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+        {/* ── REAL-WORLD INTERACTIVE NAVIGATION & ROUTE MAP ── */}
+        <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-2xl overflow-hidden">
+          
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8 border-b border-slate-100 pb-6">
             <div>
-              <span className="section-label">GOOGLE MAP NAVIGATION</span>
-              <h3 className="text-xl sm:text-2xl font-black text-[#102C24] mt-2">
-                Locate Our Regional Offices
+              <span className="section-label">LIVE MAP & NAVIGATION</span>
+              <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+                Real-World Direction & Search Map
               </h3>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                Enter your starting city/village or use your device GPS to get instant turn-by-turn directions to our offices.
+              </p>
             </div>
 
-            {/* Map Switcher Tabs */}
-            <div className="flex items-center gap-2 bg-[#F5F2E9] p-1.5 rounded-2xl border border-slate-200">
+            {/* Office Switcher Tabs */}
+            <div className="flex items-center gap-2 bg-[#F5F2E9] p-1.5 rounded-2xl border border-slate-200 shrink-0">
               <button
-                onClick={() => setActiveMapTab("punjab")}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-                  activeMapTab === "punjab"
-                    ? "bg-[#183F32] text-white shadow-md"
-                    : "text-slate-600 hover:text-[#183F32]"
+                onClick={() => {
+                  setActiveOffice("punjab");
+                  setMapMode("location");
+                }}
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                  activeOffice === "punjab"
+                    ? "bg-[#183F32] text-white shadow-md scale-105"
+                    : "text-slate-700 hover:text-[#183F32]"
                 }`}
               >
                 Punjab (Corporate)
               </button>
               <button
-                onClick={() => setActiveMapTab("pune")}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-                  activeMapTab === "pune"
-                    ? "bg-[#183F32] text-white shadow-md"
-                    : "text-slate-600 hover:text-[#183F32]"
+                onClick={() => {
+                  setActiveOffice("pune");
+                  setMapMode("location");
+                }}
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                  activeOffice === "pune"
+                    ? "bg-[#183F32] text-white shadow-md scale-105"
+                    : "text-slate-700 hover:text-[#183F32]"
                 }`}
               >
                 Pune (Maharashtra)
@@ -343,32 +438,116 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Embedded Google Map Iframe */}
-          <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 shadow-inner">
+          {/* Interactive Route / Direction Planner Bar */}
+          <div className="bg-[#F5F2E9] rounded-2xl p-4 sm:p-5 border border-slate-200 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4 items-center">
+              
+              {/* Origin Search Input */}
+              <div className="md:col-span-5 relative">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                  <Search className="w-4 h-4" />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your current city / village / pin code..."
+                  value={userLocation}
+                  onChange={(e) => setUserLocation(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && userLocation.trim()) {
+                      setMapMode("directions");
+                    }
+                  }}
+                  className="w-full pl-10 pr-4 py-3 text-xs sm:text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#183F32] bg-white font-medium"
+                />
+              </div>
+
+              {/* Destination Readonly Badge */}
+              <div className="md:col-span-4 flex items-center gap-2 px-4 py-3 rounded-xl bg-white border border-slate-300 text-xs font-bold text-[#102C24]">
+                <MapPin className="w-4 h-4 text-[#B5A16A] shrink-0" />
+                <span className="truncate">Destination: {currentOffice.name}</span>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="md:col-span-3 flex items-center gap-2">
+                <button
+                  onClick={() => {
+                    if (userLocation.trim()) {
+                      setMapMode("directions");
+                    } else {
+                      handleUseCurrentLocation();
+                    }
+                  }}
+                  className="btn-gold flex-1 py-3 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-md"
+                >
+                  <Route className="w-3.5 h-3.5" />
+                  <span>Show Route</span>
+                </button>
+
+                <button
+                  onClick={handleUseCurrentLocation}
+                  title="Detect my current location with GPS"
+                  className="p-3 rounded-xl bg-white border border-slate-300 text-[#183F32] hover:bg-[#183F32] hover:text-white transition-colors shadow-sm"
+                >
+                  <Compass className="w-4 h-4" />
+                </button>
+              </div>
+
+            </div>
+
+            {/* Quick Suggestions */}
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] text-slate-500">
+              <span className="font-bold text-slate-700">Popular routes:</span>
+              {(activeOffice === "punjab" 
+                ? ["Chandigarh", "Ludhiana", "Ambala", "Delhi"] 
+                : ["Mumbai", "Nashik", "Satara", "Kolhapur", "Ahmednagar"]
+              ).map((city) => (
+                <button
+                  key={city}
+                  onClick={() => {
+                    setUserLocation(city);
+                    setMapMode("directions");
+                  }}
+                  className="px-2.5 py-1 rounded-full bg-white hover:bg-[#183F32] hover:text-white border border-slate-200 transition-colors font-medium"
+                >
+                  From {city}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Embedded Real Google Map Frame with Full Map Controls */}
+          <div className="relative w-full h-[400px] sm:h-[480px] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-100">
             <iframe
-              src={activeMapTab === "punjab" ? mapPunjab : mapPune}
-              title={activeMapTab === "punjab" ? "Punjab Corporate Office" : "Pune Sales Office"}
+              src={getMapUrl()}
+              title={`Google Map - ${currentOffice.name}`}
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
             />
           </div>
-          
-          <div className="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
-            <span>
-              📍 Currently showing: <strong className="text-[#183F32]">{activeMapTab === "punjab" ? COMPANY_INFO.contacts.corporateOffice : COMPANY_INFO.contacts.salesOffice}</strong>
-            </span>
-            <a
-              href={activeMapTab === "punjab" ? "https://maps.google.com/?q=Mini+Secretariat+Patiala+Punjab" : "https://maps.google.com/?q=Viman+Nagar+Pune+Maharashtra"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-[#183F32] font-bold hover:text-[#B5A16A]"
-            >
-              <span>Open in Google Maps App</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
+
+          {/* Footer Bar of Map */}
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-3">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span>
+                Destination: <strong className="text-[#102C24]">{currentOffice.address}</strong>
+              </span>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => openDirectDirections(userLocation)}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#183F32] text-white font-bold hover:bg-[#102C24] transition-colors shadow-sm"
+              >
+                <Navigation className="w-3.5 h-3.5 text-[#C5B27D]" />
+                <span>Start Live Navigation in App</span>
+                <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
+              </button>
+            </div>
           </div>
+
         </div>
 
       </div>
