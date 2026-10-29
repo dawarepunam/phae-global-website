@@ -102,126 +102,196 @@ export const PRODUCTS_LIST: ProductItem[] = [
     slug: "naturally-ventilated-polyhouse",
     title: "Naturally Ventilated Polyhouse",
     category: "Polyhouses",
-    badge: "Flagship",
-    shortDescription: "Engineered with aerodynamic natural ridge and side vents that ensure optimal air circulation without excessive power consumption.",
-    fullDescription: "The Naturally Ventilated Polyhouse from PolyHub Agro Engineers is the gold standard for protected cultivation across India. Designed to withstand wind speeds of up to 130-150 km/h, this structure leverages natural thermal buoyancy principles through aerodynamic top ridge vents and continuous motorized or manual side curtain ventilation. It ensures uniform humidity and temperature dissipation without relying on heavy electrical power, making it the most cost-effective and dependable shelter for commercial horticulture.",
-    bannerImage: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80",
+    badge: "Flagship Model",
+    shortDescription: "Harnessing Nature's Breath: Ingenious design relying on natural convective airflow, side and roof ridge vents for optimal crop growth without high electricity costs.",
+    fullDescription: "A naturally ventilated polyhouse is a type of greenhouse structure that relies on natural airflow to regulate the internal environment, rather than using mechanical ventilation systems. It is designed to create an optimal growing environment for various crops by utilizing natural ventilation methods such as side and roof vents. This type of polyhouse helps maintain appropriate temperature, humidity, and carbon dioxide levels, which are crucial for healthy plant growth.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
+    image: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80"
+      "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg"
     ],
     specifications: [
-      { label: "Structural Framework", value: "Hot-Dip Galvanized Iron (GI) Pipes conforming to IS 1239 / IS 1161" },
-      { label: "Wind Velocity Resistance", value: "Tested up to 130 - 150 km/h aerodynamic endurance" },
-      { label: "Cladding Material", value: "200-micron multi-layered UV-stabilized anti-drip, anti-dust polyfilm" },
-      { label: "Gutter Height", value: "4.0 to 4.5 meters from ground level" },
-      { label: "Ridge Height", value: "6.0 to 6.5 meters with aerodynamic continuous ventilation opening" },
-      { label: "Insect Exclusion", value: "40 / 50 Mesh virgin HDPE monofilament netting along all vents" },
-      { label: "Foundation Standard", value: "Telescopic civil concrete footing grouted 750mm to 1000mm deep" },
-      { label: "Corrosion Protection", value: "Minimum 275 - 350 GSM zinc galvanization coating" }
+      { label: "Structural Frame", value: "Hot-Dip Galvanized steel tubular pipes providing strength and corrosion resistance conforming to IS norms" },
+      { label: "Covering Material", value: "200-micron multi-layered UV-stabilized anti-drip, anti-dust polyethylene film" },
+      { label: "Side Vents", value: "Continuous roll-up or drop-down vents located along both sides with insect netting" },
+      { label: "Roof Ridge Vents", value: "Continuous aerodynamic ridge vents facilitating natural hot air convection" },
+      { label: "End Gable Vents", value: "Gable end ventilation flaps for enhanced cross-ventilation" },
+      { label: "Wind Endurance", value: "Engineered to withstand wind velocities of 120 - 140 km/h" },
+      { label: "Insect Protection", value: "40 / 50 Mesh virgin HDPE monofilament insect netting on all vent openings" }
     ],
     features: [
-      "Top-grade galvanized steel structure with 120-150 km/h wind resistance",
-      "200-micron UV-stabilized anti-drip, anti-fog diffused polyethylene film",
-      "Continuous aerodynamic top ridge ventilator with insect mesh protection",
-      "Manual or motorized roll-up side ventilation curtain system with lock profiles"
+      "Natural Convective Airflow: Roof ridge and side vents dissipate excess heat without electrical power",
+      "UV-Stabilized Cladding: Diffused light transmission protecting crops from sunburn and leaf scorching",
+      "Corrosion-Resistant GI Frame: Heavy-duty galvanized tubular pipes ensuring 15+ years structural durability",
+      "Insect & Pest Protection: Fully enclosed with 40/50 mesh insect nets preventing sucking pest ingress",
+      "Integrated Micro-Irrigation: Compatible with automated drip fertigation and micro-fogging humidity controls"
     ],
-    idealFor: "Capsicum, Cucumber, Tomato, Dutch Roses, Gerberas, and Commercial Nursery Raising",
+    idealFor: "Capsicum, Cucumber, Tomato, Dutch Roses, Gerberas, Orchids, Carnations, and Vegetable Nurseries",
     technicalHighlights: [
-      "Natural chimney-effect airflow reducing ambient heat by 4-6°C",
-      "Diffused light distribution preventing sunburn on tender blooms and fruits",
-      "Heavy-duty profile wire and aluminum locking spring fasteners"
+      "Chimney effect ventilation reducing internal temperature by 4-6°C",
+      "Diffused light distribution enhancing uniform photosynthesis across the canopy",
+      "Cost-effective capital and operational model qualifying for 50% NHB/MIDH government subsidies"
     ],
     advantages: [
-      "Zero continuous electricity required for base ventilation",
-      "Qualifies for up to 50% capital subsidy under NHM / MIDH guidelines",
-      "15+ years structural design lifespan on GI framework"
-    ]
-  },
-  {
-    id: "fan-and-pad-polyhouse",
-    slug: "fan-and-pad-polyhouse",
-    title: "Fan and Pad Polyhouse (Climate Controlled)",
-    category: "Polyhouses",
-    badge: "Climate Controlled",
-    shortDescription: "Fully automated, temperature and humidity controlled environment utilizing evaporative cellulose cooling pads and high-CFM extraction fans.",
-    fullDescription: "The Fan and Pad Polyhouse represents the pinnacle of precision greenhouse engineering. Built for arid regions with scorching summers or growers cultivating hypersensitive exotic crops, this system actively cools and humidifies the interior through evaporative cellulose cooling pads installed along one wall and high-CFM exhaust fans on the opposing wall. Monitored by PLC microclimate automation, it maintains peak growing conditions regardless of extreme outdoor heat.",
-    bannerImage: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=900&q=80",
-    galleryImages: [
-      "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=800&q=80"
-    ],
-    specifications: [
-      { label: "Cooling Media", value: "Fluted cellulose paper pads (100mm / 150mm thickness) with anti-algae treatment" },
-      { label: "Exhaust Fans", value: "50-inch industrial belt-driven fans with automatic centrifugal louvers" },
-      { label: "Cooling Efficiency", value: "Temperature reduction of 8°C to 12°C relative to ambient outdoor heat" },
-      { label: "Structural Frame", value: "Tubular galvanized steel truss framework with heavy gusset plates" },
-      { label: "Automation System", value: "Integrated PLC digital thermostat & relative humidity sensor controller" },
-      { label: "Water Distribution", value: "PVC header and gutter recycling loop with inline secondary filtration" },
-      { label: "Covering Film", value: "5-layer thermal infrared retaining 200-micron polyfilm" }
-    ],
-    features: [
-      "Heavy duty cellulose cooling pads with water distribution & filtration",
-      "High CFM industrial exhaust fans with automated shutter control",
-      "PLC-based temperature, humidity and microclimate monitoring",
-      "Suitable for round-the-year cultivation in extreme weather zones"
-    ],
-    idealFor: "Exotic Floriculture, Carnations, Orchids, Anthuriums, Tissue Culture & Seed Production",
-    technicalHighlights: [
-      "Closed-loop evaporative cooling preventing insect ingress completely",
-      "Automatic staged fan triggering to save electrical power during cool periods",
-      "Thermal shading screen inside for additional heat insulation"
-    ],
-    advantages: [
-      "Year-round predictable harvests regardless of 45°C ambient temperatures",
-      "Superior petal size and export grade stem lengths",
-      "Eligible for maximum NHB commercial project subsidies"
+      "Zero continuous electricity required for ventilation cooling",
+      "Significantly higher commercial yield compared to open field farming",
+      "Extended 9-10 month continuous harvesting cycles"
     ]
   },
   {
     id: "tunnel-type-polyhouse",
     slug: "tunnel-type-polyhouse",
-    title: "Tunnel Type Polyhouse",
+    title: "Poly Tunnel (Tunnel Type Polyhouse)",
     category: "Polyhouses",
     badge: "Cost-Effective",
-    shortDescription: "Economical arched structure designed for high-density vegetable production, season extension, and cold protection.",
-    fullDescription: "PolyHub's Tunnel Type Polyhouse offers an agile and budget-conscious protected cultivation solution. Built with curved arch pipes that resist heavy rain, hail, and unseasonal frosts, it is exceptionally easy to erect and maintain. Ideal for small-to-medium farmers extending early-season harvest windows for strawberries, vegetables, and seedlings.",
-    bannerImage: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=900&q=80",
+    shortDescription: "Tunnel Power: Boosting agriculture with efficiency and sustainability through versatile arched hoop structures ideal for high-density vegetable crops.",
+    fullDescription: "In the realm of modern agriculture, tunnel-type polyhouses (also known as shadehouses) emerge as versatile structures designed to optimize growing conditions for crops. Combining the benefits of greenhouse technology with simplicity and cost-effectiveness, these arched hoop polyhouses provide a controlled microclimate that promotes crop growth while offering reliable protection from adverse weather conditions.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80"
+      "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-08-10-at-12.58.02_58346514.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_bc92a838-1.jpg"
     ],
     specifications: [
-      { label: "Arch Geometry", value: "Semi-circular Gothic arch providing rapid water runoff and snow shed" },
-      { label: "Pipe Standard", value: "Pre-galvanized circular hollow sections (32mm / 42mm OD)" },
-      { label: "Span Width", value: "6.0 to 8.0 meters per single tunnel bay" },
-      { label: "Peak Center Height", value: "3.2 to 3.8 meters" },
-      { label: "Ground Anchoring", value: "Direct ground anchor foundation pipes or mini concrete footings" },
-      { label: "Covering Film", value: "150 - 200 micron UV stabilized polyethylene film" }
+      { label: "Structure & Design", value: "Arched or hoop-shaped frames constructed from high-strength galvanized steel pipes" },
+      { label: "Covering Material", value: "UV-stabilized polyethylene or shade netting tailored to specific crop requirements" },
+      { label: "Natural Ventilation", value: "Designed with open ends or adjustable side vents for adequate air circulation" },
+      { label: "Cost-Effectiveness", value: "Affordable to construct, maintain, and expand compared to heavy rigid greenhouses" },
+      { label: "Span & Height", value: "6.0 to 8.0 meters span width with 3.2 to 3.8 meters center clearance" }
     ],
     features: [
-      "Sturdy hoop galvanized GI piping with ground anchoring system",
-      "Quick assembly modular structure with low maintenance",
-      "Diffused light transmission ensuring uniform canopy growth",
-      "Excellent defense against hail, frost, and unseasonal heavy rain"
+      "Sturdy hoop galvanized GI piping with direct ground anchoring",
+      "Adjustable natural ventilation reducing humidity buildup",
+      "UV-stabilized light management optimizing photosynthesis",
+      "Quick assembly modular structure with low initial investment",
+      "Protection from unseasonal rains, hail, and extreme morning frosts"
     ],
-    idealFor: "Strawberries, Leafy Greens, Seedling Raising, Early Market Vegetables",
+    idealFor: "Strawberries, Leafy Vegetables, Capsicum, Cucumber, Early Nursery Seedlings",
     technicalHighlights: [
-      "Streamlined curved profile preventing wind buffeting",
-      "Quick polyfilm tensioning using profile clamps and zig-zag wires"
+      "Streamlined curved aerodynamic profile preventing wind damage",
+      "Modular scalability allowing easy phased acreage enlargement"
     ],
     advantages: [
       "Lowest capital expenditure per square meter",
-      "Can be relocated or expanded modularly as farm operations scale",
-      "Harvest 3-4 weeks earlier than open-field competitors"
+      "Harvesting starts 3 to 4 weeks earlier than open-field competitors",
+      "Low maintenance with simple polyfilm replacement"
+    ]
+  },
+  {
+    id: "polycarbonate-greenhouses",
+    slug: "polycarbonate-greenhouses",
+    title: "Polycarbonate Greenhouse",
+    category: "Polyhouses",
+    badge: "Ultra-Durable",
+    shortDescription: "Strength Meets Sustainability: Exceptional insulation, extreme impact resistance, and durability through multi-wall polycarbonate panels.",
+    fullDescription: "Polycarbonate greenhouses represent a fusion of strength, durability, and energy efficiency in modern protected cultivation. Utilizing multi-wall polycarbonate sheets, these greenhouses provide outstanding thermal insulation, high light transmission, and unmatched impact resistance against severe hailstorms, winds, and debris.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+    galleryImages: [
+      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg"
+    ],
+    specifications: [
+      { label: "Panel Material", value: "Multi-wall (twin-wall or triple-wall) UV-coated polycarbonate sheets" },
+      { label: "Impact Resistance", value: "Up to 200 times stronger than glass, highly resistant to hail and flying stones" },
+      { label: "Thermal Insulation", value: "Multi-wall air chambers retaining heat efficiently in cold climate zones" },
+      { label: "Light Transmission", value: "80% - 85% diffused light eliminating hot spots and leaf burn" },
+      { label: "Frame Architecture", value: "Heavy-gauge extruded aluminum and galvanized structural steel trusses" }
+    ],
+    features: [
+      "Extreme durability and hail resistance with 10+ year panel warranty",
+      "Superior thermal insulation significantly reducing winter heating costs",
+      "Diffused light scattering ensuring uniform growth across all canopy tiers",
+      "UV protection layer blocking harmful radiation while allowing photosynthetically active radiation (PAR)",
+      "Modern aesthetic appearance suitable for commercial agri-tourism and institutional research"
+    ],
+    idealFor: "Exotic Floriculture, Institutional Research Farms, High-Elevation Regions, Tissue Culture Laboratories",
+    technicalHighlights: [
+      "Multi-wall cellular insulation maintaining stable indoor temperatures",
+      "Virtually unbreakable glazing ensuring zero crop loss from broken panels"
+    ],
+    advantages: [
+      "30-40% lower heating and cooling energy expenditure compared to glass",
+      "Decades of reliable service life with minimal maintenance overhead",
+      "Ideal for extreme weather zones with heavy snow or frequent hail"
+    ]
+  },
+  {
+    id: "shade-net-house-dome",
+    slug: "shade-net-house-dome",
+    title: "Shade Net House Model – Dome",
+    category: "Shade Nets",
+    badge: "Horticulture",
+    shortDescription: "Optimal Protection, Maximum Yield: Innovative dome-shaped shade net structure providing superior climate tempering, UV filtering, and pest defense.",
+    fullDescription: "Discover the ultimate solution for protecting your plants and crops with our innovative Shade Net House Model – Dome. Designed for optimal performance and durability, this dome-shaped structure provides the perfect microclimate for a variety of horticultural and floricultural needs, combining high structural strength with uniform shading.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+    galleryImages: [
+      "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg"
+    ],
+    specifications: [
+      { label: "Dome Geometry", value: "Curved aerodynamic multi-dome arch framework shedding rain smoothly" },
+      { label: "Structural Frame", value: "Galvanized tubular steel poles with anti-corrosion zinc galvanization" },
+      { label: "Netting Options", value: "35%, 50%, 75% shade factor virgin HDPE UV-stabilized monofilament net" },
+      { label: "Pest Exclusion", value: "Optional 40/50 mesh side netting preventing insect and bird entry" },
+      { label: "Clearance Height", value: "3.5 to 4.5 meters center height enabling machinery access" }
+    ],
+    features: [
+      "Multi-dome aerodynamic roof resisting strong wind turbulence",
+      "Customizable shade factor (35% to 75%) tailored to shade-loving crops",
+      "Significant reduction in crop evapotranspiration and irrigation water demand",
+      "Shields crops from intense direct sun scorch, torrential rains, and bird damage",
+      "Cost-effective alternative to full polyhouses for tropical climate zones"
+    ],
+    idealFor: "Orchids, Anthuriums, Betel Vine (Paan), Foliage Nurseries, Spices, Hardening Facilities",
+    technicalHighlights: [
+      "Continuous air circulation preventing stagnant fungal humidity",
+      "Fast rainwater runoff along curved domes avoiding water pockets"
+    ],
+    advantages: [
+      "Subsidized up to 50% under National Horticulture Mission (MIDH)",
+      "Economical installation with long 8-10 year netting life",
+      "Reduces internal canopy temperature by 3°C to 6°C during peak summer"
+    ]
+  },
+  {
+    id: "ground-mounted-flat-shade-house",
+    slug: "ground-mounted-flat-shade-house",
+    title: "Ground Mounted Flat Shade Net House",
+    category: "Shade Nets",
+    badge: "Commercial Acreage",
+    shortDescription: "Flat Type Shade House Model: Cost-effective, robust horizontal shading architecture engineered for expansive commercial open-field acreage.",
+    fullDescription: "Welcome to our Flat Type Shade House Model section. Designed for agricultural environments requiring reliable shading, climate tempering, and pest mitigation over large land areas, our flat type shade house structures offer immense stability, straightforward construction, and exceptional value for progressive growers.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+    galleryImages: [
+      "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg"
+    ],
+    specifications: [
+      { label: "Frame Grid", value: "Galvanized GI column grid with high-tensile wire rope top cross-bracing" },
+      { label: "Netting Material", value: "HDPE monofilament tape cloth with UV stabilization inhibitors" },
+      { label: "Foundation Footing", value: "Concrete grouted column anchors resistant to dynamic wind lift" },
+      { label: "Internal Spacing", value: "Wide tractor-friendly column layout for mechanized intercultural operations" }
+    ],
+    features: [
+      "Robust flat horizontal roof framework covering large acreage at minimal cost",
+      "Adjustable shade netting density protecting fruit orchards and vegetable belts",
+      "Provides uniform shade coverage without shadows or hot spots",
+      "Significant reduction in sunburn and skin blemishes on commercial produce",
+      "Low structural steel requirement compared to curved truss assemblies"
+    ],
+    idealFor: "Pomegranate, Papaya, Citrus Orchards, Commercial Open-field Vegetables, Hardening Plants",
+    technicalHighlights: [
+      "High-tensile wire rope support system maintaining taut net tension",
+      "Low maintenance architecture with simple seasonal net deployment"
+    ],
+    advantages: [
+      "Most economical shading structure for projects above 1 to 5 acres",
+      "Increases export grade fruit pack-out percentage by 30-40%",
+      "Eligible for government capital subsidies under MIDH guidelines"
     ]
   },
   {
@@ -230,112 +300,37 @@ export const PRODUCTS_LIST: ProductItem[] = [
     title: "Hydroponic Greenhouse System",
     category: "Precision Agri",
     badge: "Next-Gen Agri",
-    shortDescription: "Complete soil-less farming installation leveraging NFT channels, Dutch Buckets, and automated nutrient dosing systems.",
-    fullDescription: "PolyHub Hydroponic Greenhouse combines high-precision structural environmental control with cutting-edge soil-less fertigation. Utilizing Nutrient Film Technique (NFT) for leafy greens and Dutch Buckets for fruiting vegetables, this setup eliminates soil-borne pests, reduces water usage by up to 90%, and yields up to 4 times higher per unit area.",
-    bannerImage: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=900&q=80",
+    shortDescription: "Redefining Sustainable Agriculture: Advanced soil-less cultivation integrating NFT gullies, Dutch Buckets, and automated nutrient dosing systems.",
+    fullDescription: "The Hydrophonic Greenhouse is designed for advanced hydroponic farming, offering optimal conditions for plant growth without soil. This high-tech greenhouse integrates a hydroponic system with a controlled environment to maximize yield, operational efficiency, and crop quality year-round.",
+    bannerImage: "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
+    image: "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
     galleryImages: [
-      "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+      "https://polyhubagro.com/wp-content/uploads/2020/04/Hydroponic-Green-House-1-1024x576.jpg",
+      "https://polyhubagro.com/wp-content/uploads/2020/04/polycarbonate-greenhouses-1024x576.jpg"
     ],
     specifications: [
-      { label: "Cultivation Systems", value: "Food-grade UV stabilized UPVC NFT channels & Dutch Buckets with perlite/cocopeat" },
-      { label: "Dosing Automation", value: "Automated EC & pH continuous monitoring and injection unit" },
-      { label: "Water Savings", value: "90% reduction compared to furrow/field irrigation through recirculating loop" },
-      { label: "Lighting Integration", value: "Optional supplementary horticultural LED grow bars" },
-      { label: "Plumbing Media", value: "Class 6 commercial PVC piping with mechanical filtration" }
+      { label: "Hydroponic Systems", value: "Nutrient Film Technique (NFT), Deep Water Culture (DWC), and Dutch Bucket setups" },
+      { label: "Automated Fertigation", value: "Precision EC & pH continuous monitoring and automated nutrient dosing controllers" },
+      { label: "Microclimate Control", value: "Temperature, humidity, and ventilation controls creating ideal growing conditions" },
+      { label: "Light Management", value: "Natural diffused sunlight with optional supplementary LED horticultural lighting" },
+      { label: "Growth Medium", value: "Soil-less options: Rockwool, Coconut Coir, Perlite, and LECA clay pebbles" }
     ],
     features: [
-      "Food-grade UV-resistant NFT gullies and Dutch bucket arrays",
-      "Automated EC & pH monitoring dosing controllers",
-      "90% water saving compared to conventional open-field farming",
-      "Zero soil-borne pathogens and up to 4x crop cycle turnover"
+      "Integrated soil-less cultivation eliminating soil-borne diseases and nematodes",
+      "Up to 90% water saving through continuous recirculating closed-loop fertigation",
+      "Automated sensor-driven nutrient delivery maximizing nutrient uptake efficiency",
+      "High-density vertical and horizontal cultivation yielding 3x to 5x higher output",
+      "Clean room growing conditions producing residue-free, pesticide-safe produce"
     ],
-    idealFor: "Lettuce, Exotic Herbs, Cherry Tomatoes, Bell Peppers, Strawberries",
+    idealFor: "Exotic Lettuces, Baby Spinach, Basil, Parsley, Cherry Tomatoes, European Cucumbers, Strawberries",
     technicalHighlights: [
-      "Precision closed loop recycling nutrient run-off",
-      "Clean room harvesting standards appealing to high-end hospitality chains"
+      "Precision computerized nutrient dosing maintaining exact EC/pH ratios",
+      "Closed loop plumbing preventing environmental fertilizer runoff"
     ],
     advantages: [
-      "Pesticide-free residue-free premium produce realization",
-      "Scalable commercial production on barren or non-fertile land",
-      "Year-round stable contract farming supply"
-    ]
-  },
-  {
-    id: "shade-net-house-dome",
-    slug: "shade-net-house-dome",
-    title: "Shade Net House (Dome & Flat Models)",
-    category: "Shade Nets",
-    badge: "Horticulture",
-    shortDescription: "Durable shading solutions engineered to block excess solar radiation, reduce heat stress, and protect crops from harsh UV.",
-    fullDescription: "PolyHub Shade Net Houses (available in both Curved Dome and Flat Truss variants) are engineered to protect crops from intense solar insolation, thermal shock, torrential hail, and pest infestations. Fabricated using hot-dip galvanized steel members and virgin HDPE mono-tape shade nets (35% to 75% shade factor), these structures create an optimum light-diffusion microenvironment.",
-    bannerImage: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=900&q=80",
-    galleryImages: [
-      "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
-    ],
-    specifications: [
-      { label: "Structural Frame", value: "GI tubular columns with top truss bracing" },
-      { label: "Netting Material", value: "Virgin HDPE monofilament & tape combination with 5-year UV warranty" },
-      { label: "Shade Percentages", value: "35%, 50%, 75%, and 90% in Green/Green, Black, or White" },
-      { label: "Height Clearance", value: "3.5 to 4.5 meters allowing internal tractor maneuvering" },
-      { label: "Wind Defense", value: "Aerodynamic mesh porosity reducing wind impact load" }
-    ],
-    features: [
-      "Custom shade percentages (35%, 50%, 75%, 90%) HDPE monofilament netting",
-      "Dome and flat truss structural frameworks with corrosion protection",
-      "Significant reduction in evapotranspiration and water demand",
-      "Hail and bird protection for high-value fruit and vegetable crops"
-    ],
-    idealFor: "Horticulture nurseries, Foliage plants, Ginger, Turmeric, Betel Vine, Anthuriums",
-    technicalHighlights: [
-      "Reduces internal canopy temperature by 3°C to 5°C during summer peaks",
-      "Fast drainage top dome avoiding water pooling during monsoons"
-    ],
-    advantages: [
-      "Subsidized up to 50% under National Horticulture Mission",
-      "Low capital cost with 10+ year frame life"
-    ]
-  },
-  {
-    id: "wire-rope-shade-net",
-    slug: "wire-rope-shade-net",
-    title: "Wire Rope Shade Net House",
-    category: "Shade Nets",
-    badge: "Commercial Acreage",
-    shortDescription: "High-tensile wire rope suspension architecture for covering vast agricultural expanses with minimal foundation footprint.",
-    fullDescription: "When covering multi-acre orchards or expansive commercial vegetable farms, traditional pipe columns can be costly and obstruct machinery. The PolyHub Wire Rope Shade Net House utilizes high-tensile multi-strand galvanized aircraft cables suspended between heavy-duty perimeter anchor masts, providing immense structural expanse with minimal internal column clutter.",
-    bannerImage: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1800&q=85",
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=900&q=80",
-    galleryImages: [
-      "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
-    ],
-    specifications: [
-      { label: "Cable Standard", value: "Hot-dip galvanized high-tensile multi-strand steel aircraft rope" },
-      { label: "Perimeter Anchors", value: "Heavy RCC deadman ground anchor blocks engineered for dynamic wind shear" },
-      { label: "Column Spacing", value: "Generous 8m x 8m or 10m x 10m grid enabling full tractor pass-through" },
-      { label: "Fastening Hardware", value: "Forged turnbuckles, wire rope clamps, and thimbles with anti-loosening locks" }
-    ],
-    features: [
-      "Galvanized multi-strand aircraft-grade cable network",
-      "Optimized column spacing allowing tractor and machinery access",
-      "High wind shock absorption and tensile endurance",
-      "Cost-optimized for large commercial orchards and vegetable belts"
-    ],
-    idealFor: "Pomegranate, Papaya, Banana, Dragon Fruit, and Commercial Open-Field Vegetables",
-    technicalHighlights: [
-      "Dynamic tension dampening resisting sudden storm wind gusts",
-      "Substantially reduced structural weight compared to rigid truss assemblies"
-    ],
-    advantages: [
-      "Most economical shading structure for projects above 2 acres",
-      "Prevents sun-scalding on export fruit yields by over 40%"
+      "Premium pricing realization with direct supermarket and hotel procurement",
+      "Can be established on rocky, barren, or non-fertile land",
+      "Rapid turnaround cycles with steady daily cash flows"
     ]
   }
 ];
