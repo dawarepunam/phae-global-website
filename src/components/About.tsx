@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight, Play, X, Award, Users, MapPin } from "lucide-react";
+import { ArrowRight, Play, Pause, X, ChevronLeft, ChevronRight, Award, Users, MapPin } from "lucide-react";
 import { COMPANY_INFO } from "@/data/polyhubData";
 
 const stats = [
@@ -26,38 +26,99 @@ const principles = [
   },
 ];
 
+// Curated Real PolyHub High-Resolution Construction & Structure Images
+const projectReelImages = [
+  "https://polyhubagro.com/wp-content/uploads/2020/04/WhatsApp-Image-2024-07-30-at-12.30.39-PM-1024x768.jpeg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1024x768.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/dutch-rose-1024x576.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2020/04/Fan-and-pad-1-1024x576.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/08/Hydroponic-Green-House-1-1024x576.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/fresh-cucumber-gathered-into-plastic-box-from-greenhouse-plants-1024x683.jpg",
+  "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b82e64ab.jpg",
+];
+
 export default function About() {
-  const [videoOpen, setVideoOpen] = useState(false);
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalIdx, setModalIdx] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  // Fast 2-second auto-transition for seamless cinematic video effect
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIdx((prev) => (prev + 1) % projectReelImages.length);
+    }, 2000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Modal autoplay (2 seconds)
+  useEffect(() => {
+    if (!modalOpen || !isPlaying) return;
+    const interval = setInterval(() => {
+      setModalIdx((prev) => (prev + 1) % projectReelImages.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [modalOpen, isPlaying]);
+
+  // ESC key to close modal
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setModalOpen(false);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
+  const openModal = () => {
+    setModalIdx(currentIdx);
+    setIsPlaying(true);
+    setModalOpen(true);
+  };
+
+  const nextImg = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setModalIdx((prev) => (prev + 1) % projectReelImages.length);
+  };
+
+  const prevImg = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setModalIdx((prev) => (prev - 1 + projectReelImages.length) % projectReelImages.length);
+  };
 
   return (
-    <section className="relative bg-white py-24 sm:py-32 overflow-hidden">
+    <section className="relative bg-white py-16 sm:py-24 lg:py-32 overflow-hidden">
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.025] pointer-events-none"
-        style={{ backgroundImage: "radial-gradient(circle, #183F32 1px, transparent 1px)", backgroundSize: "32px 32px" }}
+      <div
+        className="absolute inset-0 opacity-[0.025] pointer-events-none"
+        style={{
+          backgroundImage: "radial-gradient(circle, #183F32 1px, transparent 1px)",
+          backgroundSize: "32px 32px",
+        }}
       />
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* ── Left: Content ── */}
-          <div className="space-y-7">
+          <div className="space-y-6 sm:space-y-7 order-2 lg:order-1">
             <div>
               <span className="section-label">WHO WE ARE</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight leading-tight mt-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight leading-tight mt-3">
                 PolyHub Agro<br />
                 <span className="text-[#183F32]">Engineers</span>
               </h2>
               <div className="section-divider mt-4" />
             </div>
 
-            <p className="text-base text-slate-600 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl">
               We are a leading provider of modern agricultural infrastructure solutions, specializing in polyhouse, greenhouse, and shade net structures. With {COMPANY_INFO.established} foundation and 10+ years of experience, we are committed to helping farmers achieve higher productivity and sustainable growth.
             </p>
 
             {/* 3 Principles */}
-            <div className="space-y-4 pt-1">
+            <div className="space-y-3.5 pt-1">
               {principles.map((p, i) => (
-                <div key={i} className="flex items-start gap-3.5">
+                <div key={i} className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-[#183F32] text-white text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">
                     {i + 1}
                   </div>
@@ -70,102 +131,185 @@ export default function About() {
             </div>
 
             {/* 3 Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-3">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-2">
               {stats.map((stat, i) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={i} className="bg-[#F5F2E9] rounded-2xl p-4 text-center border border-slate-200/80 hover:border-[#B5A16A]/40 hover:shadow-md transition-all">
-                    <Icon className="w-5 h-5 text-[#B5A16A] mx-auto mb-2" />
-                    <div className="text-2xl font-black text-[#183F32]">{stat.value}</div>
-                    <div className="text-[11px] font-semibold text-slate-500 mt-0.5 leading-tight">{stat.label}</div>
+                  <div
+                    key={i}
+                    className="bg-[#F5F2E9] rounded-2xl p-3 sm:p-4 text-center border border-slate-200/80 hover:border-[#B5A16A]/40 hover:shadow-md transition-all"
+                  >
+                    <Icon className="w-5 h-5 text-[#B5A16A] mx-auto mb-1.5" />
+                    <div className="text-xl sm:text-2xl font-black text-[#183F32]">{stat.value}</div>
+                    <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 mt-0.5 leading-tight">
+                      {stat.label}
+                    </div>
                   </div>
                 );
               })}
             </div>
 
-            <Link
-              href="/about"
-              className="btn-gold inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-bold"
-            >
-              <span>Learn More About Us</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="pt-2">
+              <Link
+                href="/about"
+                className="btn-gold inline-flex items-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all"
+              >
+                <span>Learn More About Us</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
 
-          {/* ── Right: Image with Play Button ── */}
-          <div className="relative">
-            {/* Main image */}
+          {/* ── Right: Smooth 2-Second Cinematic Image Video Reel (No Text/Titles) ── */}
+          <div className="relative order-1 lg:order-2">
             <div
-              className="relative rounded-3xl overflow-hidden shadow-2xl cursor-pointer group"
-              onClick={() => setVideoOpen(true)}
+              className="relative rounded-3xl overflow-hidden shadow-2xl cursor-pointer group aspect-[4/3] sm:aspect-video lg:aspect-[4/3] bg-black border-4 border-white"
+              onClick={openModal}
             >
-              <img
-                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80"
-                alt="PolyHub Agro Farm Construction"
-                className="w-full h-80 sm:h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#102C24]/85 via-[#102C24]/20 to-transparent" />
-
-              {/* Play Button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-18 h-18 relative">
-                  <div className="absolute inset-0 rounded-full bg-[#C5B27D]/30 animate-ping" />
-                  <div className="relative w-16 h-16 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-7 h-7 fill-current text-[#102C24] ml-1" />
-                  </div>
+              {/* Stacked Images with 2-second crossfade */}
+              {projectReelImages.map((imgUrl, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    i === currentIdx ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none"
+                  }`}
+                >
+                  <img
+                    src={imgUrl}
+                    alt="PolyHub Agro Project"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
                 </div>
+              ))}
+
+              {/* Progress Bar (2 seconds loop) */}
+              <div className="absolute top-3 left-4 right-4 flex gap-1 z-20">
+                {projectReelImages.map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex-1 h-1 bg-white/30 rounded-full overflow-hidden backdrop-blur-sm"
+                  >
+                    <div
+                      className={`h-full rounded-full transition-all duration-300 ${
+                        i === currentIdx ? "w-full bg-[#C5B27D]" : "w-0"
+                      }`}
+                    />
+                  </div>
+                ))}
               </div>
 
-              {/* Bottom label */}
-              <div className="absolute bottom-5 left-6 right-6 flex items-end justify-between text-white">
-                <div>
-                  <span className="font-black italic text-2xl text-[#C5B27D] font-serif">Sustainable Farming</span>
-                  <p className="text-xs text-slate-300 mt-0.5">Patiala, Punjab & Pune, Maharashtra Operations</p>
+              {/* Clean Play Button without bottom titles */}
+              <div className="absolute inset-0 flex items-center justify-center z-10">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
+                  <div className="absolute inset-0 rounded-full bg-[#C5B27D]/30 animate-ping" />
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                    <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-[#102C24] ml-1" />
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Floating badge card */}
-            <div className="absolute -bottom-6 -right-4 sm:-right-8 bg-white rounded-2xl shadow-2xl border border-[#B5A16A]/20 p-4 flex items-center gap-3 w-52">
-              <div className="w-10 h-10 rounded-xl bg-[#183F32] flex items-center justify-center text-[#C5B27D] shrink-0">
+            {/* Floating NHB badge card */}
+            <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white rounded-2xl shadow-xl border border-[#B5A16A]/20 p-3 sm:p-4 flex items-center gap-3 w-48 sm:w-56 z-20">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#183F32] flex items-center justify-center text-[#C5B27D] shrink-0">
                 <Award className="w-5 h-5" />
               </div>
               <div>
                 <div className="text-xs font-black text-[#102C24]">NHB / MIDH</div>
-                <div className="text-[11px] text-slate-500 leading-tight">Government Certified Structures</div>
+                <div className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
+                  Government Certified Structures
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* Video Modal */}
-      {videoOpen && (
+      {/* ── Fullscreen Interactive Cinematic Video Reel Modal ── */}
+      {modalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl p-4"
-          onClick={() => setVideoOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-xl p-3 sm:p-6"
+          onClick={() => setModalOpen(false)}
         >
           <div
-            className="relative w-full max-w-4xl bg-[#0D2419] rounded-3xl overflow-hidden border border-[#B5A16A]/30 shadow-2xl"
+            className="relative w-full max-w-4xl bg-black rounded-3xl overflow-hidden border border-white/20 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between p-4 border-b border-white/10">
-              <span className="text-sm font-bold text-white">PolyHub Agro Engineers — Farm Tour</span>
-              <button
-                onClick={() => setVideoOpen(false)}
-                className="w-9 h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/25 transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
+            {/* Top Bar with Controls */}
+            <div className="flex items-center justify-between p-3.5 sm:p-4 bg-black/80 border-b border-white/10 z-30">
+              <span className="text-xs sm:text-sm font-bold text-white tracking-wide">
+                PolyHub Agro — Field Projects ({modalIdx + 1} of {projectReelImages.length})
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setIsPlaying((p) => !p)}
+                  className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/25 transition-colors"
+                  title={isPlaying ? "Pause" : "Play"}
+                >
+                  {isPlaying ? (
+                    <Pause className="w-4 h-4 fill-white" />
+                  ) : (
+                    <Play className="w-4 h-4 fill-white ml-0.5" />
+                  )}
+                </button>
+                <button
+                  onClick={() => setModalOpen(false)}
+                  className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/25 transition-colors"
+                >
+                  <X className="w-4 h-4 sm:w-5 sm:h-5" />
+                </button>
+              </div>
             </div>
-            <div className="aspect-video w-full">
-              <iframe
-                src="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1&rel=0"
-                title="PolyHub Agro Story"
-                className="w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+
+            {/* Video Canvas */}
+            <div className="relative aspect-video w-full bg-black flex items-center justify-center">
+              {projectReelImages.map((imgUrl, i) => (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    i === modalIdx ? "opacity-100" : "opacity-0 pointer-events-none"
+                  }`}
+                >
+                  <img
+                    src={imgUrl}
+                    alt="PolyHub Project"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+
+              {/* Prev / Next Buttons */}
+              <button
+                onClick={prevImg}
+                className="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/50 border border-white/20 text-white flex items-center justify-center hover:bg-black/75 transition"
+              >
+                <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+              </button>
+              <button
+                onClick={nextImg}
+                className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/50 border border-white/20 text-white flex items-center justify-center hover:bg-black/75 transition"
+              >
+                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+              </button>
+
+              {/* Progress bar in modal */}
+              <div className="absolute bottom-3 left-4 right-4 flex gap-1 z-20">
+                {projectReelImages.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setModalIdx(i)}
+                    className="flex-1 h-1 bg-white/30 rounded-full overflow-hidden hover:h-1.5 transition-all"
+                  >
+                    <div
+                      className={`h-full rounded-full transition-all duration-300 ${
+                        i === modalIdx ? "w-full bg-[#C5B27D]" : "w-0"
+                      }`}
+                    />
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
