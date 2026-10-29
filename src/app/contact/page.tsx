@@ -483,17 +483,19 @@ export default function ContactPage() {
             )}
           </div>
 
-          {/* Column 3: ENLARGED PARTNER / LEADERSHIP SLIDER BOX (Width increased: lg:col-span-4) */}
+          {/* Column 3: ENLARGED PARTNER / LEADERSHIP SLIDER BOX (Width: lg:col-span-4) */}
           <div className="lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative min-h-[480px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#B5A16A]/40 bg-[#102C24]">
             
-            {/* Background: Clean Architectural Greenhouse Polyhouse Farm Image (Partners are clear in the foreground) */}
-            <div className="absolute inset-0 z-0">
+            {/* Elegant Agro Architectural Pattern Background (Clean & Clear, Not Stretched Photo) */}
+            <div className="absolute inset-0 z-0 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80"
-                alt="PolyHub Modern Agro Engineering Farm"
-                className="w-full h-full object-cover object-center filter brightness-[0.38] contrast-105"
+                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=80"
+                alt="Agro Greenhouse Architecture"
+                className="w-full h-full object-cover opacity-25 filter blur-[1px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#102C24]/85 to-[#102C24]/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#102C24]/95 to-[#14372D]/90" />
+              {/* Subtle ambient gold radial lighting */}
+              <div className="absolute -top-20 -right-20 w-60 h-60 bg-[#B5A16A]/15 rounded-full blur-3xl pointer-events-none" />
             </div>
 
             {/* Top Bar: Section Tag & Prev/Next Arrows */}
@@ -521,18 +523,18 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Bottom Content Area: Leader Name, Photo thumbnail, Role, Quote & Expertise */}
-            <div className="relative z-10 text-white space-y-3 mt-auto pt-6">
+            {/* Middle Content Area: Highlighted Partner Avatar Card & Info */}
+            <div className="relative z-10 text-white space-y-4 my-auto py-4">
               
-              <div className="flex items-center gap-3">
-                <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-[#C5B27D] shadow-lg shrink-0 bg-white">
+              <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md shadow-md">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-[#C5B27D] shadow-xl shrink-0 bg-white">
                   <img
                     src={activeLeader.image}
                     alt={activeLeader.name}
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = activeLeader.fallbackImage;
                     }}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div>
@@ -542,48 +544,48 @@ export default function ContactPage() {
                   <p className="text-xs text-[#C5B27D] font-bold mt-0.5">
                     {activeLeader.role}
                   </p>
-                  <span className="text-[10px] text-slate-300 block">
+                  <span className="text-[10px] text-slate-300 block mt-0.5 font-medium">
                     {activeLeader.company}
                   </span>
                 </div>
               </div>
 
-              {/* Quote from polyhubagro.com Innovative Solutions */}
-              <div className="p-3.5 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10">
+              {/* Official Quote from polyhubagro.com */}
+              <div className="p-4 rounded-2xl bg-black/35 backdrop-blur-md border border-[#B5A16A]/20">
                 <p className="text-xs text-slate-200 leading-relaxed italic">
                   &ldquo;{activeLeader.quote}&rdquo;
                 </p>
               </div>
 
               {/* Key Highlights */}
-              <div className="space-y-1.5 pt-1">
+              <div className="space-y-2 pt-1">
                 {activeLeader.expertise.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-[11px] text-slate-300 font-medium">
+                  <div key={idx} className="flex items-center gap-2 text-xs text-slate-300 font-medium">
                     <Check className="w-3.5 h-3.5 text-[#C5B27D] shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
               </div>
 
-              {/* Slider Dots */}
-              <div className="flex items-center justify-between pt-2">
-                <div className="flex items-center gap-1.5">
-                  {leadershipPartners.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setCurrentLeaderIdx(i)}
-                      className={`h-1.5 rounded-full transition-all duration-300 ${
-                        currentLeaderIdx === i ? "w-7 bg-[#C5B27D]" : "w-2 bg-white/40"
-                      }`}
-                    />
-                  ))}
-                </div>
+            </div>
 
-                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
-                  Partner 0{currentLeaderIdx + 1} / 0{leadershipPartners.length}
-                </span>
+            {/* Bottom Slider Dots Indicator */}
+            <div className="relative z-10 flex items-center justify-between pt-2 border-t border-white/10">
+              <div className="flex items-center gap-1.5">
+                {leadershipPartners.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentLeaderIdx(i)}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      currentLeaderIdx === i ? "w-7 bg-[#C5B27D]" : "w-2 bg-white/40"
+                    }`}
+                  />
+                ))}
               </div>
 
+              <span className="text-[10px] text-[#C5B27D] font-bold uppercase tracking-wider">
+                Partner 0{currentLeaderIdx + 1} of 0{leadershipPartners.length}
+              </span>
             </div>
 
           </div>

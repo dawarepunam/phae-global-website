@@ -674,57 +674,417 @@ export const SUBSIDY_INFO = {
 
 export const GALLERY_ITEMS = [
   {
-    title: "Naturally Ventilated Polyhouse",
-    category: "Polyhouses",
-    location: "Patiala, Punjab",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1000&q=80"
+    "title": "Polyhouses Field Execution Project #1",
+    "category": "Polyhouses",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-06-at-10.24.04_9cb01ebd-1.jpg"
   },
   {
-    title: "Commercial Fan & Pad Floriculture",
-    category: "Greenhouse",
-    location: "Pune, Maharashtra",
-    image: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1000&q=80"
+    "title": "Greenhouse Field Execution Project #2",
+    "category": "Greenhouse",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.00_2ba3d33c.jpg"
   },
   {
-    title: "High-Roof Arched Tunnel",
-    category: "Polyhouses",
-    location: "Bathinda, Punjab",
-    image: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1000&q=80"
+    "title": "Shade Net House Field Execution Project #3",
+    "category": "Shade Net House",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.03_3c367041.jpg"
   },
   {
-    title: "Hydroponic Channel Setup",
-    category: "Farming",
-    location: "Nashik, Maharashtra",
-    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1000&q=80"
+    "title": "Construction Field Execution Project #4",
+    "category": "Construction",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.03_1923c74f.jpg"
   },
   {
-    title: "Dome Shade Net House Installation",
-    category: "Shade Net House",
-    location: "Sangrur, Punjab",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=1000&q=80"
+    "title": "Farming Field Execution Project #5",
+    "category": "Farming",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b0e4b2fc.jpg"
   },
   {
-    title: "Wire Rope Orchard Shading",
-    category: "Shade Net House",
-    location: "Solapur, Maharashtra",
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1000&q=80"
+    "title": "Polyhouses Field Execution Project #6",
+    "category": "Polyhouses",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.04_b82e64ab.jpg"
   },
   {
-    title: "Dutch Rose Harvest in Polyhouse",
-    category: "Farming",
-    location: "Pune Floral Cluster",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80"
+    "title": "Greenhouse Field Execution Project #7",
+    "category": "Greenhouse",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.05_4f7ce404.jpg"
   },
   {
-    title: "Colored Capsicum Trellis Training",
-    category: "Farming",
-    location: "Ludhiana, Punjab",
-    image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=1000&q=80"
+    "title": "Shade Net House Field Execution Project #8",
+    "category": "Shade Net House",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.05_31de74a4.jpg"
   },
   {
-    title: "Precision GI Structural Foundation",
-    category: "Construction",
-    location: "Satara, Maharashtra",
-    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80"
+    "title": "Construction Field Execution Project #9",
+    "category": "Construction",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.06_6ef49eb7-1.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #10",
+    "category": "Farming",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.06_f97fa1a2.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #11",
+    "category": "Polyhouses",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.08_ba1ca66c.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #12",
+    "category": "Greenhouse",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.09_07bbdc72.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #13",
+    "category": "Shade Net House",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.13_75d6f947.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #14",
+    "category": "Construction",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-15.54.14_a765bb27.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #15",
+    "category": "Farming",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.17_a800466e.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #16",
+    "category": "Polyhouses",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.18_52fe5d3f.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #17",
+    "category": "Greenhouse",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.20_3a4ce083.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #18",
+    "category": "Shade Net House",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.20_5ab4b084.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #19",
+    "category": "Construction",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.20_d02ca9d7.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #20",
+    "category": "Farming",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.21_6e2efce7.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #21",
+    "category": "Polyhouses",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.22_a553d75c.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #22",
+    "category": "Greenhouse",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.24_f5411a05.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #23",
+    "category": "Shade Net House",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.25_d4d36c04.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #24",
+    "category": "Construction",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.25_dd33c058.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #25",
+    "category": "Farming",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-16.10.26_cbb3739b.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #26",
+    "category": "Polyhouses",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-15.09.35_4009e6f5-2.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #27",
+    "category": "Greenhouse",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-12.32.47_3cef84cf.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #28",
+    "category": "Shade Net House",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-12.32.47_ac084101.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #29",
+    "category": "Construction",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-12.32.48_0e05fde7.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #30",
+    "category": "Farming",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-12.32.48_8ca299a4.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #31",
+    "category": "Polyhouses",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-12.32.48_3588f28b.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #32",
+    "category": "Greenhouse",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-15.09.35_4009e6f5-1.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #33",
+    "category": "Shade Net House",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-17-at-15.09.36_5c314673.jpg"
+  },
+  {
+    "title": "Climate-Controlled Fan & Pad Greenhouse 34",
+    "category": "Greenhouse",
+    "location": "Maharashtra Project",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Fan-and-pad-1.jpg"
+  },
+  {
+    "title": "Climate-Controlled Fan & Pad Greenhouse 35",
+    "category": "Greenhouse",
+    "location": "Maharashtra Project",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Fan-and-pad-2.jpg"
+  },
+  {
+    "title": "Commercial Hydroponic Setup 36",
+    "category": "Greenhouse",
+    "location": "Precision Agri Site",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Hydroponic-Green-House-1.jpg"
+  },
+  {
+    "title": "Commercial Hydroponic Setup 37",
+    "category": "Greenhouse",
+    "location": "Precision Agri Site",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Hydroponic-Green-House-2.jpg"
+  },
+  {
+    "title": "Commercial Hydroponic Setup 38",
+    "category": "Greenhouse",
+    "location": "Precision Agri Site",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Hydroponic-Green-House-3.jpg"
+  },
+  {
+    "title": "Commercial Hydroponic Setup 39",
+    "category": "Greenhouse",
+    "location": "Precision Agri Site",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Hydroponic-Green-House-4.jpg"
+  },
+  {
+    "title": "Naturally Ventilated Commercial Polyhouse 40",
+    "category": "Polyhouses",
+    "location": "Punjab State Project",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Naturally-Ventilated-Polyhouse-outer-1.jpg"
+  },
+  {
+    "title": "Multi-Dome Shade Net Structure 41",
+    "category": "Shade Net House",
+    "location": "Horticulture Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Shade-net-house-flat-1.jpg"
+  },
+  {
+    "title": "High-Roof Arched Tunnel Polyhouse 42",
+    "category": "Polyhouses",
+    "location": "Protected Cultivation Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Tunnel-type-Polyhouse-1.jpeg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #43",
+    "category": "Shade Net House",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0067.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #44",
+    "category": "Construction",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0068.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #45",
+    "category": "Farming",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0069.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #46",
+    "category": "Polyhouses",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0070.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #47",
+    "category": "Greenhouse",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0071.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #48",
+    "category": "Shade Net House",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0072.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #49",
+    "category": "Construction",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0073.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #50",
+    "category": "Farming",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0074.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #51",
+    "category": "Polyhouses",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0075.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #52",
+    "category": "Greenhouse",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0076.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #53",
+    "category": "Shade Net House",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0077.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #54",
+    "category": "Construction",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0078.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #55",
+    "category": "Farming",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0079.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #56",
+    "category": "Polyhouses",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0080.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #57",
+    "category": "Greenhouse",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0081.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #58",
+    "category": "Shade Net House",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0082.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #59",
+    "category": "Construction",
+    "location": "Solapur, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0083.jpg"
+  },
+  {
+    "title": "Farming Field Execution Project #60",
+    "category": "Farming",
+    "location": "Ludhiana, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0084.jpg"
+  },
+  {
+    "title": "Polyhouses Field Execution Project #61",
+    "category": "Polyhouses",
+    "location": "Patiala, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0085.jpg"
+  },
+  {
+    "title": "Greenhouse Field Execution Project #62",
+    "category": "Greenhouse",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0086.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #63",
+    "category": "Shade Net House",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0087.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #64",
+    "category": "Construction",
+    "location": "Bathinda, Punjab",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/IMG-20240806-WA0088.jpg"
+  },
+  {
+    "title": "Multi-Dome Shade Net Structure 65",
+    "category": "Shade Net House",
+    "location": "Horticulture Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-1-1.jpg"
+  },
+  {
+    "title": "Multi-Dome Shade Net Structure 66",
+    "category": "Shade Net House",
+    "location": "Horticulture Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-2-1.jpg"
+  },
+  {
+    "title": "Multi-Dome Shade Net Structure 67",
+    "category": "Shade Net House",
+    "location": "Horticulture Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/Multi-dome-shade-net-3-1.jpg"
+  },
+  {
+    "title": "Shade Net House Field Execution Project #68",
+    "category": "Shade Net House",
+    "location": "Pune, Maharashtra",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-06-at-21.32.28_048b29ee.jpg"
+  },
+  {
+    "title": "Construction Field Execution Project #69",
+    "category": "Construction",
+    "location": "Nashik Cluster",
+    "image": "https://polyhubagro.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-06-at-21.32.28_5380298c.jpg"
   }
 ];
