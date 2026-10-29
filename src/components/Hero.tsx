@@ -170,11 +170,11 @@ export default function Hero() {
         ))}
 
         {/* ── Content Grid ── */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 sm:py-36 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 sm:pt-40 sm:pb-28 lg:py-36 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left Column: Headings & CTA */}
-            <div className="lg:col-span-7 xl:col-span-8 space-y-6">
+            <div className="lg:col-span-7 xl:col-span-8 space-y-5 sm:space-y-6">
               
               {/* Pill badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A6B5A0]/20 border border-[#B5A16A]/40 text-[#C5B27D] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
