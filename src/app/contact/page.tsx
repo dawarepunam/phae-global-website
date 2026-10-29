@@ -22,29 +22,31 @@ import {
   ChevronLeft,
   ChevronRight,
   ShieldCheck,
-  Award
+  Award,
+  Sprout,
+  Check
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/polyhubData";
 
-// Partnership slider stories (featuring agri engineers & farming partners)
-const partnershipSlides = [
+// Actual Leadership / Partners from polyhubagro.com Home Page ("Innovative Solutions for Modern Agriculture")
+const leadershipPartners = [
   {
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=1200&q=80",
-    title: "Engineering Innovation with Farmers",
-    subtitle: "Turnkey Agro Collaboration",
-    desc: "Our on-site structural engineers work side-by-side with progressive farmers to build climate-resilient, high-yield polyhouses tailored to regional wind loads and soil conditions."
+    name: "Randeep Singh",
+    role: "Director & Agro Structural Specialist",
+    company: "PolyHub Agro Engineers",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-02-at-5.55.18-PM-5-1-460x460.png",
+    fallbackImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    quote: "At the heart of PolyHub Agro's offerings are our state-of-the-art protected cultivation structures designed to meet the evolving climate challenges of modern agriculture.",
+    expertise: ["Hot-Dip Galvanized GI Design", "IS 1239 / IS 1161 Standards", "Pan-India Project Execution"]
   },
   {
-    image: "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80",
-    title: "End-to-End Agronomy & DPR Assistance",
-    subtitle: "Complete Project Lifecycle",
-    desc: "From initial GPS topographical land survey and soil testing to bankable DPR preparation and government subsidy disbursement, our dedicated technical team supports you at every step."
-  },
-  {
-    image: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=1200&q=80",
-    title: "300+ Successful Commercial Installations",
-    subtitle: "Trusted Pan-India Network",
-    desc: "Join over 300+ successful farm entrepreneurs across 18+ Indian states cultivating premium export-quality Dutch Roses, Carnations, and exotic vegetables."
+    name: "Arvind Kumar Yadav",
+    role: "Director & Precision Agri Consultant",
+    company: "PolyHub Agro Engineers",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/Group-1696-460x460.png",
+    fallbackImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    quote: "We integrate smart irrigation systems, precision automation, and real-time environmental sensors so farmers achieve maximum output per drop and acre.",
+    expertise: ["Smart Irrigation Automation", "NHB / MIDH 50% Subsidy DPR", "Crop Economics Optimization"]
   }
 ];
 
@@ -53,7 +55,7 @@ export default function ContactPage() {
   const [activeOffice, setActiveOffice] = useState<"punjab" | "pune">("punjab");
   const [userLocation, setUserLocation] = useState("");
   const [mapMode, setMapMode] = useState<"location" | "directions">("location");
-  const [currentPartnerSlide, setCurrentPartnerSlide] = useState(0);
+  const [currentLeaderIdx, setCurrentLeaderIdx] = useState(0);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -65,11 +67,11 @@ export default function ContactPage() {
     message: ""
   });
 
-  // Auto rotate partnership slider
+  // Auto rotate partner slider every 5.5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentPartnerSlide((prev) => (prev + 1) % partnershipSlides.length);
-    }, 6000);
+      setCurrentLeaderIdx((prev) => (prev + 1) % leadershipPartners.length);
+    }, 5500);
     return () => clearInterval(timer);
   }, []);
 
@@ -133,6 +135,8 @@ export default function ContactPage() {
     setSubmitted(true);
   };
 
+  const activeLeader = leadershipPartners[currentLeaderIdx];
+
   return (
     <div className="bg-[#F5F2E9] min-h-screen">
       
@@ -145,7 +149,7 @@ export default function ContactPage() {
             alt="PolyHub Agro Greenhouse Engineering"
             className="w-full h-full object-cover object-center opacity-30 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0D2419] via-[#102C24]/90 to-[#183F32]/85" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0D2419] via-[#102C24]/92 to-[#183F32]/85" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#102C24] via-transparent to-transparent" />
         </div>
 
@@ -169,7 +173,7 @@ export default function ContactPage() {
               </h1>
 
               <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                Connect with our certified greenhouse engineers for turn-key structural design, government subsidy DPR paperwork, and on-site topographic evaluations.
+                Connect directly with our company leadership and structural engineers for turn-key protected cultivation, bankable subsidy DPRs, and on-site topographic evaluations.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -222,10 +226,10 @@ export default function ContactPage() {
       </section>
 
       {/* ── MAIN CONTENT CONTAINER ── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
         {/* Top 3 Quick Helpline Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           
           <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4">
             <div className="w-12 h-12 rounded-2xl bg-[#183F32] text-[#C5B27D] flex items-center justify-center shrink-0 shadow-md">
@@ -275,49 +279,49 @@ export default function ContactPage() {
 
         </div>
 
-        {/* ── 3-COLUMN CONTACT SECTION WITH PARTNERSHIP SLIDER POSTER ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
+        {/* ── 3-COLUMN LAYOUT: ADJUSTED WIDTHS (Offices: col-span-3, Form: col-span-5, Partner: col-span-4) ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-7 items-stretch mb-16">
           
-          {/* Column 1: Registered Office Cards */}
-          <div className="lg:col-span-4 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-lg flex flex-col justify-between">
-            <div className="space-y-6">
+          {/* Column 1: Registered Offices (Compact Width: lg:col-span-3) */}
+          <div className="lg:col-span-3 bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-md flex flex-col justify-between">
+            <div className="space-y-4">
               <div>
-                <span className="section-label">OUR PRESENCE</span>
-                <h3 className="text-xl font-black text-[#102C24] mt-3">
-                  Registered Offices
+                <span className="section-label text-[9px] px-2.5 py-0.5">OFFICES</span>
+                <h3 className="text-lg font-black text-[#102C24] mt-2">
+                  Locations
                 </h3>
-                <div className="section-divider mt-2" />
+                <div className="section-divider mt-1.5" />
               </div>
 
               {/* Punjab Office Card */}
               <div 
                 onClick={() => setActiveOffice("punjab")}
-                className={`p-4 rounded-2xl border transition-all cursor-pointer ${
+                className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                   activeOffice === "punjab" 
                     ? "bg-[#183F32]/10 border-[#183F32] shadow-sm" 
                     : "bg-[#F5F2E9] border-slate-200 hover:border-slate-300"
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Building2 className={`w-4 h-4 ${activeOffice === "punjab" ? "text-[#183F32]" : "text-slate-600"}`} />
-                    <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
-                      Corporate Office (Punjab)
+                  <div className="flex items-center gap-1.5">
+                    <Building2 className={`w-3.5 h-3.5 ${activeOffice === "punjab" ? "text-[#183F32]" : "text-slate-600"}`} />
+                    <h4 className="font-extrabold text-[11px] uppercase tracking-wider text-[#102C24]">
+                      Punjab (Corporate)
                     </h4>
                   </div>
                   {activeOffice === "punjab" && (
-                    <span className="text-[10px] bg-[#183F32] text-white px-2 py-0.5 rounded-full font-bold">
-                      Selected
+                    <span className="text-[9px] bg-[#183F32] text-white px-1.5 py-0.5 rounded-full font-bold">
+                      Active
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-slate-700 leading-relaxed pl-6 mt-2">
-                  {COMPANY_INFO.contacts.corporateOffice}
+                <p className="text-[11px] text-slate-700 leading-relaxed pl-5 mt-1.5">
+                  SCO-63, First Floor, D.A.C., Near Mini-Secretariat, Patiala, Punjab - 147001
                 </p>
-                <div className="pl-6 pt-2">
-                  <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32]">
-                    <Navigation className="w-3.5 h-3.5" />
-                    <span>View Location & Route Below ↓</span>
+                <div className="pl-5 pt-1.5">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#183F32]">
+                    <Navigation className="w-3 h-3" />
+                    <span>View on Map ↓</span>
                   </span>
                 </div>
               </div>
@@ -325,54 +329,54 @@ export default function ContactPage() {
               {/* Pune Office Card */}
               <div 
                 onClick={() => setActiveOffice("pune")}
-                className={`p-4 rounded-2xl border transition-all cursor-pointer ${
+                className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                   activeOffice === "pune" 
                     ? "bg-[#183F32]/10 border-[#183F32] shadow-sm" 
                     : "bg-[#F5F2E9] border-slate-200 hover:border-slate-300"
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Building2 className={`w-4 h-4 ${activeOffice === "pune" ? "text-[#183F32]" : "text-slate-600"}`} />
-                    <h4 className="font-extrabold text-xs uppercase tracking-wider text-[#102C24]">
-                      Sales Office (Maharashtra)
+                  <div className="flex items-center gap-1.5">
+                    <Building2 className={`w-3.5 h-3.5 ${activeOffice === "pune" ? "text-[#183F32]" : "text-slate-600"}`} />
+                    <h4 className="font-extrabold text-[11px] uppercase tracking-wider text-[#102C24]">
+                      Pune (Sales)
                     </h4>
                   </div>
                   {activeOffice === "pune" && (
-                    <span className="text-[10px] bg-[#183F32] text-white px-2 py-0.5 rounded-full font-bold">
-                      Selected
+                    <span className="text-[9px] bg-[#183F32] text-white px-1.5 py-0.5 rounded-full font-bold">
+                      Active
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-slate-700 leading-relaxed pl-6 mt-2">
-                  {COMPANY_INFO.contacts.salesOffice}
+                <p className="text-[11px] text-slate-700 leading-relaxed pl-5 mt-1.5">
+                  104 Niche Facade, New Airport Road, Viman Nagar, Pune - 411014
                 </p>
-                <div className="pl-6 pt-2">
-                  <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#183F32]">
-                    <Navigation className="w-3.5 h-3.5" />
-                    <span>View Location & Route Below ↓</span>
+                <div className="pl-5 pt-1.5">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#183F32]">
+                    <Navigation className="w-3 h-3" />
+                    <span>View on Map ↓</span>
                   </span>
                 </div>
               </div>
 
             </div>
 
-            <div className="mt-8 pt-5 border-t border-slate-100">
+            <div className="mt-6 pt-4 border-t border-slate-100">
               <a
                 href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PolyHub%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition-all duration-300 hover:scale-[1.02]"
+                className="w-full inline-flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition-all duration-300 hover:scale-[1.02]"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span>Instant WhatsApp Inquiry</span>
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>WhatsApp Advisory</span>
               </a>
             </div>
           </div>
 
-          {/* Column 2: Send Us a Message Form */}
-          <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl">
-            <h3 className="text-xl font-black text-[#102C24] border-b border-slate-100 pb-3 mb-6">
+          {/* Column 2: Send Us a Message Form (Balanced: lg:col-span-5) */}
+          <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-xl">
+            <h3 className="text-xl font-black text-[#102C24] border-b border-slate-100 pb-3 mb-5">
               Send Us a Message
             </h3>
 
@@ -393,50 +397,50 @@ export default function ContactPage() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-3.5">
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1.5">Full Name *</label>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
                   <input
                     type="text"
                     required
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="form-input"
+                    className="form-input py-2.5"
                   />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
                     <input
                       type="tel"
                       required
                       placeholder="+91 Mobile number"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="form-input"
+                      className="form-input py-2.5"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">Email Address</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
                     <input
                       type="email"
                       placeholder="your.email@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="form-input"
+                      className="form-input py-2.5"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">Structure Type</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">Structure Type</label>
                     <select
                       value={formData.structureType}
                       onChange={(e) => setFormData({...formData, structureType: e.target.value})}
-                      className="form-input bg-white cursor-pointer"
+                      className="form-input py-2.5 bg-white cursor-pointer"
                     >
                       <option>Naturally Ventilated Polyhouse</option>
                       <option>Fan and Pad Polyhouse</option>
@@ -446,108 +450,143 @@ export default function ContactPage() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1.5">State / Location</label>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">State / Location</label>
                     <input
                       type="text"
                       placeholder="e.g. Punjab, Maharashtra"
                       value={formData.state}
                       onChange={(e) => setFormData({...formData, state: e.target.value})}
-                      className="form-input"
+                      className="form-input py-2.5"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1.5">Message / Requirements</label>
+                  <label className="block text-xs font-bold text-slate-700 mb-1">Message / Requirements</label>
                   <textarea
-                    rows={3}
-                    placeholder="Describe your land area, targeted crop (e.g. Dutch Rose, Capsicum), or subsidy inquiry..."
+                    rows={2}
+                    placeholder="Describe your land area, targeted crop, or subsidy inquiry..."
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="form-input"
+                    className="form-input py-2"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full btn-gold py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 mt-2 shadow-lg"
+                  className="w-full btn-gold py-3 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Submit Inquiry</span>
+                  <span>Submit Technical Proposal Request</span>
                 </button>
               </form>
             )}
           </div>
 
-          {/* Column 3: INTERACTIVE PARTNERSHIP SLIDER POSTER (Featuring the 2 agro partners & farmers) */}
-          <div className="lg:col-span-3 rounded-3xl overflow-hidden shadow-2xl relative min-h-[440px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#B5A16A]/40 group bg-[#102C24]">
+          {/* Column 3: ENLARGED PARTNER / LEADERSHIP SLIDER BOX (Width increased: lg:col-span-4) */}
+          <div className="lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative min-h-[480px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#B5A16A]/40 bg-[#102C24]">
             
-            {/* Slider Background Images */}
-            {partnershipSlides.map((slide, idx) => (
-              <div
-                key={idx}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                  idx === currentPartnerSlide ? "opacity-100 scale-100" : "opacity-0 scale-105 pointer-events-none"
-                }`}
-              >
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D2419] via-[#102C24]/80 to-black/30" />
-              </div>
-            ))}
+            {/* Background Image of Selected Leader/Partner with Fallback handling */}
+            <div className="absolute inset-0 z-0">
+              <img
+                src={activeLeader.image}
+                alt={activeLeader.name}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = activeLeader.fallbackImage;
+                }}
+                className="w-full h-full object-cover object-top filter brightness-90 group-hover:scale-105 transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0D2419] via-[#102C24]/85 to-black/40" />
+            </div>
 
-            {/* Top Badge & Slider Controls */}
+            {/* Top Bar: Section Tag & Prev/Next Arrows */}
             <div className="relative z-10 flex items-center justify-between">
-              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#C5B27D] bg-[#102C24]/85 px-3 py-1 rounded-full border border-[#B5A16A]/40 flex items-center gap-1.5">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#C5B27D] bg-[#102C24]/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#B5A16A]/40 flex items-center gap-1.5 shadow-sm">
                 <Handshake className="w-3.5 h-3.5 text-[#B5A16A]" />
-                <span>Partner With Us</span>
+                <span>Leadership & Partners</span>
               </span>
 
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 bg-black/40 backdrop-blur-md p-1 rounded-full border border-white/15">
                 <button
-                  onClick={() => setCurrentPartnerSlide((prev) => (prev - 1 + partnershipSlides.length) % partnershipSlides.length)}
-                  className="w-7 h-7 rounded-full bg-black/40 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors border border-white/20"
+                  onClick={() => setCurrentLeaderIdx((prev) => (prev - 1 + leadershipPartners.length) % leadershipPartners.length)}
+                  aria-label="Previous Partner"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
-                  onClick={() => setCurrentPartnerSlide((prev) => (prev + 1) % partnershipSlides.length)}
-                  className="w-7 h-7 rounded-full bg-black/40 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors border border-white/20"
+                  onClick={() => setCurrentLeaderIdx((prev) => (prev + 1) % leadershipPartners.length)}
+                  aria-label="Next Partner"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#183F32] text-white flex items-center justify-center transition-colors"
                 >
                   <ChevronRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
 
-            {/* Bottom Content with Slide details */}
-            <div className="relative z-10 text-white space-y-2 mt-auto pt-6">
-              <span className="text-[11px] font-bold text-[#C5B27D] tracking-wider uppercase block">
-                {partnershipSlides[currentPartnerSlide].subtitle}
-              </span>
-
-              <h4 className="text-xl sm:text-2xl font-black font-serif italic text-white leading-tight">
-                {partnershipSlides[currentPartnerSlide].title}
-              </h4>
-
-              <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
-                {partnershipSlides[currentPartnerSlide].desc}
-              </p>
-
-              {/* Slider Dots Indicator */}
-              <div className="flex items-center gap-1.5 pt-2">
-                {partnershipSlides.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrentPartnerSlide(i)}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      currentPartnerSlide === i ? "w-6 bg-[#C5B27D]" : "w-2 bg-white/40"
-                    }`}
+            {/* Bottom Content Area: Leader Name, Photo thumbnail, Role, Quote & Expertise */}
+            <div className="relative z-10 text-white space-y-3 mt-auto pt-6">
+              
+              <div className="flex items-center gap-3">
+                <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-[#C5B27D] shadow-lg shrink-0 bg-white">
+                  <img
+                    src={activeLeader.image}
+                    alt={activeLeader.name}
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = activeLeader.fallbackImage;
+                    }}
+                    className="w-full h-full object-cover object-top"
                   />
+                </div>
+                <div>
+                  <h4 className="text-xl sm:text-2xl font-black text-white leading-tight">
+                    {activeLeader.name}
+                  </h4>
+                  <p className="text-xs text-[#C5B27D] font-bold mt-0.5">
+                    {activeLeader.role}
+                  </p>
+                  <span className="text-[10px] text-slate-300 block">
+                    {activeLeader.company}
+                  </span>
+                </div>
+              </div>
+
+              {/* Quote from polyhubagro.com Innovative Solutions */}
+              <div className="p-3.5 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10">
+                <p className="text-xs text-slate-200 leading-relaxed italic">
+                  &ldquo;{activeLeader.quote}&rdquo;
+                </p>
+              </div>
+
+              {/* Key Highlights */}
+              <div className="space-y-1.5 pt-1">
+                {activeLeader.expertise.map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-[11px] text-slate-300 font-medium">
+                    <Check className="w-3.5 h-3.5 text-[#C5B27D] shrink-0" />
+                    <span>{item}</span>
+                  </div>
                 ))}
               </div>
+
+              {/* Slider Dots */}
+              <div className="flex items-center justify-between pt-2">
+                <div className="flex items-center gap-1.5">
+                  {leadershipPartners.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setCurrentLeaderIdx(i)}
+                      className={`h-1.5 rounded-full transition-all duration-300 ${
+                        currentLeaderIdx === i ? "w-7 bg-[#C5B27D]" : "w-2 bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
+
+                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                  Partner 0{currentLeaderIdx + 1} / 0{leadershipPartners.length}
+                </span>
+              </div>
+
             </div>
 
           </div>
