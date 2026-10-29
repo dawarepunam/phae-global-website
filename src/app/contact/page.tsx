@@ -486,17 +486,14 @@ export default function ContactPage() {
           {/* Column 3: ENLARGED PARTNER / LEADERSHIP SLIDER BOX (Width increased: lg:col-span-4) */}
           <div className="lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative min-h-[480px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#B5A16A]/40 bg-[#102C24]">
             
-            {/* Background Image of Selected Leader/Partner with Fallback handling */}
+            {/* Background: Clean Architectural Greenhouse Polyhouse Farm Image (Partners are clear in the foreground) */}
             <div className="absolute inset-0 z-0">
               <img
-                src={activeLeader.image}
-                alt={activeLeader.name}
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = activeLeader.fallbackImage;
-                }}
-                className="w-full h-full object-cover object-top filter brightness-90 group-hover:scale-105 transition-all duration-700"
+                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80"
+                alt="PolyHub Modern Agro Engineering Farm"
+                className="w-full h-full object-cover object-center filter brightness-[0.38] contrast-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D2419] via-[#102C24]/85 to-black/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#102C24]/85 to-[#102C24]/40" />
             </div>
 
             {/* Top Bar: Section Tag & Prev/Next Arrows */}
