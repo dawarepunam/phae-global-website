@@ -79,16 +79,16 @@ export default function ContactPage() {
     punjab: {
       name: "Punjab Corporate Office",
       address: COMPANY_INFO.contacts.corporateOffice,
-      query: "Mini Secretariat, Patiala, Punjab 147001",
+      query: "SCO-63, First Floor, D.A.C., Near Mini-Secretariat, Patiala, Punjab 147001",
       city: "Patiala, Punjab",
-      latLng: "30.3205,76.3814"
+      embedUrl: "https://maps.google.com/maps?q=Mini%20Secretariat%2C%20Patiala%2C%20Punjab%20147001&t=&z=15&ie=UTF8&iwloc=&output=embed"
     },
     pune: {
       name: "Pune Sales Office",
       address: COMPANY_INFO.contacts.salesOffice,
       query: "104 Niche Facade, New Airport Road, Viman Nagar, Pune, Maharashtra 411014",
       city: "Pune, Maharashtra",
-      latLng: "18.5623,73.9104"
+      embedUrl: "https://maps.google.com/maps?q=Viman%20Nagar%2C%20Pune%2C%20Maharashtra%20411014&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   };
 
@@ -98,9 +98,9 @@ export default function ContactPage() {
     if (mapMode === "directions" && userLocation.trim()) {
       const origin = encodeURIComponent(userLocation.trim());
       const destination = encodeURIComponent(currentOffice.query);
-      return `https://www.google.com/maps?saddr=${origin}&daddr=${destination}&output=embed`;
+      return `https://maps.google.com/maps?saddr=${origin}&daddr=${destination}&output=embed`;
     }
-    return `https://www.google.com/maps?q=${encodeURIComponent(currentOffice.query)}&t=m&z=15&output=embed&iwloc=near`;
+    return currentOffice.embedUrl;
   };
 
   const openDirectDirections = (origin?: string) => {
@@ -715,8 +715,9 @@ export default function ContactPage() {
           </div>
 
           {/* Embedded Real Google Map Frame with Full Map Controls */}
-          <div className="relative w-full h-[400px] sm:h-[480px] rounded-2xl overflow-hidden border border-slate-200 shadow-inner bg-slate-100">
+          <div className="relative w-full h-[450px] sm:h-[520px] rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-100">
             <iframe
+              key={`${activeOffice}-${mapMode}-${userLocation}`}
               src={getMapUrl()}
               title={`Google Map - ${currentOffice.name}`}
               className="w-full h-full border-0"
