@@ -487,31 +487,63 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
   {
     id: "orchid",
     slug: "orchid",
-    name: "Orchid",
+    name: "Orchid (Dendrobium)",
     type: "Flower",
     variety: "Dendrobium, Phalaenopsis, Cymbidium",
-    shortSummary: "High-value luxury crop with exceptional wedding and export market demand.",
-    overview: "Orchids are among the highest-revenue commercial floriculture crops in the international and domestic luxury gift markets. Cultivated in climate-controlled fan & pad or shaded structures, orchids require high relative humidity (60-80%) and filtered light. Because of their long flower vase life (up to 3-4 weeks), they command premium prices throughout wedding and holiday seasons.",
-    climateSuitability: "Climate-Controlled Fan & Pad Polyhouse / 75% Shade Net",
-    yieldAdvantage: "Continuous harvesting across 4-6 years from a single planting, yielding premium stem returns.",
+    shortSummary: "High-value luxury cut flower yielding ₹24.20 Lakh net annual profit under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Orchids are among the highest-revenue commercial floriculture crops in the international and domestic luxury gift markets. Cultivated in naturally ventilated polyhouses with 30% extra black shade net and micro-fogging, orchids yield continuously for 6 to 7 years with a plant density of 11.25 plants/sq.m (45,000 plants total).",
+    climateSuitability: "Naturally Ventilated Polyhouse with 30% Black Shade Net & Micro-fogging",
+    yieldAdvantage: "Continuous harvesting across 7 years with an average yield of 6 spikes/plant/year (up to 8 spikes in peak years).",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/cultivation-of-orchid-flowers-in-poly-houses.jpg",
     keyBenefits: [
-      "High market value & luxury gifting appeal",
-      "Year-round controlled production window",
-      "Low water requirement with precision drip misting",
-      "Excellent export potential to Middle-East & European flower auctions"
+      "Indicative Net Return: ₹24,20,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "High plant density: 11.25 plants/sq.m (45,000 tissue culture plants)",
+      "Long commercial lifespan of 7 consecutive years",
+      "Qualifies for up to 50% capital subsidy under NHB & MIDH norms"
     ],
     economicsMetrics: [
-      { label: "Target Plant Density", value: "35,000 - 40,000 plants per acre" },
-      { label: "Harvest Cycle", value: "Starts from month 9-10; commercial harvest for 4+ years" },
-      { label: "Expected Yield", value: "6 - 8 cut spikes per plant per year" },
-      { label: "Market Price Realization", value: "₹25 - ₹45 per spike (premium festive spikes up to ₹60+)" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "11.25 plants/sq.m (45,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹71,76,000 (Structure & Plants)" },
+      { label: "Annual Operational Cost", value: "₹13,60,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹37,80,000 / Year (@ ₹14/flower)" },
+      { label: "Net Annual Return", value: "₹24,20,000 / Year" }
     ],
     cultivationGuidelines: [
-      "Substrate: Coconut husk chips, charcoal, and brick pieces (soil-less)",
-      "Humidity: 65% to 80% maintained through automated micro-foggers",
-      "Nutrient Management: Foliar feeding with balanced NPK micronutrients twice weekly"
-    ]
+      "Substrate Bed: Table stand with wire ropes (₹7 Lakh), Concrete blocks (₹6 Lakh), Coco shells (₹2 Lakh)",
+      "Irrigation & Microclimate: Drip irrigation, fogging for temperature & humidity control, fertigation & filtration",
+      "Water Requirement: 0.7 litre/plant/day + misting + spraying",
+      "Planting Material: Tissue culture plants (45,000 Nos. @ ₹40/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "30% Extra Black Shade Net for shading", cost: "₹1,00,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Water Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (Table Stand with Wire Ropes, Concrete Blocks & Coco Shells)", cost: "₹15,00,000" },
+        { particular: "Tissue Culture Plants (45,000 Nos. @ ₹40/plant)", cost: "₹18,00,000" }
+      ],
+      totalInvestment: "₹71,76,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (0.7L/plant/day)", cost: "₹20,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹70,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹1,20,000" },
+        { particular: "Labor Costs (2-4 persons/day)", cost: "₹3,36,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹60,000" },
+        { particular: "Packing Material, Transport & Sales Commission", cost: "₹5,40,000" },
+        { particular: "Farm Supervision (₹12,000/month)", cost: "₹1,44,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹70,000" }
+      ],
+      totalOperationalCost: "₹13,60,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "6 Flowers / Plant / Year (2,70,000 cut blooms/yr)",
+        sellingPrice: "₹14.00 Avg. Realization per Bloom",
+        grossRevenue: "₹37,80,000 / Year",
+        netReturnPerYear: "₹24,20,000 / Year"
+      }
+    }
   },
   {
     id: "gerbera",
@@ -519,28 +551,59 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     name: "Gerbera",
     type: "Flower",
     variety: "Rosalin, Dune, Intense, Balance, Goliath",
-    shortSummary: "Year-round flowering with uniform head size and vibrant colors.",
-    overview: "Gerbera is the backbone of the commercial Indian cut-flower industry. In climate-controlled or well-ventilated polyhouses, each plant yields 35 to 45 pristine stems annually for over 30 to 36 months. Protected structures eliminate rain-splash soil contamination, which is the primary cause of crown rot in open fields.",
+    shortSummary: "Year-round daily harvest cut flower yielding ₹9.52 Lakh net annual profit under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Gerbera is the backbone of the commercial Indian cut-flower industry. In naturally ventilated polyhouses with raised beds (45-60 cm high) prepared with Red Soil, FYM, Rice Husk and Sand, each plant yields 45 blooms annually over a continuous multi-year lifespan.",
     climateSuitability: "Naturally Ventilated Polyhouse / Climate Controlled",
-    yieldAdvantage: "Daily harvest rhythm with 3x higher premium grade stems compared to open fields.",
+    yieldAdvantage: "Continuous daily harvest rhythm yielding 45 flowers per plant per year (10.80 Lakh flowers/acre).",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/gerbera-cultivation-in-polyhouse-1365450.jpg",
     keyBenefits: [
-      "Daily harvest yield for up to 3 years",
-      "30-40 blooms per plant per year in fan & pad setups",
-      "High demand across Indian wedding and corporate industries",
-      "Up to 50% subsidy applicable under state horticulture missions"
+      "Indicative Net Return: ₹9,52,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "High annual yield: 45 flowers/plant (10,80,000 blooms/year)",
+      "Plant population: 6 plants/sq.m (24,000 tissue culture plants)",
+      "Eligible for 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Density", value: "24,000 - 28,000 tissue-cultured plants per acre" },
-      { label: "Harvest Window", value: "Starts at 10-12 weeks; continuous daily harvest for 3 years" },
-      { label: "Annual Yield", value: "8 - 10 Lakh cut blooms per acre per year" },
-      { label: "Average Price", value: "₹3.50 to ₹7.00 per bloom (festive surges up to ₹12-15)" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "6 plants/sq.m (24,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹49,36,000 (Structure & Plants)" },
+      { label: "Annual Operational Cost", value: "₹12,08,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹21,60,000 / Year (@ ₹2.00/flower)" },
+      { label: "Net Annual Return", value: "₹9,52,000 / Year" }
     ],
     cultivationGuidelines: [
-      "Bed Height: 45cm raised beds with sand, soil, and well-rotted FYM",
-      "pH Range: 5.5 to 6.5 with EC under 1.0 mS/cm",
-      "Irrigation: Drip fertigation delivering precise potassium-to-nitrogen ratios"
-    ]
+      "Bed Height: 45-60 cm high & 60-70 cm wide raised bed with Red Soil, FYM, Rice Husk & Sand",
+      "Irrigation & Fogging: Drip irrigation, foggers for temperature/humidity control, fertigation & filtration unit",
+      "Water Requirement: 0.7 litre/plant/day + misting + spraying",
+      "Planting Material: Tissue culture plants (24,000 Nos. @ ₹30/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Water Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (45-60cm Raised Bed with Red Soil, FYM, Rice Husk, Sand)", cost: "₹4,40,000" },
+        { particular: "Tissue Culture Plants (24,000 Nos. @ ₹30/plant)", cost: "₹7,20,000" }
+      ],
+      totalInvestment: "₹49,36,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (0.7L/plant/day)", cost: "₹20,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹50,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹1,20,000" },
+        { particular: "Labor Costs (3-4 persons/day)", cost: "₹3,60,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹1,20,000" },
+        { particular: "Packing Material, Transport & Sales Commission", cost: "₹3,24,000" },
+        { particular: "Farm Supervision (₹12,000/month)", cost: "₹1,44,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹70,000" }
+      ],
+      totalOperationalCost: "₹12,08,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "45 Flowers / Plant / Year (10,80,000 cut blooms/yr)",
+        sellingPrice: "₹2.00 Avg. Realization per Bloom",
+        grossRevenue: "₹21,60,000 / Year",
+        netReturnPerYear: "₹9,52,000 / Year"
+      }
+    }
   },
   {
     id: "carnation",
@@ -548,27 +611,60 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     name: "Carnation",
     type: "Flower",
     variety: "Standard Carnation (Master, Farida, Baltico, Kiro)",
-    shortSummary: "World's most demanded bouquet flower with premium stem pricing.",
-    overview: "Carnations demand cool night temperatures and low relative humidity, making them prime candidates for protected cultivation in hilly zones or fan & pad polyhouses in the plains. With high planting density and pinch-pruning techniques, growers achieve multiple flushes of long, sturdy stems suitable for export.",
-    climateSuitability: "Fan & Pad Evaporative Polyhouse / High-Elevation Polyhouse",
-    yieldAdvantage: "Dense canopy yields up to 200 stems per square meter annually with long post-harvest vase life.",
+    shortSummary: "World's most demanded bouquet flower yielding ₹18.94 Lakh net annual profit under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Carnations demand cool night temperatures and low relative humidity. Cultivated in naturally ventilated polyhouses with 4-row high density plantation (20 plants/sq.m = 80,000 plants) and GI wire mesh support, carnations deliver 9,60,000 cut stems per year over a 5-year life cycle.",
+    climateSuitability: "Naturally Ventilated Polyhouse / High-Elevation Polyhouse",
+    yieldAdvantage: "Dense canopy yielding 12 flowers per plant per year (9,60,000 flowers/acre) with long vase life.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/carnation-plantation-in-polyhouse-1024x575.jpg",
     keyBenefits: [
-      "Cold tolerant under naturally ventilated polyhouses",
-      "Very long shelf-life during transit and cold storage",
-      "High density planting (up to 25-30 plants/sqm)",
-      "Contract farming purchase buybacks available"
+      "Indicative Net Return: ₹18,94,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "High density: 20 plants/sq.m (80,000 rooted cuttings)",
+      "Total life cycle: 5 continuous years",
+      "Qualifies for up to 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Density", value: "80,000 - 100,000 rooted cuttings per acre" },
-      { label: "Harvest Duration", value: "Two distinct seasonal flushes over 2 years" },
-      { label: "Expected Revenue", value: "High export margin with steady domestic luxury demand" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "20 plants/sq.m (80,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹56,16,000 (Structure & Plants)" },
+      { label: "Annual Operational Cost", value: "₹14,66,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹33,60,000 / Year (@ ₹3.50/flower)" },
+      { label: "Net Annual Return", value: "₹18,94,000 / Year" }
     ],
     cultivationGuidelines: [
-      "Temperature: Day 20-22°C, Night 12-15°C",
-      "Pinching: Single or pinch-and-a-half method to stimulate multi-lateral stems",
-      "Ventilation: Vigorous air circulation to prevent Botrytis flower blight"
-    ]
+      "Bed Height: 20-25 cm high & 80 cm wide raised bed with Red Soil, FYM, Rice Husk & Sand",
+      "Crop Support: GI wire mesh support system for vertical plant guidance (₹2.4 Lakh)",
+      "Irrigation & Fogging: Drip irrigation, fogging system, fertigation & filtration head unit",
+      "Planting Material: Rooted cutting plants (80,000 Nos. @ ₹14/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Water Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (20-25cm Raised Bed with Red Soil, FYM, Sand)", cost: "₹4,80,000" },
+        { particular: "Rooted Cutting Plants (80,000 Nos. @ ₹14/plant)", cost: "₹11,20,000" },
+        { particular: "Crop Support System (GI Wire Mesh Support System)", cost: "₹2,40,000" }
+      ],
+      totalInvestment: "₹56,16,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (0.25L/plant/day)", cost: "₹20,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹50,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹1,60,000" },
+        { particular: "Labor Costs (8-10 persons/day)", cost: "₹6,40,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹1,40,000" },
+        { particular: "Packing Material, Transport & Sales Commission", cost: "₹1,92,000" },
+        { particular: "Farm Supervision (₹12,000/month)", cost: "₹1,44,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹1,20,000" }
+      ],
+      totalOperationalCost: "₹14,66,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "12 Flowers / Plant / Year (9,60,000 cut blooms/yr)",
+        sellingPrice: "₹3.50 Avg. Realization per Bloom",
+        grossRevenue: "₹33,60,000 / Year",
+        netReturnPerYear: "₹18,94,000 / Year"
+      }
+    }
   },
   {
     id: "dutch-rose",
@@ -576,57 +672,119 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     name: "Dutch Rose",
     type: "Flower",
     variety: "Top Secret, Taj Mahal, Gold Strike, Avalanche",
-    shortSummary: "Long-stem premium cut roses for elite floral markets with year-round harvest.",
-    overview: "Dutch roses are the quintessential high-value commercial floriculture crop grown under naturally ventilated or climate-controlled polyhouses. Protected conditions produce sturdy 60-90 cm stems with vibrant petal color and extended vase life, commanding peak prices on Valentine's and festive seasons.",
+    shortSummary: "Export-grade long stem cut rose yielding ₹7.57 Lakh net annual profit under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Dutch roses are the quintessential high-value commercial floriculture crop grown under naturally ventilated polyhouses with misting systems. Protected conditions produce sturdy 60-90 cm stems with vibrant petal color and extended vase life, producing 6,00,000 cut flowers per year from 30,000 top-grafted plants.",
     climateSuitability: "Naturally Ventilated Polyhouse with Top Mist Fogging",
-    yieldAdvantage: "Over 200-250 stems per square meter per year with predictable harvest cycles.",
+    yieldAdvantage: "Over 20 flowers per plant per year (6,00,000 cut stems/acre) with peak Valentine's rates.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/dutch-rose-1024x576.jpg",
     keyBenefits: [
-      "Continuous daily harvesting for up to 5-6 years",
-      "Peak festival rates surging up to ₹25-₹40 per stem",
-      "Fully covered under NHB & MIDH 50% subsidy schemes",
-      "Export grade quality with minimal pest infestation"
+      "Indicative Net Return: ₹7,57,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "Plant population: 7.5 plants/sq.m (30,000 top-grafted plants)",
+      "High yield: 20 flowers/plant (6,00,000 stems/year)",
+      "Qualifies for up to 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Density", value: "28,000 - 30,000 budded plants per acre" },
-      { label: "Harvest Window", value: "Starts in 70-80 days; continuous daily cuts" },
-      { label: "Annual Yield", value: "7 - 8 Lakh cut stems per acre per year" },
-      { label: "Average Realization", value: "₹6.00 - ₹12.00 per stem" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "7.5 plants/sq.m (30,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹44,76,000 (Structure & Plants)" },
+      { label: "Annual Operational Cost", value: "₹10,43,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹18,00,000 / Year (@ ₹3.00/flower)" },
+      { label: "Net Annual Return", value: "₹7,57,000 / Year" }
     ],
     cultivationGuidelines: [
-      "Bending Technique: Periodic shoot bending to build strong basal crown structure",
-      "Relative Humidity: 60-70% with active humidity control",
-      "Fertigation: High potassium feeding during budding and bloom formation"
-    ]
+      "Bed Height: 45 cm high & 90 cm wide raised bed with Red Soil, FYM, Rice Husk & Sand",
+      "Irrigation & Microclimate: Drip irrigation, misting system for temperature & humidity control, fertigation & filtration unit",
+      "Water Requirement: 0.9 litre/plant/day + misting + spraying",
+      "Planting Material: Top grafted plants (30,000 Nos. @ ₹10/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹825/sq.m)", cost: "₹33,76,000" },
+        { particular: "Drip Irrigation, Misting System, Fertigation & Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (45cm Raised Bed with Red Soil, FYM, Rice Husk, Sand)", cost: "₹4,00,000" },
+        { particular: "Top Grafted Plants (30,000 Nos. @ ₹10/plant)", cost: "₹3,00,000" }
+      ],
+      totalInvestment: "₹44,76,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (0.9L/plant/day)", cost: "₹27,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹50,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹80,000" },
+        { particular: "Labor Costs (3-4 persons/day)", cost: "₹4,32,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹60,000" },
+        { particular: "Packing Material, Transport & Sales Commission", cost: "₹1,80,000" },
+        { particular: "Farm Supervision (₹12,000/month)", cost: "₹1,44,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹70,000" }
+      ],
+      totalOperationalCost: "₹10,43,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "20 Flowers / Plant / Year (6,00,000 cut blooms/yr)",
+        sellingPrice: "₹3.00 Avg. Realization per Bloom",
+        grossRevenue: "₹18,00,000 / Year",
+        netReturnPerYear: "₹7,57,000 / Year"
+      }
+    }
   },
   {
     id: "colored-capsicum",
     slug: "colored-capsicum",
-    name: "Colored Capsicum (Sweet Bell Peppers)",
+    name: "Colored Capsicum (Yellow & Red Bell Peppers)",
     type: "Vegetable",
     variety: "Bachata, Inspiration, Orobelle, Pasarella",
-    shortSummary: "Yellow & Red Bell Peppers offering 4x higher margins than green capsicum.",
-    overview: "Cultivating sweet bell peppers (colored capsicum) under naturally ventilated polyhouses is one of India's most commercially lucrative horticulture ventures. Sheltered from excessive UV, sucking pests (thrips and mites), and monsoon blight, polyhouse capsicum plants grow up to 10-12 feet tall on trellises, producing glossy, four-lobed fruits with thick, crunchy pericarp walls.",
+    shortSummary: "Premium sweet bell peppers yielding ₹6.60 Lakh net annual profit under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Cultivating sweet bell peppers (colored capsicum) under naturally ventilated polyhouses is one of India's most commercially lucrative vegetable ventures. Sheltered from excessive UV, sucking pests (thrips and mites), and monsoon blight, polyhouse capsicum produces 25,000 kg per year with direct supermarket and hotel procurement.",
     climateSuitability: "Naturally Ventilated Polyhouse",
-    yieldAdvantage: "35 to 45 tons per acre under polyhouse vs 8 to 10 tons in open fields.",
+    yieldAdvantage: "25,000 kg harvest per acre under polyhouse at premium market rates of ₹60/kg.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/vecteezy_plants-in-greenhouse_12692792-1-1024x685.jpg",
     keyBenefits: [
-      "Yields up to 35-40 tons per acre inside polyhouse",
-      "Direct procurement from supermarket chains, hotels, and food aggregators",
-      "8-9 months extended harvesting season",
-      "Thick glossy walls reducing transit loss and increasing shelf life"
+      "Indicative Net Return: ₹6,60,400 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "High price realization: ₹60/kg average mandi & retail procurement",
+      "Total production: 25,000 kg per year (2.5 kg/plant)",
+      "Eligible for 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Population", value: "12,000 - 14,000 plants per acre (two-stem training system)" },
-      { label: "Harvest Window", value: "Starts at 65-75 days; harvested weekly for 8-9 months" },
-      { label: "Average Production", value: "35,000 - 45,000 kg per acre" },
-      { label: "Price Realization", value: "₹40 - ₹80 per kg depending on season and quality" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "3.0 plants/sq.m (10,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹43,36,000 (Structure & Seedlings)" },
+      { label: "Annual Operational Cost", value: "₹8,40,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹15,00,000 / Year (@ ₹60/kg)" },
+      { label: "Net Annual Return", value: "₹6,60,400 / Year" }
     ],
     cultivationGuidelines: [
-      "Trellising: Overhead GI support wires with vertical nylon twine clips",
-      "Pruning: Strict two-leader stem training, removing all side sucker branches",
-      "Fertigation: Regular calcium and potassium dosing to avoid blossom end rot"
-    ]
+      "Bed Height: 40 cm high & 90 cm wide raised bed with Red Soil, FYM, Rice Husk & Sand",
+      "Irrigation & Microclimate: Drip irrigation, fogging system, fertigation & filtration head unit",
+      "Water Requirement: 1.0 litre/plant/day + misting + spraying",
+      "Planting Material: Nursery hybrid seedlings (10,000 Nos. @ ₹10/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Water Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (40cm Raised Bed with Red Soil, FYM, Rice Husk, Sand)", cost: "₹4,60,000" },
+        { particular: "Nursery Seedling Plants (10,000 Nos. @ ₹10/plant)", cost: "₹1,00,000" }
+      ],
+      totalInvestment: "₹43,36,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (1.0L/plant/day)", cost: "₹20,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹50,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹1,20,000" },
+        { particular: "Labor Costs (3-4 persons/day)", cost: "₹3,00,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹50,000" },
+        { particular: "Packing Material, Transport & Sales Commission", cost: "₹1,20,000" },
+        { particular: "Farm Supervision (₹10,000/month)", cost: "₹1,00,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹80,000" }
+      ],
+      totalOperationalCost: "₹8,40,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "2.5 Kg / Plant / Year (25,000 Kg Total Production)",
+        sellingPrice: "₹60.00 Avg. Realization per Kg",
+        grossRevenue: "₹15,00,000 / Year",
+        netReturnPerYear: "₹6,60,400 / Year"
+      }
+    }
   },
   {
     id: "cucumber",
@@ -634,27 +792,59 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     name: "English Parthenocarpic Cucumber",
     type: "Vegetable",
     variety: "Hilton, Kian, Multistar, Satis",
-    shortSummary: "Seedless, crisp fruit harvestable in 30-35 days with rapid turnovers.",
-    overview: "Parthenocarpic (self-pollinating seedless) cucumbers are bred specifically for protected greenhouse cultivation without insect pollination. They grow rapidly, producing crisp, dark-green fruits at every node. Because of the rapid 30-day turnaround, farmers can produce 3 to 4 successive crop cycles per year.",
+    shortSummary: "Rapid 30-day turnaround cash crop yielding ₹6.68 Lakh net annual profit with 2 crop cycles under 4,000 sq.m naturally ventilated polyhouse.",
+    overview: "Parthenocarpic (self-pollinating seedless) cucumbers produce crisp, seedless, dark-green fruits at every node without insect pollination. With 2 successive crop cycles per year (10,000 plants per cycle = 20,000 plants/year), it delivers 1,00,000 kg total annual yield with fast cash generation.",
     climateSuitability: "Naturally Ventilated Polyhouse / Low Tunnel",
-    yieldAdvantage: "Continuous fruit setting at every leaf axil with 4x higher productivity than field cucumbers.",
+    yieldAdvantage: "1,00,000 kg fruit yield across 2 cycles per year with rapid 30-day harvest initiation.",
     image: "https://polyhubagro.com/wp-content/uploads/2024/07/fresh-cucumber-gathered-into-plastic-box-from-greenhouse-plants-1024x683.jpg",
     keyBenefits: [
-      "Harvest starts within 30-35 days of transplanting",
-      "Seedless and uniform fruit size favored by modern retail",
-      "3 to 4 crop cycles possible in a single year",
-      "High daily cash flow generation"
+      "Indicative Net Return: ₹6,68,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "Rapid harvest: First cut begins within 30-35 days of transplanting",
+      "2 crop cycles per year yielding 1,00,000 kg total fruit",
+      "Eligible for 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Density", value: "10,000 - 12,000 plants per acre" },
-      { label: "Cycle Duration", value: "90 - 100 days per crop cycle" },
-      { label: "Expected Yield", value: "25 - 30 tons per acre per cycle" }
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Cycles", value: "3 plants/sq.m (10,000 plants × 2 cycles = 20,000/yr)" },
+      { label: "Total Capital Investment", value: "₹43,12,000 (Structure & Seedlings)" },
+      { label: "Annual Operational Cost", value: "₹8,32,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹15,00,000 / Year (@ ₹15/kg)" },
+      { label: "Net Annual Return", value: "₹6,68,000 / Year" }
     ],
     cultivationGuidelines: [
-      "Trellising: Single vertical string training system",
-      "Pollination: Self-pollinating; insect-proof netting prevents unwanted insect cross-pollination",
-      "Harvesting: Morning harvest at tender 180-220g fruit weight"
-    ]
+      "Bed Height: 40 cm high & 90 cm wide raised bed with Red Soil, FYM, Rice Husk & Sand",
+      "Irrigation & Microclimate: Drip irrigation, fogging system, fertigation & filtration head unit",
+      "Water Requirement: 1.0 litre/plant/day + misting + spraying",
+      "Planting Material: Nursery hybrid seedlings (20,000 Nos./yr @ ₹8/plant)"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + Polyethylene @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Water Filtration Unit", cost: "₹4,00,000" },
+        { particular: "Growing System (40cm Raised Bed with Red Soil, FYM, Rice Husk, Sand)", cost: "₹4,00,000" },
+        { particular: "Nursery Seedling Plants (20,000 Nos. in 2 Cycles @ ₹8/plant)", cost: "₹1,60,000" }
+      ],
+      totalInvestment: "₹43,12,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying (1.0L/plant/day)", cost: "₹20,000" },
+        { particular: "Electricity & Generator (3.0 units/day)", cost: "₹50,000" },
+        { particular: "Water Soluble Fertilizers", cost: "₹1,12,000" },
+        { particular: "Labor Costs (2-3 persons/day)", cost: "₹2,00,000" },
+        { particular: "Crop Protection & Spraying", cost: "₹60,000" },
+        { particular: "Fruit Packing, Transport & Sales Commission", cost: "₹1,20,000" },
+        { particular: "Farm Supervision (₹10,000/month)", cost: "₹1,00,000" },
+        { particular: "Miscellaneous (Maintenance & Depreciation)", cost: "₹70,000" }
+      ],
+      totalOperationalCost: "₹8,32,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "5.0 Kg / Plant / Year in 2 Cycles (1,00,000 Kg Total Yield)",
+        sellingPrice: "₹15.00 Avg. Realization per Kg",
+        grossRevenue: "₹15,00,000 / Year",
+        netReturnPerYear: "₹6,68,000 / Year"
+      }
+    }
   },
   {
     id: "chrysanthemum",
@@ -662,21 +852,22 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     name: "Chrysanthemum",
     type: "Flower",
     variety: "Standard and Spray types (Yellow, White, Purple)",
-    shortSummary: "Massive festive and event consumption across India with quick turnaround.",
-    overview: "Chrysanthemums enjoy year-round commercial demand across Indian religious, wedding, and event markets. Cultivating chrysanthemums in naturally ventilated polyhouses allows precise photoperiod management (blackout curtains for day-length manipulation), resulting in off-season flowering when open-field prices skyrocket.",
-    climateSuitability: "Naturally Ventilated Polyhouse with Photoperiod Blackout System",
+    shortSummary: "Massive festive cut flower with rapid turnover and high volume commercial demand across India.",
+    overview: "Chrysanthemums enjoy year-round commercial demand across Indian religious, wedding, and event markets. Cultivating chrysanthemums in naturally ventilated polyhouses allows precise photoperiod management resulting in off-season flowering with multiple staggered cycles per year.",
+    climateSuitability: "Naturally Ventilated Polyhouse with Photoperiod System",
     yieldAdvantage: "Up to 3 crop cycles per year with predictable maturity windows timed with major festivals.",
     image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
     keyBenefits: [
-      "Quick harvest cycles with staggered plantings",
-      "High stem density per square meter",
+      "Quick harvest cycles with staggered plantings (90-110 days per cycle)",
+      "High stem density per square meter (80,000 - 1,00,000 stems/acre)",
       "Consistent mandi absorption throughout winter and festive months",
-      "Low seedling mortality rate in protected polyhouses"
+      "Qualifies for up to 50% capital subsidy under NHB & MIDH"
     ],
     economicsMetrics: [
-      { label: "Plant Population", value: "80,000 - 100,000 stems per acre per cycle" },
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Population", value: "80,000 - 1,00,000 stems per acre per cycle" },
       { label: "Crop Duration", value: "90 - 110 days per cycle (2-3 cycles annually)" },
-      { label: "Annual Revenue Cycle", value: "High turnover with rapid capital recovery within 12 months" }
+      { label: "Mandi Realization", value: "₹4.00 - ₹8.00 per stem (festive surges up to ₹15)" }
     ],
     cultivationGuidelines: [
       "Soil Requirement: Rich well-drained loamy soil, pH 6.0 - 6.8",
