@@ -174,34 +174,19 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right CTA Button & Phone */}
+        {/* Right CTA Button (Clean without phone number) */}
         <div className="hidden lg:flex items-center gap-3">
-          <a
-            href={`tel:${COMPANY_INFO.contacts.phone}`}
-            className="flex items-center gap-1.5 text-xs text-white/90 hover:text-[#C5B27D] font-semibold transition-colors px-2 py-1"
-          >
-            <Phone className="w-3.5 h-3.5 text-[#B5A16A]" />
-            <span>{COMPANY_INFO.contacts.phoneDisplay}</span>
-          </a>
-
           <Link
             href="/contact"
-            className="btn-gold py-2.5 px-4 rounded-xl text-xs font-bold inline-flex items-center gap-1.5 shadow-md active:scale-95 transition-all"
+            className="btn-gold py-2.5 px-5 rounded-xl text-xs font-bold inline-flex items-center gap-1.5 shadow-md active:scale-95 transition-all"
           >
             <span>Get Quote</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <div className="lg:hidden flex items-center gap-2">
-          <a
-            href={`tel:${COMPANY_INFO.contacts.phone}`}
-            className="p-2 rounded-xl bg-white/10 text-[#C5B27D] border border-white/10"
-            aria-label="Call PolyHub"
-          >
-            <Phone className="w-4 h-4" />
-          </a>
+        {/* Mobile Hamburger Button (Clean without phone icon) */}
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2.5 rounded-xl bg-white/10 text-white border border-white/10 hover:bg-white/20 transition-colors"
@@ -231,13 +216,7 @@ export default function Navbar() {
                 Poly<span className="text-[#C5B27D]">Hub</span>
               </span>
             </Link>
-            <div className="flex items-center gap-2">
-              <a
-                href={`tel:${COMPANY_INFO.contacts.phone}`}
-                className="p-2 rounded-xl bg-white/10 text-[#C5B27D] border border-white/10"
-              >
-                <Phone className="w-4 h-4" />
-              </a>
+            <div className="flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 rounded-xl bg-white/15 text-white border border-white/20 hover:bg-white/25"
