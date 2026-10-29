@@ -53,6 +53,26 @@ export interface CropEconomicsItem {
     value: string;
   }[];
   cultivationGuidelines: string[];
+  costEconomics?: {
+    area: string;
+    structureType: string;
+    capitalInvestment: {
+      particular: string;
+      cost: string;
+    }[];
+    totalInvestment: string;
+    annualOperationalCost: {
+      particular: string;
+      cost: string;
+    }[];
+    totalOperationalCost: string;
+    returnsAndProfitability: {
+      yieldBenchmark: string;
+      sellingPrice: string;
+      grossRevenue: string;
+      netReturnPerYear: string;
+    };
+  };
 }
 
 export const COMPANY_INFO = {
@@ -404,20 +424,81 @@ export const SERVICES_LIST: ServiceItem[] = [
 
 export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
   {
+    id: "anthurium",
+    slug: "anthurium",
+    name: "Anthurium",
+    type: "Flower",
+    variety: "Tropical Red, Fire, Sensazione, Pistache",
+    shortSummary: "High-value export flower yielding ₹21.65 Lakh net annual return under 4000 sq.m naturally ventilated polyhouse.",
+    overview: "Anthuriums are tropical evergreen perennials prized for their distinctive heart-shaped spathes and long vase life. Based on PolyHub's real project economics for a 4000 sq. meter (1 Acre) Naturally Ventilated Polyhouse under MIDH norms, anthurium cultivation provides outstanding recurring annual income with steady corporate and export market demand.",
+    climateSuitability: "Naturally Ventilated Polyhouse / 75% Shade Net House with Micro-fogging",
+    yieldAdvantage: "Continuous commercial production with up to 7 export-grade flowers per plant annually and minimal seasonal price fluctuation.",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/ANTHURIUM-poly.jpg",
+    keyBenefits: [
+      "Indicative Net Return: ₹21,65,000 per year on 4,000 Sq. Mtr (1.0 Acre)",
+      "High plant density: 10 plants/Sq.Mtr (40,000 tissue culture plants)",
+      "Long commercial lifespan of 6-7 consecutive years",
+      "Qualifies for up to 50% capital subsidy under NHB & MIDH norms"
+    ],
+    economicsMetrics: [
+      { label: "Polyhouse Area", value: "4,000 Sq. Mtr (1.0 Acre)" },
+      { label: "Plant Density & Count", value: "10 plants/sq.m (40,000 Plants)" },
+      { label: "Total Capital Investment", value: "₹99,76,000 (Incl. Structure & Plants)" },
+      { label: "Annual Operational Cost", value: "₹17,50,000 / Year" },
+      { label: "Gross Annual Returns", value: "₹39,15,000 / Year (@ ₹14.5/flower)" },
+      { label: "Net Annual Return", value: "₹21,65,000 / Year" }
+    ],
+    cultivationGuidelines: [
+      "Polyhouse Structure: Naturally Ventilated Polyhouse with 30% black shade net ceiling and micro-fogging",
+      "Growing System: Table stand with wire ropes (₹7 Lakh) and Coco shell bed preparation (₹4 Lakh)",
+      "Irrigation & Fertigation: Drip irrigation with automatic fertigation and water filtration (₹4 Lakh)",
+      "Climatic Management: 18°C - 28°C with 65-80% relative humidity, sheltered from direct harsh sunlight"
+    ],
+    costEconomics: {
+      area: "4,000 Sq. Mtr. (1.0 Acre)",
+      structureType: "Naturally Ventilated Polyhouse (MIDH Norms)",
+      capitalInvestment: [
+        { particular: "Polyhouse Construction (GI Pipe + 200µ UV Film @ ₹844/sq.m)", cost: "₹33,76,000" },
+        { particular: "30% Black Shade Net", cost: "₹1,00,000" },
+        { particular: "Drip Irrigation, Fogging, Fertigation & Filtration System", cost: "₹4,00,000" },
+        { particular: "Growing System (Table Stand with Wire Ropes & Coco Shells)", cost: "₹11,00,000" },
+        { particular: "Tissue Culture Plants (40,000 Nos. @ ₹125/plant)", cost: "₹50,00,000" }
+      ],
+      totalInvestment: "₹99,76,000",
+      annualOperationalCost: [
+        { particular: "Water, Misting & Spraying", cost: "₹30,000" },
+        { particular: "Electricity & Generator Operation", cost: "₹7,00,000" },
+        { particular: "Fertilizers & Nutrients", cost: "₹1,20,000" },
+        { particular: "Labor Costs (2-4 persons/day)", cost: "₹3,36,000" },
+        { particular: "Crop Protection & Fungicides", cost: "₹60,000" },
+        { particular: "Packing, Transport & Mandi Commission", cost: "₹5,40,000" },
+        { particular: "Farm Supervision & Management", cost: "₹1,44,000" },
+        { particular: "Miscellaneous Farm Maintenance", cost: "₹4,50,000" }
+      ],
+      totalOperationalCost: "₹17,50,000 / Year",
+      returnsAndProfitability: {
+        yieldBenchmark: "6 - 7 Flowers / Plant / Year (Average 2,70,000 blooms/yr)",
+        sellingPrice: "₹14.50 Avg. Realization per Bloom",
+        grossRevenue: "₹39,15,000 / Year",
+        netReturnPerYear: "₹21,65,000 / Year"
+      }
+    }
+  },
+  {
     id: "orchid",
     slug: "orchid",
     name: "Orchid",
     type: "Flower",
     variety: "Dendrobium, Phalaenopsis, Cymbidium",
-    shortSummary: "High-value crop with excellent market demand.",
-    overview: "Orchids are among the highest-revenue commercial floriculture crops in the international and domestic luxury gift markets. Cultivated in climate-controlled fan & pad or shaded structures, orchids require high relative humidity (60-80%) and filtered light. Because of their long flower vase life (up to 3-4 weeks), they command exceptional prices throughout wedding and holiday seasons.",
+    shortSummary: "High-value luxury crop with exceptional wedding and export market demand.",
+    overview: "Orchids are among the highest-revenue commercial floriculture crops in the international and domestic luxury gift markets. Cultivated in climate-controlled fan & pad or shaded structures, orchids require high relative humidity (60-80%) and filtered light. Because of their long flower vase life (up to 3-4 weeks), they command premium prices throughout wedding and holiday seasons.",
     climateSuitability: "Climate-Controlled Fan & Pad Polyhouse / 75% Shade Net",
     yieldAdvantage: "Continuous harvesting across 4-6 years from a single planting, yielding premium stem returns.",
-    image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/cultivation-of-orchid-flowers-in-poly-houses.jpg",
     keyBenefits: [
       "High market value & luxury gifting appeal",
       "Year-round controlled production window",
-      "Low water requirement with drip misting",
+      "Low water requirement with precision drip misting",
       "Excellent export potential to Middle-East & European flower auctions"
     ],
     economicsMetrics: [
@@ -433,63 +514,6 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     ]
   },
   {
-    id: "anthurium",
-    slug: "anthurium",
-    name: "Anthurium",
-    type: "Flower",
-    variety: "Tropical Red, Fire, Sensazione, Pistache",
-    shortSummary: "Long vase life cut flower with constant commercial returns.",
-    overview: "Anthuriums are tropical evergreen perennials prized for their distinctive heart-shaped spathes. Cultivated in 70-75% shade net houses or naturally ventilated polyhouses with micro-fogging, anthuriums produce consistent weekly stems year-round. Their resilience during cold storage and long transit makes them a favorite for corporate floristry.",
-    climateSuitability: "75% Shade Net House / Humidity Managed Polyhouse",
-    yieldAdvantage: "Continuous production with 6-8 blooms per plant annually and minimal seasonal price fluctuation.",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d69104a49?auto=format&fit=crop&w=800&q=80",
-    keyBenefits: [
-      "Shade-loving crop yielding for 4-5 consecutive years",
-      "Requires 75% shade net house infrastructure",
-      "Premium rates in corporate and hotel floristry",
-      "Minimal pesticide requirement in protected houses"
-    ],
-    economicsMetrics: [
-      { label: "Plant Density", value: "28,000 - 32,000 plants per acre" },
-      { label: "First Harvest", value: "6 - 8 months after planting" },
-      { label: "Annual Stem Output", value: "1.8 - 2.2 Lakh export quality cut flowers per acre" },
-      { label: "Average Realization", value: "₹20 - ₹40 per stem" }
-    ],
-    cultivationGuidelines: [
-      "Bed Preparation: Raised beds with cocopeat, composted pine bark, and gravel",
-      "Temperature Range: 18°C to 28°C; sensitive to temperatures below 14°C",
-      "Irrigation: Drip with overhead micro-sprinklers for relative humidity balancing"
-    ]
-  },
-  {
-    id: "chrysanthemum",
-    slug: "chrysanthemum",
-    name: "Chrysanthemum",
-    type: "Flower",
-    variety: "Standard and Spray types (Yellow, White, Purple)",
-    shortSummary: "Massive festive and event consumption across India.",
-    overview: "Chrysanthemums enjoy year-round commercial demand across Indian religious, wedding, and event markets. Cultivating chrysanthemums in naturally ventilated polyhouses allows precise photoperiod management (blackout curtains for day-length manipulation), resulting in off-season flowering when open-field prices skyrocket.",
-    climateSuitability: "Naturally Ventilated Polyhouse with Photoperiod Blackout System",
-    yieldAdvantage: "Up to 3 crop cycles per year with predictable maturity windows timed with major festivals.",
-    image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
-    keyBenefits: [
-      "Quick harvest cycles with staggered plantings",
-      "High stem density per square meter",
-      "Consistent mandi absorption throughout winter and festive months",
-      "Low seedling mortality rate in protected polyhouses"
-    ],
-    economicsMetrics: [
-      { label: "Plant Population", value: "80,000 - 100,000 stems per acre per cycle" },
-      { label: "Crop Duration", value: "90 - 110 days per cycle (2-3 cycles annually)" },
-      { label: "Annual Revenue Cycle", value: "High turnover with rapid capital recovery within 12 months" }
-    ],
-    cultivationGuidelines: [
-      "Soil Requirement: Rich well-drained loamy soil, pH 6.0 - 6.8",
-      "Support Netting: 2-3 tiers of horizontal nylon flower support netting as stems grow",
-      "Light Manipulation: Night break lighting or black-out curtains for scheduled bud initiation"
-    ]
-  },
-  {
     id: "gerbera",
     slug: "gerbera",
     name: "Gerbera",
@@ -499,7 +523,7 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     overview: "Gerbera is the backbone of the commercial Indian cut-flower industry. In climate-controlled or well-ventilated polyhouses, each plant yields 35 to 45 pristine stems annually for over 30 to 36 months. Protected structures eliminate rain-splash soil contamination, which is the primary cause of crown rot in open fields.",
     climateSuitability: "Naturally Ventilated Polyhouse / Climate Controlled",
     yieldAdvantage: "Daily harvest rhythm with 3x higher premium grade stems compared to open fields.",
-    image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/gerbera-cultivation-in-polyhouse-1365450.jpg",
     keyBenefits: [
       "Daily harvest yield for up to 3 years",
       "30-40 blooms per plant per year in fan & pad setups",
@@ -528,7 +552,7 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     overview: "Carnations demand cool night temperatures and low relative humidity, making them prime candidates for protected cultivation in hilly zones or fan & pad polyhouses in the plains. With high planting density and pinch-pruning techniques, growers achieve multiple flushes of long, sturdy stems suitable for export.",
     climateSuitability: "Fan & Pad Evaporative Polyhouse / High-Elevation Polyhouse",
     yieldAdvantage: "Dense canopy yields up to 200 stems per square meter annually with long post-harvest vase life.",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/carnation-plantation-in-polyhouse-1024x575.jpg",
     keyBenefits: [
       "Cold tolerant under naturally ventilated polyhouses",
       "Very long shelf-life during transit and cold storage",
@@ -547,16 +571,45 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     ]
   },
   {
+    id: "dutch-rose",
+    slug: "dutch-rose",
+    name: "Dutch Rose",
+    type: "Flower",
+    variety: "Top Secret, Taj Mahal, Gold Strike, Avalanche",
+    shortSummary: "Long-stem premium cut roses for elite floral markets with year-round harvest.",
+    overview: "Dutch roses are the quintessential high-value commercial floriculture crop grown under naturally ventilated or climate-controlled polyhouses. Protected conditions produce sturdy 60-90 cm stems with vibrant petal color and extended vase life, commanding peak prices on Valentine's and festive seasons.",
+    climateSuitability: "Naturally Ventilated Polyhouse with Top Mist Fogging",
+    yieldAdvantage: "Over 200-250 stems per square meter per year with predictable harvest cycles.",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/dutch-rose-1024x576.jpg",
+    keyBenefits: [
+      "Continuous daily harvesting for up to 5-6 years",
+      "Peak festival rates surging up to ₹25-₹40 per stem",
+      "Fully covered under NHB & MIDH 50% subsidy schemes",
+      "Export grade quality with minimal pest infestation"
+    ],
+    economicsMetrics: [
+      { label: "Plant Density", value: "28,000 - 30,000 budded plants per acre" },
+      { label: "Harvest Window", value: "Starts in 70-80 days; continuous daily cuts" },
+      { label: "Annual Yield", value: "7 - 8 Lakh cut stems per acre per year" },
+      { label: "Average Realization", value: "₹6.00 - ₹12.00 per stem" }
+    ],
+    cultivationGuidelines: [
+      "Bending Technique: Periodic shoot bending to build strong basal crown structure",
+      "Relative Humidity: 60-70% with active humidity control",
+      "Fertigation: High potassium feeding during budding and bloom formation"
+    ]
+  },
+  {
     id: "colored-capsicum",
     slug: "colored-capsicum",
-    name: "Colored Capsicum (Yellow & Red Bell Peppers)",
+    name: "Colored Capsicum (Sweet Bell Peppers)",
     type: "Vegetable",
     variety: "Bachata, Inspiration, Orobelle, Pasarella",
     shortSummary: "Yellow & Red Bell Peppers offering 4x higher margins than green capsicum.",
     overview: "Cultivating sweet bell peppers (colored capsicum) under naturally ventilated polyhouses is one of India's most commercially lucrative horticulture ventures. Sheltered from excessive UV, sucking pests (thrips and mites), and monsoon blight, polyhouse capsicum plants grow up to 10-12 feet tall on trellises, producing glossy, four-lobed fruits with thick, crunchy pericarp walls.",
     climateSuitability: "Naturally Ventilated Polyhouse",
     yieldAdvantage: "35 to 45 tons per acre under polyhouse vs 8 to 10 tons in open fields.",
-    image: "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=800&q=80",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/vecteezy_plants-in-greenhouse_12692792-1-1024x685.jpg",
     keyBenefits: [
       "Yields up to 35-40 tons per acre inside polyhouse",
       "Direct procurement from supermarket chains, hotels, and food aggregators",
@@ -585,7 +638,7 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     overview: "Parthenocarpic (self-pollinating seedless) cucumbers are bred specifically for protected greenhouse cultivation without insect pollination. They grow rapidly, producing crisp, dark-green fruits at every node. Because of the rapid 30-day turnaround, farmers can produce 3 to 4 successive crop cycles per year.",
     climateSuitability: "Naturally Ventilated Polyhouse / Low Tunnel",
     yieldAdvantage: "Continuous fruit setting at every leaf axil with 4x higher productivity than field cucumbers.",
-    image: "https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&w=800&q=80",
+    image: "https://polyhubagro.com/wp-content/uploads/2024/07/fresh-cucumber-gathered-into-plastic-box-from-greenhouse-plants-1024x683.jpg",
     keyBenefits: [
       "Harvest starts within 30-35 days of transplanting",
       "Seedless and uniform fruit size favored by modern retail",
@@ -604,31 +657,31 @@ export const CROPS_ECONOMICS_LIST: CropEconomicsItem[] = [
     ]
   },
   {
-    id: "betel-vine",
-    slug: "betel-vine",
-    name: "Betel Vine (Paan Cultivation)",
-    type: "Vegetable",
-    variety: "Meetha Paan, Magahi, Desi Varieties",
-    shortSummary: "Traditional high-value crop protected from scorching sun and dry winds.",
-    overview: "Betel vine (Paan) cultivation requires sheltered humidity, moderate warmth, and filtered sunlight. PolyHub's 75% shade net houses provide the ideal microclimate, shielding tender climbing vines from summer scorching and dry winds, while reducing irrigation demand and preventing leaf spot diseases.",
-    climateSuitability: "75% Shade Net House",
-    yieldAdvantage: "Higher leaf luster, uniform sizing, and continuous plucking throughout the year.",
-    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    id: "chrysanthemum",
+    slug: "chrysanthemum",
+    name: "Chrysanthemum",
+    type: "Flower",
+    variety: "Standard and Spray types (Yellow, White, Purple)",
+    shortSummary: "Massive festive and event consumption across India with quick turnaround.",
+    overview: "Chrysanthemums enjoy year-round commercial demand across Indian religious, wedding, and event markets. Cultivating chrysanthemums in naturally ventilated polyhouses allows precise photoperiod management (blackout curtains for day-length manipulation), resulting in off-season flowering when open-field prices skyrocket.",
+    climateSuitability: "Naturally Ventilated Polyhouse with Photoperiod Blackout System",
+    yieldAdvantage: "Up to 3 crop cycles per year with predictable maturity windows timed with major festivals.",
+    image: "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80",
     keyBenefits: [
-      "Consistent humidity retention",
-      "Protection from destructive winds and hail",
-      "Higher market price for tender, unblemished leaves",
-      "Continuous plucking for several consecutive years"
+      "Quick harvest cycles with staggered plantings",
+      "High stem density per square meter",
+      "Consistent mandi absorption throughout winter and festive months",
+      "Low seedling mortality rate in protected polyhouses"
     ],
     economicsMetrics: [
-      { label: "Canopy Management", value: "Vertical bamboo / GI trellis climbing arrays" },
-      { label: "Harvest Frequency", value: "Weekly leaf harvesting year-round" },
-      { label: "Commercial Viability", value: "High local mandi demand with zero cold storage reliance" }
+      { label: "Plant Population", value: "80,000 - 100,000 stems per acre per cycle" },
+      { label: "Crop Duration", value: "90 - 110 days per cycle (2-3 cycles annually)" },
+      { label: "Annual Revenue Cycle", value: "High turnover with rapid capital recovery within 12 months" }
     ],
     cultivationGuidelines: [
-      "Shading: 70% to 75% monofilament shade netting",
-      "Soil moisture: Constant moist root zone through low-pressure drippers",
-      "Protection: Enclosed insect net borders preventing chewing insects"
+      "Soil Requirement: Rich well-drained loamy soil, pH 6.0 - 6.8",
+      "Support Netting: 2-3 tiers of horizontal nylon flower support netting as stems grow",
+      "Light Manipulation: Night break lighting or black-out curtains for scheduled bud initiation"
     ]
   }
 ];

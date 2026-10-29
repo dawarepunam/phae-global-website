@@ -4,7 +4,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 import { CROPS_ECONOMICS_LIST } from "@/data/polyhubData";
-import { CheckCircle2, ArrowLeft, Send, TrendingUp, Sun, Sparkles } from "lucide-react";
+import { 
+  CheckCircle2, 
+  ArrowLeft, 
+  Send, 
+  TrendingUp, 
+  Sun, 
+  Calculator, 
+  Coins, 
+  FileText, 
+  IndianRupee, 
+  ShieldCheck,
+  Building
+} from "lucide-react";
 
 interface CropPageProps {
   params: Promise<{
@@ -46,7 +58,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
     <div className="bg-[#F5F2E9] min-h-screen pb-24">
       <PageBanner
         title={crop.name}
-        subtitle={`${crop.type} Cultivation Economics`}
+        subtitle={`${crop.type} Cultivation Economics & Financial Viability`}
         breadcrumbItems={[
           { label: "Economics", href: "/economics" },
           { label: crop.name },
@@ -59,25 +71,26 @@ export default async function CropDetailPage({ params }: CropPageProps) {
         {/* Back Link */}
         <Link
           href="/economics"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#183F32] hover:text-[#B5A16A] mb-8 transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#183F32] hover:text-[#B5A16A] mb-8 transition-colors group"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Crops Economics</span>
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        {/* Top Split: Left Content, Right Media & Quick Summary */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
           
           {/* Left Column: Crop Overview */}
           <div className="lg:col-span-7 space-y-6">
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md space-y-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${
                   crop.type === "Flower" ? "bg-pink-700 text-white" : "bg-[#183F32] text-white"
                 }`}>
                   {crop.type}
                 </span>
                 <span className="text-xs text-slate-500 font-semibold">
-                  Common Commercial Varieties: {crop.variety}
+                  Commercial Varieties: {crop.variety}
                 </span>
               </div>
 
@@ -114,7 +127,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
               <div className="space-y-3">
                 {crop.cultivationGuidelines.map((guide, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-[#F5F2E9] text-xs text-slate-700 font-medium">
+                  <div key={idx} className="p-3.5 rounded-2xl bg-[#F5F2E9] text-xs text-slate-700 font-medium border border-slate-200/50">
                     {guide}
                   </div>
                 ))}
@@ -123,15 +136,19 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
           </div>
 
-          {/* Right Column: Economics Table & DPR Action */}
+          {/* Right Column: Image & Quick Metrics */}
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
-              <div className="h-64 sm:h-72 w-full overflow-hidden">
+              <div className="h-64 sm:h-80 w-full overflow-hidden relative">
                 <img
                   src={crop.image}
                   alt={crop.name}
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40" />
+                <div className="absolute bottom-3 left-4 right-4 text-white text-xs font-medium">
+                  PolyHub Engineering Protected Crop System
+                </div>
               </div>
             </div>
 
@@ -158,13 +175,13 @@ export default async function CropDetailPage({ params }: CropPageProps) {
               <div className="pt-4 border-t border-slate-100">
                 <Link
                   href="/contact"
-                  className="btn-gold w-full text-center py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
+                  className="btn-gold w-full text-center py-3.5 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-sm"
                 >
                   <Send className="w-4 h-4" />
                   <span>Request Full Crop DPR & Cost Sheet</span>
                 </Link>
                 <p className="text-[11px] text-center text-slate-500 mt-2">
-                  DPR formulated to support bank loans and NHB subsidy applications
+                  DPR formulated to support bank loans and NHB / MIDH subsidies
                 </p>
               </div>
             </div>
@@ -173,8 +190,152 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
         </div>
 
+        {/* Detailed Financial & Cost Economics Table (If Available, e.g. for Anthurium) */}
+        {crop.costEconomics && (
+          <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-xl space-y-8">
+            <div className="border-b border-slate-200 pb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A] bg-[#B5A16A]/10 px-3 py-1 rounded-full">
+                  Detailed Project Economics Report
+                </span>
+                <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+                  Commercial Cost & Return Analysis (1.0 Acre / {crop.costEconomics.area})
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                  Structure: <span className="font-bold text-[#183F32]">{crop.costEconomics.structureType}</span> | Conforming to NHB & MIDH Norms
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <Link
+                  href="/subsidy"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#183F32]/10 text-[#183F32] hover:bg-[#183F32] hover:text-white text-xs font-bold transition-colors"
+                >
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Check 50% Subsidy</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="btn-gold px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-1.5"
+                >
+                  <FileText className="w-4 h-4" />
+                  <span>Get Official DPR</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Section A: Capital Investment */}
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Building className="w-5 h-5 text-[#183F32]" />
+                <h4 className="text-lg font-bold text-[#102C24]">
+                  Part A: Capital Investment & Polyhouse Infrastructure
+                </h4>
+              </div>
+              <div className="overflow-x-auto rounded-2xl border border-slate-200">
+                <table className="w-full text-left text-xs sm:text-sm">
+                  <thead className="bg-[#183F32] text-white">
+                    <tr>
+                      <th className="py-3 px-4 font-bold">Particulars / Component</th>
+                      <th className="py-3 px-4 font-bold text-right">Investment (INR)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {crop.costEconomics.capitalInvestment.map((item, idx) => (
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F5F2E9]/40"}>
+                        <td className="py-3 px-4 text-slate-700 font-medium">{item.particular}</td>
+                        <td className="py-3 px-4 text-slate-900 font-bold text-right">{item.cost}</td>
+                      </tr>
+                    ))}
+                    <tr className="bg-[#183F32]/10 font-black text-sm text-[#102C24]">
+                      <td className="py-3.5 px-4">TOTAL CAPITAL INVESTMENT (A)</td>
+                      <td className="py-3.5 px-4 text-right text-[#183F32] text-base">{crop.costEconomics.totalInvestment}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Section B: Annual Operational Cost */}
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Calculator className="w-5 h-5 text-[#183F32]" />
+                <h4 className="text-lg font-bold text-[#102C24]">
+                  Part B: Annual Cultivation & Operational Costs
+                </h4>
+              </div>
+              <div className="overflow-x-auto rounded-2xl border border-slate-200">
+                <table className="w-full text-left text-xs sm:text-sm">
+                  <thead className="bg-[#102C24] text-white">
+                    <tr>
+                      <th className="py-3 px-4 font-bold">Cost Component</th>
+                      <th className="py-3 px-4 font-bold text-right">Estimated Cost / Year</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-200">
+                    {crop.costEconomics.annualOperationalCost.map((item, idx) => (
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F5F2E9]/40"}>
+                        <td className="py-3 px-4 text-slate-700 font-medium">{item.particular}</td>
+                        <td className="py-3 px-4 text-slate-900 font-bold text-right">{item.cost}</td>
+                      </tr>
+                    ))}
+                    <tr className="bg-[#183F32]/10 font-black text-sm text-[#102C24]">
+                      <td className="py-3.5 px-4">TOTAL ANNUAL OPERATING COST (B)</td>
+                      <td className="py-3.5 px-4 text-right text-[#183F32] text-base">{crop.costEconomics.totalOperationalCost}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Section C: Net Revenue & Returns */}
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <IndianRupee className="w-5 h-5 text-[#B5A16A]" />
+                <h4 className="text-lg font-bold text-[#102C24]">
+                  Part C: Projected Commercial Returns & Net Profitability
+                </h4>
+              </div>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Average Yield</span>
+                  <span className="text-sm font-black text-[#102C24] mt-1 block">
+                    {crop.costEconomics.returnsAndProfitability.yieldBenchmark}
+                  </span>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Selling Price</span>
+                  <span className="text-sm font-black text-[#102C24] mt-1 block">
+                    {crop.costEconomics.returnsAndProfitability.sellingPrice}
+                  </span>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Gross Revenue / Year</span>
+                  <span className="text-base font-black text-[#183F32] mt-1 block">
+                    {crop.costEconomics.returnsAndProfitability.grossRevenue}
+                  </span>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-[#183F32] text-white shadow-md">
+                  <span className="text-xs text-[#B5A16A] font-bold uppercase tracking-wider block">Net Return / Year</span>
+                  <span className="text-xl font-black text-white mt-1 block">
+                    {crop.costEconomics.returnsAndProfitability.netReturnPerYear}
+                  </span>
+                </div>
+              </div>
+
+              <p className="text-[11px] text-slate-500 mt-3 italic">
+                * Note: The financial projections above are indicative models based on standard agronomic practices and prevailing Indian market prices. Actual figures vary depending on management proficiency, region, and festive price surges.
+              </p>
+            </div>
+
+          </div>
+        )}
+
       </div>
     </div>
   );
 }
-
