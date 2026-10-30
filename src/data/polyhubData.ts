@@ -92,7 +92,7 @@ export const COMPANY_INFO = {
     phoneDisplay: "+91 78149 10934",
     email: "contact@polyhubagro.com",
     corporateOffice: "SCO-63, First Floor, D.A.C., Near Mini-Secretariat, Patiala, Punjab - 147001",
-    salesOffice: "104 Niche Facade, New Airport Road, Viman Nagar, Pune, Maharashtra - 411014",
+    salesOffice: "JMKC GROUP, OFFICE NO. 701 C, 7th Floor, EAST COURT, PHOENIX MARKET CITY, VIMAN NAGAR, PUNE 411014",
     whatsapp: "917814910934"
   }
 };

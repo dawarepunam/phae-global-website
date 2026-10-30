@@ -86,9 +86,9 @@ export default function ContactPage() {
     pune: {
       name: "Pune Sales Office",
       address: COMPANY_INFO.contacts.salesOffice,
-      query: "104 Niche Facade, New Airport Road, Viman Nagar, Pune, Maharashtra 411014",
+      query: "JMKC GROUP, OFFICE NO. 701 C, 7th Floor, EAST COURT, PHOENIX MARKET CITY, VIMAN NAGAR, PUNE 411014",
       city: "Pune, Maharashtra",
-      embedUrl: "https://maps.google.com/maps?q=Viman%20Nagar%2C%20Pune%2C%20Maharashtra%20411014&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      embedUrl: "https://maps.google.com/maps?q=East%20Court%2C%20Phoenix%20Marketcity%2C%20Viman%20Nagar%2C%20Pune%2C%20Maharashtra%20411014&t=&z=15&ie=UTF8&iwloc=&output=embed"
     }
   };
 
@@ -349,7 +349,7 @@ export default function ContactPage() {
                   )}
                 </div>
                 <p className="text-[11px] text-slate-700 leading-relaxed pl-5 mt-1.5">
-                  104 Niche Facade, New Airport Road, Viman Nagar, Pune - 411014
+                  JMKC GROUP, OFFICE NO. 701 C, 7th Floor, EAST COURT, PHOENIX MARKET CITY, VIMAN NAGAR, PUNE 411014
                 </p>
                 <div className="pl-5 pt-1.5">
                   <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#183F32]">
