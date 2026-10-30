@@ -25,7 +25,7 @@ export default function Subsidy() {
             
             {/* Left Column: Schemes Overview */}
             <div className="lg:col-span-5 space-y-5">
-              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/10">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#0056B3]/10">
                 CAPITAL ASSISTANCE
               </span>
               

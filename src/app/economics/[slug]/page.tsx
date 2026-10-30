@@ -208,7 +208,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
               <div className="flex items-center gap-3">
                 <Link
                   href="/subsidy"
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#004B87]/10 text-[#004B87] hover:bg-[#004B87] hover:text-white text-xs font-bold transition-colors"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#004B87]/10 text-[#004B87] hover:bg-[#0056B3] hover:text-white text-xs font-bold transition-colors"
                 >
                   <ShieldCheck className="w-4 h-4" />
                   <span>Check 50% Subsidy</span>

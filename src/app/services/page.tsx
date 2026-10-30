@@ -64,7 +64,7 @@ export default function ServicesPage() {
 
                   <div className="p-6 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#004B87] transition-colors">
+                      <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#0056B3] transition-colors">
                         {service.title}
                       </h3>
                       <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed min-h-[4rem] line-clamp-3">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                 <div className="p-6 pt-0 mt-auto">
                   <Link
                     href={`/services/${service.slug}`}
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#004B87] text-[#004B87] hover:bg-[#004B87] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#0056B3] text-[#004B87] hover:bg-[#0056B3] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
                   >
                     <span>Explore Full Process & Scope</span>
                     <ArrowRight className="w-4 h-4 ml-auto" />

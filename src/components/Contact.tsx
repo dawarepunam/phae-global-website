@@ -124,7 +124,7 @@ export default function Contact() {
 
             {submitted ? (
               <div className="py-12 text-center space-y-3">
-                <div className="w-14 h-14 rounded-full bg-emerald-100 text-[#004B87] flex items-center justify-center mx-auto">
+                <div className="w-14 h-14 rounded-full bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h4 className="text-lg font-bold text-[#0A1128]">Inquiry Sent Successfully!</h4>

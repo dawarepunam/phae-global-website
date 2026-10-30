@@ -142,7 +142,7 @@ export default function GalleryPage() {
           {/* Prev Slide Arrow */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
+            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#0056B3] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -150,7 +150,7 @@ export default function GalleryPage() {
           {/* Next Slide Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
+            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#0056B3] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
           >
             <ChevronRight className="w-6 h-6" />
           </button>

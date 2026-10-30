@@ -71,7 +71,7 @@ export default function EconomicsPage() {
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#004B87] transition-colors">
+                    <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#0056B3] transition-colors">
                       {crop.name}
                     </h3>
 
@@ -93,7 +93,7 @@ export default function EconomicsPage() {
               <div className="p-6 pt-0 mt-auto">
                 <Link
                   href={`/economics/${crop.slug}`}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#004B87] text-[#004B87] hover:bg-[#004B87] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#0056B3] text-[#004B87] hover:bg-[#0056B3] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
                 >
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>View Economics & Yield Metrics</span>

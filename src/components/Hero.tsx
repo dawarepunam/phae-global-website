@@ -253,7 +253,7 @@ export default function Hero() {
                 return (
                   <div
                     key={i}
-                    className={`bg-gradient-to-br ${card.color} backdrop-blur-xl bg-[#0D2419]/60 border border-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#B5A16A]/40 hover:bg-[#004B87]/50 transition-all duration-300 cursor-default`}
+                    className={`bg-gradient-to-br ${card.color} backdrop-blur-xl bg-[#0F1F3D]/70 border border-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#B5A16A]/40 hover:bg-[#0056B3]/50 transition-all duration-300 cursor-default`}
                   >
                     <div className="w-11 h-11 rounded-xl bg-[#004B87] border border-[#B5A16A]/25 flex items-center justify-center text-[#C5B27D] shrink-0">
                       <Icon className="w-5 h-5" />
@@ -271,7 +271,7 @@ export default function Hero() {
               })}
 
               {/* Quick Stats */}
-              <div className="mt-2 bg-[#0D2419]/70 backdrop-blur-xl border border-[#B5A16A]/20 rounded-2xl p-4 grid grid-cols-3 gap-3 text-center shadow-xl">
+              <div className="mt-2 bg-[#0F1F3D]/80 backdrop-blur-xl border border-[#B5A16A]/20 rounded-2xl p-4 grid grid-cols-3 gap-3 text-center shadow-xl">
                 {[
                   { val: "10+", label: "Years" },
                   { val: "300+", label: "Projects" },
@@ -309,7 +309,7 @@ export default function Hero() {
           onClick={() => setVideoModalOpen(false)}
         >
           <div
-            className="relative w-full max-w-4xl bg-[#0D2419] rounded-3xl overflow-hidden border border-[#B5A16A]/40 shadow-2xl flex flex-col"
+            className="relative w-full max-w-4xl bg-[#0A1128] rounded-3xl overflow-hidden border border-[#B5A16A]/40 shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Bar */}

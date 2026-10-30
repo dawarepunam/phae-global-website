@@ -128,7 +128,7 @@ export default function AboutClient() {
 
           {/* ── Left: Text Content ── */}
           <div className="space-y-6 order-2 lg:order-1">
-            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 border border-[#004B87]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 border border-[#0056B3]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
               <Sprout className="w-3.5 h-3.5 shrink-0" />
               WHO WE ARE — PIONEERING SUSTAINABLE AGRICULTURE
             </span>
@@ -159,7 +159,7 @@ export default function AboutClient() {
               ].map((m) => (
                 <div
                   key={m.label}
-                  className="p-3 sm:p-4 rounded-2xl bg-white border border-[#004B87]/10 shadow-sm text-center"
+                  className="p-3 sm:p-4 rounded-2xl bg-white border border-[#0056B3]/10 shadow-sm text-center"
                 >
                   <div className="text-xl sm:text-2xl font-black text-[#004B87]">{m.val}</div>
                   <div className="text-[10px] sm:text-[11px] font-semibold text-slate-600 mt-1">{m.label}</div>
@@ -177,7 +177,7 @@ export default function AboutClient() {
               </Link>
               <button
                 onClick={() => { setReelOpen(true); setReelIndex(0); setProgress(0); setIsPlaying(true); }}
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl border-2 border-[#004B87] text-[#004B87] text-xs sm:text-sm font-bold hover:bg-[#004B87] hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl border-2 border-[#0056B3] text-[#004B87] text-xs sm:text-sm font-bold hover:bg-[#0056B3] hover:text-white transition-all"
               >
                 <Play className="w-4 h-4 shrink-0 fill-current" />
                 <span>Watch Project Reel</span>

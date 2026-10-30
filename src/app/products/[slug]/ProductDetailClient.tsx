@@ -78,7 +78,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     onClick={() => setActiveImage(imgUrl)}
                     className={`h-20 sm:h-24 rounded-2xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                       isActive 
-                        ? "border-[#004B87] ring-2 ring-[#004B87]/20 scale-[0.98]" 
+                        ? "border-[#0056B3] ring-2 ring-[#004B87]/20 scale-[0.98]" 
                         : "border-slate-200 hover:border-[#B5A16A] opacity-80 hover:opacity-100"
                     }`}
                   >
@@ -97,7 +97,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           )}
 
           {/* Recommended Crops Suitability Callout */}
-          <div className="p-6 rounded-2xl bg-white border border-[#004B87]/10 shadow-sm">
+          <div className="p-6 rounded-2xl bg-white border border-[#0056B3]/10 shadow-sm">
             <h3 className="text-xs font-bold uppercase tracking-wider text-[#004B87] mb-1.5">
               Recommended Crops & Cultivation Suitability
             </h3>

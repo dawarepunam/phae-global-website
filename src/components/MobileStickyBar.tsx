@@ -27,7 +27,7 @@ export default function MobileStickyBar() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-20 sm:bottom-6 right-5 z-40 p-3 rounded-full bg-[#0A1128]/90 text-white shadow-xl hover:bg-[#004B87] transition-all hover:scale-105 active:scale-95 border border-[#B5A16A]/30"
+          className="fixed bottom-20 sm:bottom-6 right-5 z-40 p-3 rounded-full bg-[#0A1128]/90 text-white shadow-xl hover:bg-[#0056B3] transition-all hover:scale-105 active:scale-95 border border-[#B5A16A]/30"
         >
           <ArrowUp className="w-5 h-5 text-[#C5B27D]" />
         </button>

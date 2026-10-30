@@ -147,7 +147,7 @@ export default function Navbar() {
                         <Link
                           key={sub.name}
                           href={sub.href}
-                          className="flex items-center justify-between px-3 py-2 text-xs text-slate-200 hover:text-white hover:bg-[#004B87]/80 rounded-lg transition-colors"
+                          className="flex items-center justify-between px-3 py-2 text-xs text-slate-200 hover:text-white hover:bg-[#0056B3]/80 rounded-lg transition-colors"
                         >
                           <span className="line-clamp-1">{sub.name}</span>
                           {sub.badge && (

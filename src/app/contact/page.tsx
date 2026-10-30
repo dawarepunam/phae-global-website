@@ -149,7 +149,7 @@ export default function ContactPage() {
             alt="PHAE Global Greenhouse Engineering"
             className="w-full h-full object-cover object-center opacity-30 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0D2419] via-[#0A1128]/92 to-[#004B87]/85" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#060B18] via-[#0A1128]/95 to-[#0B3A6E]/85" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128] via-transparent to-transparent" />
         </div>
 
@@ -298,7 +298,7 @@ export default function ContactPage() {
                 onClick={() => setActiveOffice("punjab")}
                 className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                   activeOffice === "punjab" 
-                    ? "bg-[#004B87]/10 border-[#004B87] shadow-sm" 
+                    ? "bg-[#004B87]/10 border-[#0056B3] shadow-sm" 
                     : "bg-[#F0F4F8] border-slate-200 hover:border-slate-300"
                 }`}
               >
@@ -331,7 +331,7 @@ export default function ContactPage() {
                 onClick={() => setActiveOffice("pune")}
                 className={`p-3.5 rounded-2xl border transition-all cursor-pointer ${
                   activeOffice === "pune" 
-                    ? "bg-[#004B87]/10 border-[#004B87] shadow-sm" 
+                    ? "bg-[#004B87]/10 border-[#0056B3] shadow-sm" 
                     : "bg-[#F0F4F8] border-slate-200 hover:border-slate-300"
                 }`}
               >
@@ -382,7 +382,7 @@ export default function ContactPage() {
 
             {submitted ? (
               <div className="py-12 text-center space-y-4">
-                <div className="w-16 h-16 rounded-full bg-emerald-100 text-[#004B87] flex items-center justify-center mx-auto shadow-inner">
+                <div className="w-16 h-16 rounded-full bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center mx-auto shadow-inner">
                   <CheckCircle2 className="w-9 h-9" />
                 </div>
                 <h4 className="text-xl font-black text-[#0A1128]">Inquiry Submitted Successfully!</h4>
@@ -391,7 +391,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-4 px-6 py-2.5 rounded-xl bg-[#0A1128] text-white text-xs font-bold hover:bg-[#004B87] transition-colors"
+                  className="mt-4 px-6 py-2.5 rounded-xl bg-[#0A1128] text-white text-xs font-bold hover:bg-[#0056B3] transition-colors"
                 >
                   Submit Another Inquiry
                 </button>
@@ -509,14 +509,14 @@ export default function ContactPage() {
                 <button
                   onClick={() => setCurrentLeaderIdx((prev) => (prev - 1 + leadershipPartners.length) % leadershipPartners.length)}
                   aria-label="Previous Partner"
-                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center transition-colors"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#0056B3] text-white flex items-center justify-center transition-colors"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setCurrentLeaderIdx((prev) => (prev + 1) % leadershipPartners.length)}
                   aria-label="Next Partner"
-                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center transition-colors"
+                  className="w-7 h-7 rounded-full bg-white/10 hover:bg-[#0056B3] text-white flex items-center justify-center transition-colors"
                 >
                   <ChevronRight className="w-4 h-4" />
                 </button>
@@ -616,7 +616,7 @@ export default function ContactPage() {
                 className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
                   activeOffice === "punjab"
                     ? "bg-[#004B87] text-white shadow-md scale-105"
-                    : "text-slate-700 hover:text-[#004B87]"
+                    : "text-slate-700 hover:text-[#0056B3]"
                 }`}
               >
                 Punjab (Corporate)
@@ -629,7 +629,7 @@ export default function ContactPage() {
                 className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
                   activeOffice === "pune"
                     ? "bg-[#004B87] text-white shadow-md scale-105"
-                    : "text-slate-700 hover:text-[#004B87]"
+                    : "text-slate-700 hover:text-[#0056B3]"
                 }`}
               >
                 Pune (Maharashtra)
@@ -656,7 +656,7 @@ export default function ContactPage() {
                       setMapMode("directions");
                     }
                   }}
-                  className="w-full pl-10 pr-4 py-3 text-xs sm:text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#004B87] bg-white font-medium"
+                  className="w-full pl-10 pr-4 py-3 text-xs sm:text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#0056B3] bg-white font-medium"
                 />
               </div>
 
@@ -685,7 +685,7 @@ export default function ContactPage() {
                 <button
                   onClick={handleUseCurrentLocation}
                   title="Detect my current location with GPS"
-                  className="p-3 rounded-xl bg-white border border-slate-300 text-[#004B87] hover:bg-[#004B87] hover:text-white transition-colors shadow-sm"
+                  className="p-3 rounded-xl bg-white border border-slate-300 text-[#004B87] hover:bg-[#0056B3] hover:text-white transition-colors shadow-sm"
                 >
                   <Compass className="w-4 h-4" />
                 </button>
@@ -706,7 +706,7 @@ export default function ContactPage() {
                     setUserLocation(city);
                     setMapMode("directions");
                   }}
-                  className="px-2.5 py-1 rounded-full bg-white hover:bg-[#004B87] hover:text-white border border-slate-200 transition-colors font-medium"
+                  className="px-2.5 py-1 rounded-full bg-white hover:bg-[#0056B3] hover:text-white border border-slate-200 transition-colors font-medium"
                 >
                   From {city}
                 </button>
@@ -738,7 +738,7 @@ export default function ContactPage() {
           {/* Footer Bar of Map */}
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-3">
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse" />
               <span>
                 Destination: <strong className="text-[#0A1128]">{currentOffice.address}</strong>
               </span>

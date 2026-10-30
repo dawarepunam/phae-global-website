@@ -86,7 +86,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm border-collapse">
               <thead>
-                <tr className="border-b-2 border-[#004B87]/20 bg-[#F0F4F8]">
+                <tr className="border-b-2 border-[#0056B3]/20 bg-[#F0F4F8]">
                   <th className="py-3.5 px-4 font-bold text-[#0A1128] w-1/3">Parameter</th>
                   <th className="py-3.5 px-4 font-bold text-[#0A1128]">Engineering Standard / Specification</th>
                 </tr>

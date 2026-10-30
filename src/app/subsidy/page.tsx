@@ -102,7 +102,7 @@ export default function SubsidyPage() {
 
             {/* Right Big 50% Shield Badge */}
             <div className="lg:col-span-4 text-center">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#0D2419]/80 border-2 border-[#B5A16A]/50 backdrop-blur-md shadow-2xl">
+              <div className="p-8 sm:p-10 rounded-3xl bg-[#0F1F3D]/90 border-2 border-[#B5A16A]/50 backdrop-blur-md shadow-2xl">
                 <span className="text-xs font-black uppercase tracking-widest text-[#C5B27D]">
                   GOVERNMENT GRANT
                 </span>
@@ -137,10 +137,10 @@ export default function SubsidyPage() {
               <div className="flex flex-col flex-1">
                 {/* Header Tag & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/20">
+                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#0056B3]/20">
                     AUTHORITY 01 • CENTRAL SCHEME
                   </span>
-                  <span className="text-xs font-black text-[#004B87] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
+                  <span className="text-xs font-black text-[#0056B3] bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-lg shrink-0">
                     Comprehensive 50%
                   </span>
                 </div>
@@ -192,10 +192,10 @@ export default function SubsidyPage() {
               <div className="flex flex-col flex-1">
                 {/* Header Tag & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/20">
+                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#0056B3]/20">
                     AUTHORITY 02 • STATE MISSION
                   </span>
-                  <span className="text-xs font-black text-[#004B87] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
+                  <span className="text-xs font-black text-[#0056B3] bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-lg shrink-0">
                     State Norms 50%
                   </span>
                 </div>
@@ -278,7 +278,7 @@ export default function SubsidyPage() {
                       onClick={() => setStructureType(s.id as any)}
                       className={`p-3.5 rounded-2xl border text-left transition-all ${
                         structureType === s.id
-                          ? "bg-[#004B87] text-white border-[#004B87] shadow-md"
+                          ? "bg-[#004B87] text-white border-[#0056B3] shadow-md"
                           : "bg-[#F0F4F8] text-slate-700 border-slate-200 hover:border-slate-300"
                       }`}
                     >
@@ -327,7 +327,7 @@ export default function SubsidyPage() {
                   <button
                     onClick={() => setSelectedScheme("nhb")}
                     className={`flex-1 py-2.5 px-4 rounded-xl text-xs font-bold border transition-all ${
-                      selectedScheme === "nhb" ? "bg-[#004B87] text-white border-[#004B87]" : "bg-white text-slate-700 border-slate-200"
+                      selectedScheme === "nhb" ? "bg-[#004B87] text-white border-[#0056B3]" : "bg-white text-slate-700 border-slate-200"
                     }`}
                   >
                     NHB (National Board)
@@ -335,7 +335,7 @@ export default function SubsidyPage() {
                   <button
                     onClick={() => setSelectedScheme("nhm")}
                     className={`flex-1 py-2.5 px-4 rounded-xl text-xs font-bold border transition-all ${
-                      selectedScheme === "nhm" ? "bg-[#004B87] text-white border-[#004B87]" : "bg-white text-slate-700 border-slate-200"
+                      selectedScheme === "nhm" ? "bg-[#004B87] text-white border-[#0056B3]" : "bg-white text-slate-700 border-slate-200"
                     }`}
                   >
                     NHM (State Mission)
@@ -360,9 +360,9 @@ export default function SubsidyPage() {
                     </span>
                   </div>
 
-                  <div className="flex justify-between items-center text-xs text-emerald-400 font-semibold">
+                  <div className="flex justify-between items-center text-xs text-[#60A5FA] font-semibold">
                     <span>Government Subsidy (50%):</span>
-                    <span className="text-base font-black text-emerald-400">
+                    <span className="text-base font-black text-[#60A5FA]">
                       - ₹{estimatedSubsidy.toLocaleString("en-IN")}
                     </span>
                   </div>
