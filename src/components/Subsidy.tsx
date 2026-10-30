@@ -40,21 +40,21 @@ export default function Subsidy() {
               <div className="space-y-3 pt-1">
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
                   <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#25D366]" />
                   </div>
                   <span>National Horticulture Board (NHB) Commercial Projects</span>
                 </div>
                 
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
                   <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#25D366]" />
                   </div>
                   <span>National Horticulture Mission (NHM / MIDH Schemes)</span>
                 </div>
 
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
                   <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#25D366]" />
                   </div>
                   <span>State Horticulture Department Direct Capital Grants</span>
                 </div>
@@ -73,12 +73,12 @@ export default function Subsidy() {
 
             {/* Center: Up to 50% Big Badge */}
             <div className="lg:col-span-3 text-center">
-              <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-white shadow-2xl border-2 border-[#1a7a4a]/50 relative overflow-hidden group">
-                <div className="absolute -top-12 -right-12 w-28 h-28 bg-[#1a7a4a]/20 rounded-full blur-xl" />
-                <span className="text-xs font-bold uppercase tracking-widest text-[#1a7a4a]">
+              <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-white shadow-2xl border-2 border-[#25D366]/50 relative overflow-hidden group">
+                <div className="absolute -top-12 -right-12 w-28 h-28 bg-[#25D366]/20 rounded-full blur-xl" />
+                <span className="text-xs font-bold uppercase tracking-widest text-[#25D366]">
                   Up To
                 </span>
-                <div className="text-5xl sm:text-6xl font-black text-[#1a7a4a] tracking-tight my-2">
+                <div className="text-5xl sm:text-6xl font-black text-[#25D366] tracking-tight my-2">
                   50%
                 </div>
                 <span className="text-xs font-semibold text-slate-200 block leading-snug">

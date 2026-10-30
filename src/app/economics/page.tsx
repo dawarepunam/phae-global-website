@@ -57,7 +57,7 @@ export default function EconomicsPage() {
                   </span>
 
                   {crop.costEconomics && (
-                    <span className="absolute top-3 right-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-[#1a7a4a] text-white shadow-sm flex items-center gap-1">
+                    <span className="absolute top-3 right-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-[#25D366] text-white shadow-sm flex items-center gap-1">
                       <Sparkles className="w-3 h-3" /> Full Cost DPR
                     </span>
                   )}

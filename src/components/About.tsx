@@ -190,7 +190,7 @@ export default function About() {
                   >
                     <div
                       className={`h-full rounded-full transition-all duration-300 ${
-                        i === currentIdx ? "w-full bg-[#1a7a4a]" : "w-0"
+                        i === currentIdx ? "w-full bg-[#25D366]" : "w-0"
                       }`}
                     />
                   </div>
@@ -200,8 +200,8 @@ export default function About() {
               {/* Clean Play Button without bottom titles */}
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
-                  <div className="absolute inset-0 rounded-full bg-[#1a7a4a]/30 animate-ping" />
-                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#1a7a4a] to-[#1a7a4a] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="absolute inset-0 rounded-full bg-[#25D366]/30 animate-ping" />
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#25D366] to-[#25D366] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
                     <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-[#0A1128] ml-1" />
                   </div>
                 </div>
@@ -209,8 +209,8 @@ export default function About() {
             </div>
 
             {/* Floating NHB badge card */}
-            <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white rounded-2xl shadow-xl border border-[#1a7a4a]/20 p-3 sm:p-4 flex items-center gap-3 w-48 sm:w-56 z-20">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#004B87] flex items-center justify-center text-[#1a7a4a] shrink-0">
+            <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white rounded-2xl shadow-xl border border-[#25D366]/20 p-3 sm:p-4 flex items-center gap-3 w-48 sm:w-56 z-20">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#004B87] flex items-center justify-center text-[#25D366] shrink-0">
                 <Award className="w-5 h-5" />
               </div>
               <div>
@@ -302,7 +302,7 @@ export default function About() {
                   >
                     <div
                       className={`h-full rounded-full transition-all duration-300 ${
-                        i === modalIdx ? "w-full bg-[#1a7a4a]" : "w-0"
+                        i === modalIdx ? "w-full bg-[#25D366]" : "w-0"
                       }`}
                     />
                   </button>

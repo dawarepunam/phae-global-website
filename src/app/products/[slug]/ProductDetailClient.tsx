@@ -61,7 +61,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-[#0A1128]/90 text-white text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md flex items-center gap-2 shadow-lg">
-                  <ZoomIn className="w-4 h-4 text-[#1a7a4a]" /> Click to Enlarge
+                  <ZoomIn className="w-4 h-4 text-[#25D366]" /> Click to Enlarge
                 </span>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     className={`h-20 sm:h-24 rounded-2xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                       isActive 
                         ? "border-[#0056B3] ring-2 ring-[#004B87]/20 scale-[0.98]" 
-                        : "border-slate-200 hover:border-[#1a7a4a] opacity-80 hover:opacity-100"
+                        : "border-slate-200 hover:border-[#25D366] opacity-80 hover:opacity-100"
                     }`}
                   >
                     <img 
@@ -117,7 +117,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                 {product.category}
               </span>
               {product.badge && (
-                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#1a7a4a]/20 text-[#0A1128]">
+                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#25D366]/20 text-[#0A1128]">
                   {product.badge}
                 </span>
               )}

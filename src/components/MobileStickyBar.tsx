@@ -27,9 +27,9 @@ export default function MobileStickyBar() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-20 sm:bottom-6 right-5 z-40 p-3 rounded-full bg-[#0A1128]/90 text-white shadow-xl hover:bg-[#0056B3] transition-all hover:scale-105 active:scale-95 border border-[#1a7a4a]/30"
+          className="fixed bottom-20 sm:bottom-6 right-5 z-40 p-3 rounded-full bg-[#0A1128]/90 text-white shadow-xl hover:bg-[#0056B3] transition-all hover:scale-105 active:scale-95 border border-[#25D366]/30"
         >
-          <ArrowUp className="w-5 h-5 text-[#1a7a4a]" />
+          <ArrowUp className="w-5 h-5 text-[#25D366]" />
         </button>
       )}
 
@@ -47,12 +47,12 @@ export default function MobileStickyBar() {
       </div>
 
       {/* Bottom Sticky Action Bar exclusively for iOS, Android, and mobile phones */}
-      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0A1128]/95 backdrop-blur-lg border-t border-[#1a7a4a]/30 px-4 py-2.5 pb-[max(0.65rem,env(safe-area-inset-bottom))] shadow-[0_-4px_16px_rgba(0,0,0,0.15)] flex items-center justify-between gap-3">
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0A1128]/95 backdrop-blur-lg border-t border-[#25D366]/30 px-4 py-2.5 pb-[max(0.65rem,env(safe-area-inset-bottom))] shadow-[0_-4px_16px_rgba(0,0,0,0.15)] flex items-center justify-between gap-3">
         <a
           href={`tel:${COMPANY_INFO.contacts.phone}`}
           className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white/10 text-white font-bold text-xs active:bg-white/20 transition-colors"
         >
-          <Phone className="w-3.5 h-3.5 text-[#1a7a4a]" />
+          <Phone className="w-3.5 h-3.5 text-[#25D366]" />
           <span>Call Us</span>
         </a>
 
@@ -68,7 +68,7 @@ export default function MobileStickyBar() {
 
         <Link
           href="/contact"
-          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#1a7a4a] text-[#0A1128] font-bold text-xs active:bg-[#1a7a4a] transition-colors"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#25D366] text-[#0A1128] font-bold text-xs active:bg-[#25D366] transition-colors"
         >
           <span>Quote</span>
         </Link>

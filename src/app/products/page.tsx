@@ -52,7 +52,7 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
 
                   {product.badge && (
-                    <span className="absolute top-3 right-3 bg-[#0A1128]/90 border border-[#1a7a4a]/60 text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                    <span className="absolute top-3 right-3 bg-[#0A1128]/90 border border-[#25D366]/60 text-[#25D366] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
                       {product.badge}
                     </span>
                   )}
@@ -78,7 +78,7 @@ export default function ProductsPage() {
                     </span>
                     {product.features.slice(0, 2).map((feat, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-xs text-slate-700 font-medium">
-                        <Check className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
+                        <Check className="w-3.5 h-3.5 text-[#25D366] shrink-0 mt-0.5" />
                         <span className="line-clamp-1">{feat.split(':')[0]}</span>
                       </div>
                     ))}
@@ -101,9 +101,9 @@ export default function ProductsPage() {
         </div>
 
         {/* Technical Standards Bar */}
-        <div className="mt-16 bg-[#0A1128] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#1a7a4a]/20">
+        <div className="mt-16 bg-[#0A1128] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#25D366]/20">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#25D366]">
               Manufacturing & Civil Standard
             </span>
             <h3 className="text-xl sm:text-2xl font-black text-white mt-1">

@@ -58,7 +58,7 @@ export default function Economics() {
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#1a7a4a]/30">
+                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#25D366] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#25D366]/30">
                     {activeData.type} Crop
                   </span>
                 </div>
@@ -68,7 +68,7 @@ export default function Economics() {
             {/* Center: Details */}
             <div className="lg:col-span-4 space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#004B87]/10 text-[#004B87] text-[11px] font-bold">
-                <Sparkles className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>Commercial Polyhouse Cultivation</span>
               </div>
 
@@ -96,7 +96,7 @@ export default function Economics() {
             </div>
 
             {/* Right: Key Benefits Card */}
-            <div className="lg:col-span-4 bg-[#F0F4F8] rounded-2xl p-6 sm:p-7 border border-[#1a7a4a]/20">
+            <div className="lg:col-span-4 bg-[#F0F4F8] rounded-2xl p-6 sm:p-7 border border-[#25D366]/20">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingUp className="w-4 h-4 text-[#004B87]" />
                 <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#004B87]">
@@ -107,7 +107,7 @@ export default function Economics() {
               <div className="space-y-3.5">
                 {activeData.keyBenefits.map((benefit, i) => (
                   <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 font-medium">
-                    <CheckCircle2 className="w-4 h-4 text-[#1a7a4a] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#25D366] shrink-0 mt-0.5" />
                     <span className="leading-snug">{benefit}</span>
                   </div>
                 ))}

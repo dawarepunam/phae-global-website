@@ -65,12 +65,12 @@ export default function SubsidyPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
         {/* Top Hero Highlight Card with 50% Badge */}
-        <div className="bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#1a7a4a]/30">
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#1a7a4a]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#25D366]/30">
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#25D366]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             <div className="lg:col-span-8 space-y-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[#1a7a4a] text-xs font-bold uppercase tracking-wider border border-white/20">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[#25D366] text-xs font-bold uppercase tracking-wider border border-white/20">
                 <Landmark className="w-3.5 h-3.5" />
                 CENTRAL & STATE HORTICULTURE MISSIONS
               </span>
@@ -102,11 +102,11 @@ export default function SubsidyPage() {
 
             {/* Right Big 50% Shield Badge */}
             <div className="lg:col-span-4 text-center">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#0F1F3D]/90 border-2 border-[#1a7a4a]/50 backdrop-blur-md shadow-2xl">
-                <span className="text-xs font-black uppercase tracking-widest text-[#1a7a4a]">
+              <div className="p-8 sm:p-10 rounded-3xl bg-[#0F1F3D]/90 border-2 border-[#25D366]/50 backdrop-blur-md shadow-2xl">
+                <span className="text-xs font-black uppercase tracking-widest text-[#25D366]">
                   GOVERNMENT GRANT
                 </span>
-                <div className="text-6xl sm:text-7xl font-black text-[#1a7a4a] tracking-tight my-2">
+                <div className="text-6xl sm:text-7xl font-black text-[#25D366] tracking-tight my-2">
                   50%
                 </div>
                 <span className="text-sm font-bold text-white block">
@@ -283,7 +283,7 @@ export default function SubsidyPage() {
                       }`}
                     >
                       <span className="text-xs font-bold block">{s.label}</span>
-                      <span className={`text-[10px] block mt-0.5 ${structureType === s.id ? "text-[#1a7a4a]" : "text-slate-500"}`}>
+                      <span className={`text-[10px] block mt-0.5 ${structureType === s.id ? "text-[#25D366]" : "text-slate-500"}`}>
                         Benchmark: {s.rate}
                       </span>
                     </button>
@@ -347,8 +347,8 @@ export default function SubsidyPage() {
 
             {/* Live Calculation Output Card */}
             <div className="lg:col-span-5">
-              <div className="bg-[#0A1128] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#1a7a4a]/40 space-y-5">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#1a7a4a] block">
+              <div className="bg-[#0A1128] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#25D366]/40 space-y-5">
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#25D366] block">
                   ESTIMATED FINANCIAL BREAKDOWN
                 </span>
 
@@ -371,7 +371,7 @@ export default function SubsidyPage() {
                 {/* Farmer Net Investment */}
                 <div>
                   <span className="text-xs text-slate-400 block">Farmer Effective Capital Contribution:</span>
-                  <div className="text-3xl sm:text-4xl font-black text-[#1a7a4a] tracking-tight mt-1">
+                  <div className="text-3xl sm:text-4xl font-black text-[#25D366] tracking-tight mt-1">
                     ₹{farmerContribution.toLocaleString("en-IN")}*
                   </div>
                   <span className="text-[10px] text-slate-400 block mt-1">
@@ -427,8 +427,8 @@ export default function SubsidyPage() {
                 desc: "Assisting during joint inspection team (JIT) visit until direct subsidy disbursement into bank account."
               }
             ].map((p, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#F0F4F8] border border-slate-200 text-center hover:border-[#1a7a4a]/50 transition-all">
-                <div className="w-10 h-10 rounded-full bg-[#004B87] text-[#1a7a4a] font-black text-sm flex items-center justify-center mx-auto mb-3">
+              <div key={idx} className="p-6 rounded-2xl bg-[#F0F4F8] border border-slate-200 text-center hover:border-[#25D366]/50 transition-all">
+                <div className="w-10 h-10 rounded-full bg-[#004B87] text-[#25D366] font-black text-sm flex items-center justify-center mx-auto mb-3">
                   {p.step}
                 </div>
                 <h4 className="text-sm font-bold text-[#0A1128] mb-1.5">{p.title}</h4>
@@ -443,9 +443,9 @@ export default function SubsidyPage() {
             </span>
             <a
               href={`tel:${COMPANY_INFO.contacts.phone}`}
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] hover:text-[#1a7a4a]"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] hover:text-[#25D366]"
             >
-              <Phone className="w-4 h-4 text-[#1a7a4a]" />
+              <Phone className="w-4 h-4 text-[#25D366]" />
               <span>Call our Subsidy Helpline: {COMPANY_INFO.contacts.phoneDisplay}</span>
             </a>
           </div>

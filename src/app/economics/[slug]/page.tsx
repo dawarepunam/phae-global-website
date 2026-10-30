@@ -71,7 +71,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
         {/* Back Link */}
         <Link
           href="/economics"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#1a7a4a] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#25D366] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Crops Economics</span>
@@ -110,7 +110,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                 <div className="space-y-2.5">
                   {crop.keyBenefits.map((benefit, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#1a7a4a] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#25D366] shrink-0 mt-0.5" />
                       <span>{benefit}</span>
                     </div>
                   ))}
@@ -121,7 +121,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             {/* Cultivation Agronomy Tips */}
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md">
               <h3 className="text-xl font-bold text-[#0A1128] mb-4 flex items-center gap-2">
-                <Sun className="w-5 h-5 text-[#1a7a4a]" />
+                <Sun className="w-5 h-5 text-[#25D366]" />
                 Agronomy & Microclimate Best Practices
               </h3>
 
@@ -154,7 +154,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             {/* Economics Metrics Card */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-lg space-y-4">
               <div className="flex items-center gap-2 text-[#004B87] font-black text-sm uppercase tracking-wider">
-                <TrendingUp className="w-4 h-4 text-[#1a7a4a]" />
+                <TrendingUp className="w-4 h-4 text-[#25D366]" />
                 <span>Production & Yield Benchmarks</span>
               </div>
 
@@ -194,7 +194,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
           <div className="bg-white rounded-3xl p-6 sm:p-12 border border-slate-200 shadow-xl space-y-8">
             <div className="border-b border-slate-200 pb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#1a7a4a]/10 px-3 py-1 rounded-full">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#25D366] bg-[#25D366]/10 px-3 py-1 rounded-full">
                   Detailed Project Economics Report
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
@@ -290,7 +290,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             {/* Section C: Net Revenue & Returns */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <IndianRupee className="w-5 h-5 text-[#1a7a4a]" />
+                <IndianRupee className="w-5 h-5 text-[#25D366]" />
                 <h4 className="text-lg font-bold text-[#0A1128]">
                   Part C: Projected Commercial Returns & Net Profitability
                 </h4>
@@ -319,7 +319,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                 </div>
 
                 <div className="p-5 rounded-2xl bg-[#004B87] text-white shadow-md">
-                  <span className="text-xs text-[#1a7a4a] font-bold uppercase tracking-wider block">Net Return / Year</span>
+                  <span className="text-xs text-[#25D366] font-bold uppercase tracking-wider block">Net Return / Year</span>
                   <span className="text-xl font-black text-white mt-1 block">
                     {crop.costEconomics.returnsAndProfitability.netReturnPerYear}
                   </span>

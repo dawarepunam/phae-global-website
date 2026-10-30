@@ -5,7 +5,7 @@ import { COMPANY_INFO, PRODUCTS_LIST, SERVICES_LIST } from "@/data/polyhubData";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A1128] text-slate-300 pt-16 pb-12 border-t border-[#1a7a4a]/25 relative">
+    <footer className="bg-[#0A1128] text-slate-300 pt-16 pb-12 border-t border-[#25D366]/25 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 4 Column Layout */}
@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Column 1: Brand & Identity with Official Emblem */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-[#1a7a4a]/40 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
+              <div className="relative w-12 h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-[#25D366]/40 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
                 <img
                   src="/phae-global-logo.png"
                   alt="PHAE Global Business Private Limited Logo"
@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
-                  PHAE <span className="text-[#1a7a4a] ml-1">Global</span>
+                  PHAE <span className="text-[#25D366] ml-1">Global</span>
                 </span>
                 <span className="text-[9px] uppercase font-bold tracking-wider text-[#90A4AE] -mt-0.5">
                   Business Private Limited
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#25D366]">
               Navigation
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Column 3: Products */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#25D366]">
               Commercial Structures
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -81,26 +81,26 @@ export default function Footer() {
 
           {/* Column 4: Contact & Locations */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#25D366]">
               Contact Details
             </h4>
             <div className="space-y-3 text-xs text-slate-300">
               <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#25D366] shrink-0 mt-0.5" />
                 <span><strong>Corporate Office:</strong> {COMPANY_INFO.contacts.corporateOffice}</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#25D366] shrink-0 mt-0.5" />
                 <span><strong>Sales Office:</strong> {COMPANY_INFO.contacts.salesOffice}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
+                <Mail className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                 <a href={`mailto:${COMPANY_INFO.contacts.email}`} className="hover:text-white">
                   {COMPANY_INFO.contacts.email}
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                 <a href={`tel:${COMPANY_INFO.contacts.phone}`} className="hover:text-white font-semibold">
                   {COMPANY_INFO.contacts.phoneDisplay}
                 </a>

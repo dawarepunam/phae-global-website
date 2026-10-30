@@ -493,7 +493,7 @@ export default function ContactPage() {
           </div>
 
           {/* Column 3: ENLARGED PARTNER / LEADERSHIP SLIDER BOX (Width: lg:col-span-4) */}
-          <div className="lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative min-h-[480px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#1a7a4a]/40 bg-[#0A1128]">
+          <div className="lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative min-h-[480px] flex flex-col justify-between p-6 sm:p-7 border-2 border-[#25D366]/40 bg-[#0A1128]">
             
             {/* Elegant Agro Architectural Pattern Background (Clean & Clear, Not Stretched Photo) */}
             <div className="absolute inset-0 z-0 overflow-hidden">
@@ -504,13 +504,13 @@ export default function ContactPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#060B18] via-[#0A1128]/95 to-[#0F1F3D]/90" />
               {/* Subtle ambient gold radial lighting */}
-              <div className="absolute -top-20 -right-20 w-60 h-60 bg-[#1a7a4a]/15 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -top-20 -right-20 w-60 h-60 bg-[#25D366]/15 rounded-full blur-3xl pointer-events-none" />
             </div>
 
             {/* Top Bar: Section Tag & Prev/Next Arrows */}
             <div className="relative z-10 flex items-center justify-between">
-              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#1a7a4a] bg-[#0A1128]/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#1a7a4a]/40 flex items-center gap-1.5 shadow-sm">
-                <Handshake className="w-3.5 h-3.5 text-[#1a7a4a]" />
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#25D366] bg-[#0A1128]/90 backdrop-blur-md px-3 py-1 rounded-full border border-[#25D366]/40 flex items-center gap-1.5 shadow-sm">
+                <Handshake className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>Leadership & Partners</span>
               </span>
 
@@ -536,7 +536,7 @@ export default function ContactPage() {
             <div className="relative z-10 text-white space-y-4 my-auto py-4">
               
               <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md shadow-md">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-[#1a7a4a] shadow-xl shrink-0 bg-white">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border-2 border-[#25D366] shadow-xl shrink-0 bg-white">
                   <img
                     src={activeLeader.image}
                     alt={activeLeader.name}
@@ -550,7 +550,7 @@ export default function ContactPage() {
                   <h4 className="text-xl sm:text-2xl font-black text-white leading-tight">
                     {activeLeader.name}
                   </h4>
-                  <p className="text-xs text-[#1a7a4a] font-bold mt-0.5">
+                  <p className="text-xs text-[#25D366] font-bold mt-0.5">
                     {activeLeader.role}
                   </p>
                   <span className="text-[10px] text-slate-300 block mt-0.5 font-medium">
@@ -560,7 +560,7 @@ export default function ContactPage() {
               </div>
 
               {/* Official Quote from polyhubagro.com */}
-              <div className="p-4 rounded-2xl bg-black/35 backdrop-blur-md border border-[#1a7a4a]/20">
+              <div className="p-4 rounded-2xl bg-black/35 backdrop-blur-md border border-[#25D366]/20">
                 <p className="text-xs text-slate-200 leading-relaxed italic">
                   &ldquo;{activeLeader.quote}&rdquo;
                 </p>
@@ -570,7 +570,7 @@ export default function ContactPage() {
               <div className="space-y-2 pt-1">
                 {activeLeader.expertise.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-xs text-slate-300 font-medium">
-                    <Check className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
+                    <Check className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -586,13 +586,13 @@ export default function ContactPage() {
                     key={i}
                     onClick={() => setCurrentLeaderIdx(i)}
                     className={`h-1.5 rounded-full transition-all duration-300 ${
-                      currentLeaderIdx === i ? "w-7 bg-[#1a7a4a]" : "w-2 bg-white/40"
+                      currentLeaderIdx === i ? "w-7 bg-[#25D366]" : "w-2 bg-white/40"
                     }`}
                   />
                 ))}
               </div>
 
-              <span className="text-[10px] text-[#1a7a4a] font-bold uppercase tracking-wider">
+              <span className="text-[10px] text-[#25D366] font-bold uppercase tracking-wider">
                 Partner 0{currentLeaderIdx + 1} of 0{leadershipPartners.length}
               </span>
             </div>
@@ -671,7 +671,7 @@ export default function ContactPage() {
 
               {/* Destination Readonly Badge */}
               <div className="md:col-span-4 flex items-center gap-2 px-4 py-3 rounded-xl bg-white border border-slate-300 text-xs font-bold text-[#0A1128]">
-                <MapPin className="w-4 h-4 text-[#1a7a4a] shrink-0" />
+                <MapPin className="w-4 h-4 text-[#25D366] shrink-0" />
                 <span className="truncate">Destination: {currentOffice.name}</span>
               </div>
 
@@ -758,7 +758,7 @@ export default function ContactPage() {
                 onClick={() => openDirectDirections(userLocation)}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#004B87] text-white font-bold hover:bg-[#0A1128] transition-colors shadow-sm"
               >
-                <Navigation className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                <Navigation className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>Start Live Navigation in App</span>
                 <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
               </button>

@@ -54,7 +54,7 @@ const featureCards = [
     icon: TrendingUp,
     title: "Better Crop",
     subtitle: "Higher Yield Cultivation",
-    color: "from-[#1a7a4a]/20 to-[#1a7a4a]/5",
+    color: "from-[#25D366]/20 to-[#25D366]/5",
   },
   {
     icon: Shield,
@@ -179,7 +179,7 @@ export default function Hero() {
               {/* Pill badge */}
               {/* Top Pill - Modern Enterprise Tag */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
-                <Sparkles className="w-3.5 h-3.5 text-[#1a7a4a]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>SUSTAINABLE • INNOVATIVE • GLOBAL</span>
               </div>
 
@@ -230,14 +230,14 @@ export default function Hero() {
                     onClick={() => setCurrentSlide(i)}
                     className={`flex items-center gap-1.5 text-xs font-bold transition-all ${
                       currentSlide === i
-                        ? "text-[#1a7a4a]"
+                        ? "text-[#25D366]"
                         : "text-white/40 hover:text-white/70"
                     }`}
                   >
                     <div
                       className={`h-0.5 rounded-full transition-all duration-500 ${
                         currentSlide === i
-                          ? "w-8 bg-[#1a7a4a]"
+                          ? "w-8 bg-[#25D366]"
                           : "w-4 bg-white/30"
                       }`}
                     />
@@ -305,7 +305,7 @@ export default function Hero() {
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-1.5 text-[11px] text-slate-400/80 z-20">
           <span className="uppercase tracking-widest text-[10px]">Scroll Down</span>
           <div className="w-5 h-8 rounded-full border-2 border-slate-500/50 flex justify-center pt-1.5">
-            <div className="w-1 h-2 bg-[#1a7a4a] rounded-full animate-bounce" />
+            <div className="w-1 h-2 bg-[#25D366] rounded-full animate-bounce" />
           </div>
           <ChevronDown className="w-4 h-4 animate-bounce opacity-50" />
         </div>
@@ -318,14 +318,14 @@ export default function Hero() {
           onClick={() => setVideoModalOpen(false)}
         >
           <div
-            className="relative w-full max-w-4xl bg-[#0A1128] rounded-3xl overflow-hidden border border-[#1a7a4a]/40 shadow-2xl flex flex-col"
+            className="relative w-full max-w-4xl bg-[#0A1128] rounded-3xl overflow-hidden border border-[#25D366]/40 shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Bar */}
             <div className="flex items-center justify-between p-4 px-6 border-b border-white/10 bg-[#0A1128]">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                <span className="text-xs uppercase font-extrabold tracking-widest text-[#1a7a4a]">
+                <span className="text-xs uppercase font-extrabold tracking-widest text-[#25D366]">
                   PHAE Global Field Project Reel
                 </span>
               </div>
@@ -373,7 +373,7 @@ export default function Hero() {
                   
                   {/* On-screen Video Info Overlay */}
                   <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
-                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#1a7a4a] text-[#0A1128]">
+                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#25D366] text-[#0A1128]">
                       {scene.category} • Scene {idx + 1} of {reelScenes.length}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black text-white mt-2">
@@ -389,7 +389,7 @@ export default function Hero() {
               {/* Progress Bar along bottom */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-white/20 z-20">
                 <div 
-                  className="h-full bg-[#1a7a4a] transition-all duration-500 ease-linear"
+                  className="h-full bg-[#25D366] transition-all duration-500 ease-linear"
                   style={{ width: `${((reelSceneIndex + 1) / reelScenes.length) * 100}%` }}
                 />
               </div>
@@ -410,7 +410,7 @@ export default function Hero() {
                     }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                       reelSceneIndex === idx
-                        ? "bg-[#1a7a4a] text-[#0A1128] shadow-md"
+                        ? "bg-[#25D366] text-[#0A1128] shadow-md"
                         : "bg-white/5 hover:bg-white/10 text-slate-300"
                     }`}
                   >

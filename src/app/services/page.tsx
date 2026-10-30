@@ -58,7 +58,7 @@ export default function ServicesPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-50" />
                     <div className="absolute top-3 left-3 bg-[#004B87] text-white p-2.5 rounded-2xl shadow-md flex items-center justify-center">
-                      <IconComponent className="w-5 h-5 text-[#1a7a4a]" />
+                      <IconComponent className="w-5 h-5 text-[#25D366]" />
                     </div>
                   </div>
 
@@ -78,7 +78,7 @@ export default function ServicesPage() {
                       </span>
                       {service.deliverables.slice(0, 3).map((item, idx) => (
                         <div key={idx} className="flex items-start gap-2 text-xs text-slate-700 font-medium">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-[#25D366] shrink-0 mt-0.5" />
                           <span className="line-clamp-1">{item.split(':')[0]}</span>
                         </div>
                       ))}
@@ -101,9 +101,9 @@ export default function ServicesPage() {
         </div>
 
         {/* Why Choose Our Services Banner */}
-        <div className="mt-20 bg-[#0A1128] rounded-3xl p-8 sm:p-12 text-white shadow-xl border border-[#1a7a4a]/20">
+        <div className="mt-20 bg-[#0A1128] rounded-3xl p-8 sm:p-12 text-white shadow-xl border border-[#25D366]/20">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#1a7a4a]/10 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#25D366] bg-[#25D366]/10 px-3 py-1 rounded-full">
               PHAE Global Engineering Assurance
             </span>
             <h3 className="text-xl sm:text-3xl font-black mt-3 text-white">
@@ -116,17 +116,17 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <ShieldCheck className="w-8 h-8 text-[#1a7a4a] mx-auto mb-3" />
+              <ShieldCheck className="w-8 h-8 text-[#25D366] mx-auto mb-3" />
               <h4 className="font-bold text-sm text-white">Certified Materials</h4>
               <p className="text-xs text-slate-300 mt-1">IS 1239 / IS 1161 compliant GI tubular frames and multi-layer UV film.</p>
             </div>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <Clock className="w-8 h-8 text-[#1a7a4a] mx-auto mb-3" />
+              <Clock className="w-8 h-8 text-[#25D366] mx-auto mb-3" />
               <h4 className="font-bold text-sm text-white">Timely Execution</h4>
               <p className="text-xs text-slate-300 mt-1">Strict adherence to milestones ensuring crops can be planted on schedule.</p>
             </div>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <Award className="w-8 h-8 text-[#1a7a4a] mx-auto mb-3" />
+              <Award className="w-8 h-8 text-[#25D366] mx-auto mb-3" />
               <h4 className="font-bold text-sm text-white">Subsidy Guarantee</h4>
               <p className="text-xs text-slate-300 mt-1">Bankable DPR formulation guaranteeing maximum 50% NHB/MIDH eligibility.</p>
             </div>

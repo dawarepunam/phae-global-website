@@ -43,7 +43,7 @@ export default function Services() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <span className="bg-[#1a7a4a] text-[#0A1128] text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                    <span className="bg-[#25D366] text-[#0A1128] text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
                       Service 0{idx + 1}
                     </span>
                   </div>
@@ -62,7 +62,7 @@ export default function Services() {
               <div className="p-7 pt-0 border-t border-slate-100 mt-2">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] group-hover:text-[#1a7a4a] transition-colors py-2"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] group-hover:text-[#25D366] transition-colors py-2"
                 >
                   <span>Learn More & Scope Details</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -73,17 +73,17 @@ export default function Services() {
         </div>
 
         {/* Why Choose Our Services Strip */}
-        <div className="mt-20 bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#1a7a4a]/30 relative overflow-hidden">
-          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#1a7a4a]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="mt-20 bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#25D366]/30 relative overflow-hidden">
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#25D366]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#1a7a4a]">
+            <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#25D366]">
               UNCOMPROMISING QUALITY
             </span>
             <h3 className="text-2xl sm:text-3xl font-black mt-2 text-white">
               Why Choose Our Services?
             </h3>
-            <div className="w-12 h-0.5 bg-[#1a7a4a] mx-auto mt-3" />
+            <div className="w-12 h-0.5 bg-[#25D366] mx-auto mt-3" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -92,9 +92,9 @@ export default function Services() {
               return (
                 <div 
                   key={idx} 
-                  className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#1a7a4a]/40 hover:bg-white/10 transition-all duration-300"
+                  className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#25D366]/40 hover:bg-white/10 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#004B87] border border-[#1a7a4a]/30 flex items-center justify-center text-[#1a7a4a] mx-auto mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-[#004B87] border border-[#25D366]/30 flex items-center justify-center text-[#25D366] mx-auto mb-3">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h4 className="text-sm font-bold text-white tracking-wide">{item.title}</h4>
