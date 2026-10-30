@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Economics from "@/components/Economics";
 import Subsidy from "@/components/Subsidy";
 import Gallery from "@/components/Gallery";
+import TrustLogos from "@/components/TrustLogos";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -31,7 +32,10 @@ export default function Home() {
       {/* 7. Gallery project preview */}
       <Gallery />
 
-      {/* 8. Contact Us & Let's Grow Together Form */}
+      {/* 8. Worldwide Industry Trust Bar (Tata, L&T, Adani, Reliance, etc.) */}
+      <TrustLogos />
+
+      {/* 9. Contact Us & Let's Grow Together Form */}
       <Contact />
     </>
   );

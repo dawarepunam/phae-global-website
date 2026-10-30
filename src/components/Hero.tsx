@@ -177,35 +177,36 @@ export default function Hero() {
             <div className="lg:col-span-7 xl:col-span-8 space-y-5 sm:space-y-6">
               
               {/* Pill badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#90A4AE]/20 border border-[#B5A16A]/40 text-[#C5B27D] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+              {/* Top Pill - Modern Enterprise Tag */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5 text-[#C5B27D]" />
-                <span>{active.subtitle}</span>
+                <span>SUSTAINABLE • INNOVATIVE • GLOBAL</span>
               </div>
 
               {/* Title */}
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight leading-[1.08] text-white">
-                {active.title}{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5B27D] via-[#E2D5B0] to-[#B5A16A]">
-                  {active.highlight}
+                Higher Yields,{" "}
+                <span className="text-[#38BDF8]">
+                  90% Less Water Loss
                 </span>
               </h1>
 
               {/* Description */}
               <p className="text-sm sm:text-base text-slate-200/90 max-w-2xl leading-relaxed font-normal">
-                {active.description}
+                Innovative solutions for a greener tomorrow. PHAE Global Business brings sustainable and efficient solutions in modern agriculture and greenhouse technology.
               </p>
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link
-                  href={active.ctaLink}
-                  className="btn-gold px-7 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all"
+                  href="/products"
+                  className="px-7 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0056B3] hover:bg-[#004B87] text-white flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all"
                 >
-                  <span>{active.cta}</span>
+                  <span>Explore Our Business</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
-                {/* Watch Video Button that triggers Cinematic Reel Modal */}
+                {/* Watch Video Button */}
                 <button
                   onClick={() => {
                     setReelSceneIndex(0);
@@ -214,10 +215,10 @@ export default function Hero() {
                   }}
                   className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-md text-xs sm:text-sm font-bold text-white transition-all group"
                 >
-                  <span className="w-8 h-8 rounded-full bg-[#B5A16A] text-[#0A1128] flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
+                  <span className="w-8 h-8 rounded-full bg-white/20 text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
                     <Play className="w-4 h-4 fill-current ml-0.5" />
                   </span>
-                  <span>Watch Field Project Video</span>
+                  <span>Watch Our Video</span>
                 </button>
               </div>
 
@@ -246,39 +247,47 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Right Column: Feature Cards */}
-            <div className="hidden lg:flex lg:col-span-5 xl:col-span-4 flex-col gap-3">
-              {featureCards.map((card, i) => {
-                const Icon = card.icon;
-                return (
-                  <div
-                    key={i}
-                    className={`bg-gradient-to-br ${card.color} backdrop-blur-xl bg-[#0F1F3D]/70 border border-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#B5A16A]/40 hover:bg-[#0056B3]/50 transition-all duration-300 cursor-default`}
-                  >
-                    <div className="w-11 h-11 rounded-xl bg-[#004B87] border border-[#B5A16A]/25 flex items-center justify-center text-[#C5B27D] shrink-0">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-bold text-white">
-                        {card.title}
-                      </h3>
-                      <p className="text-xs text-slate-300 mt-0.5">
-                        {card.subtitle}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+            {/* Right Column: Feature Cards (Image-styled Glass Cards) */}
+            <div className="hidden lg:flex lg:col-span-5 xl:col-span-4 flex-col gap-3.5">
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 flex items-center gap-3.5 shadow-2xl hover:border-blue-400/40 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-600/20 text-[#38BDF8] border border-blue-400/30 flex items-center justify-center shrink-0">
+                  <TrendingUp className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-white">Smart Agriculture</h3>
+                  <p className="text-xs text-slate-300">Modern farming solutions</p>
+                </div>
+              </div>
 
-              {/* Quick Stats */}
-              <div className="mt-2 bg-[#0F1F3D]/80 backdrop-blur-xl border border-[#B5A16A]/20 rounded-2xl p-4 grid grid-cols-3 gap-3 text-center shadow-xl">
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 flex items-center gap-3.5 shadow-2xl hover:border-blue-400/40 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-600/20 text-[#38BDF8] border border-blue-400/30 flex items-center justify-center shrink-0">
+                  <Shield className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-white">Sustainable Growth</h3>
+                  <p className="text-xs text-slate-300">Eco-friendly commercial setups</p>
+                </div>
+              </div>
+
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 flex items-center gap-3.5 shadow-2xl hover:border-blue-400/40 transition-all">
+                <div className="w-10 h-10 rounded-xl bg-blue-600/20 text-[#38BDF8] border border-blue-400/30 flex items-center justify-center shrink-0">
+                  <Leaf className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-white">Global Presence</h3>
+                  <p className="text-xs text-slate-300">Serving worldwide</p>
+                </div>
+              </div>
+
+              {/* Quick Stats matching image exactly */}
+              <div className="mt-2 bg-[#0A1128]/90 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 grid grid-cols-3 gap-3 text-center shadow-2xl">
                 {[
-                  { val: "10+", label: "Years" },
-                  { val: "300+", label: "Projects" },
-                  { val: "9M+", label: "Sq. Mtrs" },
+                  { val: "10+", label: "Countries" },
+                  { val: "300+", label: "Partners" },
+                  { val: "500+", label: "Projects" },
                 ].map((stat) => (
                   <div key={stat.label}>
-                    <div className="text-lg font-black text-[#C5B27D]">
+                    <div className="text-xl font-black text-white">
                       {stat.val}
                     </div>
                     <div className="text-[10px] text-slate-400 font-medium mt-0.5">

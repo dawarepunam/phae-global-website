@@ -103,60 +103,58 @@ export default function About() {
           {/* ── Left: Content ── */}
           <div className="space-y-6 sm:space-y-7 order-2 lg:order-1">
             <div>
-              <span className="section-label">WHO WE ARE</span>
+              <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0056B3] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block">
+                ABOUT US
+              </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight leading-tight mt-3">
                 PHAE Global<br />
-                <span className="text-[#004B87]">Engineers</span>
+                <span className="text-[#0056B3]">Engineers</span>
               </h2>
-              <div className="section-divider mt-4" />
             </div>
 
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl">
-              We are a leading provider of modern agricultural infrastructure solutions, specializing in polyhouse, greenhouse, and shade net structures. With {COMPANY_INFO.established} foundation and 10+ years of experience, we are committed to helping farmers achieve higher productivity and sustainable growth.
+              PHAE GLOBAL Business Private Limited is committed to facilitating international trade and business collaborations. We bridge markets, create opportunities, and deliver sustainable growth through trust, integrity, and excellence.
             </p>
 
-            {/* 3 Principles */}
-            <div className="space-y-3.5 pt-1">
-              {principles.map((p, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#004B87] text-white text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">
-                    {i + 1}
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-[#0A1128]">{p.title}</h4>
-                    <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{p.description}</p>
-                  </div>
+            {/* 4 Brand Pillars (Matching Reference Image) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+              {[
+                { title: "Global Network", icon: "🌐" },
+                { title: "Trusted Partnerships", icon: "🤝" },
+                { title: "Quality Assurance", icon: "🛡️" },
+                { title: "Sustainable Growth", icon: "🌱" }
+              ].map((item, idx) => (
+                <div key={idx} className="p-3 rounded-2xl bg-[#F0F4F8] border border-slate-200/80 text-center hover:border-blue-400/40 hover:bg-white transition-all">
+                  <div className="text-xl mb-1">{item.icon}</div>
+                  <span className="text-xs font-bold text-[#0A1128] block leading-tight">{item.title}</span>
                 </div>
               ))}
             </div>
 
-            {/* 3 Stats */}
-            <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-2">
-              {stats.map((stat, i) => {
-                const Icon = stat.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-[#F0F4F8] rounded-2xl p-3 sm:p-4 text-center border border-slate-200/80 hover:border-[#B5A16A]/40 hover:shadow-md transition-all"
-                  >
-                    <Icon className="w-5 h-5 text-[#B5A16A] mx-auto mb-1.5" />
-                    <div className="text-xl sm:text-2xl font-black text-[#004B87]">{stat.value}</div>
-                    <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 mt-0.5 leading-tight">
-                      {stat.label}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="pt-2">
+            <div className="pt-2 flex items-center gap-4">
               <Link
                 href="/about"
-                className="btn-gold inline-flex items-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all"
+                className="px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0056B3] hover:bg-[#004B87] text-white inline-flex items-center gap-2 shadow-md hover:shadow-lg transition-all"
               >
-                <span>Learn More About Us</span>
+                <span>More About Us</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
+            </div>
+
+            {/* 3 Stats (Matching Reference Image) */}
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-4 border-t border-slate-200/80">
+              {[
+                { value: "10+", label: "Countries" },
+                { value: "300+", label: "Partners" },
+                { value: "500+", label: "Projects" },
+              ].map((stat, i) => (
+                <div key={i} className="text-center">
+                  <div className="text-2xl sm:text-3xl font-black text-[#0056B3]">{stat.value}</div>
+                  <div className="text-xs font-semibold text-slate-500 mt-0.5">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
