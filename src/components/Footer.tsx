@@ -14,10 +14,10 @@ export default function Footer() {
           {/* Column 1: Brand & Identity with Official Emblem */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-11 h-11 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform">
+              <div className="relative w-12 h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
                 <img
-                  src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-                  alt="PHAE Global Logo"
+                  src="/phae-global-logo.png"
+                  alt="PHAE Global Business Private Limited Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -25,8 +25,8 @@ export default function Footer() {
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
                   PHAE <span className="text-[#C5B27D] ml-1">Global</span>
                 </span>
-                <span className="text-[9px] uppercase font-bold tracking-widest text-[#A6B5A0] -mt-1">
-                  PHAE Global
+                <span className="text-[9px] uppercase font-bold tracking-wider text-[#A6B5A0] -mt-0.5">
+                  Business Private Limited
                 </span>
               </div>
             </Link>

@@ -98,10 +98,10 @@ export default function Navbar() {
 
         {/* Brand Logo: PHAE Global */}
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group">
-          <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-white p-1 shadow-md flex items-center justify-center border-none group-hover:scale-105 transition-transform shrink-0">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-white/20 group-hover:scale-105 transition-transform shrink-0 overflow-hidden">
             <img
-              src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-              alt="PHAE Global Logo"
+              src="/phae-global-logo.png"
+              alt="PHAE Global Business Private Limited"
               className="w-full h-full object-contain"
             />
           </div>
@@ -109,8 +109,8 @@ export default function Navbar() {
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center">
               PHAE <span className="text-[#C5B27D] ml-1">Global</span>
             </span>
-            <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.2em] sm:tracking-[0.25em] text-[#A6B5A0] -mt-1">
-              PHAE Global
+            <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.12em] text-[#A6B5A0] -mt-0.5">
+              Business Pvt Ltd
             </span>
           </div>
         </Link>
@@ -204,16 +204,21 @@ export default function Navbar() {
           {/* Top Header inside fullscreen menu with Logo and Close button */}
           <div className="fixed top-0 left-0 right-0 h-16 bg-[#102C24] border-b border-white/10 px-5 flex items-center justify-between z-[10000]">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-white/20 shrink-0 overflow-hidden">
                 <img
-                  src="https://polyhubagro.com/wp-content/uploads/2024/06/cropped-Poly-Hub-Agro-Engineers-Logo_Final-1.png"
-                  alt="PHAE Global Logo"
+                  src="/phae-global-logo.png"
+                  alt="PHAE Global Business Private Limited"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="font-black text-lg text-white">
-                PHAE <span className="text-[#C5B27D]">Global</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="font-black text-lg text-white leading-tight">
+                  PHAE <span className="text-[#C5B27D]">Global</span>
+                </span>
+                <span className="text-[8px] uppercase font-bold tracking-wider text-[#A6B5A0]">
+                  Business Pvt Ltd
+                </span>
+              </div>
             </Link>
             <div className="flex items-center">
               <button
