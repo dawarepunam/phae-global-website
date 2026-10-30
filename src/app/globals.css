@@ -4,8 +4,8 @@
   --color-forest: #004B87;
   --color-evergreen: #0A1128;
   --color-ivory: #F0F4F8;
-  --color-gold: #B5A16A;
-  --color-gold-hover: #C5B27D;
+  --color-gold: #1a7a4a;
+  --color-gold-hover: #15a058;
   --color-sage: #90A4AE;
   --color-text-dark: #0A1128;
   --color-text-muted: #475569;
@@ -68,10 +68,10 @@ img, video, iframe {
    PREMIUM BUTTONS
    ========================================= */
 .btn-gold {
-  background: linear-gradient(135deg, #C5B27D 0%, #B5A16A 55%, #9B8752 100%);
-  color: #0A1128;
+  background: linear-gradient(135deg, #1f9157 0%, #1a7a4a 55%, #136039 100%);
+  color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 4px 16px rgba(181, 161, 106, 0.35);
+  box-shadow: 0 4px 16px rgba(26, 122, 74, 0.35);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
@@ -86,8 +86,8 @@ img, video, iframe {
 }
 
 .btn-gold:hover {
-  background: linear-gradient(135deg, #D4C391 0%, #C5B27D 55%, #A9945B 100%);
-  box-shadow: 0 8px 28px rgba(181, 161, 106, 0.5);
+  background: linear-gradient(135deg, #25a865 0%, #1f9157 55%, #1a7a4a 100%);
+  box-shadow: 0 8px 28px rgba(26, 122, 74, 0.5);
   transform: translateY(-2px) scale(1.01);
 }
 
@@ -97,14 +97,14 @@ img, video, iframe {
 
 .btn-forest-outline {
   background: transparent;
-  border: 1.5px solid rgba(181, 161, 106, 0.5);
+  border: 1.5px solid rgba(26, 122, 74, 0.5);
   color: #F0F4F8;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-forest-outline:hover {
-  background: rgba(181, 161, 106, 0.12);
-  border-color: #C5B27D;
+  background: rgba(26, 122, 74, 0.12);
+  border-color: #1f9157;
   color: #FFFFFF;
   transform: translateY(-1px);
 }
@@ -203,8 +203,8 @@ img, video, iframe {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(181, 161, 106, 0.4); }
-  50% { box-shadow: 0 0 0 12px rgba(181, 161, 106, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(26, 122, 74, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(26, 122, 74, 0); }
 }
 
 .animate-fade-in {
@@ -259,7 +259,7 @@ img, video, iframe {
 .section-divider {
   width: 48px;
   height: 3px;
-  background: linear-gradient(90deg, #B5A16A, #C5B27D);
+  background: linear-gradient(90deg, #1a7a4a, #1f9157);
   border-radius: 999px;
 }
 
@@ -389,12 +389,12 @@ button, a {
 }
 
 .breadcrumb-item a:hover {
-  color: #C5B27D;
+  color: #1f9157;
   transition: color 0.2s;
 }
 
 .breadcrumb-item.active {
-  color: #C5B27D;
+  color: #1f9157;
   font-weight: 600;
 }
 

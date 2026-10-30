@@ -43,7 +43,7 @@ export default function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/90 via-[#0A1128]/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute bottom-4 left-5 right-5 text-white">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#C5B27D] bg-[#0A1128]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#B5A16A]/30">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#0A1128]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#B5A16A]/30">
                   {item.category}
                 </span>
                 <h4 className="text-base font-bold mt-2 text-white leading-snug">
@@ -63,7 +63,7 @@ export default function Gallery() {
             className="relative h-64 rounded-3xl overflow-hidden bg-gradient-to-br from-[#0A1128] to-[#004B87] flex flex-col items-center justify-center text-white p-6 text-center border-2 border-[#B5A16A]/50 shadow-xl group hover:shadow-2xl transition-all duration-300"
           >
             <div className="absolute -right-12 -bottom-12 w-40 h-40 bg-[#B5A16A]/10 rounded-full blur-2xl" />
-            <span className="text-xs uppercase font-extrabold tracking-widest text-[#C5B27D]">
+            <span className="text-xs uppercase font-extrabold tracking-widest text-[#1a7a4a]">
               Complete Portfolio
             </span>
             <h4 className="text-2xl font-black mt-2 mb-4 text-white">
@@ -86,7 +86,7 @@ export default function Gallery() {
           <div className="relative max-w-4xl max-h-[85vh] w-full flex items-center justify-center">
             <button
               onClick={() => setSelectedImg(null)}
-              className="absolute -top-12 right-0 text-white p-2 hover:text-[#C5B27D] transition-colors"
+              className="absolute -top-12 right-0 text-white p-2 hover:text-[#1a7a4a] transition-colors"
             >
               <X className="w-8 h-8" />
             </button>
@@ -101,3 +101,4 @@ export default function Gallery() {
     </section>
   );
 }
+

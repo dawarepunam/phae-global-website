@@ -29,7 +29,7 @@ export default function MobileStickyBar() {
           aria-label="Scroll to top"
           className="fixed bottom-20 sm:bottom-6 right-5 z-40 p-3 rounded-full bg-[#0A1128]/90 text-white shadow-xl hover:bg-[#0056B3] transition-all hover:scale-105 active:scale-95 border border-[#B5A16A]/30"
         >
-          <ArrowUp className="w-5 h-5 text-[#C5B27D]" />
+          <ArrowUp className="w-5 h-5 text-[#1a7a4a]" />
         </button>
       )}
 
@@ -52,7 +52,7 @@ export default function MobileStickyBar() {
           href={`tel:${COMPANY_INFO.contacts.phone}`}
           className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white/10 text-white font-bold text-xs active:bg-white/20 transition-colors"
         >
-          <Phone className="w-3.5 h-3.5 text-[#C5B27D]" />
+          <Phone className="w-3.5 h-3.5 text-[#1a7a4a]" />
           <span>Call Us</span>
         </a>
 
@@ -68,7 +68,7 @@ export default function MobileStickyBar() {
 
         <Link
           href="/contact"
-          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#C5B27D] text-[#0A1128] font-bold text-xs active:bg-[#B5A16A] transition-colors"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#1a7a4a] text-[#0A1128] font-bold text-xs active:bg-[#B5A16A] transition-colors"
         >
           <span>Quote</span>
         </Link>
@@ -76,3 +76,4 @@ export default function MobileStickyBar() {
     </>
   );
 }
+

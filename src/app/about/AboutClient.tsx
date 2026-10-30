@@ -209,7 +209,7 @@ export default function AboutClient() {
 
               {/* Overlay Info */}
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 z-10">
-                <span className="text-[10px] sm:text-xs uppercase font-bold text-[#C5B27D] tracking-wider block mb-1">
+                <span className="text-[10px] sm:text-xs uppercase font-bold text-[#1a7a4a] tracking-wider block mb-1">
                   {currentScene.category}
                 </span>
                 <h3 className="font-bold text-base sm:text-xl text-white leading-tight">
@@ -228,7 +228,7 @@ export default function AboutClient() {
                     onClick={() => setWhoIndex(i)}
                     className={`rounded-full transition-all duration-300 ${
                       i === whoIndex
-                        ? "w-5 h-1.5 bg-[#C5B27D]"
+                        ? "w-5 h-1.5 bg-[#1a7a4a]"
                         : "w-1.5 h-1.5 bg-white/40 hover:bg-white/70"
                     }`}
                   />
@@ -305,7 +305,7 @@ export default function AboutClient() {
       <section className="bg-[#0A1128]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
           <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A] bg-[#B5A16A]/10 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#1a7a4a]/10 px-3 py-1 rounded-full">
               Leadership &amp; Driving Vision
             </span>
             <h3 className="text-2xl sm:text-3xl font-black mt-3 text-white">
@@ -344,7 +344,7 @@ export default function AboutClient() {
                 </div>
                 <div>
                   <h4 className="text-base sm:text-lg font-bold text-white">{leader.name}</h4>
-                  <p className="text-xs text-[#B5A16A] font-semibold">{leader.role}</p>
+                  <p className="text-xs text-[#1a7a4a] font-semibold">{leader.role}</p>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">{leader.bio}</p>
                 </div>
               </div>
@@ -387,7 +387,7 @@ export default function AboutClient() {
                   <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">{card.body}</p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-[#004B87]">
-                  <card.FooterIcon className="w-4 h-4 text-[#B5A16A] shrink-0" />
+                  <card.FooterIcon className="w-4 h-4 text-[#1a7a4a] shrink-0" />
                   <span>{card.footer}</span>
                 </div>
               </div>
@@ -434,10 +434,10 @@ export default function AboutClient() {
                     <div
                       className={`h-full rounded-full transition-all duration-75 ${
                         i < reelIndex
-                          ? "w-full bg-[#C5B27D]"
+                          ? "w-full bg-[#1a7a4a]"
                           : i === reelIndex
-                          ? "bg-[#C5B27D]"
-                          : "w-0 bg-[#C5B27D]"
+                          ? "bg-[#1a7a4a]"
+                          : "w-0 bg-[#1a7a4a]"
                       }`}
                       style={
                         i === reelIndex
@@ -477,7 +477,7 @@ export default function AboutClient() {
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 z-20">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <div>
-                    <span className="text-[10px] sm:text-xs uppercase font-bold text-[#C5B27D] tracking-widest">
+                    <span className="text-[10px] sm:text-xs uppercase font-bold text-[#1a7a4a] tracking-widest">
                       {reelScene.category}
                     </span>
                     <h3 className="text-base sm:text-xl font-bold text-white mt-0.5 leading-tight">
@@ -509,7 +509,7 @@ export default function AboutClient() {
                       onClick={() => { setReelIndex(i); setProgress(0); }}
                       className={`rounded-full transition-all duration-300 ${
                         i === reelIndex
-                          ? "w-5 h-1.5 bg-[#C5B27D]"
+                          ? "w-5 h-1.5 bg-[#1a7a4a]"
                           : "w-1.5 h-1.5 bg-white/40 hover:bg-white/70"
                       }`}
                     />
@@ -523,4 +523,5 @@ export default function AboutClient() {
     </div>
   );
 }
+
 

@@ -55,7 +55,7 @@ export default function Contact() {
               <div className="space-y-6 text-xs text-slate-600">
                 <div className="flex items-start gap-3.5">
                   <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-                    <MapPin className="w-4 h-4 text-[#C5B27D]" />
+                    <MapPin className="w-4 h-4 text-[#1a7a4a]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Corporate Office (Punjab)</h4>
@@ -67,7 +67,7 @@ export default function Contact() {
 
                 <div className="flex items-start gap-3.5">
                   <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-                    <MapPin className="w-4 h-4 text-[#C5B27D]" />
+                    <MapPin className="w-4 h-4 text-[#1a7a4a]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Sales Office (Maharashtra)</h4>
@@ -79,7 +79,7 @@ export default function Contact() {
 
                 <div className="flex items-start gap-3.5">
                   <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-                    <Mail className="w-4 h-4 text-[#C5B27D]" />
+                    <Mail className="w-4 h-4 text-[#1a7a4a]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Email</h4>
@@ -91,7 +91,7 @@ export default function Contact() {
 
                 <div className="flex items-start gap-3.5">
                   <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-                    <Phone className="w-4 h-4 text-[#C5B27D]" />
+                    <Phone className="w-4 h-4 text-[#1a7a4a]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Phone / WhatsApp</h4>
@@ -207,8 +207,8 @@ export default function Contact() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128] via-[#0A1128]/80 to-transparent" />
             <div className="relative z-10 text-white space-y-2.5">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5B27D] flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#B5A16A]" />
+              <span className="text-[10px] font-bold uppercase tracking-widest text-[#1a7a4a] flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-[#1a7a4a]" />
                 Partnership
               </span>
               <h4 className="text-3xl font-black font-serif italic text-white leading-tight">
@@ -226,3 +226,4 @@ export default function Contact() {
     </section>
   );
 }
+

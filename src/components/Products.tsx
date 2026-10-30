@@ -69,7 +69,7 @@ export default function Products() {
           </div>
           <Link
             href="/products"
-            className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-[#004B87] hover:text-[#B5A16A] transition-colors group"
+            className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-[#004B87] hover:text-[#1a7a4a] transition-colors group"
           >
             <span>View All Products</span>
             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -109,13 +109,13 @@ export default function Products() {
                 />
                 {/* Category tag */}
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#0A1128]/85 backdrop-blur-sm text-[#C5B27D] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/85 backdrop-blur-sm text-[#1a7a4a] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#B5A16A]/30">
                     {item.category}
                   </span>
                 </div>
                 {item.badge && (
                   <div className="absolute top-3 right-3">
-                    <span className="bg-[#B5A16A] text-[#0A1128] text-[9px] font-black uppercase px-2 py-0.5 rounded-full shadow-sm">
+                    <span className="bg-[#1a7a4a] text-[#0A1128] text-[9px] font-black uppercase px-2 py-0.5 rounded-full shadow-sm">
                       {item.badge}
                     </span>
                   </div>
@@ -136,7 +136,7 @@ export default function Products() {
                 {/* CTA */}
                 <Link
                   href={`/products/${item.slug}`}
-                  className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#004B87] hover:text-[#B5A16A] transition-colors group/link"
+                  className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#004B87] hover:text-[#1a7a4a] transition-colors group/link"
                 >
                   <span>Learn More</span>
                   <div className="w-7 h-7 rounded-full bg-[#F0F4F8] group-hover/link:bg-[#004B87] group-hover/link:text-white flex items-center justify-center transition-all duration-250 border border-slate-200 group-hover/link:border-[#0056B3]">
@@ -215,7 +215,7 @@ export default function Products() {
                 />
                 <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="bg-[#0A1128]/90 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl backdrop-blur-md flex items-center gap-1.5 shadow-lg">
-                    <ZoomIn className="w-4 h-4 text-[#C5B27D]" /> Click to Enlarge
+                    <ZoomIn className="w-4 h-4 text-[#1a7a4a]" /> Click to Enlarge
                   </span>
                 </div>
               </div>
@@ -302,3 +302,4 @@ export default function Products() {
     </section>
   );
 }
+

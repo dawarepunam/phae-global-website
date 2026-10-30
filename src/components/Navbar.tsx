@@ -107,7 +107,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center">
-              PHAE <span className="text-[#C5B27D] ml-1">Global</span>
+              PHAE <span className="text-[#1a7a4a] ml-1">Global</span>
             </span>
             <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.12em] text-[#90A4AE] -mt-0.5">
               Business Pvt Ltd
@@ -123,7 +123,7 @@ export default function Navbar() {
               <div key={item.name} className="relative group">
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 py-2 transition-colors relative ${isActive ? "text-[#C5B27D] font-bold" : "hover:text-white"
+                  className={`flex items-center gap-1 py-2 transition-colors relative ${isActive ? "text-[#1a7a4a] font-bold" : "hover:text-white"
                     }`}
                 >
                   <span>{item.name}</span>
@@ -131,7 +131,7 @@ export default function Navbar() {
                     <ChevronDown className="w-3.5 h-3.5 opacity-60 group-hover:rotate-180 transition-transform duration-200" />
                   )}
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C5B27D] rounded-full" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1a7a4a] rounded-full" />
                   )}
                 </Link>
 
@@ -139,9 +139,9 @@ export default function Navbar() {
                 {item.hasDropdown && item.subItems && (
                   <div className="absolute top-full left-0 w-72 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
                     <div className="bg-[#0A1128]/95 backdrop-blur-xl border border-[#B5A16A]/30 rounded-2xl p-2 shadow-2xl">
-                      <div className="px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest text-[#B5A16A] border-b border-white/10 mb-1 flex items-center justify-between">
+                      <div className="px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest text-[#1a7a4a] border-b border-white/10 mb-1 flex items-center justify-between">
                         <span>Explore {item.name}</span>
-                        <Sparkles className="w-3 h-3 text-[#B5A16A]" />
+                        <Sparkles className="w-3 h-3 text-[#1a7a4a]" />
                       </div>
                       {item.subItems.map((sub) => (
                         <Link
@@ -151,7 +151,7 @@ export default function Navbar() {
                         >
                           <span className="line-clamp-1">{sub.name}</span>
                           {sub.badge && (
-                            <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#B5A16A]/20 text-[#C5B27D] font-bold shrink-0 ml-2">
+                            <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#1a7a4a]/20 text-[#1a7a4a] font-bold shrink-0 ml-2">
                               {sub.badge}
                             </span>
                           )}
@@ -160,7 +160,7 @@ export default function Navbar() {
                       <div className="mt-1 pt-1 border-t border-white/10">
                         <Link
                           href={item.href}
-                          className="block text-center px-3 py-1.5 text-[11px] font-bold text-[#C5B27D] hover:underline"
+                          className="block text-center px-3 py-1.5 text-[11px] font-bold text-[#1a7a4a] hover:underline"
                         >
                           View All {item.name} →
                         </Link>
@@ -213,7 +213,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-black text-lg text-white leading-tight">
-                  PHAE <span className="text-[#C5B27D]">Global</span>
+                  PHAE <span className="text-[#1a7a4a]">Global</span>
                 </span>
                 <span className="text-[8px] uppercase font-bold tracking-wider text-[#90A4AE]">
                   Business Pvt Ltd
@@ -242,7 +242,7 @@ export default function Navbar() {
                     <Link
                       href={item.href}
                       onClick={() => !item.hasDropdown && setMobileMenuOpen(false)}
-                      className={`text-base font-semibold py-2.5 flex-1 transition-colors ${isActive ? "text-[#C5B27D]" : "text-white hover:text-[#C5B27D]"
+                      className={`text-base font-semibold py-2.5 flex-1 transition-colors ${isActive ? "text-[#1a7a4a]" : "text-white hover:text-[#1a7a4a]"
                         }`}
                     >
                       {item.name}
@@ -254,7 +254,7 @@ export default function Navbar() {
                         className="p-2 text-slate-300 hover:text-white"
                         aria-label={`Toggle ${item.name} Submenu`}
                       >
-                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isSubOpen ? "rotate-180 text-[#C5B27D]" : ""}`} />
+                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isSubOpen ? "rotate-180 text-[#1a7a4a]" : ""}`} />
                       </button>
                     )}
                   </div>
@@ -282,14 +282,14 @@ export default function Navbar() {
           {/* Quick Helpline Box in Mobile Menu */}
           <div className="pt-4 space-y-3">
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
-              <span className="text-[11px] font-bold text-[#B5A16A] uppercase tracking-wider block">
+              <span className="text-[11px] font-bold text-[#1a7a4a] uppercase tracking-wider block">
                 Direct Helpline
               </span>
               <a
                 href={`tel:${COMPANY_INFO.contacts.phone}`}
                 className="text-sm font-bold text-white flex items-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#B5A16A]" />
+                <Phone className="w-4 h-4 text-[#1a7a4a]" />
                 <span>{COMPANY_INFO.contacts.phoneDisplay}</span>
               </a>
               <p className="text-[11px] text-slate-300">
@@ -312,3 +312,4 @@ export default function Navbar() {
     </header>
   );
 }
+

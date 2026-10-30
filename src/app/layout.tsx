@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased selection:bg-[#004B87] selection:text-[#C5B27D]">
+      <body className="antialiased selection:bg-[#004B87] selection:text-white">
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -101,23 +101,23 @@ export default function GalleryPage() {
               
               {/* Category Pill Tag */}
               <div className="absolute top-4 left-4 z-10">
-                <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/35 shadow-sm">
+                <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/35 shadow-sm">
                   {item.category}
                 </span>
               </div>
 
               {/* View Icon Button on Hover */}
               <div className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 shadow-md">
-                <Maximize2 className="w-4 h-4 text-[#C5B27D]" />
+                <Maximize2 className="w-4 h-4 text-[#1a7a4a]" />
               </div>
 
               {/* Bottom Caption & Location */}
               <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                <h3 className="text-base font-bold leading-snug group-hover:text-[#C5B27D] transition-colors line-clamp-1">
+                <h3 className="text-base font-bold leading-snug group-hover:text-[#1f9157] transition-colors line-clamp-1">
                   {item.title}
                 </h3>
                 <p className="text-xs text-slate-300 flex items-center gap-1.5 mt-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-[#C5B27D] shrink-0" />
+                  <MapPin className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
                   <span>{item.location}</span>
                 </p>
               </div>
@@ -171,14 +171,14 @@ export default function GalleryPage() {
             </div>
 
             <div className="mt-4 text-center text-white space-y-1">
-              <div className="inline-block bg-[#004B87] text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#B5A16A]/40 mb-1">
+              <div className="inline-block bg-[#004B87] text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#B5A16A]/40 mb-1">
                 {filtered[lightboxIndex].category} • Photo {lightboxIndex + 1} of {filtered.length}
               </div>
               <h4 className="text-lg font-bold text-white">
                 {filtered[lightboxIndex].title}
               </h4>
               <p className="text-xs text-slate-300 flex items-center justify-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-[#C5B27D]" />
+                <MapPin className="w-3.5 h-3.5 text-[#1a7a4a]" />
                 <span>{filtered[lightboxIndex].location}</span>
               </p>
             </div>
@@ -188,3 +188,4 @@ export default function GalleryPage() {
     </div>
   );
 }
+

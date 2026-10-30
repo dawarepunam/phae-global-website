@@ -179,7 +179,7 @@ export default function Hero() {
               {/* Pill badge */}
               {/* Top Pill - Modern Enterprise Tag */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
-                <Sparkles className="w-3.5 h-3.5 text-[#C5B27D]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#1a7a4a]" />
                 <span>SUSTAINABLE • INNOVATIVE • GLOBAL</span>
               </div>
 
@@ -230,14 +230,14 @@ export default function Hero() {
                     onClick={() => setCurrentSlide(i)}
                     className={`flex items-center gap-1.5 text-xs font-bold transition-all ${
                       currentSlide === i
-                        ? "text-[#C5B27D]"
+                        ? "text-[#1a7a4a]"
                         : "text-white/40 hover:text-white/70"
                     }`}
                   >
                     <div
                       className={`h-0.5 rounded-full transition-all duration-500 ${
                         currentSlide === i
-                          ? "w-8 bg-[#C5B27D]"
+                          ? "w-8 bg-[#1a7a4a]"
                           : "w-4 bg-white/30"
                       }`}
                     />
@@ -305,7 +305,7 @@ export default function Hero() {
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-1.5 text-[11px] text-slate-400/80 z-20">
           <span className="uppercase tracking-widest text-[10px]">Scroll Down</span>
           <div className="w-5 h-8 rounded-full border-2 border-slate-500/50 flex justify-center pt-1.5">
-            <div className="w-1 h-2 bg-[#C5B27D] rounded-full animate-bounce" />
+            <div className="w-1 h-2 bg-[#1a7a4a] rounded-full animate-bounce" />
           </div>
           <ChevronDown className="w-4 h-4 animate-bounce opacity-50" />
         </div>
@@ -325,7 +325,7 @@ export default function Hero() {
             <div className="flex items-center justify-between p-4 px-6 border-b border-white/10 bg-[#0A1128]">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-                <span className="text-xs uppercase font-extrabold tracking-widest text-[#C5B27D]">
+                <span className="text-xs uppercase font-extrabold tracking-widest text-[#1a7a4a]">
                   PHAE Global Field Project Reel
                 </span>
               </div>
@@ -426,3 +426,4 @@ export default function Hero() {
     </>
   );
 }
+

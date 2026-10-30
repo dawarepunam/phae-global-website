@@ -23,7 +23,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
-                  PHAE <span className="text-[#C5B27D] ml-1">Global</span>
+                  PHAE <span className="text-[#1a7a4a] ml-1">Global</span>
                 </span>
                 <span className="text-[9px] uppercase font-bold tracking-wider text-[#90A4AE] -mt-0.5">
                   Business Private Limited
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
               Navigation
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Column 3: Products */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
               Commercial Structures
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -81,26 +81,26 @@ export default function Footer() {
 
           {/* Column 4: Contact & Locations */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#C5B27D]">
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#1a7a4a]">
               Contact Details
             </h4>
             <div className="space-y-3 text-xs text-slate-300">
               <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#B5A16A] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
                 <span><strong>Corporate Office:</strong> {COMPANY_INFO.contacts.corporateOffice}</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-[#B5A16A] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0 mt-0.5" />
                 <span><strong>Sales Office:</strong> {COMPANY_INFO.contacts.salesOffice}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#B5A16A] shrink-0" />
+                <Mail className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
                 <a href={`mailto:${COMPANY_INFO.contacts.email}`} className="hover:text-white">
                   {COMPANY_INFO.contacts.email}
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#B5A16A] shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-[#1a7a4a] shrink-0" />
                 <a href={`tel:${COMPANY_INFO.contacts.phone}`} className="hover:text-white font-semibold">
                   {COMPANY_INFO.contacts.phoneDisplay}
                 </a>
@@ -124,3 +124,4 @@ export default function Footer() {
     </footer>
   );
 }
+

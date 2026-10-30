@@ -61,7 +61,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-[#0A1128]/90 text-white text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md flex items-center gap-2 shadow-lg">
-                  <ZoomIn className="w-4 h-4 text-[#B5A16A]" /> Click to Enlarge
+                  <ZoomIn className="w-4 h-4 text-[#1a7a4a]" /> Click to Enlarge
                 </span>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                 {product.category}
               </span>
               {product.badge && (
-                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#B5A16A]/20 text-[#0A1128]">
+                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#1a7a4a]/20 text-[#0A1128]">
                   {product.badge}
                 </span>
               )}

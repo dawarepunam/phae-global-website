@@ -78,7 +78,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         {/* Back Link */}
         <Link
           href="/services"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#B5A16A] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#1a7a4a] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Services</span>
@@ -94,7 +94,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-200/90 shadow-md space-y-4">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shadow-md">
-                  <IconComponent className="w-4 h-4 text-[#C5B27D]" />
+                  <IconComponent className="w-4 h-4 text-[#1a7a4a]" />
                 </div>
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0056B3] bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
                   Official Service Scope
@@ -112,7 +112,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               <div className="pt-3 flex flex-wrap gap-2.5">
                 {service.features.map((feat, idx) => (
                   <span key={idx} className="text-xs font-semibold px-3.5 py-1.5 rounded-xl bg-[#F0F4F8] text-[#004B87] border border-slate-200/80 shadow-sm flex items-center gap-1.5">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#C5B27D]" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#1a7a4a]" />
                     <span>{feat}</span>
                   </span>
                 ))}
@@ -124,7 +124,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0056B3]">
-                    <Sparkles className="w-4 h-4 text-[#C5B27D]" />
+                    <Sparkles className="w-4 h-4 text-[#1a7a4a]" />
                     <span>PHAE Global Engineering Methodology</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-[#0A1128] mt-1">
@@ -142,7 +142,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                     key={index}
                     className="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-[#0056B3]/40 transition-all group"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-[#C5B27D] flex items-center justify-center font-black text-xs shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-[#1a7a4a] flex items-center justify-center font-black text-xs shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                       {stepItem.step}
                     </div>
                     <div>
@@ -185,7 +185,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             {/* Direct Consultation Box */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl space-y-4">
               <div className="flex items-center gap-2 text-[#0056B3] font-black text-sm uppercase tracking-wider">
-                <ShieldCheck className="w-5 h-5 text-[#C5B27D]" />
+                <ShieldCheck className="w-5 h-5 text-[#1a7a4a]" />
                 <span>On-Site Engineering Consultation</span>
               </div>
 
@@ -220,7 +220,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
             {/* Other Services Navigation */}
             <div className="bg-gradient-to-br from-[#0A1128] to-[#0F1F3D] rounded-3xl p-6 text-white shadow-xl space-y-3 border border-white/10">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#C5B27D] flex items-center gap-2">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a] flex items-center gap-2">
                 <span>Explore Other Services</span>
               </h4>
               <div className="space-y-2">
@@ -231,7 +231,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                     className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10 text-xs font-semibold text-slate-200 hover:text-white"
                   >
                     <span>{other.title}</span>
-                    <span className="text-[#C5B27D]">→</span>
+                    <span className="text-[#1a7a4a]">→</span>
                   </Link>
                 ))}
               </div>
@@ -246,7 +246,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-6 mb-8 border-b border-slate-100">
             <div>
               <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-widest text-[#0056B3]">
-                <FileCheck2 className="w-4 h-4 text-[#C5B27D]" />
+                <FileCheck2 className="w-4 h-4 text-[#1a7a4a]" />
                 <span>Comprehensive Key Deliverables</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-1">
@@ -276,7 +276,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                   <div className="space-y-2">
                     <div className="flex items-start justify-between gap-2">
                       <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-200 text-[#0056B3] flex items-center justify-center shrink-0 group-hover:bg-[#004B87] group-hover:text-white transition-colors">
-                        <CheckCircle2 className="w-4 h-4 text-[#C5B27D]" />
+                        <CheckCircle2 className="w-4 h-4 text-[#1a7a4a]" />
                       </div>
                       <span className="text-[10px] font-black text-slate-400 group-hover:text-[#0056B3]">
                         #{String(idx + 1).padStart(2, '0')}
@@ -306,7 +306,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           {/* Bottom Trust Assurance Bar */}
           <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600 bg-gradient-to-r from-[#F0F4F8] via-white to-[#F0F4F8] p-4 sm:p-6 rounded-2xl border border-slate-200/80">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-[#C5B27D] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-[#1a7a4a] flex items-center justify-center shrink-0">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div>

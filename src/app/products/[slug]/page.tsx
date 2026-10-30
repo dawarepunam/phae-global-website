@@ -60,7 +60,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         {/* Back Link */}
         <Link
           href="/products"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#B5A16A] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#1a7a4a] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to Products Catalogue</span>

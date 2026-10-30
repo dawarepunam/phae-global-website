@@ -58,7 +58,7 @@ export default function Economics() {
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">
                     {activeData.type} Crop
                   </span>
                 </div>
@@ -68,7 +68,7 @@ export default function Economics() {
             {/* Center: Details */}
             <div className="lg:col-span-4 space-y-4">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#004B87]/10 text-[#004B87] text-[11px] font-bold">
-                <Sparkles className="w-3.5 h-3.5 text-[#B5A16A]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#1a7a4a]" />
                 <span>Commercial Polyhouse Cultivation</span>
               </div>
 
@@ -107,7 +107,7 @@ export default function Economics() {
               <div className="space-y-3.5">
                 {activeData.keyBenefits.map((benefit, i) => (
                   <div key={i} className="flex items-start gap-3 text-xs sm:text-sm text-slate-700 font-medium">
-                    <CheckCircle2 className="w-4 h-4 text-[#B5A16A] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#1a7a4a] shrink-0 mt-0.5" />
                     <span className="leading-snug">{benefit}</span>
                   </div>
                 ))}
@@ -127,3 +127,4 @@ export default function Economics() {
     </section>
   );
 }
+
