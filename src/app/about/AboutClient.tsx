@@ -128,14 +128,14 @@ export default function AboutClient() {
 
           {/* ── Left: Text Content ── */}
           <div className="space-y-6 order-2 lg:order-1">
-            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 border border-[#0056B3]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
-              <Sprout className="w-3.5 h-3.5 shrink-0" />
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0056B3] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
+              <Sprout className="w-3.5 h-3.5 shrink-0 text-[#0056B3]" />
               WHO WE ARE — PIONEERING SUSTAINABLE AGRICULTURE
             </span>
 
             <h2 className="text-3xl sm:text-4xl xl:text-5xl font-black text-[#0A1128] tracking-tight leading-tight">
               Welcome to{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5A16A] to-[#004B87]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0056B3] to-[#38BDF8]">
                 PHAE Global
               </span>
             </h2>
