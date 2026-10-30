@@ -51,16 +51,16 @@ export default function Products() {
   };
 
   return (
-    <section className="bg-[#F5F2E9] py-16 sm:py-24 lg:py-32">
+    <section className="bg-[#F0F4F8] py-16 sm:py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── Section Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
           <div className="max-w-xl">
             <span className="section-label">OUR PRODUCTS</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight leading-tight mt-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight leading-tight mt-4">
               Innovative Structures<br />
-              <span className="text-[#183F32]">for Better Farming</span>
+              <span className="text-[#004B87]">for Better Farming</span>
             </h2>
             <div className="section-divider mt-4" />
             <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -69,7 +69,7 @@ export default function Products() {
           </div>
           <Link
             href="/products"
-            className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-[#183F32] hover:text-[#B5A16A] transition-colors group"
+            className="shrink-0 inline-flex items-center gap-2 text-sm font-bold text-[#004B87] hover:text-[#B5A16A] transition-colors group"
           >
             <span>View All Products</span>
             <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -109,24 +109,24 @@ export default function Products() {
                 />
                 {/* Category tag */}
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#102C24]/85 backdrop-blur-sm text-[#C5B27D] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/85 backdrop-blur-sm text-[#C5B27D] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#B5A16A]/30">
                     {item.category}
                   </span>
                 </div>
                 {item.badge && (
                   <div className="absolute top-3 right-3">
-                    <span className="bg-[#B5A16A] text-[#102C24] text-[9px] font-black uppercase px-2 py-0.5 rounded-full shadow-sm">
+                    <span className="bg-[#B5A16A] text-[#0A1128] text-[9px] font-black uppercase px-2 py-0.5 rounded-full shadow-sm">
                       {item.badge}
                     </span>
                   </div>
                 )}
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#102C24]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               {/* Content */}
               <div className="flex flex-col flex-1 p-5">
-                <h3 className="text-base font-bold text-[#102C24] leading-snug group-hover:text-[#183F32] transition-colors">
+                <h3 className="text-base font-bold text-[#0A1128] leading-snug group-hover:text-[#004B87] transition-colors">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-xs text-slate-500 leading-relaxed line-clamp-2 flex-1">
@@ -136,10 +136,10 @@ export default function Products() {
                 {/* CTA */}
                 <Link
                   href={`/products/${item.slug}`}
-                  className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#183F32] hover:text-[#B5A16A] transition-colors group/link"
+                  className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#004B87] hover:text-[#B5A16A] transition-colors group/link"
                 >
                   <span>Learn More</span>
-                  <div className="w-7 h-7 rounded-full bg-[#F5F2E9] group-hover/link:bg-[#183F32] group-hover/link:text-white flex items-center justify-center transition-all duration-250 border border-slate-200 group-hover/link:border-[#183F32]">
+                  <div className="w-7 h-7 rounded-full bg-[#F0F4F8] group-hover/link:bg-[#004B87] group-hover/link:text-white flex items-center justify-center transition-all duration-250 border border-slate-200 group-hover/link:border-[#004B87]">
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
@@ -156,7 +156,7 @@ export default function Products() {
             <div className="lg:col-span-7 p-6 sm:p-10 lg:p-12 flex flex-col justify-center space-y-6">
               <div>
                 <span className="section-label">FLAGSHIP STRUCTURE</span>
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#102C24] mt-3 leading-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0A1128] mt-3 leading-tight">
                   Naturally Ventilated<br />Polyhouse
                 </h3>
                 <div className="section-divider mt-3" />
@@ -175,9 +175,9 @@ export default function Products() {
                 ].map(({ icon: Icon, label }) => (
                   <div
                     key={label}
-                    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F5F2E9] border border-slate-100 text-center hover:border-[#B5A16A]/30 hover:shadow-sm transition-all"
+                    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F0F4F8] border border-slate-100 text-center hover:border-[#B5A16A]/30 hover:shadow-sm transition-all"
                   >
-                    <Icon className="w-5 h-5 text-[#183F32]" />
+                    <Icon className="w-5 h-5 text-[#004B87]" />
                     <span className="text-[11px] font-bold text-slate-700 leading-tight">{label}</span>
                   </div>
                 ))}
@@ -193,7 +193,7 @@ export default function Products() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 bg-[#F5F2E9] hover:bg-slate-100 transition-colors border border-slate-200"
+                  className="px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 bg-[#F0F4F8] hover:bg-slate-100 transition-colors border border-slate-200"
                 >
                   Request Technical DPR
                 </Link>
@@ -201,7 +201,7 @@ export default function Products() {
             </div>
 
             {/* Interactive Image Gallery */}
-            <div className="lg:col-span-5 bg-[#F5F2E9] p-5 sm:p-7 flex flex-col gap-3 justify-center">
+            <div className="lg:col-span-5 bg-[#F0F4F8] p-5 sm:p-7 flex flex-col gap-3 justify-center">
               
               {/* Main Image with Zoom Trigger */}
               <div
@@ -214,7 +214,7 @@ export default function Products() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="bg-[#102C24]/90 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl backdrop-blur-md flex items-center gap-1.5 shadow-lg">
+                  <span className="bg-[#0A1128]/90 text-white text-xs font-bold px-3.5 py-1.5 rounded-xl backdrop-blur-md flex items-center gap-1.5 shadow-lg">
                     <ZoomIn className="w-4 h-4 text-[#C5B27D]" /> Click to Enlarge
                   </span>
                 </div>
@@ -230,7 +230,7 @@ export default function Products() {
                       onClick={() => setActiveMainImg(src)}
                       className={`h-16 sm:h-20 rounded-xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                         isActive
-                          ? "border-[#183F32] ring-2 ring-[#183F32]/30 scale-[0.98]"
+                          ? "border-[#004B87] ring-2 ring-[#004B87]/30 scale-[0.98]"
                           : "border-white hover:border-[#B5A16A] opacity-75 hover:opacity-100"
                       }`}
                     >
@@ -240,7 +240,7 @@ export default function Products() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                       {isActive && (
-                        <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#183F32] ring-1 ring-white" />
+                        <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#004B87] ring-1 ring-white" />
                       )}
                     </button>
                   );

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <div className="bg-[#F5F2E9] min-h-screen">
+    <div className="bg-[#F0F4F8] min-h-screen">
       <PageBanner
         title="Products Catalogue"
         subtitle="Engineered Commercial Agri-Structures for Modern Farming"
@@ -23,10 +23,10 @@ export default function ProductsPage() {
         
         {/* Intro */}
         <div className="max-w-3xl mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5" /> High-Performance Agri-Structures
           </span>
-          <h2 className="text-2xl sm:text-4xl font-black text-[#102C24] mt-3">
+          <h2 className="text-2xl sm:text-4xl font-black text-[#0A1128] mt-3">
             Engineered For Climate Resilience & Maximum Harvest
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -52,11 +52,11 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
 
                   {product.badge && (
-                    <span className="absolute top-3 right-3 bg-[#102C24]/90 border border-[#B5A16A]/60 text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                    <span className="absolute top-3 right-3 bg-[#0A1128]/90 border border-[#B5A16A]/60 text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
                       {product.badge}
                     </span>
                   )}
-                  <span className="absolute bottom-3 left-3 bg-[#102C24]/80 backdrop-blur-md text-[#F5F2E9] text-[11px] font-semibold px-2.5 py-1 rounded-lg">
+                  <span className="absolute bottom-3 left-3 bg-[#0A1128]/80 backdrop-blur-md text-[#F0F4F8] text-[11px] font-semibold px-2.5 py-1 rounded-lg">
                     {product.category}
                   </span>
                 </div>
@@ -64,7 +64,7 @@ export default function ProductsPage() {
                 {/* Content with fixed minimum heights for perfect alignment */}
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-lg font-bold text-[#102C24] group-hover:text-[#183F32] transition-colors line-clamp-1">
+                    <h3 className="text-lg font-bold text-[#0A1128] group-hover:text-[#004B87] transition-colors line-clamp-1">
                       {product.title}
                     </h3>
                     <p className="mt-2 text-xs sm:text-sm text-slate-600 line-clamp-3 leading-relaxed min-h-[4rem]">
@@ -73,7 +73,7 @@ export default function ProductsPage() {
                   </div>
 
                   <div className="mt-4 space-y-2 pt-3 border-t border-slate-100">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#183F32] block">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#004B87] block">
                       Engineering Highlights:
                     </span>
                     {product.features.slice(0, 2).map((feat, idx) => (
@@ -90,7 +90,7 @@ export default function ProductsPage() {
               <div className="p-6 pt-0 mt-auto">
                 <Link
                   href={`/products/${product.slug}`}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#183F32] text-[#183F32] hover:bg-[#183F32] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#004B87] text-[#004B87] hover:bg-[#004B87] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
                 >
                   <span>View Specifications & Details</span>
                   <ArrowRight className="w-4 h-4 ml-auto" />
@@ -101,7 +101,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Technical Standards Bar */}
-        <div className="mt-16 bg-[#102C24] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#B5A16A]/20">
+        <div className="mt-16 bg-[#0A1128] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#B5A16A]/20">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A]">
               Manufacturing & Civil Standard

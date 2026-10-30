@@ -44,7 +44,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   }
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen pb-24">
+    <div className="bg-[#F0F4F8] min-h-screen pb-24">
       <PageBanner
         title={product.title}
         subtitle={product.category}
@@ -60,7 +60,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         {/* Back Link */}
         <Link
           href="/products"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#183F32] hover:text-[#B5A16A] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#B5A16A] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to Products Catalogue</span>
@@ -72,10 +72,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         {/* Detailed Technical Specifications Table */}
         <div className="mt-16 bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-lg">
           <div className="max-w-2xl mb-8">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full">
               Engineering Compliance
             </span>
-            <h3 className="text-2xl font-black text-[#102C24] mt-2">
+            <h3 className="text-2xl font-black text-[#0A1128] mt-2">
               Technical Specifications & Structural Parameters
             </h3>
             <p className="text-xs text-slate-500 mt-1">
@@ -86,15 +86,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm border-collapse">
               <thead>
-                <tr className="border-b-2 border-[#183F32]/20 bg-[#F5F2E9]">
-                  <th className="py-3.5 px-4 font-bold text-[#102C24] w-1/3">Parameter</th>
-                  <th className="py-3.5 px-4 font-bold text-[#102C24]">Engineering Standard / Specification</th>
+                <tr className="border-b-2 border-[#004B87]/20 bg-[#F0F4F8]">
+                  <th className="py-3.5 px-4 font-bold text-[#0A1128] w-1/3">Parameter</th>
+                  <th className="py-3.5 px-4 font-bold text-[#0A1128]">Engineering Standard / Specification</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
                 {product.specifications.map((spec, i) => (
                   <tr key={i} className="hover:bg-slate-50/80 transition-colors">
-                    <td className="py-3.5 px-4 font-semibold text-[#183F32]">{spec.label}</td>
+                    <td className="py-3.5 px-4 font-semibold text-[#004B87]">{spec.label}</td>
                     <td className="py-3.5 px-4 text-slate-700">{spec.value}</td>
                   </tr>
                 ))}

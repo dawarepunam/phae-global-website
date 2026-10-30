@@ -12,13 +12,13 @@ export default function Gallery() {
   const previewItems = GALLERY_ITEMS.slice(0, 5);
 
   return (
-    <section className="bg-[#F5F2E9] py-24 sm:py-32">
+    <section className="bg-[#F0F4F8] py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-label">OUR GALLERY</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight mt-4">
             Real Projects. Real Results.
           </h2>
           <div className="section-divider mx-auto mt-4" />
@@ -40,10 +40,10 @@ export default function Gallery() {
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#102C24]/90 via-[#102C24]/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/90 via-[#0A1128]/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute bottom-4 left-5 right-5 text-white">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#C5B27D] bg-[#102C24]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#B5A16A]/30">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#C5B27D] bg-[#0A1128]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#B5A16A]/30">
                   {item.category}
                 </span>
                 <h4 className="text-base font-bold mt-2 text-white leading-snug">
@@ -60,7 +60,7 @@ export default function Gallery() {
           {/* 6th Slot: View More Card Linking to /gallery */}
           <Link
             href="/gallery"
-            className="relative h-64 rounded-3xl overflow-hidden bg-gradient-to-br from-[#102C24] to-[#183F32] flex flex-col items-center justify-center text-white p-6 text-center border-2 border-[#B5A16A]/50 shadow-xl group hover:shadow-2xl transition-all duration-300"
+            className="relative h-64 rounded-3xl overflow-hidden bg-gradient-to-br from-[#0A1128] to-[#004B87] flex flex-col items-center justify-center text-white p-6 text-center border-2 border-[#B5A16A]/50 shadow-xl group hover:shadow-2xl transition-all duration-300"
           >
             <div className="absolute -right-12 -bottom-12 w-40 h-40 bg-[#B5A16A]/10 rounded-full blur-2xl" />
             <span className="text-xs uppercase font-extrabold tracking-widest text-[#C5B27D]">
@@ -69,7 +69,7 @@ export default function Gallery() {
             <h4 className="text-2xl font-black mt-2 mb-4 text-white">
               View More Projects
             </h4>
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] text-[#102C24] flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] text-[#0A1128] flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
               <ArrowRight className="w-6 h-6" />
             </div>
           </Link>

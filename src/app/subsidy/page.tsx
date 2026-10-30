@@ -54,7 +54,7 @@ export default function SubsidyPage() {
   ];
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen">
+    <div className="bg-[#F0F4F8] min-h-screen">
       <PageBanner
         title="Government Subsidies"
         subtitle="Up to 50% Financial Support for Protected Farming"
@@ -65,7 +65,7 @@ export default function SubsidyPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
         {/* Top Hero Highlight Card with 50% Badge */}
-        <div className="bg-gradient-to-br from-[#102C24] via-[#14372D] to-[#183F32] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#B5A16A]/30">
+        <div className="bg-gradient-to-br from-[#0A1128] via-[#14372D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#B5A16A]/30">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#B5A16A]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
@@ -124,7 +124,7 @@ export default function SubsidyPage() {
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="section-label">THE 2 AUTHORITIES</span>
-            <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
               Available Subsidy Frameworks
             </h3>
             <div className="section-divider mx-auto mt-2" />
@@ -137,16 +137,16 @@ export default function SubsidyPage() {
               <div className="flex flex-col flex-1">
                 {/* Header Tag & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/25 px-3 py-1 rounded-full border border-[#183F32]/20">
+                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/20">
                     AUTHORITY 01 • CENTRAL SCHEME
                   </span>
-                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
+                  <span className="text-xs font-black text-[#004B87] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
                     Comprehensive 50%
                   </span>
                 </div>
 
                 {/* Title */}
-                <h4 className="text-2xl font-black text-[#102C24] min-h-[36px] flex items-center">
+                <h4 className="text-2xl font-black text-[#0A1128] min-h-[36px] flex items-center">
                   National Horticulture Board (NHB)
                 </h4>
 
@@ -156,8 +156,8 @@ export default function SubsidyPage() {
                 </p>
 
                 {/* Scope Coverage List Box */}
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
-                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
+                <div className="p-5 rounded-2xl bg-[#F0F4F8] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
+                  <span className="text-xs font-bold text-[#004B87] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
                     Total Project Cost Includes:
                   </span>
                   {[
@@ -168,7 +168,7 @@ export default function SubsidyPage() {
                     "Basic infrastructure: Grading hall, packhouse & irrigation room"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#183F32] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#004B87] shrink-0 mt-0.5" />
                       <span className="leading-snug">{item}</span>
                     </div>
                   ))}
@@ -192,16 +192,16 @@ export default function SubsidyPage() {
               <div className="flex flex-col flex-1">
                 {/* Header Tag & Badge */}
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/25 px-3 py-1 rounded-full border border-[#183F32]/20">
+                  <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/20">
                     AUTHORITY 02 • STATE MISSION
                   </span>
-                  <span className="text-xs font-black text-[#183F32] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
+                  <span className="text-xs font-black text-[#004B87] bg-emerald-100 px-2.5 py-1 rounded-lg shrink-0">
                     State Norms 50%
                   </span>
                 </div>
 
                 {/* Title */}
-                <h4 className="text-2xl font-black text-[#102C24] min-h-[36px] flex items-center">
+                <h4 className="text-2xl font-black text-[#0A1128] min-h-[36px] flex items-center">
                   National Horticulture Mission (NHM / MIDH)
                 </h4>
 
@@ -211,8 +211,8 @@ export default function SubsidyPage() {
                 </p>
 
                 {/* Scope Coverage List Box */}
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
-                  <span className="text-xs font-bold text-[#183F32] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
+                <div className="p-5 rounded-2xl bg-[#F0F4F8] border border-slate-200/80 space-y-2.5 flex-1 flex flex-col justify-start">
+                  <span className="text-xs font-bold text-[#004B87] uppercase tracking-wider block border-b border-slate-200/60 pb-2 mb-2">
                     State Department Inclusions:
                   </span>
                   {[
@@ -223,7 +223,7 @@ export default function SubsidyPage() {
                     "Direct subsidy credit into farmer bank account upon verification"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#183F32] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#004B87] shrink-0 mt-0.5" />
                       <span className="leading-snug">{item}</span>
                     </div>
                   ))}
@@ -249,7 +249,7 @@ export default function SubsidyPage() {
         <div id="calculator" className="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/90 shadow-2xl mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="section-label">ONLINE ESTIMATION TOOL</span>
-            <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
               Polyhouse Subsidy Calculator
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -278,8 +278,8 @@ export default function SubsidyPage() {
                       onClick={() => setStructureType(s.id as any)}
                       className={`p-3.5 rounded-2xl border text-left transition-all ${
                         structureType === s.id
-                          ? "bg-[#183F32] text-white border-[#183F32] shadow-md"
-                          : "bg-[#F5F2E9] text-slate-700 border-slate-200 hover:border-slate-300"
+                          ? "bg-[#004B87] text-white border-[#004B87] shadow-md"
+                          : "bg-[#F0F4F8] text-slate-700 border-slate-200 hover:border-slate-300"
                       }`}
                     >
                       <span className="text-xs font-bold block">{s.label}</span>
@@ -297,7 +297,7 @@ export default function SubsidyPage() {
                   <label className="text-xs font-extrabold uppercase tracking-wider text-slate-700">
                     2. Farm Area (Sq. Meters):
                   </label>
-                  <span className="text-sm font-black text-[#183F32] bg-[#F5F2E9] px-3 py-1 rounded-lg border border-slate-200">
+                  <span className="text-sm font-black text-[#004B87] bg-[#F0F4F8] px-3 py-1 rounded-lg border border-slate-200">
                     {areaSqMtr.toLocaleString("en-IN")} sq.m (~{(areaSqMtr / 4047).toFixed(2)} Acres)
                   </span>
                 </div>
@@ -308,7 +308,7 @@ export default function SubsidyPage() {
                   step={100}
                   value={areaSqMtr}
                   onChange={(e) => setAreaSqMtr(Number(e.target.value))}
-                  className="w-full accent-[#183F32] cursor-pointer"
+                  className="w-full accent-[#004B87] cursor-pointer"
                 />
                 <div className="flex justify-between text-[11px] text-slate-400 font-semibold mt-1">
                   <span>500 sq.m</span>
@@ -327,7 +327,7 @@ export default function SubsidyPage() {
                   <button
                     onClick={() => setSelectedScheme("nhb")}
                     className={`flex-1 py-2.5 px-4 rounded-xl text-xs font-bold border transition-all ${
-                      selectedScheme === "nhb" ? "bg-[#183F32] text-white border-[#183F32]" : "bg-white text-slate-700 border-slate-200"
+                      selectedScheme === "nhb" ? "bg-[#004B87] text-white border-[#004B87]" : "bg-white text-slate-700 border-slate-200"
                     }`}
                   >
                     NHB (National Board)
@@ -335,7 +335,7 @@ export default function SubsidyPage() {
                   <button
                     onClick={() => setSelectedScheme("nhm")}
                     className={`flex-1 py-2.5 px-4 rounded-xl text-xs font-bold border transition-all ${
-                      selectedScheme === "nhm" ? "bg-[#183F32] text-white border-[#183F32]" : "bg-white text-slate-700 border-slate-200"
+                      selectedScheme === "nhm" ? "bg-[#004B87] text-white border-[#004B87]" : "bg-white text-slate-700 border-slate-200"
                     }`}
                   >
                     NHM (State Mission)
@@ -347,7 +347,7 @@ export default function SubsidyPage() {
 
             {/* Live Calculation Output Card */}
             <div className="lg:col-span-5">
-              <div className="bg-[#102C24] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#B5A16A]/40 space-y-5">
+              <div className="bg-[#0A1128] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#B5A16A]/40 space-y-5">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-[#C5B27D] block">
                   ESTIMATED FINANCIAL BREAKDOWN
                 </span>
@@ -396,7 +396,7 @@ export default function SubsidyPage() {
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/90 shadow-xl">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="section-label">HOW WE WORK</span>
-            <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
               PHAE Global&apos;s Turnkey Subsidy Assistance
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -427,11 +427,11 @@ export default function SubsidyPage() {
                 desc: "Assisting during joint inspection team (JIT) visit until direct subsidy disbursement into bank account."
               }
             ].map((p, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#F5F2E9] border border-slate-200 text-center hover:border-[#B5A16A]/50 transition-all">
-                <div className="w-10 h-10 rounded-full bg-[#183F32] text-[#C5B27D] font-black text-sm flex items-center justify-center mx-auto mb-3">
+              <div key={idx} className="p-6 rounded-2xl bg-[#F0F4F8] border border-slate-200 text-center hover:border-[#B5A16A]/50 transition-all">
+                <div className="w-10 h-10 rounded-full bg-[#004B87] text-[#C5B27D] font-black text-sm flex items-center justify-center mx-auto mb-3">
                   {p.step}
                 </div>
-                <h4 className="text-sm font-bold text-[#102C24] mb-1.5">{p.title}</h4>
+                <h4 className="text-sm font-bold text-[#0A1128] mb-1.5">{p.title}</h4>
                 <p className="text-xs text-slate-600 leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -443,7 +443,7 @@ export default function SubsidyPage() {
             </span>
             <a
               href={`tel:${COMPANY_INFO.contacts.phone}`}
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#183F32] hover:text-[#B5A16A]"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] hover:text-[#B5A16A]"
             >
               <Phone className="w-4 h-4 text-[#C5B27D]" />
               <span>Call our Subsidy Helpline: {COMPANY_INFO.contacts.phoneDisplay}</span>

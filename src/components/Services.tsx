@@ -18,7 +18,7 @@ export default function Services() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-label">OUR SERVICES</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight mt-4">
             End-to-End Support for Your Farming Success
           </h2>
           <div className="section-divider mx-auto mt-4" />
@@ -41,16 +41,16 @@ export default function Services() {
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#102C24]/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <span className="bg-[#B5A16A] text-[#102C24] text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                    <span className="bg-[#B5A16A] text-[#0A1128] text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
                       Service 0{idx + 1}
                     </span>
                   </div>
                 </div>
 
                 <div className="p-7">
-                  <h3 className="text-xl font-bold text-[#102C24] group-hover:text-[#183F32] transition-colors">
+                  <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#004B87] transition-colors">
                     {service.title}
                   </h3>
                   <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
@@ -62,7 +62,7 @@ export default function Services() {
               <div className="p-7 pt-0 border-t border-slate-100 mt-2">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#183F32] group-hover:text-[#B5A16A] transition-colors py-2"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#004B87] group-hover:text-[#B5A16A] transition-colors py-2"
                 >
                   <span>Learn More & Scope Details</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -73,7 +73,7 @@ export default function Services() {
         </div>
 
         {/* Why Choose Our Services Strip */}
-        <div className="mt-20 bg-gradient-to-br from-[#102C24] via-[#14372D] to-[#183F32] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#B5A16A]/30 relative overflow-hidden">
+        <div className="mt-20 bg-gradient-to-br from-[#0A1128] via-[#14372D] to-[#004B87] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#B5A16A]/30 relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#B5A16A]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="text-center max-w-2xl mx-auto mb-10">
@@ -94,7 +94,7 @@ export default function Services() {
                   key={idx} 
                   className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#B5A16A]/40 hover:bg-white/10 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#183F32] border border-[#B5A16A]/30 flex items-center justify-center text-[#C5B27D] mx-auto mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-[#004B87] border border-[#B5A16A]/30 flex items-center justify-center text-[#C5B27D] mx-auto mb-3">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h4 className="text-sm font-bold text-white tracking-wide">{item.title}</h4>

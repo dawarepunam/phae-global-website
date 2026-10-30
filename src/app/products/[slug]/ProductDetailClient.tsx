@@ -60,7 +60,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="bg-[#102C24]/90 text-white text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md flex items-center gap-2 shadow-lg">
+                <span className="bg-[#0A1128]/90 text-white text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md flex items-center gap-2 shadow-lg">
                   <ZoomIn className="w-4 h-4 text-[#B5A16A]" /> Click to Enlarge
                 </span>
               </div>
@@ -78,7 +78,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     onClick={() => setActiveImage(imgUrl)}
                     className={`h-20 sm:h-24 rounded-2xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                       isActive 
-                        ? "border-[#183F32] ring-2 ring-[#183F32]/20 scale-[0.98]" 
+                        ? "border-[#004B87] ring-2 ring-[#004B87]/20 scale-[0.98]" 
                         : "border-slate-200 hover:border-[#B5A16A] opacity-80 hover:opacity-100"
                     }`}
                   >
@@ -88,7 +88,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform" 
                     />
                     {isActive && (
-                      <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-[#183F32] ring-2 ring-white" />
+                      <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-[#004B87] ring-2 ring-white" />
                     )}
                   </button>
                 );
@@ -97,11 +97,11 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           )}
 
           {/* Recommended Crops Suitability Callout */}
-          <div className="p-6 rounded-2xl bg-white border border-[#183F32]/10 shadow-sm">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#183F32] mb-1.5">
+          <div className="p-6 rounded-2xl bg-white border border-[#004B87]/10 shadow-sm">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#004B87] mb-1.5">
               Recommended Crops & Cultivation Suitability
             </h3>
-            <p className="text-sm font-semibold text-[#102C24] leading-relaxed">
+            <p className="text-sm font-semibold text-[#0A1128] leading-relaxed">
               {product.idealFor}
             </p>
           </div>
@@ -113,17 +113,17 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-lg space-y-5">
             
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full">
+              <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full">
                 {product.category}
               </span>
               {product.badge && (
-                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#B5A16A]/20 text-[#102C24]">
+                <span className="text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full bg-[#B5A16A]/20 text-[#0A1128]">
                   {product.badge}
                 </span>
               )}
             </div>
 
-            <h2 className="text-2xl sm:text-3xl font-black text-[#102C24]">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#0A1128]">
               {product.title}
             </h2>
 
@@ -133,12 +133,12 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
 
             {/* Engineering Highlights */}
             <div className="pt-3 border-t border-slate-100 space-y-2.5">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-[#183F32]">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#004B87]">
                 Key Engineering Features:
               </h4>
               {product.features.map((feat, idx) => (
                 <div key={idx} className="flex items-start gap-2 text-xs text-slate-700">
-                  <Check className="w-4 h-4 text-[#183F32] shrink-0 mt-0.5" />
+                  <Check className="w-4 h-4 text-[#004B87] shrink-0 mt-0.5" />
                   <span className="leading-relaxed">{feat}</span>
                 </div>
               ))}
@@ -155,7 +155,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               </Link>
 
               <div className="text-[11px] text-center text-slate-500 flex items-center justify-center gap-1.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#183F32]" />
+                <ShieldCheck className="w-3.5 h-3.5 text-[#004B87]" />
                 <span>Eligible for up to 50% NHB/MIDH Subsidy Support</span>
               </div>
             </div>

@@ -92,7 +92,7 @@ export default function About() {
       <div
         className="absolute inset-0 opacity-[0.025] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle, #183F32 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(circle, #004B87 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -104,9 +104,9 @@ export default function About() {
           <div className="space-y-6 sm:space-y-7 order-2 lg:order-1">
             <div>
               <span className="section-label">WHO WE ARE</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight leading-tight mt-3">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight leading-tight mt-3">
                 PHAE Global<br />
-                <span className="text-[#183F32]">Engineers</span>
+                <span className="text-[#004B87]">Engineers</span>
               </h2>
               <div className="section-divider mt-4" />
             </div>
@@ -119,11 +119,11 @@ export default function About() {
             <div className="space-y-3.5 pt-1">
               {principles.map((p, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#183F32] text-white text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-6 h-6 rounded-full bg-[#004B87] text-white text-[11px] font-black flex items-center justify-center shrink-0 mt-0.5">
                     {i + 1}
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-[#102C24]">{p.title}</h4>
+                    <h4 className="text-sm font-bold text-[#0A1128]">{p.title}</h4>
                     <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">{p.description}</p>
                   </div>
                 </div>
@@ -137,10 +137,10 @@ export default function About() {
                 return (
                   <div
                     key={i}
-                    className="bg-[#F5F2E9] rounded-2xl p-3 sm:p-4 text-center border border-slate-200/80 hover:border-[#B5A16A]/40 hover:shadow-md transition-all"
+                    className="bg-[#F0F4F8] rounded-2xl p-3 sm:p-4 text-center border border-slate-200/80 hover:border-[#B5A16A]/40 hover:shadow-md transition-all"
                   >
                     <Icon className="w-5 h-5 text-[#B5A16A] mx-auto mb-1.5" />
-                    <div className="text-xl sm:text-2xl font-black text-[#183F32]">{stat.value}</div>
+                    <div className="text-xl sm:text-2xl font-black text-[#004B87]">{stat.value}</div>
                     <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 mt-0.5 leading-tight">
                       {stat.label}
                     </div>
@@ -204,7 +204,7 @@ export default function About() {
                 <div className="w-16 h-16 sm:w-20 sm:h-20 relative">
                   <div className="absolute inset-0 rounded-full bg-[#C5B27D]/30 animate-ping" />
                   <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-[#102C24] ml-1" />
+                    <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-current text-[#0A1128] ml-1" />
                   </div>
                 </div>
               </div>
@@ -212,11 +212,11 @@ export default function About() {
 
             {/* Floating NHB badge card */}
             <div className="absolute -bottom-5 -right-3 sm:-right-6 bg-white rounded-2xl shadow-xl border border-[#B5A16A]/20 p-3 sm:p-4 flex items-center gap-3 w-48 sm:w-56 z-20">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#183F32] flex items-center justify-center text-[#C5B27D] shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#004B87] flex items-center justify-center text-[#C5B27D] shrink-0">
                 <Award className="w-5 h-5" />
               </div>
               <div>
-                <div className="text-xs font-black text-[#102C24]">NHB / MIDH</div>
+                <div className="text-xs font-black text-[#0A1128]">NHB / MIDH</div>
                 <div className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
                   Government Certified Structures
                 </div>

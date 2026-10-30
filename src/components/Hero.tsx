@@ -66,7 +66,7 @@ const featureCards = [
     icon: Leaf,
     title: "Sustainable",
     subtitle: "Organic & Precision Farming",
-    color: "from-[#A6B5A0]/20 to-[#A6B5A0]/5",
+    color: "from-[#90A4AE]/20 to-[#90A4AE]/5",
   },
 ];
 
@@ -147,7 +147,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative min-h-[95vh] sm:min-h-screen flex items-center overflow-hidden bg-[#102C24] text-white">
+      <section className="relative min-h-[95vh] sm:min-h-screen flex items-center overflow-hidden bg-[#0A1128] text-white">
         {/* ── Background Slides ── */}
         {slides.map((slide, i) => (
           <div
@@ -164,7 +164,7 @@ export default function Hero() {
               className="w-full h-full object-cover object-center"
             />
             {/* Layered gradient overlays for cinematic depth */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0A1E18]/96 via-[#102C24]/80 to-[#102C24]/35" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0A1E18]/96 via-[#0A1128]/80 to-[#0A1128]/35" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18]/90 via-transparent to-black/30" />
           </div>
         ))}
@@ -177,7 +177,7 @@ export default function Hero() {
             <div className="lg:col-span-7 xl:col-span-8 space-y-5 sm:space-y-6">
               
               {/* Pill badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#A6B5A0]/20 border border-[#B5A16A]/40 text-[#C5B27D] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#90A4AE]/20 border border-[#B5A16A]/40 text-[#C5B27D] text-xs font-bold uppercase tracking-wider backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5 text-[#C5B27D]" />
                 <span>{active.subtitle}</span>
               </div>
@@ -214,7 +214,7 @@ export default function Hero() {
                   }}
                   className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-md text-xs sm:text-sm font-bold text-white transition-all group"
                 >
-                  <span className="w-8 h-8 rounded-full bg-[#B5A16A] text-[#102C24] flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
+                  <span className="w-8 h-8 rounded-full bg-[#B5A16A] text-[#0A1128] flex items-center justify-center group-hover:scale-110 transition-transform shadow-md">
                     <Play className="w-4 h-4 fill-current ml-0.5" />
                   </span>
                   <span>Watch Field Project Video</span>
@@ -253,9 +253,9 @@ export default function Hero() {
                 return (
                   <div
                     key={i}
-                    className={`bg-gradient-to-br ${card.color} backdrop-blur-xl bg-[#0D2419]/60 border border-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#B5A16A]/40 hover:bg-[#183F32]/50 transition-all duration-300 cursor-default`}
+                    className={`bg-gradient-to-br ${card.color} backdrop-blur-xl bg-[#0D2419]/60 border border-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-xl hover:border-[#B5A16A]/40 hover:bg-[#004B87]/50 transition-all duration-300 cursor-default`}
                   >
-                    <div className="w-11 h-11 rounded-xl bg-[#183F32] border border-[#B5A16A]/25 flex items-center justify-center text-[#C5B27D] shrink-0">
+                    <div className="w-11 h-11 rounded-xl bg-[#004B87] border border-[#B5A16A]/25 flex items-center justify-center text-[#C5B27D] shrink-0">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
@@ -313,7 +313,7 @@ export default function Hero() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Bar */}
-            <div className="flex items-center justify-between p-4 px-6 border-b border-white/10 bg-[#102C24]">
+            <div className="flex items-center justify-between p-4 px-6 border-b border-white/10 bg-[#0A1128]">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
                 <span className="text-xs uppercase font-extrabold tracking-widest text-[#C5B27D]">
@@ -364,7 +364,7 @@ export default function Hero() {
                   
                   {/* On-screen Video Info Overlay */}
                   <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
-                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#B5A16A] text-[#102C24]">
+                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#B5A16A] text-[#0A1128]">
                       {scene.category} • Scene {idx + 1} of {reelScenes.length}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black text-white mt-2">
@@ -401,7 +401,7 @@ export default function Hero() {
                     }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                       reelSceneIndex === idx
-                        ? "bg-[#B5A16A] text-[#102C24] shadow-md"
+                        ? "bg-[#B5A16A] text-[#0A1128] shadow-md"
                         : "bg-white/5 hover:bg-white/10 text-slate-300"
                     }`}
                   >

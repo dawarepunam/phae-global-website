@@ -89,8 +89,8 @@ export default function Navbar() {
 
   // Identical borderless transparent-to-frosted dark glass styling across all pages
   const headerBgClass = scrolled
-    ? "bg-[#102C24]/95 backdrop-blur-2xl shadow-2xl py-2.5 sm:py-3 border-none"
-    : "bg-[#102C24]/85 backdrop-blur-xl shadow-lg py-3 sm:py-4 border-none";
+    ? "bg-[#0A1128]/95 backdrop-blur-2xl shadow-2xl py-2.5 sm:py-3 border-none"
+    : "bg-[#0A1128]/85 backdrop-blur-xl shadow-lg py-3 sm:py-4 border-none";
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 border-none ${headerBgClass}`}>
@@ -109,7 +109,7 @@ export default function Navbar() {
             <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center">
               PHAE <span className="text-[#C5B27D] ml-1">Global</span>
             </span>
-            <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.12em] text-[#A6B5A0] -mt-0.5">
+            <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-[0.12em] text-[#90A4AE] -mt-0.5">
               Business Pvt Ltd
             </span>
           </div>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 {/* Dropdown Menu */}
                 {item.hasDropdown && item.subItems && (
                   <div className="absolute top-full left-0 w-72 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                    <div className="bg-[#102C24]/95 backdrop-blur-xl border border-[#B5A16A]/30 rounded-2xl p-2 shadow-2xl">
+                    <div className="bg-[#0A1128]/95 backdrop-blur-xl border border-[#B5A16A]/30 rounded-2xl p-2 shadow-2xl">
                       <div className="px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest text-[#B5A16A] border-b border-white/10 mb-1 flex items-center justify-between">
                         <span>Explore {item.name}</span>
                         <Sparkles className="w-3 h-3 text-[#B5A16A]" />
@@ -147,7 +147,7 @@ export default function Navbar() {
                         <Link
                           key={sub.name}
                           href={sub.href}
-                          className="flex items-center justify-between px-3 py-2 text-xs text-slate-200 hover:text-white hover:bg-[#183F32]/80 rounded-lg transition-colors"
+                          className="flex items-center justify-between px-3 py-2 text-xs text-slate-200 hover:text-white hover:bg-[#004B87]/80 rounded-lg transition-colors"
                         >
                           <span className="line-clamp-1">{sub.name}</span>
                           {sub.badge && (
@@ -199,10 +199,10 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu - Fullscreen Solid Modal Above Everything */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 w-screen h-[100dvh] bg-[#102C24] overflow-y-auto px-5 pt-20 pb-28 space-y-4 animate-fadeIn z-[9999] shadow-2xl">
+        <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 w-screen h-[100dvh] bg-[#0A1128] overflow-y-auto px-5 pt-20 pb-28 space-y-4 animate-fadeIn z-[9999] shadow-2xl">
 
           {/* Top Header inside fullscreen menu with Logo and Close button */}
-          <div className="fixed top-0 left-0 right-0 h-16 bg-[#102C24] border-b border-white/10 px-5 flex items-center justify-between z-[10000]">
+          <div className="fixed top-0 left-0 right-0 h-16 bg-[#0A1128] border-b border-white/10 px-5 flex items-center justify-between z-[10000]">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-white/20 shrink-0 overflow-hidden">
                 <img
@@ -215,7 +215,7 @@ export default function Navbar() {
                 <span className="font-black text-lg text-white leading-tight">
                   PHAE <span className="text-[#C5B27D]">Global</span>
                 </span>
-                <span className="text-[8px] uppercase font-bold tracking-wider text-[#A6B5A0]">
+                <span className="text-[8px] uppercase font-bold tracking-wider text-[#90A4AE]">
                   Business Pvt Ltd
                 </span>
               </div>

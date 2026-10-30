@@ -13,13 +13,13 @@ export default function Economics() {
     CROPS_ECONOMICS_LIST[0];
 
   return (
-    <section className="bg-[#F5F2E9] py-24 sm:py-32">
+    <section className="bg-[#F0F4F8] py-24 sm:py-32">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="section-label">CROP ECONOMICS</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight mt-4">
             Know the Potential, Plan for a Profitable Future
           </h2>
           <div className="section-divider mx-auto mt-4" />
@@ -51,14 +51,14 @@ export default function Economics() {
             
             {/* Left: Crop Image Card */}
             <div className="lg:col-span-4">
-              <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-lg bg-[#102C24]/5 group flex items-center justify-center p-2 border border-slate-200">
+              <div className="relative h-72 sm:h-80 w-full rounded-2xl overflow-hidden shadow-lg bg-[#0A1128]/5 group flex items-center justify-center p-2 border border-slate-200">
                 <img
                   src={activeData.image}
                   alt={activeData.name}
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#102C24]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">
                     {activeData.type} Crop
                   </span>
                 </div>
@@ -67,17 +67,17 @@ export default function Economics() {
 
             {/* Center: Details */}
             <div className="lg:col-span-4 space-y-4">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#183F32]/10 text-[#183F32] text-[11px] font-bold">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#004B87]/10 text-[#004B87] text-[11px] font-bold">
                 <Sparkles className="w-3.5 h-3.5 text-[#B5A16A]" />
                 <span>Commercial Polyhouse Cultivation</span>
               </div>
 
-              <h3 className="text-3xl font-black text-[#102C24] tracking-tight">
+              <h3 className="text-3xl font-black text-[#0A1128] tracking-tight">
                 {activeData.name}
               </h3>
               
               <div className="text-xs font-semibold text-slate-500">
-                <span className="text-[#183F32]">Target Varieties:</span> {activeData.variety}
+                <span className="text-[#004B87]">Target Varieties:</span> {activeData.variety}
               </div>
 
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -96,10 +96,10 @@ export default function Economics() {
             </div>
 
             {/* Right: Key Benefits Card */}
-            <div className="lg:col-span-4 bg-[#F5F2E9] rounded-2xl p-6 sm:p-7 border border-[#B5A16A]/20">
+            <div className="lg:col-span-4 bg-[#F0F4F8] rounded-2xl p-6 sm:p-7 border border-[#B5A16A]/20">
               <div className="flex items-center gap-2 mb-4">
-                <TrendingUp className="w-4 h-4 text-[#183F32]" />
-                <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#183F32]">
+                <TrendingUp className="w-4 h-4 text-[#004B87]" />
+                <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#004B87]">
                   Key Benefits & Potential
                 </h4>
               </div>

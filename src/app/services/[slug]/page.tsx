@@ -62,7 +62,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const IconComponent = serviceIcons[service.id] || Hammer;
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen pb-24">
+    <div className="bg-[#F0F4F8] min-h-screen pb-24">
       <PageBanner
         title={service.title}
         subtitle="Specialized Polyhouse Engineering Services"
@@ -78,7 +78,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         {/* Back Link */}
         <Link
           href="/services"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#183F32] hover:text-[#B5A16A] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#B5A16A] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Services</span>
@@ -93,15 +93,15 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             {/* Overview Card */}
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-xl bg-[#183F32] text-white flex items-center justify-center shadow-sm">
+                <div className="w-8 h-8 rounded-xl bg-[#004B87] text-white flex items-center justify-center shadow-sm">
                   <IconComponent className="w-4 h-4 text-[#B5A16A]" />
                 </div>
-                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full">
+                <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full">
                   Official Service Scope
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-[#102C24]">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#0A1128]">
                 {service.title}
               </h2>
               <p className="text-sm text-slate-700 leading-relaxed font-normal">
@@ -111,7 +111,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               {/* Highlights */}
               <div className="pt-4 flex flex-wrap gap-2">
                 {service.features.map((feat, idx) => (
-                  <span key={idx} className="text-xs font-semibold px-3 py-1.5 rounded-xl bg-[#F5F2E9] text-[#183F32] border border-slate-200">
+                  <span key={idx} className="text-xs font-semibold px-3 py-1.5 rounded-xl bg-[#F0F4F8] text-[#004B87] border border-slate-200">
                     ✓ {feat}
                   </span>
                 ))}
@@ -120,19 +120,19 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
             {/* Step-by-Step Execution Process (From Website) */}
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md">
-              <h3 className="text-xl font-bold text-[#102C24] mb-6 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-[#0A1128] mb-6 flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-[#B5A16A]" />
                 Structured Engineering Workflow
               </h3>
 
               <div className="space-y-5">
                 {service.processSteps.map((stepItem, index) => (
-                  <div key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-[#F5F2E9]/60 border border-slate-200/60 hover:bg-[#F5F2E9] transition-colors">
-                    <div className="w-9 h-9 rounded-xl bg-[#183F32] text-[#B5A16A] flex items-center justify-center font-black text-xs shrink-0 shadow-sm">
+                  <div key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-[#F0F4F8]/60 border border-slate-200/60 hover:bg-[#F0F4F8] transition-colors">
+                    <div className="w-9 h-9 rounded-xl bg-[#004B87] text-[#B5A16A] flex items-center justify-center font-black text-xs shrink-0 shadow-sm">
                       {stepItem.step}
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold text-[#102C24]">{stepItem.title}</h4>
+                      <h4 className="text-sm font-bold text-[#0A1128]">{stepItem.title}</h4>
                       <p className="text-xs text-slate-600 mt-1 leading-relaxed">{stepItem.description}</p>
                     </div>
                   </div>
@@ -142,8 +142,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
             {/* All Specific Deliverables Grid */}
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md">
-              <h3 className="text-lg font-bold text-[#102C24] mb-4 flex items-center gap-2">
-                <FileCheck2 className="w-5 h-5 text-[#183F32]" />
+              <h3 className="text-lg font-bold text-[#0A1128] mb-4 flex items-center gap-2">
+                <FileCheck2 className="w-5 h-5 text-[#004B87]" />
                 Comprehensive Key Deliverables
               </h3>
               <div className="space-y-3">
@@ -155,7 +155,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                     <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-700 leading-relaxed border-b border-slate-100 pb-2.5 last:border-0 last:pb-0">
                       <CheckCircle2 className="w-4 h-4 text-[#B5A16A] shrink-0 mt-0.5" />
                       <div>
-                        <strong className="text-[#102C24] font-bold">{label}{detail ? ':' : ''}</strong>
+                        <strong className="text-[#0A1128] font-bold">{label}{detail ? ':' : ''}</strong>
                         {detail && <span className="text-slate-600">{detail}</span>}
                       </div>
                     </div>
@@ -184,7 +184,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
             {/* Direct Consultation Box */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-lg space-y-4">
-              <div className="flex items-center gap-2 text-[#183F32] font-black text-sm uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-[#004B87] font-black text-sm uppercase tracking-wider">
                 <ShieldCheck className="w-5 h-5 text-[#B5A16A]" />
                 <span>On-Site Engineering Consultation</span>
               </div>
@@ -194,12 +194,12 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
               </p>
 
               <div className="space-y-2 pt-2">
-                <div className="p-3 rounded-xl bg-[#F5F2E9] text-xs font-medium text-slate-700 flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-[#183F32]" />
+                <div className="p-3 rounded-xl bg-[#F0F4F8] text-xs font-medium text-slate-700 flex items-center gap-2">
+                  <PhoneCall className="w-4 h-4 text-[#004B87]" />
                   <span>Technical Helpline: <strong>+91 78149 10934</strong></span>
                 </div>
-                <div className="p-3 rounded-xl bg-[#F5F2E9] text-xs font-medium text-slate-700 flex items-center gap-2">
-                  <FileCheck2 className="w-4 h-4 text-[#183F32]" />
+                <div className="p-3 rounded-xl bg-[#F0F4F8] text-xs font-medium text-slate-700 flex items-center gap-2">
+                  <FileCheck2 className="w-4 h-4 text-[#004B87]" />
                   <span>Turnkey Project DPR & Quotation Support</span>
                 </div>
               </div>
@@ -219,7 +219,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
             </div>
 
             {/* Other Services Navigation */}
-            <div className="bg-[#102C24] rounded-3xl p-6 text-white shadow-lg space-y-3">
+            <div className="bg-[#0A1128] rounded-3xl p-6 text-white shadow-lg space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-wider text-[#B5A16A]">
                 Explore Other Services
               </h4>

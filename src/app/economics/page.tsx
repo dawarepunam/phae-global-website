@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function EconomicsPage() {
   return (
-    <div className="bg-[#F5F2E9] min-h-screen">
+    <div className="bg-[#F0F4F8] min-h-screen">
       <PageBanner
         title="Crop Economics"
         subtitle="Know the Potential, Plan for a Profitable Future"
@@ -23,10 +23,10 @@ export default function EconomicsPage() {
         
         {/* Intro */}
         <div className="max-w-3xl mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
             <Sprout className="w-3.5 h-3.5" /> High-Value Horticulture & Floriculture
           </span>
-          <h2 className="text-2xl sm:text-4xl font-black text-[#102C24] mt-3">
+          <h2 className="text-2xl sm:text-4xl font-black text-[#0A1128] mt-3">
             Commercial Return on Investment Under Protected Shelters
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600">
@@ -42,7 +42,7 @@ export default function EconomicsPage() {
               className="premium-agro-card overflow-hidden flex flex-col justify-between group h-full"
             >
               <div className="flex-1 flex flex-col">
-                <div className="relative h-60 w-full overflow-hidden bg-[#102C24]/5 flex items-center justify-center p-2">
+                <div className="relative h-60 w-full overflow-hidden bg-[#0A1128]/5 flex items-center justify-center p-2">
                   <img
                     src={crop.image}
                     alt={crop.name}
@@ -51,7 +51,7 @@ export default function EconomicsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
                   
                   <span className={`absolute top-3 left-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm ${
-                    crop.type === "Flower" ? "bg-pink-700 text-white" : "bg-[#183F32] text-white"
+                    crop.type === "Flower" ? "bg-pink-700 text-white" : "bg-[#004B87] text-white"
                   }`}>
                     {crop.type}
                   </span>
@@ -71,7 +71,7 @@ export default function EconomicsPage() {
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-[#102C24] group-hover:text-[#183F32] transition-colors">
+                    <h3 className="text-xl font-bold text-[#0A1128] group-hover:text-[#004B87] transition-colors">
                       {crop.name}
                     </h3>
 
@@ -82,8 +82,8 @@ export default function EconomicsPage() {
                   </div>
 
                   {/* Ideal Structure badge */}
-                  <div className="mt-4 p-3 rounded-xl bg-[#F5F2E9] border border-slate-200/80 text-xs min-h-[4rem] flex flex-col justify-center">
-                    <span className="font-bold text-[#183F32] block">Ideal Structure:</span>
+                  <div className="mt-4 p-3 rounded-xl bg-[#F0F4F8] border border-slate-200/80 text-xs min-h-[4rem] flex flex-col justify-center">
+                    <span className="font-bold text-[#004B87] block">Ideal Structure:</span>
                     <span className="text-slate-700 font-medium line-clamp-2">{crop.climateSuitability}</span>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function EconomicsPage() {
               <div className="p-6 pt-0 mt-auto">
                 <Link
                   href={`/economics/${crop.slug}`}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#183F32] text-[#183F32] hover:bg-[#183F32] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#004B87] text-[#004B87] hover:bg-[#004B87] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
                 >
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>View Economics & Yield Metrics</span>

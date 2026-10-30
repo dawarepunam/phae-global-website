@@ -10,7 +10,7 @@ export default function Subsidy() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-label">GOVERNMENT SCHEMES</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight mt-4">
             Government Support for a Stronger Farming Future
           </h2>
           <div className="section-divider mx-auto mt-4" />
@@ -20,16 +20,16 @@ export default function Subsidy() {
         </div>
 
         {/* Main Subsidy Highlight Banner */}
-        <div className="bg-[#F5F2E9] rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/90 shadow-xl relative overflow-hidden">
+        <div className="bg-[#F0F4F8] rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-200/90 shadow-xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Column: Schemes Overview */}
             <div className="lg:col-span-5 space-y-5">
-              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/25 px-3 py-1 rounded-full border border-[#183F32]/10">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/25 px-3 py-1 rounded-full border border-[#004B87]/10">
                 CAPITAL ASSISTANCE
               </span>
               
-              <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] leading-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] leading-tight">
                 Government Schemes & Grants
               </h3>
 
@@ -39,21 +39,21 @@ export default function Subsidy() {
 
               <div className="space-y-3 pt-1">
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
-                  <div className="w-5 h-5 rounded-full bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#C5B27D]" />
                   </div>
                   <span>National Horticulture Board (NHB) Commercial Projects</span>
                 </div>
                 
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
-                  <div className="w-5 h-5 rounded-full bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#C5B27D]" />
                   </div>
                   <span>National Horticulture Mission (NHM / MIDH Schemes)</span>
                 </div>
 
                 <div className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-slate-800">
-                  <div className="w-5 h-5 rounded-full bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#C5B27D]" />
                   </div>
                   <span>State Horticulture Department Direct Capital Grants</span>
@@ -73,7 +73,7 @@ export default function Subsidy() {
 
             {/* Center: Up to 50% Big Badge */}
             <div className="lg:col-span-3 text-center">
-              <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#102C24] to-[#183F32] text-white shadow-2xl border-2 border-[#B5A16A]/50 relative overflow-hidden group">
+              <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0A1128] to-[#004B87] text-white shadow-2xl border-2 border-[#B5A16A]/50 relative overflow-hidden group">
                 <div className="absolute -top-12 -right-12 w-28 h-28 bg-[#B5A16A]/20 rounded-full blur-xl" />
                 <span className="text-xs font-bold uppercase tracking-widest text-[#C5B27D]">
                   Up To

@@ -33,7 +33,7 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-label">GET IN TOUCH</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#102C24] tracking-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0A1128] tracking-tight mt-4">
             We&apos;re Here to Help You Build a Better Tomorrow
           </h2>
           <div className="section-divider mx-auto mt-4" />
@@ -46,19 +46,19 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Column 1: Contact Details */}
-          <div className="lg:col-span-4 bg-[#F5F2E9] rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md flex flex-col justify-between">
+          <div className="lg:col-span-4 bg-[#F0F4F8] rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md flex flex-col justify-between">
             <div>
-              <h3 className="text-lg font-black text-[#102C24] border-b border-slate-200 pb-3 mb-6">
+              <h3 className="text-lg font-black text-[#0A1128] border-b border-slate-200 pb-3 mb-6">
                 Contact Details
               </h3>
 
               <div className="space-y-6 text-xs text-slate-600">
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                     <MapPin className="w-4 h-4 text-[#C5B27D]" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#102C24] text-xs uppercase tracking-wider">Corporate Office (Punjab)</h4>
+                    <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Corporate Office (Punjab)</h4>
                     <p className="mt-1 leading-relaxed text-slate-600">
                       {COMPANY_INFO.contacts.corporateOffice}
                     </p>
@@ -66,11 +66,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                     <MapPin className="w-4 h-4 text-[#C5B27D]" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#102C24] text-xs uppercase tracking-wider">Sales Office (Maharashtra)</h4>
+                    <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Sales Office (Maharashtra)</h4>
                     <p className="mt-1 leading-relaxed text-slate-600">
                       {COMPANY_INFO.contacts.salesOffice}
                     </p>
@@ -78,11 +78,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                     <Mail className="w-4 h-4 text-[#C5B27D]" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#102C24] text-xs uppercase tracking-wider">Email</h4>
+                    <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Email</h4>
                     <p className="mt-1 text-slate-800 font-semibold">
                       {COMPANY_INFO.contacts.email}
                     </p>
@@ -90,11 +90,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#183F32] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#004B87] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                     <Phone className="w-4 h-4 text-[#C5B27D]" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#102C24] text-xs uppercase tracking-wider">Phone / WhatsApp</h4>
+                    <h4 className="font-bold text-[#0A1128] text-xs uppercase tracking-wider">Phone / WhatsApp</h4>
                     <p className="mt-1 text-slate-800 font-bold">
                       {COMPANY_INFO.contacts.phoneDisplay}
                     </p>
@@ -118,16 +118,16 @@ export default function Contact() {
 
           {/* Column 2: Send Us a Message Form */}
           <div className="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl">
-            <h3 className="text-lg font-black text-[#102C24] border-b border-slate-100 pb-3 mb-6">
+            <h3 className="text-lg font-black text-[#0A1128] border-b border-slate-100 pb-3 mb-6">
               Send Us a Message
             </h3>
 
             {submitted ? (
               <div className="py-12 text-center space-y-3">
-                <div className="w-14 h-14 rounded-full bg-emerald-100 text-[#183F32] flex items-center justify-center mx-auto">
+                <div className="w-14 h-14 rounded-full bg-emerald-100 text-[#004B87] flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h4 className="text-lg font-bold text-[#102C24]">Inquiry Sent Successfully!</h4>
+                <h4 className="text-lg font-bold text-[#0A1128]">Inquiry Sent Successfully!</h4>
                 <p className="text-xs text-slate-500">
                   Our greenhouse technical manager will contact you shortly.
                 </p>
@@ -205,7 +205,7 @@ export default function Contact() {
               alt="Let's grow together"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#102C24] via-[#102C24]/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128] via-[#0A1128]/80 to-transparent" />
             <div className="relative z-10 text-white space-y-2.5">
               <span className="text-[10px] font-bold uppercase tracking-widest text-[#C5B27D] flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#B5A16A]" />

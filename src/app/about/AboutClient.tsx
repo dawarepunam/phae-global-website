@@ -118,7 +118,7 @@ export default function AboutClient() {
   const reelScene = whoWeAreScenes[reelIndex];
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen">
+    <div className="bg-[#F0F4F8] min-h-screen">
 
       {/* ══════════════════════════════════════════════
           SECTION 1 — WHO WE ARE  (Cinematic Reel)
@@ -128,21 +128,21 @@ export default function AboutClient() {
 
           {/* ── Left: Text Content ── */}
           <div className="space-y-6 order-2 lg:order-1">
-            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#183F32] bg-[#A6B5A0]/20 border border-[#183F32]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#004B87] bg-[#90A4AE]/20 border border-[#004B87]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
               <Sprout className="w-3.5 h-3.5 shrink-0" />
               WHO WE ARE — PIONEERING SUSTAINABLE AGRICULTURE
             </span>
 
-            <h2 className="text-3xl sm:text-4xl xl:text-5xl font-black text-[#102C24] tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl xl:text-5xl font-black text-[#0A1128] tracking-tight leading-tight">
               Welcome to{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5A16A] to-[#183F32]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#B5A16A] to-[#004B87]">
                 PHAE Global
               </span>
             </h2>
 
             <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
               At PHAE Global, we stand at the forefront of agricultural innovation, driven by our commitment to sustainability and technological advancement. Our journey began in{" "}
-              <strong className="text-[#102C24]">{COMPANY_INFO.established}</strong>, with a vision to revolutionize farming practices worldwide.
+              <strong className="text-[#0A1128]">{COMPANY_INFO.established}</strong>, with a vision to revolutionize farming practices worldwide.
             </p>
 
             <p className="text-sm text-slate-600 leading-relaxed">
@@ -159,9 +159,9 @@ export default function AboutClient() {
               ].map((m) => (
                 <div
                   key={m.label}
-                  className="p-3 sm:p-4 rounded-2xl bg-white border border-[#183F32]/10 shadow-sm text-center"
+                  className="p-3 sm:p-4 rounded-2xl bg-white border border-[#004B87]/10 shadow-sm text-center"
                 >
-                  <div className="text-xl sm:text-2xl font-black text-[#183F32]">{m.val}</div>
+                  <div className="text-xl sm:text-2xl font-black text-[#004B87]">{m.val}</div>
                   <div className="text-[10px] sm:text-[11px] font-semibold text-slate-600 mt-1">{m.label}</div>
                 </div>
               ))}
@@ -177,7 +177,7 @@ export default function AboutClient() {
               </Link>
               <button
                 onClick={() => { setReelOpen(true); setReelIndex(0); setProgress(0); setIsPlaying(true); }}
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl border-2 border-[#183F32] text-[#183F32] text-xs sm:text-sm font-bold hover:bg-[#183F32] hover:text-white transition-all"
+                className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl border-2 border-[#004B87] text-[#004B87] text-xs sm:text-sm font-bold hover:bg-[#004B87] hover:text-white transition-all"
               >
                 <Play className="w-4 h-4 shrink-0 fill-current" />
                 <span>Watch Project Reel</span>
@@ -203,7 +203,7 @@ export default function AboutClient() {
                     alt={scene.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#102C24]/90 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/90 via-black/20 to-transparent" />
                 </div>
               ))}
 
@@ -255,10 +255,10 @@ export default function AboutClient() {
       <section className="border-t border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
           <div className="max-w-3xl mb-10 sm:mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5" /> CORE INNOVATION &amp; ENGINEERING
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-[#102C24] mt-3 leading-tight">
+            <h2 className="text-2xl sm:text-4xl font-black text-[#0A1128] mt-3 leading-tight">
               Innovative Solutions for Modern Agriculture
             </h2>
             <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
@@ -286,12 +286,12 @@ export default function AboutClient() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-[#F5F2E9] p-7 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-[#F0F4F8] p-7 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-12 h-12 rounded-2xl bg-[#183F32]/10 flex items-center justify-center text-[#183F32] mb-5 shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-[#004B87]/10 flex items-center justify-center text-[#004B87] mb-5 shrink-0">
                   <item.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-[#102C24]">{item.title}</h3>
+                <h3 className="text-base sm:text-lg font-bold text-[#0A1128]">{item.title}</h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -302,7 +302,7 @@ export default function AboutClient() {
       {/* ══════════════════════════════════════════════
           SECTION 3 — LEADERSHIP SPOTLIGHT
       ══════════════════════════════════════════════ */}
-      <section className="bg-[#102C24]">
+      <section className="bg-[#0A1128]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
           <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
             <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A] bg-[#B5A16A]/10 px-3 py-1 rounded-full">
@@ -356,7 +356,7 @@ export default function AboutClient() {
       {/* ══════════════════════════════════════════════
           SECTION 4 — MISSION & CUSTOMER APPROACH
       ══════════════════════════════════════════════ */}
-      <section className="bg-[#F5F2E9]">
+      <section className="bg-[#F0F4F8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {[
@@ -380,13 +380,13 @@ export default function AboutClient() {
                 className="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#183F32] bg-[#A6B5A0]/20 px-3 py-1 rounded-full">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full">
                     {card.badge}
                   </span>
-                  <h3 className="text-xl sm:text-2xl font-black text-[#102C24] mt-3">{card.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-black text-[#0A1128] mt-3">{card.title}</h3>
                   <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">{card.body}</p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-[#183F32]">
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-[#004B87]">
                   <card.FooterIcon className="w-4 h-4 text-[#B5A16A] shrink-0" />
                   <span>{card.footer}</span>
                 </div>

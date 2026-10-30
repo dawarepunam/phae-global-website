@@ -5,7 +5,7 @@ import { COMPANY_INFO, PRODUCTS_LIST, SERVICES_LIST } from "@/data/polyhubData";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#102C24] text-slate-300 pt-16 pb-12 border-t border-[#B5A16A]/25 relative">
+    <footer className="bg-[#0A1128] text-slate-300 pt-16 pb-12 border-t border-[#B5A16A]/25 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 4 Column Layout */}
@@ -25,7 +25,7 @@ export default function Footer() {
                 <span className="font-extrabold text-xl text-white tracking-tight flex items-center">
                   PHAE <span className="text-[#C5B27D] ml-1">Global</span>
                 </span>
-                <span className="text-[9px] uppercase font-bold tracking-wider text-[#A6B5A0] -mt-0.5">
+                <span className="text-[9px] uppercase font-bold tracking-wider text-[#90A4AE] -mt-0.5">
                   Business Private Limited
                 </span>
               </div>

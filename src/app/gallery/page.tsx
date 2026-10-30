@@ -30,7 +30,7 @@ export default function GalleryPage() {
   };
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen">
+    <div className="bg-[#F0F4F8] min-h-screen">
       <PageBanner
         title="Project Gallery"
         subtitle="Real Projects. Real Results."
@@ -44,11 +44,11 @@ export default function GalleryPage() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
           <div>
             <span className="section-label">PHOTO ARCHIVE</span>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+            <h2 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
               Pan-India Execution Portfolio
             </h2>
           </div>
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-2xl border border-slate-200/90 shadow-sm text-xs font-bold text-[#183F32]">
+          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-2xl border border-slate-200/90 shadow-sm text-xs font-bold text-[#004B87]">
             <Sparkles className="w-4 h-4 text-[#C5B27D]" />
             <span>Showing {filtered.length} of {GALLERY_ITEMS.length} Certified Installations</span>
           </div>
@@ -86,7 +86,7 @@ export default function GalleryPage() {
             <div
               key={idx}
               onClick={() => setLightboxIndex(idx)}
-              className="premium-agro-card group relative h-72 sm:h-80 rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500 bg-[#102C24]"
+              className="premium-agro-card group relative h-72 sm:h-80 rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500 bg-[#0A1128]"
             >
               <img
                 src={item.image}
@@ -95,11 +95,11 @@ export default function GalleryPage() {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
               />
               {/* Gradient Dark Veil */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#102C24]/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#0A1128]/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
               
               {/* Category Pill Tag */}
               <div className="absolute top-4 left-4 z-10">
-                <span className="bg-[#102C24]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/35 shadow-sm">
+                <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#C5B27D] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/35 shadow-sm">
                   {item.category}
                 </span>
               </div>
@@ -142,7 +142,7 @@ export default function GalleryPage() {
           {/* Prev Slide Arrow */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#183F32] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
+            className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -150,7 +150,7 @@ export default function GalleryPage() {
           {/* Next Slide Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#183F32] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
+            className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-[#004B87] text-white flex items-center justify-center border border-white/20 transition-all shadow-xl"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -169,7 +169,7 @@ export default function GalleryPage() {
             </div>
 
             <div className="mt-4 text-center text-white space-y-1">
-              <div className="inline-block bg-[#183F32] text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#B5A16A]/40 mb-1">
+              <div className="inline-block bg-[#004B87] text-[#C5B27D] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#B5A16A]/40 mb-1">
                 {filtered[lightboxIndex].category} • Photo {lightboxIndex + 1} of {filtered.length}
               </div>
               <h4 className="text-lg font-bold text-white">

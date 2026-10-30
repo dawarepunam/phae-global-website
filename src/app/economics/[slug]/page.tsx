@@ -55,7 +55,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
   }
 
   return (
-    <div className="bg-[#F5F2E9] min-h-screen pb-24">
+    <div className="bg-[#F0F4F8] min-h-screen pb-24">
       <PageBanner
         title={crop.name}
         subtitle={`${crop.type} Cultivation Economics & Financial Viability`}
@@ -71,7 +71,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
         {/* Back Link */}
         <Link
           href="/economics"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#183F32] hover:text-[#B5A16A] mb-8 transition-colors group"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#004B87] hover:text-[#B5A16A] mb-8 transition-colors group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span>Back to All Crops Economics</span>
@@ -85,7 +85,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md space-y-4">
               <div className="flex items-center gap-2 flex-wrap">
                 <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${
-                  crop.type === "Flower" ? "bg-pink-700 text-white" : "bg-[#183F32] text-white"
+                  crop.type === "Flower" ? "bg-pink-700 text-white" : "bg-[#004B87] text-white"
                 }`}>
                   {crop.type}
                 </span>
@@ -94,7 +94,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-[#102C24]">
+              <h2 className="text-2xl sm:text-3xl font-black text-[#0A1128]">
                 Cultivation Overview & Commercial Scope
               </h2>
 
@@ -104,7 +104,7 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
               {/* Key Benefits */}
               <div className="pt-6 border-t border-slate-100">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-[#183F32] mb-3">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-[#004B87] mb-3">
                   Key Production & Market Advantages
                 </h3>
                 <div className="space-y-2.5">
@@ -120,14 +120,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
             {/* Cultivation Agronomy Tips */}
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-md">
-              <h3 className="text-xl font-bold text-[#102C24] mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-[#0A1128] mb-4 flex items-center gap-2">
                 <Sun className="w-5 h-5 text-[#B5A16A]" />
                 Agronomy & Microclimate Best Practices
               </h3>
 
               <div className="space-y-3">
                 {crop.cultivationGuidelines.map((guide, idx) => (
-                  <div key={idx} className="p-3.5 rounded-2xl bg-[#F5F2E9] text-xs text-slate-700 font-medium border border-slate-200/50">
+                  <div key={idx} className="p-3.5 rounded-2xl bg-[#F0F4F8] text-xs text-slate-700 font-medium border border-slate-200/50">
                     {guide}
                   </div>
                 ))}
@@ -139,13 +139,13 @@ export default async function CropDetailPage({ params }: CropPageProps) {
           {/* Right Column: Image & Quick Metrics */}
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
-              <div className="h-64 sm:h-80 w-full overflow-hidden relative bg-[#102C24]/5 flex items-center justify-center p-3">
+              <div className="h-64 sm:h-80 w-full overflow-hidden relative bg-[#0A1128]/5 flex items-center justify-center p-3">
                 <img
                   src={crop.image}
                   alt={crop.name}
                   className="w-full h-full object-contain"
                 />
-                <div className="absolute top-3 right-3 bg-[#102C24]/80 backdrop-blur-md px-3 py-1 rounded-full text-white text-[11px] font-semibold border border-white/20">
+                <div className="absolute top-3 right-3 bg-[#0A1128]/80 backdrop-blur-md px-3 py-1 rounded-full text-white text-[11px] font-semibold border border-white/20">
                   {crop.name} Cultivation
                 </div>
               </div>
@@ -153,18 +153,18 @@ export default async function CropDetailPage({ params }: CropPageProps) {
 
             {/* Economics Metrics Card */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-lg space-y-4">
-              <div className="flex items-center gap-2 text-[#183F32] font-black text-sm uppercase tracking-wider">
+              <div className="flex items-center gap-2 text-[#004B87] font-black text-sm uppercase tracking-wider">
                 <TrendingUp className="w-4 h-4 text-[#B5A16A]" />
                 <span>Production & Yield Benchmarks</span>
               </div>
 
               <div className="space-y-3 pt-2">
                 {crop.economicsMetrics.map((metric, i) => (
-                  <div key={i} className="p-3.5 rounded-2xl bg-[#F5F2E9] border border-slate-200/80">
+                  <div key={i} className="p-3.5 rounded-2xl bg-[#F0F4F8] border border-slate-200/80">
                     <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">
                       {metric.label}
                     </span>
-                    <span className="text-sm font-black text-[#102C24] mt-0.5 block">
+                    <span className="text-sm font-black text-[#0A1128] mt-0.5 block">
                       {metric.value}
                     </span>
                   </div>
@@ -197,18 +197,18 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                 <span className="text-xs font-bold uppercase tracking-wider text-[#B5A16A] bg-[#B5A16A]/10 px-3 py-1 rounded-full">
                   Detailed Project Economics Report
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#102C24] mt-2">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
                   Commercial Cost & Return Analysis (1.0 Acre / {crop.costEconomics.area})
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                  Structure: <span className="font-bold text-[#183F32]">{crop.costEconomics.structureType}</span> | Conforming to NHB & MIDH Norms
+                  Structure: <span className="font-bold text-[#004B87]">{crop.costEconomics.structureType}</span> | Conforming to NHB & MIDH Norms
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
                 <Link
                   href="/subsidy"
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#183F32]/10 text-[#183F32] hover:bg-[#183F32] hover:text-white text-xs font-bold transition-colors"
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#004B87]/10 text-[#004B87] hover:bg-[#004B87] hover:text-white text-xs font-bold transition-colors"
                 >
                   <ShieldCheck className="w-4 h-4" />
                   <span>Check 50% Subsidy</span>
@@ -226,14 +226,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             {/* Section A: Capital Investment */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Building className="w-5 h-5 text-[#183F32]" />
-                <h4 className="text-lg font-bold text-[#102C24]">
+                <Building className="w-5 h-5 text-[#004B87]" />
+                <h4 className="text-lg font-bold text-[#0A1128]">
                   Part A: Capital Investment & Polyhouse Infrastructure
                 </h4>
               </div>
               <div className="overflow-x-auto rounded-2xl border border-slate-200">
                 <table className="w-full text-left text-xs sm:text-sm">
-                  <thead className="bg-[#183F32] text-white">
+                  <thead className="bg-[#004B87] text-white">
                     <tr>
                       <th className="py-3 px-4 font-bold">Particulars / Component</th>
                       <th className="py-3 px-4 font-bold text-right">Investment (INR)</th>
@@ -241,14 +241,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                   </thead>
                   <tbody className="divide-y divide-slate-200">
                     {crop.costEconomics.capitalInvestment.map((item, idx) => (
-                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F5F2E9]/40"}>
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F0F4F8]/40"}>
                         <td className="py-3 px-4 text-slate-700 font-medium">{item.particular}</td>
                         <td className="py-3 px-4 text-slate-900 font-bold text-right">{item.cost}</td>
                       </tr>
                     ))}
-                    <tr className="bg-[#183F32]/10 font-black text-sm text-[#102C24]">
+                    <tr className="bg-[#004B87]/10 font-black text-sm text-[#0A1128]">
                       <td className="py-3.5 px-4">TOTAL CAPITAL INVESTMENT (A)</td>
-                      <td className="py-3.5 px-4 text-right text-[#183F32] text-base">{crop.costEconomics.totalInvestment}</td>
+                      <td className="py-3.5 px-4 text-right text-[#004B87] text-base">{crop.costEconomics.totalInvestment}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -258,14 +258,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             {/* Section B: Annual Operational Cost */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Calculator className="w-5 h-5 text-[#183F32]" />
-                <h4 className="text-lg font-bold text-[#102C24]">
+                <Calculator className="w-5 h-5 text-[#004B87]" />
+                <h4 className="text-lg font-bold text-[#0A1128]">
                   Part B: Annual Cultivation & Operational Costs
                 </h4>
               </div>
               <div className="overflow-x-auto rounded-2xl border border-slate-200">
                 <table className="w-full text-left text-xs sm:text-sm">
-                  <thead className="bg-[#102C24] text-white">
+                  <thead className="bg-[#0A1128] text-white">
                     <tr>
                       <th className="py-3 px-4 font-bold">Cost Component</th>
                       <th className="py-3 px-4 font-bold text-right">Estimated Cost / Year</th>
@@ -273,14 +273,14 @@ export default async function CropDetailPage({ params }: CropPageProps) {
                   </thead>
                   <tbody className="divide-y divide-slate-200">
                     {crop.costEconomics.annualOperationalCost.map((item, idx) => (
-                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F5F2E9]/40"}>
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-[#F0F4F8]/40"}>
                         <td className="py-3 px-4 text-slate-700 font-medium">{item.particular}</td>
                         <td className="py-3 px-4 text-slate-900 font-bold text-right">{item.cost}</td>
                       </tr>
                     ))}
-                    <tr className="bg-[#183F32]/10 font-black text-sm text-[#102C24]">
+                    <tr className="bg-[#004B87]/10 font-black text-sm text-[#0A1128]">
                       <td className="py-3.5 px-4">TOTAL ANNUAL OPERATING COST (B)</td>
-                      <td className="py-3.5 px-4 text-right text-[#183F32] text-base">{crop.costEconomics.totalOperationalCost}</td>
+                      <td className="py-3.5 px-4 text-right text-[#004B87] text-base">{crop.costEconomics.totalOperationalCost}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -291,34 +291,34 @@ export default async function CropDetailPage({ params }: CropPageProps) {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <IndianRupee className="w-5 h-5 text-[#B5A16A]" />
-                <h4 className="text-lg font-bold text-[#102C24]">
+                <h4 className="text-lg font-bold text-[#0A1128]">
                   Part C: Projected Commercial Returns & Net Profitability
                 </h4>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                <div className="p-5 rounded-2xl bg-[#F0F4F8] border border-slate-200">
                   <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Average Yield</span>
-                  <span className="text-sm font-black text-[#102C24] mt-1 block">
+                  <span className="text-sm font-black text-[#0A1128] mt-1 block">
                     {crop.costEconomics.returnsAndProfitability.yieldBenchmark}
                   </span>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                <div className="p-5 rounded-2xl bg-[#F0F4F8] border border-slate-200">
                   <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Selling Price</span>
-                  <span className="text-sm font-black text-[#102C24] mt-1 block">
+                  <span className="text-sm font-black text-[#0A1128] mt-1 block">
                     {crop.costEconomics.returnsAndProfitability.sellingPrice}
                   </span>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#F5F2E9] border border-slate-200">
+                <div className="p-5 rounded-2xl bg-[#F0F4F8] border border-slate-200">
                   <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block">Gross Revenue / Year</span>
-                  <span className="text-base font-black text-[#183F32] mt-1 block">
+                  <span className="text-base font-black text-[#004B87] mt-1 block">
                     {crop.costEconomics.returnsAndProfitability.grossRevenue}
                   </span>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#183F32] text-white shadow-md">
+                <div className="p-5 rounded-2xl bg-[#004B87] text-white shadow-md">
                   <span className="text-xs text-[#B5A16A] font-bold uppercase tracking-wider block">Net Return / Year</span>
                   <span className="text-xl font-black text-white mt-1 block">
                     {crop.costEconomics.returnsAndProfitability.netReturnPerYear}

@@ -33,7 +33,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#102C24",
+  themeColor: "#0A1128",
 };
 
 export default function RootLayout({
@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased selection:bg-[#183F32] selection:text-[#C5B27D]">
+      <body className="antialiased selection:bg-[#004B87] selection:text-[#C5B27D]">
         <Navbar />
         <main>{children}</main>
         <Footer />

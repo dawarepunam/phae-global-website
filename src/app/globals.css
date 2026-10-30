@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-forest: #183F32;
-  --color-evergreen: #102C24;
-  --color-ivory: #F5F2E9;
+  --color-forest: #004B87;
+  --color-evergreen: #0A1128;
+  --color-ivory: #F0F4F8;
   --color-gold: #B5A16A;
   --color-gold-hover: #C5B27D;
-  --color-sage: #A6B5A0;
-  --color-text-dark: #1F2E28;
-  --color-text-muted: #536B61;
+  --color-sage: #90A4AE;
+  --color-text-dark: #0A1128;
+  --color-text-muted: #475569;
 }
 
 /* =========================================
@@ -57,7 +57,7 @@ img, video, iframe {
 }
 
 .header-scrolled {
-  background: rgba(16, 44, 36, 0.92);
+  background: rgba(10, 17, 40, 0.94);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: none;
@@ -69,7 +69,7 @@ img, video, iframe {
    ========================================= */
 .btn-gold {
   background: linear-gradient(135deg, #C5B27D 0%, #B5A16A 55%, #9B8752 100%);
-  color: #102C24;
+  color: #0A1128;
   font-weight: 700;
   box-shadow: 0 4px 16px rgba(181, 161, 106, 0.35);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -98,7 +98,7 @@ img, video, iframe {
 .btn-forest-outline {
   background: transparent;
   border: 1.5px solid rgba(181, 161, 106, 0.5);
-  color: #F5F2E9;
+  color: #F0F4F8;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -138,7 +138,7 @@ img, video, iframe {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #183F32;
+  color: #004B87;
   background: rgba(166, 181, 160, 0.18);
   border: 1px solid rgba(24, 63, 50, 0.18);
   padding: 0.25rem 0.875rem;
@@ -288,7 +288,7 @@ img, video, iframe {
    FILTER TABS
    ========================================= */
 .filter-tab-active {
-  background: #183F32;
+  background: #004B87;
   color: white;
   box-shadow: 0 4px 14px rgba(24, 63, 50, 0.3);
   transform: scale(1.04);
@@ -296,7 +296,7 @@ img, video, iframe {
 
 .filter-tab {
   background: white;
-  color: #536B61;
+  color: #475569;
   border: 1.5px solid rgba(24, 63, 50, 0.12);
   transition: all 0.25s ease;
 }
@@ -304,7 +304,7 @@ img, video, iframe {
 .filter-tab:hover:not(.filter-tab-active) {
   background: rgba(166, 181, 160, 0.12);
   border-color: rgba(24, 63, 50, 0.25);
-  color: #183F32;
+  color: #004B87;
 }
 
 /* =========================================
@@ -317,13 +317,13 @@ img, video, iframe {
   border-radius: 0.875rem;
   border: 1.5px solid rgba(24, 63, 50, 0.15);
   background: #FAFAF8;
-  color: #1F2E28;
+  color: #0A1128;
   transition: all 0.25s ease;
   outline: none;
 }
 
 .form-input:focus {
-  border-color: #183F32;
+  border-color: #004B87;
   background: white;
   box-shadow: 0 0 0 3px rgba(24, 63, 50, 0.1);
 }
@@ -348,16 +348,16 @@ button, a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F2E9;
+  background: #F0F4F8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #A6B5A0;
+  background: #90A4AE;
   border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #183F32;
+  background: #004B87;
 }
 
 /* =========================================
@@ -365,7 +365,7 @@ button, a {
    ========================================= */
 ::selection {
   background: rgba(181, 161, 106, 0.3);
-  color: #102C24;
+  color: #0A1128;
 }
 
 /* =========================================
@@ -403,7 +403,7 @@ button, a {
    ========================================= */
 .page-banner {
   position: relative;
-  background: linear-gradient(135deg, #102C24 0%, #183F32 50%, #1E4A3A 100%);
+  background: linear-gradient(135deg, #0A1128 0%, #004B87 50%, #1E4A3A 100%);
   min-height: 280px;
   display: flex;
   align-items: flex-end;
