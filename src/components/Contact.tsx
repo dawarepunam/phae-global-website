@@ -199,7 +199,7 @@ export default function Contact() {
           </div>
 
           {/* Column 3: Let's Grow Together Poster */}
-          <div className="lg:col-span-3 rounded-3xl overflow-hidden shadow-xl relative min-h-[380px] flex flex-col justify-end p-7 border-2 border-[#B5A16A]/30 group">
+          <div className="lg:col-span-3 rounded-3xl overflow-hidden shadow-xl relative min-h-[380px] flex flex-col justify-end p-7 border-2 border-[#1a7a4a]/30 group">
             <img
               src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?auto=format&fit=crop&w=800&q=80"
               alt="Let's grow together"

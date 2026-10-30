@@ -5,7 +5,7 @@ import { COMPANY_INFO, PRODUCTS_LIST, SERVICES_LIST } from "@/data/polyhubData";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A1128] text-slate-300 pt-16 pb-12 border-t border-[#B5A16A]/25 relative">
+    <footer className="bg-[#0A1128] text-slate-300 pt-16 pb-12 border-t border-[#1a7a4a]/25 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* 4 Column Layout */}
@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Column 1: Brand & Identity with Official Emblem */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-[#B5A16A]/40 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
+              <div className="relative w-12 h-12 rounded-xl bg-white p-1 shadow-md flex items-center justify-center border border-[#1a7a4a]/40 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
                 <img
                   src="/phae-global-logo.png"
                   alt="PHAE Global Business Private Limited Logo"

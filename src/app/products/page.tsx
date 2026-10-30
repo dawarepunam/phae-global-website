@@ -52,7 +52,7 @@ export default function ProductsPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
 
                   {product.badge && (
-                    <span className="absolute top-3 right-3 bg-[#0A1128]/90 border border-[#B5A16A]/60 text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
+                    <span className="absolute top-3 right-3 bg-[#0A1128]/90 border border-[#1a7a4a]/60 text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full shadow-md">
                       {product.badge}
                     </span>
                   )}
@@ -101,7 +101,7 @@ export default function ProductsPage() {
         </div>
 
         {/* Technical Standards Bar */}
-        <div className="mt-16 bg-[#0A1128] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#B5A16A]/20">
+        <div className="mt-16 bg-[#0A1128] rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-[#1a7a4a]/20">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a]">
               Manufacturing & Civil Standard

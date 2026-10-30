@@ -109,7 +109,7 @@ export default function Products() {
                 />
                 {/* Category tag */}
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#0A1128]/85 backdrop-blur-sm text-[#1a7a4a] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/85 backdrop-blur-sm text-[#1a7a4a] text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border border-[#1a7a4a]/30">
                     {item.category}
                   </span>
                 </div>
@@ -175,7 +175,7 @@ export default function Products() {
                 ].map(({ icon: Icon, label }) => (
                   <div
                     key={label}
-                    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F0F4F8] border border-slate-100 text-center hover:border-[#B5A16A]/30 hover:shadow-sm transition-all"
+                    className="flex flex-col items-center gap-2 p-3 rounded-2xl bg-[#F0F4F8] border border-slate-100 text-center hover:border-[#1a7a4a]/30 hover:shadow-sm transition-all"
                   >
                     <Icon className="w-5 h-5 text-[#004B87]" />
                     <span className="text-[11px] font-bold text-slate-700 leading-tight">{label}</span>
@@ -231,7 +231,7 @@ export default function Products() {
                       className={`h-16 sm:h-20 rounded-xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                         isActive
                           ? "border-[#0056B3] ring-2 ring-[#004B87]/30 scale-[0.98]"
-                          : "border-white hover:border-[#B5A16A] opacity-75 hover:opacity-100"
+                          : "border-white hover:border-[#1a7a4a] opacity-75 hover:opacity-100"
                       }`}
                     >
                       <img

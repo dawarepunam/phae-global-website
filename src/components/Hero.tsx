@@ -54,7 +54,7 @@ const featureCards = [
     icon: TrendingUp,
     title: "Better Crop",
     subtitle: "Higher Yield Cultivation",
-    color: "from-[#B5A16A]/20 to-[#B5A16A]/5",
+    color: "from-[#1a7a4a]/20 to-[#1a7a4a]/5",
   },
   {
     icon: Shield,
@@ -318,7 +318,7 @@ export default function Hero() {
           onClick={() => setVideoModalOpen(false)}
         >
           <div
-            className="relative w-full max-w-4xl bg-[#0A1128] rounded-3xl overflow-hidden border border-[#B5A16A]/40 shadow-2xl flex flex-col"
+            className="relative w-full max-w-4xl bg-[#0A1128] rounded-3xl overflow-hidden border border-[#1a7a4a]/40 shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top Bar */}
@@ -373,7 +373,7 @@ export default function Hero() {
                   
                   {/* On-screen Video Info Overlay */}
                   <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
-                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#B5A16A] text-[#0A1128]">
+                    <span className="text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-md bg-[#1a7a4a] text-[#0A1128]">
                       {scene.category} • Scene {idx + 1} of {reelScenes.length}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black text-white mt-2">
@@ -389,7 +389,7 @@ export default function Hero() {
               {/* Progress Bar along bottom */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-white/20 z-20">
                 <div 
-                  className="h-full bg-[#B5A16A] transition-all duration-500 ease-linear"
+                  className="h-full bg-[#1a7a4a] transition-all duration-500 ease-linear"
                   style={{ width: `${((reelSceneIndex + 1) / reelScenes.length) * 100}%` }}
                 />
               </div>
@@ -410,7 +410,7 @@ export default function Hero() {
                     }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                       reelSceneIndex === idx
-                        ? "bg-[#B5A16A] text-[#0A1128] shadow-md"
+                        ? "bg-[#1a7a4a] text-[#0A1128] shadow-md"
                         : "bg-white/5 hover:bg-white/10 text-slate-300"
                     }`}
                   >

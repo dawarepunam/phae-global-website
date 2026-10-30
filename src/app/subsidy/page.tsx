@@ -65,7 +65,7 @@ export default function SubsidyPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
         {/* Top Hero Highlight Card with 50% Badge */}
-        <div className="bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#B5A16A]/30">
+        <div className="bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#1a7a4a]/30">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#1a7a4a]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
@@ -102,7 +102,7 @@ export default function SubsidyPage() {
 
             {/* Right Big 50% Shield Badge */}
             <div className="lg:col-span-4 text-center">
-              <div className="p-8 sm:p-10 rounded-3xl bg-[#0F1F3D]/90 border-2 border-[#B5A16A]/50 backdrop-blur-md shadow-2xl">
+              <div className="p-8 sm:p-10 rounded-3xl bg-[#0F1F3D]/90 border-2 border-[#1a7a4a]/50 backdrop-blur-md shadow-2xl">
                 <span className="text-xs font-black uppercase tracking-widest text-[#1a7a4a]">
                   GOVERNMENT GRANT
                 </span>
@@ -347,7 +347,7 @@ export default function SubsidyPage() {
 
             {/* Live Calculation Output Card */}
             <div className="lg:col-span-5">
-              <div className="bg-[#0A1128] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#B5A16A]/40 space-y-5">
+              <div className="bg-[#0A1128] rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-[#1a7a4a]/40 space-y-5">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-[#1a7a4a] block">
                   ESTIMATED FINANCIAL BREAKDOWN
                 </span>
@@ -427,7 +427,7 @@ export default function SubsidyPage() {
                 desc: "Assisting during joint inspection team (JIT) visit until direct subsidy disbursement into bank account."
               }
             ].map((p, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#F0F4F8] border border-slate-200 text-center hover:border-[#B5A16A]/50 transition-all">
+              <div key={idx} className="p-6 rounded-2xl bg-[#F0F4F8] border border-slate-200 text-center hover:border-[#1a7a4a]/50 transition-all">
                 <div className="w-10 h-10 rounded-full bg-[#004B87] text-[#1a7a4a] font-black text-sm flex items-center justify-center mx-auto mb-3">
                   {p.step}
                 </div>

@@ -138,7 +138,7 @@ export default function Navbar() {
                 {/* Dropdown Menu */}
                 {item.hasDropdown && item.subItems && (
                   <div className="absolute top-full left-0 w-72 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                    <div className="bg-[#0A1128]/95 backdrop-blur-xl border border-[#B5A16A]/30 rounded-2xl p-2 shadow-2xl">
+                    <div className="bg-[#0A1128]/95 backdrop-blur-xl border border-[#1a7a4a]/30 rounded-2xl p-2 shadow-2xl">
                       <div className="px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest text-[#1a7a4a] border-b border-white/10 mb-1 flex items-center justify-between">
                         <span>Explore {item.name}</span>
                         <Sparkles className="w-3 h-3 text-[#1a7a4a]" />

@@ -101,7 +101,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Why Choose Our Services Banner */}
-        <div className="mt-20 bg-[#0A1128] rounded-3xl p-8 sm:p-12 text-white shadow-xl border border-[#B5A16A]/20">
+        <div className="mt-20 bg-[#0A1128] rounded-3xl p-8 sm:p-12 text-white shadow-xl border border-[#1a7a4a]/20">
           <div className="max-w-3xl mx-auto text-center">
             <span className="text-xs font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#1a7a4a]/10 px-3 py-1 rounded-full">
               PHAE Global Engineering Assurance

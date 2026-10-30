@@ -58,7 +58,7 @@ export default function Economics() {
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute top-3 left-3">
-                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/30">
+                  <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-1 rounded-full border border-[#1a7a4a]/30">
                     {activeData.type} Crop
                   </span>
                 </div>
@@ -96,7 +96,7 @@ export default function Economics() {
             </div>
 
             {/* Right: Key Benefits Card */}
-            <div className="lg:col-span-4 bg-[#F0F4F8] rounded-2xl p-6 sm:p-7 border border-[#B5A16A]/20">
+            <div className="lg:col-span-4 bg-[#F0F4F8] rounded-2xl p-6 sm:p-7 border border-[#1a7a4a]/20">
               <div className="flex items-center gap-2 mb-4">
                 <TrendingUp className="w-4 h-4 text-[#004B87]" />
                 <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#004B87]">

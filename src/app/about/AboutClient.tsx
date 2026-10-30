@@ -335,7 +335,7 @@ export default function AboutClient() {
                 key={leader.name}
                 className="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-4 sm:gap-5"
               >
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-white/10 shrink-0 border-2 border-[#B5A16A]/60 shadow-md">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden bg-white/10 shrink-0 border-2 border-[#1a7a4a]/60 shadow-md">
                   <img
                     src={leader.img}
                     alt={leader.name}

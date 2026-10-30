@@ -79,7 +79,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     className={`h-20 sm:h-24 rounded-2xl overflow-hidden border-2 transition-all relative group bg-white shadow-sm ${
                       isActive 
                         ? "border-[#0056B3] ring-2 ring-[#004B87]/20 scale-[0.98]" 
-                        : "border-slate-200 hover:border-[#B5A16A] opacity-80 hover:opacity-100"
+                        : "border-slate-200 hover:border-[#1a7a4a] opacity-80 hover:opacity-100"
                     }`}
                   >
                     <img 

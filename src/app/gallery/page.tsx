@@ -101,7 +101,7 @@ export default function GalleryPage() {
               
               {/* Category Pill Tag */}
               <div className="absolute top-4 left-4 z-10">
-                <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#B5A16A]/35 shadow-sm">
+                <span className="bg-[#0A1128]/90 backdrop-blur-md text-[#1a7a4a] text-[10px] font-extrabold uppercase px-3 py-1 rounded-full border border-[#1a7a4a]/35 shadow-sm">
                   {item.category}
                 </span>
               </div>
@@ -171,7 +171,7 @@ export default function GalleryPage() {
             </div>
 
             <div className="mt-4 text-center text-white space-y-1">
-              <div className="inline-block bg-[#004B87] text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#B5A16A]/40 mb-1">
+              <div className="inline-block bg-[#004B87] text-[#1a7a4a] text-[10px] font-bold uppercase px-3 py-0.5 rounded-full border border-[#1a7a4a]/40 mb-1">
                 {filtered[lightboxIndex].category} • Photo {lightboxIndex + 1} of {filtered.length}
               </div>
               <h4 className="text-lg font-bold text-white">

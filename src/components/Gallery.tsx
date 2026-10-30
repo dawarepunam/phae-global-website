@@ -43,7 +43,7 @@ export default function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128]/90 via-[#0A1128]/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute bottom-4 left-5 right-5 text-white">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#0A1128]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#B5A16A]/30">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1a7a4a] bg-[#0A1128]/80 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-[#1a7a4a]/30">
                   {item.category}
                 </span>
                 <h4 className="text-base font-bold mt-2 text-white leading-snug">
@@ -60,16 +60,16 @@ export default function Gallery() {
           {/* 6th Slot: View More Card Linking to /gallery */}
           <Link
             href="/gallery"
-            className="relative h-64 rounded-3xl overflow-hidden bg-gradient-to-br from-[#0A1128] to-[#004B87] flex flex-col items-center justify-center text-white p-6 text-center border-2 border-[#B5A16A]/50 shadow-xl group hover:shadow-2xl transition-all duration-300"
+            className="relative h-64 rounded-3xl overflow-hidden bg-gradient-to-br from-[#0A1128] to-[#004B87] flex flex-col items-center justify-center text-white p-6 text-center border-2 border-[#1a7a4a]/50 shadow-xl group hover:shadow-2xl transition-all duration-300"
           >
-            <div className="absolute -right-12 -bottom-12 w-40 h-40 bg-[#B5A16A]/10 rounded-full blur-2xl" />
+            <div className="absolute -right-12 -bottom-12 w-40 h-40 bg-[#1a7a4a]/10 rounded-full blur-2xl" />
             <span className="text-xs uppercase font-extrabold tracking-widest text-[#1a7a4a]">
               Complete Portfolio
             </span>
             <h4 className="text-2xl font-black mt-2 mb-4 text-white">
               View More Projects
             </h4>
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C5B27D] to-[#B5A16A] text-[#0A1128] flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a7a4a] to-[#1a7a4a] text-[#0A1128] flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
               <ArrowRight className="w-6 h-6" />
             </div>
           </Link>
