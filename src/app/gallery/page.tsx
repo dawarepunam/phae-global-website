@@ -113,7 +113,7 @@ export default function GalleryPage() {
 
               {/* Bottom Caption & Location */}
               <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                <h3 className="text-base font-bold leading-snug group-hover:text-[#34E87B] transition-colors line-clamp-1">
+                <h3 className="text-base font-bold leading-snug group-hover:text-[#43e961] transition-colors line-clamp-1">
                   {item.title}
                 </h3>
                 <p className="text-xs text-slate-300 flex items-center gap-1.5 mt-1.5">

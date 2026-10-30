@@ -108,7 +108,7 @@ export default function Contact() {
                 href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs shadow-md transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white shadow-[0_4px_16px_rgba(37,211,102,0.4)] text-white font-bold text-xs shadow-md transition-colors"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>Instant WhatsApp Inquiry</span>

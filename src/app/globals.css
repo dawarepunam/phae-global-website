@@ -5,7 +5,7 @@
   --color-evergreen: #0A1128;
   --color-ivory: #F0F4F8;
   --color-gold: #25D366;
-  --color-gold-hover: #25D366;
+  --color-gold-hover: #43e961;
   --color-sage: #90A4AE;
   --color-text-dark: #0A1128;
   --color-text-muted: #475569;
@@ -68,10 +68,10 @@ img, video, iframe {
    PREMIUM BUTTONS
    ========================================= */
 .btn-gold {
-  background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+  background: linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);
   color: #ffffff;
-  font-weight: 700;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  font-weight: 800;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
@@ -81,13 +81,13 @@ img, video, iframe {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 60%);
   pointer-events: none;
 }
 
 .btn-gold:hover {
-  background: linear-gradient(135deg, #2bf074 0%, #25D366 100%);
-  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+  background: linear-gradient(135deg, #43e961 0%, #25D366 100%);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.65);
   transform: translateY(-2px) scale(1.01);
 }
 
@@ -97,13 +97,14 @@ img, video, iframe {
 
 .btn-forest-outline {
   background: transparent;
-  border: 1.5px solid rgba(37, 211, 102, 0.6);
-  color: #F0F4F8;
+  border: 2px solid #25D366;
+  color: #25D366;
+  font-weight: 700;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-forest-outline:hover {
-  background: rgba(37, 211, 102, 0.15);
+  background: #25D366;
   border-color: #25D366;
   color: #FFFFFF;
   transform: translateY(-1px);
@@ -259,7 +260,7 @@ img, video, iframe {
 .section-divider {
   width: 48px;
   height: 3px;
-  background: linear-gradient(90deg, #25D366, #34E87B);
+  background: linear-gradient(90deg, #25D366, #43e961);
   border-radius: 999px;
 }
 
@@ -389,12 +390,12 @@ button, a {
 }
 
 .breadcrumb-item a:hover {
-  color: #34E87B;
+  color: #43e961;
   transition: color 0.2s;
 }
 
 .breadcrumb-item.active {
-  color: #34E87B;
+  color: #43e961;
   font-weight: 600;
 }
 
