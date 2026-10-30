@@ -141,7 +141,7 @@ export default function ContactPage() {
     <div className="bg-[#F0F4F8] min-h-screen">
       
       {/* ── CINEMATIC CONTACT HERO SECTION ── */}
-      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden bg-[#0A1128] text-white">
+      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden bg-[#060B18] text-white">
         {/* Background Layers */}
         <div className="absolute inset-0 z-0">
           <img
@@ -149,73 +149,70 @@ export default function ContactPage() {
             alt="PHAE Global Greenhouse Engineering"
             className="w-full h-full object-cover object-center opacity-30 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#060B18] via-[#0A1128]/95 to-[#0B3A6E]/85" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1128] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#060B18] via-[#0A1128]/95 to-[#0056B3]/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#060B18] via-transparent to-transparent" />
         </div>
-
-        {/* Ambient Glow */}
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#B5A16A]/10 rounded-full blur-[140px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-8 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#004B87]/80 border border-[#B5A16A]/40 text-[#F0F4F8] text-[11px] font-bold tracking-widest uppercase backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-[#C5B27D] animate-ping" />
-                <span>DIRECT AGRO ENGINEERING HELPLINE</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-[#38BDF8] animate-ping" />
+                <span>CONTACT US</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
                 Let&apos;s Build Your Next<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C5B27D] via-[#D4C391] to-[#B5A16A]">
+                <span className="text-[#38BDF8]">
                   High-Yield Farm Project
                 </span>
               </h1>
 
               <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                Connect directly with our company leadership and structural engineers for turn-key protected cultivation, bankable subsidy DPRs, and on-site topographic evaluations.
+                Connect directly with our company leadership and structural engineers for turnkey protected cultivation, bankable subsidy DPRs, and on-site topographic evaluations.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE Global%20Agro%20Engineers,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
+                  href={`https://wa.me/${COMPANY_INFO.contacts.whatsapp}?text=Hello%20PHAE%20Global%20Business,%20I%20am%20interested%20in%20a%20Polyhouse%20Quote.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-gold px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg"
+                  className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold bg-[#0056B3] hover:bg-[#004B87] text-white flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
                 >
                   <MessageSquare className="w-4 h-4" />
-                  <span>Chat on WhatsApp</span>
+                  <span>Chat on WhatsApp →</span>
                 </a>
 
                 <a
                   href={`tel:${COMPANY_INFO.contacts.phone}`}
-                  className="btn-forest-outline px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-md text-xs sm:text-sm font-bold text-white transition-all"
                 >
-                  <Phone className="w-4 h-4 text-[#C5B27D]" />
+                  <Phone className="w-4 h-4 text-[#38BDF8]" />
                   <span>Call {COMPANY_INFO.contacts.phoneDisplay}</span>
                 </a>
               </div>
             </div>
 
-            {/* Right Trust Stats Strip */}
+            {/* Right Trust Stats Strip (matching reference image exactly with glossy navy-blue glass cards) */}
             <div className="lg:col-span-4 grid grid-cols-2 gap-3.5">
-              <div className="bg-[#004B87]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
-                <Award className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 text-center shadow-2xl">
+                <Award className="w-5 h-5 text-[#38BDF8] mx-auto mb-1.5" />
                 <div className="text-2xl font-black text-white">10+</div>
                 <div className="text-[11px] text-slate-300 font-semibold">Years of Excellence</div>
               </div>
-              <div className="bg-[#004B87]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
-                <ShieldCheck className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 text-center shadow-2xl">
+                <ShieldCheck className="w-5 h-5 text-[#38BDF8] mx-auto mb-1.5" />
                 <div className="text-2xl font-black text-white">300+</div>
                 <div className="text-[11px] text-slate-300 font-semibold">Projects Built</div>
               </div>
-              <div className="bg-[#004B87]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
-                <Building2 className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 text-center shadow-2xl">
+                <Building2 className="w-5 h-5 text-[#38BDF8] mx-auto mb-1.5" />
                 <div className="text-2xl font-black text-white">18+</div>
                 <div className="text-[11px] text-slate-300 font-semibold">Indian States</div>
               </div>
-              <div className="bg-[#004B87]/70 backdrop-blur-md border border-[#B5A16A]/25 rounded-2xl p-4 text-center">
-                <Sparkles className="w-5 h-5 text-[#C5B27D] mx-auto mb-1.5" />
+              <div className="bg-[#0A1128]/80 backdrop-blur-2xl border border-white/15 rounded-2xl p-4 text-center shadow-2xl">
+                <Sparkles className="w-5 h-5 text-[#38BDF8] mx-auto mb-1.5" />
                 <div className="text-2xl font-black text-white">Up to 50%</div>
                 <div className="text-[11px] text-slate-300 font-semibold">Subsidy Support</div>
               </div>
@@ -228,52 +225,64 @@ export default function ContactPage() {
       {/* ── MAIN CONTENT CONTAINER ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
-        {/* Top 3 Quick Helpline Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {/* Top 4 Quick Helpline Cards (matching 4-column reference image exactly) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           
-          <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-[#004B87] text-[#C5B27D] flex items-center justify-center shrink-0 shadow-md">
-              <Phone className="w-6 h-6" />
+          <div className="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-md hover:border-[#0056B3]/40 hover:shadow-xl transition-all duration-300 flex items-start gap-3.5">
+            <div className="w-11 h-11 rounded-2xl bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center shrink-0 shadow-sm">
+              <Phone className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-[#004B87]">Quick Helpline</span>
-              <h4 className="text-base font-extrabold text-[#0A1128] mt-0.5">Call / WhatsApp</h4>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#0056B3]">Quick Helpline</span>
+              <h4 className="text-sm font-extrabold text-[#0A1128] mt-0.5">Call / WhatsApp</h4>
               <a 
                 href={`tel:${COMPANY_INFO.contacts.phone}`} 
-                className="text-sm font-black text-[#004B87] hover:text-[#B5A16A] block mt-1"
+                className="text-xs font-black text-[#0056B3] hover:underline block mt-0.5"
               >
                 {COMPANY_INFO.contacts.phoneDisplay}
               </a>
-              <span className="text-[11px] text-slate-500 block mt-0.5">Direct Greenhouse Advisory</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Direct Greenhouse Advisory</span>
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-[#004B87] text-[#C5B27D] flex items-center justify-center shrink-0 shadow-md">
-              <Mail className="w-6 h-6" />
+          <div className="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-md hover:border-[#0056B3]/40 hover:shadow-xl transition-all duration-300 flex items-start gap-3.5">
+            <div className="w-11 h-11 rounded-2xl bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center shrink-0 shadow-sm">
+              <Mail className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-[#004B87]">Direct Email</span>
-              <h4 className="text-base font-extrabold text-[#0A1128] mt-0.5">Official Mail</h4>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#0056B3]">Direct Email</span>
+              <h4 className="text-sm font-extrabold text-[#0A1128] mt-0.5">Official Mail</h4>
               <a 
                 href={`mailto:${COMPANY_INFO.contacts.email}`} 
-                className="text-sm font-black text-[#004B87] hover:text-[#B5A16A] block mt-1 break-all"
+                className="text-xs font-black text-[#0056B3] hover:underline block mt-0.5 break-all"
               >
                 {COMPANY_INFO.contacts.email}
               </a>
-              <span className="text-[11px] text-slate-500 block mt-0.5">DPR & Estimation Inquiries</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">DPR & Estimation Inquiries</span>
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200/90 shadow-md hover:border-[#B5A16A]/50 hover:shadow-xl transition-all duration-300 flex items-start gap-4 sm:col-span-2 lg:col-span-1">
-            <div className="w-12 h-12 rounded-2xl bg-[#004B87] text-[#C5B27D] flex items-center justify-center shrink-0 shadow-md">
-              <Clock className="w-6 h-6" />
+          <div className="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-md hover:border-[#0056B3]/40 hover:shadow-xl transition-all duration-300 flex items-start gap-3.5">
+            <div className="w-11 h-11 rounded-2xl bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center shrink-0 shadow-sm">
+              <Clock className="w-5 h-5" />
             </div>
             <div>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-[#004B87]">Working Hours</span>
-              <h4 className="text-base font-extrabold text-[#0A1128] mt-0.5">Mon – Sat</h4>
-              <p className="text-sm font-bold text-slate-700 mt-1">9:00 AM – 7:00 PM</p>
-              <span className="text-[11px] text-emerald-700 font-bold block mt-0.5">● Response within 24 Hours</span>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#0056B3]">Working Hours</span>
+              <h4 className="text-sm font-extrabold text-[#0A1128] mt-0.5">Mon – Sat</h4>
+              <p className="text-xs font-bold text-slate-700 mt-0.5">9:00 AM – 7:00 PM</p>
+              <span className="text-[10px] text-emerald-600 font-bold block mt-0.5">● Response within 24 Hours</span>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-md hover:border-[#0056B3]/40 hover:shadow-xl transition-all duration-300 flex items-start gap-3.5">
+            <div className="w-11 h-11 rounded-2xl bg-blue-50 text-[#0056B3] border border-blue-200 flex items-center justify-center shrink-0 shadow-sm">
+              <MapPin className="w-5 h-5" />
+            </div>
+            <div>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#0056B3]">Our Location</span>
+              <h4 className="text-sm font-extrabold text-[#0A1128] mt-0.5">Head Office</h4>
+              <p className="text-xs font-bold text-slate-700 mt-0.5">Pune, Maharashtra, India</p>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Viman Nagar Business Hub</span>
             </div>
           </div>
 
@@ -474,7 +483,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full btn-gold py-3 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg"
+                  className="w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg bg-[#0056B3] hover:bg-[#004B87] text-white transition-all"
                 >
                   <Send className="w-4 h-4" />
                   <span>Submit Technical Proposal Request</span>
@@ -493,7 +502,7 @@ export default function ContactPage() {
                 alt="Agro Greenhouse Architecture"
                 className="w-full h-full object-cover opacity-25 filter blur-[1px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#0A1128]/95 to-[#14372D]/90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#060B18] via-[#0A1128]/95 to-[#0F1F3D]/90" />
               {/* Subtle ambient gold radial lighting */}
               <div className="absolute -top-20 -right-20 w-60 h-60 bg-[#B5A16A]/15 rounded-full blur-3xl pointer-events-none" />
             </div>
@@ -676,7 +685,7 @@ export default function ContactPage() {
                       handleUseCurrentLocation();
                     }
                   }}
-                  className="btn-gold flex-1 py-3 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-md"
+                  className="flex-1 py-3 px-3 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-md bg-[#0056B3] hover:bg-[#004B87] text-white transition-all"
                 >
                   <Route className="w-3.5 h-3.5" />
                   <span>Show Route</span>

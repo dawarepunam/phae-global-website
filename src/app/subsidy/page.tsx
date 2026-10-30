@@ -65,7 +65,7 @@ export default function SubsidyPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
         
         {/* Top Hero Highlight Card with 50% Badge */}
-        <div className="bg-gradient-to-br from-[#0A1128] via-[#14372D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#B5A16A]/30">
+        <div className="bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 lg:p-14 text-white shadow-2xl relative overflow-hidden mb-16 border border-[#B5A16A]/30">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#B5A16A]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">

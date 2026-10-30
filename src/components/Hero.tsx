@@ -164,8 +164,8 @@ export default function Hero() {
               className="w-full h-full object-cover object-center"
             />
             {/* Layered gradient overlays for cinematic depth */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0A1E18]/96 via-[#0A1128]/80 to-[#0A1128]/35" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18]/90 via-transparent to-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#060B18]/96 via-[#0A1128]/80 to-[#0A1128]/35" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#060B18]/90 via-transparent to-black/30" />
           </div>
         ))}
 
@@ -396,7 +396,7 @@ export default function Hero() {
             </div>
 
             {/* Bottom Scene Selector Thumbnails */}
-            <div className="p-4 bg-[#0A1E18] border-t border-white/10 flex items-center justify-between gap-3 overflow-x-auto">
+            <div className="p-4 bg-[#060B18] border-t border-white/10 flex items-center justify-between gap-3 overflow-x-auto">
               <span className="text-[11px] font-semibold text-slate-400 shrink-0">
                 Jump to Chapter:
               </span>

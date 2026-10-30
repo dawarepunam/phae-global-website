@@ -73,7 +73,7 @@ export default function Services() {
         </div>
 
         {/* Why Choose Our Services Strip */}
-        <div className="mt-20 bg-gradient-to-br from-[#0A1128] via-[#14372D] to-[#004B87] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#B5A16A]/30 relative overflow-hidden">
+        <div className="mt-20 bg-gradient-to-br from-[#0A1128] via-[#0F1F3D] to-[#004B87] rounded-3xl p-8 sm:p-12 text-white shadow-2xl border border-[#B5A16A]/30 relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-[#B5A16A]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="text-center max-w-2xl mx-auto mb-10">

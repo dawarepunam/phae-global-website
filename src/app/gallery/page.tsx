@@ -97,7 +97,7 @@ export default function GalleryPage() {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
               />
               {/* Gradient Dark Veil */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1E18] via-[#0A1128]/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#060B18] via-[#0A1128]/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
               
               {/* Category Pill Tag */}
               <div className="absolute top-4 left-4 z-10">
