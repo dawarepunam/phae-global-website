@@ -43,13 +43,15 @@ export default function GalleryPage() {
         {/* Section Intro with Total Photos Badge */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
           <div>
-            <span className="section-label">PHOTO ARCHIVE</span>
+            <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0056B3] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block">
+              PHOTO ARCHIVE
+            </span>
             <h2 className="text-2xl sm:text-3xl font-black text-[#0A1128] mt-2">
               Pan-India Execution Portfolio
             </h2>
           </div>
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-2xl border border-slate-200/90 shadow-sm text-xs font-bold text-[#004B87]">
-            <Sparkles className="w-4 h-4 text-[#C5B27D]" />
+          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-2xl border border-slate-200/90 shadow-sm text-xs font-bold text-[#0056B3]">
+            <Sparkles className="w-4 h-4 text-[#0056B3]" />
             <span>Showing {filtered.length} of {GALLERY_ITEMS.length} Certified Installations</span>
           </div>
         </div>

@@ -23,8 +23,8 @@ export default function ProductsPage() {
         
         {/* Intro */}
         <div className="max-w-3xl mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5" /> High-Performance Agri-Structures
+          <span className="text-xs font-bold uppercase tracking-wider text-[#0056B3] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-[#0056B3]" /> High-Performance Agri-Structures
           </span>
           <h2 className="text-2xl sm:text-4xl font-black text-[#0A1128] mt-3">
             Engineered For Climate Resilience & Maximum Harvest
@@ -86,16 +86,16 @@ export default function ProductsPage() {
                 </div>
               </div>
 
-              {/* Action Link at Bottom */}
-              <div className="p-6 pt-0 mt-auto">
-                <Link
-                  href={`/products/${product.slug}`}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#0056B3] text-[#004B87] hover:bg-[#0056B3] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
-                >
-                  <span>View Specifications & Details</span>
-                  <ArrowRight className="w-4 h-4 ml-auto" />
-                </Link>
-              </div>
+                {/* Action Link at Bottom */}
+                <div className="p-6 pt-0 mt-auto">
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-blue-50 hover:bg-[#0056B3] text-[#0056B3] hover:text-white border border-blue-200 font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                  >
+                    <span>View Specifications & Details</span>
+                    <ArrowRight className="w-4 h-4 ml-auto" />
+                  </Link>
+                </div>
             </div>
           ))}
         </div>

@@ -23,8 +23,8 @@ export default function EconomicsPage() {
         
         {/* Intro */}
         <div className="max-w-3xl mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#004B87] bg-[#90A4AE]/20 px-3 py-1 rounded-full inline-flex items-center gap-1.5">
-            <Sprout className="w-3.5 h-3.5" /> High-Value Horticulture & Floriculture
+          <span className="text-xs font-bold uppercase tracking-wider text-[#0056B3] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5">
+            <Sprout className="w-3.5 h-3.5 text-[#0056B3]" /> High-Value Horticulture & Floriculture
           </span>
           <h2 className="text-2xl sm:text-4xl font-black text-[#0A1128] mt-3">
             Commercial Return on Investment Under Protected Shelters
@@ -93,7 +93,7 @@ export default function EconomicsPage() {
               <div className="p-6 pt-0 mt-auto">
                 <Link
                   href={`/economics/${crop.slug}`}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl border border-[#0056B3] text-[#004B87] hover:bg-[#0056B3] hover:text-white font-bold text-xs transition-all shadow-sm group-hover:shadow"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-blue-50 hover:bg-[#0056B3] text-[#0056B3] hover:text-white border border-blue-200 font-bold text-xs transition-all shadow-sm group-hover:shadow"
                 >
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>View Economics & Yield Metrics</span>
